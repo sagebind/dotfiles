@@ -1,0 +1,1189 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"temp",
+				"temperature"
+			],
+			[
+				"pal",
+				"palindrome"
+			],
+			[
+				"no",
+				"notpal"
+			],
+			[
+				"main",
+				"main_ispal"
+			],
+			[
+				"p",
+				"palindrome"
+			],
+			[
+				"addi",
+				"addiu"
+			],
+			[
+				"nc",
+				"nchars"
+			],
+			[
+				"off",
+				"offset"
+			],
+			[
+				"add",
+				"address"
+			],
+			[
+				"sea",
+				"search_end"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"main_",
+				"main_end"
+			],
+			[
+				"an",
+				"and"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"pro",
+				"project"
+			],
+			[
+				"pr",
+				"project"
+			],
+			[
+				"me",
+				"meta"
+			],
+			[
+				"defin",
+				"define()	Core Function"
+			],
+			[
+				"Date",
+				"DateTime  (class)"
+			],
+			[
+				"co",
+				"controller"
+			],
+			[
+				"tex",
+				"textpress  (variable)"
+			],
+			[
+				"var",
+				"var_dump  (function)"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"endf",
+				"endforeach	Language Construct"
+			],
+			[
+				"createFor",
+				"createForCallable"
+			],
+			[
+				"dele",
+				"delegateMethod  (function)"
+			],
+			[
+				"ca",
+				"callable  (variable)"
+			],
+			[
+				"cal",
+				"callable"
+			],
+			[
+				"del",
+				"delegate"
+			],
+			[
+				"call",
+				"callable"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"In",
+				"InvalidArgumentException"
+			],
+			[
+				"met",
+				"method  (variable)"
+			],
+			[
+				"meth",
+				"method_exists"
+			],
+			[
+				"ReflectionF",
+				"ReflectionFunctionAbstract  (class)"
+			],
+			[
+				"cl",
+				"classScope  (variable)"
+			],
+			[
+				"func_",
+				"func_get_arg"
+			],
+			[
+				"cllo",
+				"closedArgs  (variable)"
+			],
+			[
+				"array_m",
+				"array_merge  (function)"
+			],
+			[
+				"array_un",
+				"array_unshift"
+			],
+			[
+				"Ref",
+				"ReflectionFunction  (namespace)"
+			],
+			[
+				"class",
+				"class_exists"
+			],
+			[
+				"R",
+				"ReflectionMethod  (namespace)"
+			],
+			[
+				"strp",
+				"strpos"
+			],
+			[
+				"Continuit",
+				"Continuity\\EventEmitter  (class)"
+			],
+			[
+				"lis",
+				"listeners"
+			],
+			[
+				"Re",
+				"ReflectionFunction  (namespace)"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"Cont",
+				"Continuity\\Listener  (class)"
+			],
+			[
+				"withd",
+				"withdrawalAmount"
+			],
+			[
+				"__",
+				"__invoke  (function)"
+			],
+			[
+				"Se",
+				"SettingsPropertyAccessor  (class)"
+			],
+			[
+				"sec",
+				"sectionlessKeys"
+			],
+			[
+				"getVa",
+				"getValue"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"ge",
+				"getChildren  (function)"
+			],
+			[
+				"SplFi",
+				"SplFileObject  (class)"
+			],
+			[
+				"assertLe",
+				"assertLessThanOrEqual  (function)"
+			],
+			[
+				"assertG",
+				"assertGreaterThanOrEqual  (function)"
+			],
+			[
+				"asser",
+				"assertCount  (function)"
+			],
+			[
+				"count",
+				"count()"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"asse",
+				"assertEquals"
+			],
+			[
+				"Conf",
+				"Switchbox\\ConfigurationProperty  (class)"
+			],
+			[
+				"Sw",
+				"Switchbox\\ConfigurationProperty  (class)"
+			],
+			[
+				"var_",
+				"var_dump()"
+			],
+			[
+				"jso",
+				"jsonFile"
+			],
+			[
+				"fil",
+				"fileSystem  (variable)"
+			],
+			[
+				"Switch",
+				"Switchbox\\Providers\\JsonProvider  (class)"
+			],
+			[
+				"ret",
+				"returnValue"
+			],
+			[
+				"get",
+				"getProperty  (function)"
+			],
+			[
+				"C",
+				"ConfigurationProperty  (class)"
+			],
+			[
+				"chi",
+				"childNode"
+			],
+			[
+				"prop",
+				"propertyNode"
+			],
+			[
+				"property",
+				"propertyArray"
+			],
+			[
+				"conf",
+				"configurationArray"
+			],
+			[
+				"set",
+				"settings"
+			],
+			[
+				"print",
+				"print_r()"
+			],
+			[
+				"Con",
+				"ConfigurationValue  (class)"
+			],
+			[
+				"ch",
+				"childNode"
+			],
+			[
+				"nam",
+				"names"
+			],
+			[
+				"se",
+				"setProvider  (function)"
+			],
+			[
+				"cou",
+				"count()"
+			],
+			[
+				"assert",
+				"assertEquals  (function)"
+			],
+			[
+				"E",
+				"Exception  (class)"
+			],
+			[
+				"ha",
+				"hasProperty  (function)"
+			],
+			[
+				"getP",
+				"getProperty"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"arr",
+				"array_merge"
+			],
+			[
+				"ar",
+				"array"
+			],
+			[
+				"profi",
+				"activeProfile  (variable)"
+			],
+			[
+				"prov",
+				"providers  (variable)"
+			],
+			[
+				"array",
+				"array  (function)"
+			],
+			[
+				"Proper",
+				"Seffig\\PropertyValue  (class)"
+			],
+			[
+				"s",
+				"stream"
+			],
+			[
+				"fo",
+				"fopen  (function)"
+			],
+			[
+				"prof",
+				"profile"
+			],
+			[
+				"act",
+				"activeProfile"
+			],
+			[
+				"array_k",
+				"array_key_exists"
+			],
+			[
+				"Pro",
+				"ProviderInterface"
+			],
+			[
+				"Seff",
+				"Seffig\\Providers\\IniProvider  (class)"
+			],
+			[
+				"cu",
+				"currentProperty"
+			],
+			[
+				"prope",
+				"property"
+			],
+			[
+				"str",
+				"strtolower"
+			],
+			[
+				"parse",
+				"parse_ini_file"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"php",
+				"phpunit"
+			],
+			[
+				"ins",
+				"instance"
+			],
+			[
+				"v",
+				"value  (variable)"
+			],
+			[
+				"val",
+				"values"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"of",
+				"offset"
+			],
+			[
+				"ex",
+				"explode"
+			],
+			[
+				"prge",
+				"preg_replace"
+			],
+			[
+				"is_s",
+				"is_string"
+			],
+			[
+				"Co",
+				"Controller"
+			],
+			[
+				"stat",
+				"static"
+			],
+			[
+				"NccQuizz",
+				"NccQuizzing\\\\Server\\\\Web\\Controller  (class)"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"App",
+				"NccQuizzing\\\\Server\\\\Application\\Application  (class)"
+			],
+			[
+				"nccqui",
+				"nccquizz_master"
+			],
+			[
+				"tr",
+				"target"
+			],
+			[
+				"vi",
+				"videos"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"vid",
+				"videoId"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"Indentation: Guess Settings From Buffer"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"tab",
+				"Indentation: Tab Width: 4"
+			],
+			[
+				"men",
+				"View: Toggle Menu"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"mips",
+				"Set Syntax: MIPS"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"edit pr",
+				"Project: Edit Project"
+			],
+			[
+				"sideb",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"new pre",
+				"Project: New Workspace for Project"
+			],
+			[
+				"java",
+				"Javatar: Create new..."
+			],
+			[
+				"add f",
+				"Project: Add Folder"
+			],
+			[
+				"project ma",
+				"Project Manager"
+			],
+			[
+				"pro",
+				"Project Manager: Add Project"
+			],
+			[
+				"new w",
+				"New Window"
+			],
+			[
+				"quick",
+				"Project: Quick Switch Project…"
+			],
+			[
+				"project m",
+				"Project Manager: Add Project"
+			],
+			[
+				"rese",
+				"Font: Reset Font Size"
+			],
+			[
+				"res",
+				"Font: Reset Font Size"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"x",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"reset",
+				"Font: Reset Font Size"
+			],
+			[
+				"fon",
+				"Font: Reset Font Size"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"toggl",
+				"View: Toggle Menu"
+			],
+			[
+				"togg",
+				"View: Toggle Menu"
+			],
+			[
+				"toggle",
+				"View: Toggle Menu"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"FTPSync: Upload current file"
+			],
+			[
+				"prev",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"previo",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"markdown",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"pup",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upl",
+				"FTPSync: Upload current file"
+			],
+			[
+				"u",
+				"FTPSync: Upload current file"
+			],
+			[
+				"upload",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ftps",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ft",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ftp",
+				"FTPSync: Check current file"
+			],
+			[
+				"ct",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"ctags: ",
+				"CTags: Show Symbols (all)"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"gi",
+				"Git: Status"
+			],
+			[
+				"q",
+				"Quick File Creator: Create file"
+			],
+			[
+				"Git:",
+				"Git: Open..."
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 181.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/data/Home/Dropbox/College/cs-271",
+		"/data/Home/Dropbox/College/cs-271/lab6"
+	],
+	"file_history":
+	[
+		"/data/Home/Dropbox/College/cs-271/lab7/271-lab7.asm",
+		"/data/Home/Dropbox/College/cs-271/homework5/271-homework5-palindrome.asm",
+		"/data/Home/Dropbox/College/cs-271/lab6/lab6.asm",
+		"/data/Home/Dropbox/College/cs-271/homework4/271-homework4-fibonacci.asm",
+		"/data/Home/Dropbox/College/cs-271/exercise6.3.asm",
+		"/home/coderstephen/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/data/Home/Dropbox/College/cs-271/lab4/sort3int.asm",
+		"/data/Home/Dropbox/College/cs-271/lab5/lab5.total.asm",
+		"/data/Home/Dropbox/College/cs-271/lab3/sum-of-ints.log",
+		"/data/Home/Dropbox/College/cs-271/lab3/sum-of-ints.asm",
+		"/data/Home/Dropbox/College/cs-271/homework4/271-homework4-fibonacci.log",
+		"/data/Home/Dropbox/College/cs-271/homework3/qtspim.log",
+		"/data/Home/Dropbox/College/cs-271/homework3/homework3.asm",
+		"/data/Home/Dropbox/College/cs-271/subtraction.asm",
+		"/data/Home/Dropbox/College/cs-271/hexout_driver.asm",
+		"/data/Home/Dropbox/College/cs-271/hexout.asm",
+		"/data/Home/Dropbox/College/cs-271/dec2hex.asm",
+		"/data/Home/Dropbox/College/cs-271/lab5/total.asm",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/codeivate-st.sublime-settings",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/assembly-labs.sublime-project",
+		"/data/Home/Projects/ai-pathfinder/src/GraphVertex.php",
+		"/data/Home/Projects/blog/build.xml",
+		"/data/Home/Projects/blog/scss/base/_reset.scss",
+		"/data/Home/Projects/blog/scss/components/_code.scss",
+		"/data/Home/Projects/blog/composer.json",
+		"/data/Home/Projects/blog/scss/layout/_forms.scss",
+		"/data/Home/Projects/blog/articles/2014-09-29-designing-color-palettes-better-with-gpick.md",
+		"/data/Home/Projects/blog/articles/2014-05-22-using-sass-in-php-projects.md",
+		"/data/Projects/blog/themes/stephencoakley/layout.php",
+		"/data/Projects/blog/themes/stephencoakley/index.php",
+		"/data/Projects/blog/themes/stephencoakley/portfolio.php",
+		"/data/Projects/blog/themes/stephencoakley/contact.php",
+		"/data/Projects/blog/scss/base/_reset.scss",
+		"/data/Projects/blog/articles/2014-05-22-using-sass-in-php-projects.md",
+		"/data/Projects/blog/scss/pages/_portfolio.scss",
+		"/data/Projects/blog/scss/pages/_profile.scss",
+		"/data/Projects/blog/wwwroot/components/prism.js",
+		"/data/Projects/blog/scss/layout/_header.scss",
+		"/data/Projects/blog/scss/layout/_layout.scss",
+		"/data/Projects/blog/wwwroot/index.php",
+		"/data/Projects/blog/themes/textpress/article.php",
+		"/data/Projects/blog/scss/components/_buttons.scss",
+		"/data/Projects/blog/scss/vendor/normalize/_normalize.scss",
+		"/data/Projects/blog/scss/layout/_footer.scss",
+		"/data/Projects/blog/.gitignore",
+		"/data/Projects/blog/scss/layout/_print.scss",
+		"/data/Projects/blog/scss/modules/../layout/_layout.scss",
+		"/data/Projects/blog/scss/modules/../layout/_forms.scss",
+		"/data/Projects/blog/build.xml",
+		"/data/Projects/blog/scss/main.scss",
+		"/data/Projects/blog/config.json",
+		"/data/Projects/blog/themes/stephencoakley/article.php",
+		"/data/Projects/blog/wwwroot/.htaccess",
+		"/data/Projects/blog/themes/stephencoakley/contactReplyEmail.php",
+		"/data/Projects/blog/scss/modules/forms.scss",
+		"/data/Projects/blog/themes/stephencoakley/contactEmail.php",
+		"/data/Projects/blog/composer.json",
+		"/data/Projects/blog/src/shameerc/Textpress/Textpress.php",
+		"/data/Projects/blog/bower.json",
+		"/data/Projects/blog-legacy/composer.json",
+		"/usr/local/composer/composer.json",
+		"/home/coderstephen/.composer/composer.json",
+		"/data/Projects/blog/src/Coderstephen/Blog/ContactController.php",
+		"/data/Projects/website-old/app/controllers/ContactController.php",
+		"/home/coderstephen/Projects/blog/.gitignore",
+		"/home/coderstephen/Projects/blog/wwwroot/index.php",
+		"/home/coderstephen/Projects/blog/config.json",
+		"/home/coderstephen/Projects/blog/config/config.php",
+		"/data/Projects/blog/src/shameerc/Textpress/Cache.php",
+		"/home/coderstephen/Projects/blog/src/shameerc/Textpress/Cache.php",
+		"/home/coderstephen/Projects/website-old/app/controllers/ContactController.php",
+		"/home/coderstephen/Projects/blog/composer.json",
+		"/home/coderstephen/Projects/blog/src/shameerc/Textpress/Textpress.php",
+		"/home/coderstephen/Projects/blog/themes/stephencoakley/article.php",
+		"/home/coderstephen/Projects/website/src/BlogController.php",
+		"/home/coderstephen/Projects/website/src/BlogPost.php",
+		"/home/coderstephen/Projects/blog/themes/textpress/sitemap.php",
+		"/home/coderstephen/Projects/blog/articles/2014-05-22-using-sass-in-php-projects.txt",
+		"/home/coderstephen/Projects/blog/themes/textpress/article.php",
+		"/home/coderstephen/Projects/blog/themes/textpress/index.php",
+		"/home/coderstephen/Projects/blog/themes/stephencoakley/blog.php",
+		"/home/coderstephen/Projects/blog/themes/stephencoakley/index.php",
+		"/home/coderstephen/Projects/blog/themes/textpress/archives.php",
+		"/home/coderstephen/Projects/blog/themes/stephencoakley/contact.php",
+		"/home/coderstephen/Projects/blog/themes/stephencoakley/projects.php",
+		"/home/coderstephen/Projects/blog/themes/textpress/layout.php",
+		"/home/coderstephen/Projects/blog/themes/stephencoakley/layout.php",
+		"/home/coderstephen/Projects/blog/themes/stephencoakley/portfolio.php",
+		"/home/coderstephen/Projects/blog/themes/stephencoakley/about.php",
+		"/home/coderstephen/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/coderstephen/Projects/blog/themes/textpress/about.php",
+		"/home/coderstephen/Projects/blog/build.xml",
+		"/home/coderstephen/Projects/continuity/composer.json",
+		"/home/coderstephen/Projects/website/composer.json",
+		"/home/coderstephen/Projects/website-old/composer.json",
+		"/home/coderstephen/Projects/continuity/continuity.sublime-project",
+		"/data/Projects/evernote-gnome-client/continuity.sublime-project",
+		"/data/Projects/continuity/composer.json",
+		"/home/coderstephen/Projects/uwwapi/composer.json",
+		"/home/coderstephen/Projects/uwwapi/web/index.php",
+		"/home/coderstephen/Projects/continuity/src/Event.php",
+		"/home/coderstephen/Projects/continuity/src/EventContext.php",
+		"/home/coderstephen/Projects/continuity/src/Promise.php",
+		"/home/coderstephen/Projects/continuity/src/EventKernel.php",
+		"/home/coderstephen/Projects/continuity/src/ActionKernel.php",
+		"/home/coderstephen/Projects/continuity/src/EventManager.php",
+		"/home/coderstephen/Projects/continuity/src/EventEmitter.php",
+		"/home/coderstephen/Projects/continuity/tests/bootstrap.php",
+		"/home/coderstephen/Projects/switchbox/phpunit.xml",
+		"/home/coderstephen/Projects/torque/phpunit.xml",
+		"/home/coderstephen/Projects/switchbox/tests/SettingsTest.php",
+		"/home/coderstephen/Projects/switchbox/composer.json",
+		"/home/coderstephen/Projects/continuity/phpunit.xml",
+		"/home/coderstephen/.config/sublime-text-3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/data/Projects/continuity/src/TimeAction.php",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/View In Browser.sublime-settings",
+		"/data/Projects/continuity/src/Action.php",
+		"/data/Projects/continuity/src/StreamAction.php",
+		"/home/coderstephen/Downloads/uwwmenu.php",
+		"/data/Projects/continuity/continuity.sublime-project",
+		"/data/Projects/torque/src/Torque/EventManager.php",
+		"/data/Projects/torque/src/Torque/Event.php",
+		"/data/Projects/switchbox/src/Providers/IniProvider.php",
+		"/data/Projects/switchbox/src/Providers/WindowsRegistryProvider.php",
+		"/data/Projects/switchbox/tests/Providers/IniProviderTest.php",
+		"/data/Projects/switchbox/src/ConfigurationNode.php",
+		"/data/Projects/switchbox/src/ConfigurationProperty.php"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"		[",
+			"syscall",
+			"s4",
+			"$color-highlight",
+			"line-numbers",
+			"$color-highlight",
+			"a,",
+			"hr ",
+			"hr",
+			"	",
+			"this->textpress->app",
+			"\"",
+			"function init",
+			" : ",
+			")",
+			"array(",
+			"=>",
+			"'",
+			"appendG",
+			"View",
+			"Mark",
+			"word",
+			"$delegate();",
+			"propertyNode",
+			"configuraiton",
+			"properties",
+			"bold",
+			"properties",
+			"$property",
+			"$offset",
+			"Adapter",
+			"Provider",
+			"	",
+			"Home",
+			"color-background-dark",
+			" !important;",
+			"@shBrush",
+			"$color-light",
+			"$color-border",
+			"\\\\'",
+			"self",
+			"\\n",
+			";",
+			"\"",
+			"* **",
+			"*   **",
+			" static",
+			"Assert::areIdentical",
+			"VAR_John",
+			"VAR_LastEvent",
+			"VAR_Season",
+			"VAR_Book",
+			"VAR_LastEvent,",
+			"(VAR_Book",
+			"(VAR_Translation, VAR_Book,",
+			"\n                </li>",
+			"</b>\n                    ",
+			"-",
+			":",
+			"<li><b>John ",
+			"PRIMARY KEY AUTO_INCREMENT",
+			"PRIMARY KEY,",
+			"', ",
+			", ",
+			"', ",
+			", ",
+			"Skranji",
+			"Bubblegum Sans",
+			"pointer",
+			"index",
+			"elements",
+			"'",
+			"Object",
+			"	",
+			"result table",
+			"DatabaseAdapter::",
+			"Handle",
+			"statement",
+			"abstract ",
+			"	",
+			"1",
+			"	"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"s5",
+			"$color-jade",
+			"    ",
+			"this->textpress->slim",
+			"'",
+			": ",
+			"}",
+			"{",
+			":",
+			"\"",
+			"$this->assertTrue($delegate());",
+			"valueNode",
+			"rootProperty",
+			"profiles",
+			"$name",
+			"Provider",
+			"Adapter",
+			"    ",
+			";",
+			"'/js/shBrush",
+			"$color-text-light",
+			"$color-border-light",
+			"'",
+			"static",
+			";",
+			"\\n",
+			"'",
+			"- **",
+			"-**",
+			"* **",
+			"",
+			"$this->assertEquals",
+			"#this->assertEquals",
+			"@John",
+			"@LastEvent",
+			"@Season",
+			"VAR_John",
+			"VAR_LastEvent - 2,",
+			"(VAR_Season, VAR_LastEvent, VAR_Book",
+			"(VAR_Book,",
+			"'),",
+			", '",
+			", ",
+			",",
+			"(VAR_Translation, VAR_Book, ",
+			"AUTO_INCREMENT PRIMARY KEY",
+			"PRIMARY KEY AUTO_INCREMENT,",
+			"',\\r\\n",
+			",\\r\\n",
+			",\\n",
+			"Sofadi One",
+			"Skranji",
+			"id",
+			"offset",
+			"fixedArray",
+			"\"",
+			"Component",
+			"    ",
+			"result set",
+			"DatabaseAdapterInterface::",
+			"handle",
+			"",
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "assembly-labs.sublime-project",
+	"replace":
+	{
+		"height": 78.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 550.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/data/Projects/switchbox/switchbox.sublime-project"
+			]
+		],
+		"width": 418.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 264.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "follow_symlinks": true,
+            "path": "/data/Home/Projects/evflow-async"
+        },
+        {
+            "follow_symlinks": true,
+            "path": "/data/Home/Projects/evflow"
+        },
+        {
+            "follow_symlinks": true,
+            "path": "/data/Home/Projects/evflow-guzzle-handler"
+        }
+    ]
+}

@@ -1,0 +1,1646 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ph",
+				"Phackager"
+			],
+			[
+				"Bo",
+				"BookID"
+			],
+			[
+				"Seas",
+				"Seasons"
+			],
+			[
+				"stri",
+				"string"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"stat",
+				"static"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"event",
+				"eventList"
+			],
+			[
+				"NCCQi",
+				"NCCQuizzing\\Season  (class)"
+			],
+			[
+				"exe",
+				"execute"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"in",
+				"individuals"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"Per",
+				"PersonID"
+			],
+			[
+				"Reg",
+				"RegisteredQuizMasters"
+			],
+			[
+				"Regist",
+				"RegisteredIndividualQuizzers"
+			],
+			[
+				"Regis",
+				"RegisteredTeamQuizzers"
+			],
+			[
+				"Div",
+				"Divisions"
+			],
+			[
+				"Eve",
+				"EventDivisions"
+			],
+			[
+				"Con",
+				"Conferences"
+			],
+			[
+				"Boo",
+				"Books"
+			],
+			[
+				"B",
+				"Books"
+			],
+			[
+				"Se",
+				"SeasonBooks"
+			],
+			[
+				"ncc",
+				"nccquizzing"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"Loc",
+				"LocationID"
+			],
+			[
+				"Register",
+				"RegisteredTeamID"
+			],
+			[
+				"VA",
+				"VAR_LastEvent"
+			],
+			[
+				"Ev",
+				"Events"
+			],
+			[
+				"VAR",
+				"VAR_LastEvent"
+			],
+			[
+				"V",
+				"VAR_LastEvent"
+			],
+			[
+				"St",
+				"StartVerse"
+			],
+			[
+				"Qu",
+				"Quotes"
+			],
+			[
+				"Q",
+				"quotes"
+			],
+			[
+				"INT",
+				"INTO"
+			],
+			[
+				"Book",
+				"BookID"
+			],
+			[
+				"IN",
+				"INTO"
+			],
+			[
+				"I",
+				"ID"
+			],
+			[
+				"real_es",
+				"mysql_real_escape_string"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"j",
+				"John"
+			],
+			[
+				"p",
+				"Peter"
+			],
+			[
+				"P",
+				"Philemon"
+			],
+			[
+				"Ti",
+				"Titus"
+			],
+			[
+				"Re",
+				"RegistrationID"
+			],
+			[
+				"La",
+				"LastName"
+			],
+			[
+				"Quo",
+				"QuoteID"
+			],
+			[
+				"QuizM",
+				"QuizMeetID"
+			],
+			[
+				"Co",
+				"ConferenceID"
+			],
+			[
+				"N",
+				"NULL"
+			],
+			[
+				"DI",
+				"Division"
+			],
+			[
+				"Pe",
+				"Persons"
+			],
+			[
+				"Ref",
+				"REFERENCES"
+			],
+			[
+				"L",
+				"Locations"
+			],
+			[
+				"No",
+				"NOT"
+			],
+			[
+				"C",
+				"Conference"
+			],
+			[
+				"S",
+				"Schedule"
+			],
+			[
+				"E",
+				"EventEnd"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"bacg",
+				"background-repeat"
+			],
+			[
+				"page",
+				"page-header"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"backg-",
+				"background-image"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"button",
+				"button-light"
+			],
+			[
+				"butt",
+				"button-dark"
+			],
+			[
+				"bu",
+				"button-dark"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"pag",
+				"page-footer"
+			],
+			[
+				"border-b",
+				"border-bottom-style"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"page-",
+				"page-container"
+			],
+			[
+				"M",
+				"MultiRegionalEmail"
+			],
+			[
+				"ex",
+				"exception"
+			],
+			[
+				"H",
+				"HttpResponse  (class)"
+			],
+			[
+				"strp",
+				"strpos  (function)"
+			],
+			[
+				"ext",
+				"extends"
+			],
+			[
+				"han",
+				"handleRequest  (function)"
+			],
+			[
+				"W",
+				"Web  (namespace)"
+			],
+			[
+				"ret",
+				"returnValue"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"contr",
+				"controllerInstance"
+			],
+			[
+				"cont",
+				"contentType"
+			],
+			[
+				"fi",
+				"fieldName"
+			],
+			[
+				"up",
+				"upload  (function)"
+			],
+			[
+				"fie",
+				"fieldValue"
+			],
+			[
+				"he",
+				"headerLength"
+			],
+			[
+				"co",
+				"controllerInstance"
+			],
+			[
+				"matc",
+				"matchingRoute"
+			],
+			[
+				"mat",
+				"matchingRoute"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"reg",
+				"registered  (variable)"
+			],
+			[
+				"re",
+				"register  (function)"
+			],
+			[
+				"Ac",
+				"Torque\\Web\\ActionNotSupportedException  (class)"
+			],
+			[
+				"func_",
+				"func_get_args"
+			],
+			[
+				"Exi",
+				"ExitCode"
+			],
+			[
+				"Error",
+				"ErrorException"
+			],
+			[
+				"array_u",
+				"array_unique"
+			],
+			[
+				"loca",
+				"locations"
+			],
+			[
+				"array_m",
+				"array_merge"
+			],
+			[
+				"cl",
+				"classPaths"
+			],
+			[
+				"pa",
+				"pathPattern"
+			],
+			[
+				"defi",
+				"definitionPath"
+			],
+			[
+				"Cl",
+				"ClassLoaderException  (class)"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"na",
+				"namespace"
+			],
+			[
+				"rel",
+				"relativePath"
+			],
+			[
+				"n",
+				"namespaceAsPath"
+			],
+			[
+				"nm",
+				"namespaceAsPath"
+			],
+			[
+				"clas",
+				"className  (variable)"
+			],
+			[
+				"u",
+				"unqualifiedName"
+			],
+			[
+				"Runt",
+				"Torque\\Runtime\\ClassLoader  (class)"
+			],
+			[
+				"ha",
+				"handle"
+			],
+			[
+				"imp",
+				"implode"
+			],
+			[
+				"Mail",
+				"Torque\\Mail\\MailMessage  (class)"
+			],
+			[
+				"status",
+				"statusText"
+			],
+			[
+				"Soc",
+				"SocketException"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 183,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "build.xml",
+			"settings":
+			{
+				"buffer_size": 950,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Phackager/Application.php",
+			"settings":
+			{
+				"buffer_size": 8754,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Java/Ant.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"FTPSync: Upload current file"
+			],
+			[
+				"pup",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"upl",
+				"FTPSync: Upload current file"
+			],
+			[
+				"u",
+				"FTPSync: Upload current file"
+			],
+			[
+				"upload",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ftps",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ft",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ftp",
+				"FTPSync: Check current file"
+			],
+			[
+				"ct",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"ctags: ",
+				"CTags: Show Symbols (all)"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"gi",
+				"Git: Status"
+			],
+			[
+				"q",
+				"Quick File Creator: Create file"
+			],
+			[
+				"Git:",
+				"Git: Open..."
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 181.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/data/Projects/torque/build.xml",
+		"/data/Projects/phackager/build.php",
+		"/data/Projects/phackager/build/../build.php",
+		"/C/Personal/Git/phackager/.gitignore",
+		"/C/Personal/Git/phackager/Phackager.sublime-project",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/User/Side Bar.sublime-settings",
+		"/C/Users/Stephen/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Z/Data/Websites/NCC Bible Quizzing/nccquizzing.org.sublime-project",
+		"/X/Data/Websites/NCC Bible Quizzing/src/lib/Person.php",
+		"/X/Data/Websites/NCC Bible Quizzing/database/Schema.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/src/lib/Database.php",
+		"/X/Data/Websites/NCC Bible Quizzing/nccquizzing.org.sublime-project",
+		"/X/Data/Websites/NCC Bible Quizzing/org.nccquizzing.website.sublime-project",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/season/schedule.php",
+		"/C/Stephen/Dropbox/Projects/Dragons Noble/Source/_locale/index.php",
+		"/C/Stephen/Dropbox/Projects/Dragons Noble/Source/_locale/locales.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/church-directory.php",
+		"/X/Data/Websites/NCC Bible Quizzing/database/Locations.sql",
+		"/C/Users/user/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/X/Data/Websites/NCC Bible Quizzing/database/2010-2011.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/css/footer.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/register.htm",
+		"/X/Data/Websites/NCC Bible Quizzing/database/Books.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/database/2011-2012.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/archives/2010-2011/schedule.db",
+		"/X/Data/Websites/NCC Bible Quizzing/database/RegionScopes.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/archives/2010-2011/quotes.html",
+		"/X/Data/Websites/NCC Bible Quizzing/database/Translations.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/directions.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/index.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/.htaccess",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/css/master.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/directions.html",
+		"/X/Data/Websites/NCC Bible Quizzing/database/Conferences.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/sitemap.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/sitemap.xml",
+		"/X/Data/Websites/NCC Bible Quizzing/database/Books_Translations.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/archives/2012-2013/schedule.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/sitemap.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/links.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/squirt_2012.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/robots.txt",
+		"/X/Data/Websites/NCC Bible Quizzing/database/Locations_Conferences.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/dev/deploy/public_html/church-directory.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/config.ini",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/contact.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/css/master.old.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/images/slideshow/welcome-2012.jpg",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/style/index.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/style/master.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/css/header.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/js/master.js",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/archives/2011-2012/photos/december.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/archives/2010-2011/photos/november.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/archives/2011-2012/photos/april.html",
+		"/C/Users/user/AppData/Roaming/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/user/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/css/layout.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/styles/layout.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/styles/style.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/styles/footer.html",
+		"/C/Users/user/Downloads/Evernote.enex.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/styles/google-plus-ribbon.png",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/styles/header.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/styles/header-gradient.png",
+		"/X/Data/Websites/NCC Bible Quizzing/src/public_html/settings.json",
+		"/X/Data/Websites/NCC Bible Quizzing/src/styles/header.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/style/master.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/styles/layout.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/styles/style.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/index.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/ftpsync.settings",
+		"/X/Data/Websites/NCC Bible Quizzing/src/contact.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/styles/footer.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/styles/background.png",
+		"/X/Data/Websites/NCC Bible Quizzing/src/.htaccess",
+		"/X/Data/Websites/NCC Bible Quizzing/src/res/style.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/res/layout.css",
+		"/X/Data/Websites/NCC Bible Quizzing/src/res/header.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/res/footer.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/index.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/res/header.inc",
+		"/X/Data/Websites/NCC Bible Quizzing/src/res/footer.inc",
+		"/X/Data/Websites/NCC Bible Quizzing/src/config.ini",
+		"/C/Users/user/Dropbox/Work/Beloit FMC/Website/src/public_html/master.xml",
+		"/C/Users/user/Dropbox/Work/Beloit FMC/Website/src/public_html/index.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/data/footer.dat",
+		"/X/Data/Websites/NCC Bible Quizzing/src/data/header.dat",
+		"/X/Data/Websites/NCC Bible Quizzing/dev/deploy/templates/master.html",
+		"/X/Data/Websites/NCC Bible Quizzing/dev/database/CreateDatabase.sql",
+		"/X/Data/Websites/NCC Bible Quizzing/src/links.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/robots.txt",
+		"/X/Data/Websites/NCC Bible Quizzing/src/contacts.html",
+		"/X/Data/Websites/NCC Bible Quizzing/other_versions/New/links.php",
+		"/X/Data/Websites/NCC Bible Quizzing/src/settings.json",
+		"/X/Data/Websites/NCC Bible Quizzing/src/register.ini",
+		"/X/Data/Websites/NCC Bible Quizzing/src/postinfo.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/index2.html",
+		"/X/Data/Websites/NCC Bible Quizzing/src/scripts/ftpsync.settings",
+		"/C/Users/user/Git/Torque/src/Torque/Web/CgiAdapter.php",
+		"/C/Users/user/Git/Torque/src/Torque/Http/HttpRequest.php",
+		"/C/Users/user/Git/Torque/src/Torque/Http/HttpResponse.php",
+		"/C/Users/user/Git/Torque/src/Torque/Http/HttpMessage.php",
+		"/C/Users/user/Git/Torque/src/Torque/Web/Route.php",
+		"/C/Users/user/Git/Torque/examples/CdBrowser/Application.php",
+		"/C/Users/user/Git/Torque/src/Torque/Web/RequestContext.php",
+		"/C/Users/user/Git/Torque/src/Torque/Web/Response.php",
+		"/C/Users/user/Git/Torque/src/Torque/Web/Router.php",
+		"/C/Users/user/Git/Torque/tests/MainPage.template",
+		"/C/Users/user/Git/Torque/src/Torque/IO/FileSystem.php",
+		"/C/Users/user/Git/Torque/src/Torque/ClassLoader.php",
+		"/C/Users/user/Git/Torque/examples/CdBrowser/CdList.php",
+		"/C/Users/user/Git/Torque/src/Torque/Application.php",
+		"/C/Users/user/Git/Torque/src/Torque/Web/FileCache.php",
+		"/C/Users/user/Git/Torque/src/Torque/Web/MemoryCache.php",
+		"/C/Users/user/Git/Torque/src/Torque/Web/Cache.php",
+		"/C/Users/user/Git/Torque/src/Torque/Web/CacheInterface.php",
+		"/C/Users/user/Git/Torque/src/Torque/Web/WebApplication.php",
+		"/C/Users/user/Git/Torque/Torque.sublime-project",
+		"/C/Users/user/Git/Torque/src/Torque/Web/FrontController.php",
+		"/C/Users/user/Git/Torque/src/Torque/Http/HttpHeaders.php",
+		"/C/Users/user/Git/Torque/src/Torque/Http/CookieJar.php",
+		"/C/Users/user/Git/Torque/src/Torque/Http/Cookie.php",
+		"/C/Users/user/Git/Torque/src/Torque/IO/Stream.php",
+		"/C/Users/user/Git/Torque/src/Torque/Console.php",
+		"/C/Users/user/Git/Torque/src/Torque/Exception.php",
+		"/C/Users/user/Git/Torque/src/stub.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"VAR_John",
+			"VAR_LastEvent",
+			"VAR_Season",
+			"VAR_Book",
+			"VAR_LastEvent,",
+			"(VAR_Book",
+			"(VAR_Translation, VAR_Book,",
+			"\n                </li>",
+			"</b>\n                    ",
+			"-",
+			":",
+			"<li><b>John ",
+			"PRIMARY KEY AUTO_INCREMENT",
+			"PRIMARY KEY,",
+			"', ",
+			", ",
+			"', ",
+			", ",
+			"Skranji",
+			"Bubblegum Sans",
+			"pointer",
+			"index",
+			"elements",
+			"'",
+			"Object",
+			"	",
+			"result table",
+			"DatabaseAdapter::",
+			"Handle",
+			"statement",
+			"abstract ",
+			"	",
+			"1",
+			"	"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@John",
+			"@LastEvent",
+			"@Season",
+			"VAR_John",
+			"VAR_LastEvent - 2,",
+			"(VAR_Season, VAR_LastEvent, VAR_Book",
+			"(VAR_Book,",
+			"'),",
+			", '",
+			", ",
+			",",
+			"(VAR_Translation, VAR_Book, ",
+			"AUTO_INCREMENT PRIMARY KEY",
+			"PRIMARY KEY AUTO_INCREMENT,",
+			"',\\r\\n",
+			",\\r\\n",
+			",\\n",
+			"Sofadi One",
+			"Skranji",
+			"id",
+			"offset",
+			"fixedArray",
+			"\"",
+			"Component",
+			"    ",
+			"result set",
+			"DatabaseAdapterInterface::",
+			"handle",
+			"",
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "build.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								427,
+								427
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/Phackager/Application.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								320,
+								320
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 161.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.phpdocumentor":
+	{
+		"height": 100.0
+	},
+	"project": "phackager.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/data/Projects/php-fundamentals/php-fundamentals.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

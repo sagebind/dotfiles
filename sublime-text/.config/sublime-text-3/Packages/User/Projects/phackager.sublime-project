@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "name": "Phackager",
+            "path": "/data/Home/Projects/phackager",
+            "folder_exclude_patterns": [
+                "dist"
+            ],
+            "file_exclude_patterns": [
+                ".buildpath",
+                ".gitattributes",
+                ".project",
+                ".tags",
+                ".tags_sorted_by_file",
+                "*.sublime-project",
+                "*.sublime-workspace"
+            ]
+        }
+    ]
+}

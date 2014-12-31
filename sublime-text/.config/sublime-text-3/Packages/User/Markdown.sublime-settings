@@ -1,0 +1,8 @@
+{
+    "trim_trailing_white_space_on_save": true,
+    "font_size": 14,
+    "wrap_width": 72,
+    "line_padding_top": 8,
+    "caret_style": "normal",
+    "highlight_line": true
+}

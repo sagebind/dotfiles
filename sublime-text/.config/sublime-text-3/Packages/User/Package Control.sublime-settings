@@ -1,0 +1,55 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2",
+		"ssl-linux"
+	],
+	"installed_packages":
+	[
+		"C++ Snippets",
+		"Codeivate",
+		"DocBlockr",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"GTKDarkThemeVariantSetter",
+		"Haxe",
+		"HTML Mustache",
+		"INI",
+		"Javatar",
+		"Kulture",
+		"LaTeXing",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"MIPS Syntax",
+		"Missing Palette Commands",
+		"OmniSharp",
+		"Package Control",
+		"PHP Completions Kit",
+		"Phpcs",
+		"Predawn",
+		"Project Manager",
+		"Sass",
+		"SASS Build",
+		"SCSS",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-json",
+		"SublimeLinter-php",
+		"SublimeLinter-phpcs",
+		"Theme - Phoenix",
+		"Theme - Soda",
+		"Theme - Spacegray",
+		"View In Browser",
+		"Xdebug Client"
+	],
+	"repositories":
+	[
+		"https://github.com/SublimeLinter/SublimeLinter/tree/sublime-text-3",
+		"https://github.com/kemayo/sublime-text-git/tree/python3"
+	]
+}

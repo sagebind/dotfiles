@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "name": "switchbox/switchbox",
+            "path": "/data/Home/Projects/switchbox/switchbox"
+        },
+        {
+            "name": "switchbox/windows-registry-provider",
+            "path": "/data/Home/Projects/switchbox/switchbox-windows-registry-provider"
+        }
+    ],
+
+    "build_systems": [
+        {
+            "name": "Sami",
+            "cmd": ["vendor/bin/sami.php", "update", "sami.php"],
+            "working_dir": "${project_path}"
+        }
+    ]
+}

@@ -1,0 +1,1339 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"la",
+				"last-child  (pseudo-class)"
+			],
+			[
+				"tex-",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"loc",
+				"localTime"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"ca",
+				"cachePath  (variable)"
+			],
+			[
+				"file_",
+				"file_put_contents"
+			],
+			[
+				"cach",
+				"cachePath"
+			],
+			[
+				"file",
+				"filemtime"
+			],
+			[
+				"fil",
+				"filemtime"
+			],
+			[
+				"load",
+				"loadEvents"
+			],
+			[
+				"Da",
+				"DateTime  (class)"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"col",
+				"columns"
+			],
+			[
+				"color",
+				"color-silver"
+			],
+			[
+				"inline",
+				"inline-block  (value)"
+			],
+			[
+				"grid-s",
+				"grid-size"
+			],
+			[
+				"error",
+				"errorTemplate  (variable)"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"tabl",
+				"table-cell  (value)"
+			],
+			[
+				"tab",
+				"table-cell  (value)"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"overflow-",
+				"overflow-x:   (property)"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"strp",
+				"strpos"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"tr",
+				"trim"
+			],
+			[
+				"__",
+				"__DIR__"
+			],
+			[
+				"templa",
+				"templatePath"
+			],
+			[
+				"defa",
+				"defaultTemplate"
+			],
+			[
+				"head",
+				"headerEnd"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"page",
+				"pageSource"
+			],
+			[
+				"templ",
+				"templateDirectory"
+			],
+			[
+				"serv",
+				"serveStaticFile"
+			],
+			[
+				"str_r",
+				"str_replace"
+			],
+			[
+				"read",
+				"readfile"
+			],
+			[
+				"cont",
+				"contentType"
+			],
+			[
+				"get_de",
+				"get_defined_vars"
+			],
+			[
+				"pa",
+				"pageOutput"
+			],
+			[
+				"tem",
+				"templateFile"
+			],
+			[
+				"va",
+				"var_export"
+			],
+			[
+				"co",
+				"contentPath"
+			],
+			[
+				"Ca",
+				"Caches"
+			],
+			[
+				"Cache",
+				"CacheInterface"
+			],
+			[
+				"p",
+				"phpunit"
+			],
+			[
+				"depe",
+				"depends"
+			],
+			[
+				"Re",
+				"Request  (class)"
+			],
+			[
+				"R",
+				"Router  (class)"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"rela",
+				"relativePath"
+			],
+			[
+				"rel",
+				"relativePath"
+			],
+			[
+				"class_",
+				"class_exists"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"find",
+				"findClass"
+			],
+			[
+				"list",
+				"listeners"
+			],
+			[
+				"eve",
+				"eventName"
+			],
+			[
+				"even",
+				"eventName"
+			],
+			[
+				"pu",
+				"publisher"
+			],
+			[
+				"call",
+				"callbackMethod"
+			],
+			[
+				"Eve",
+				"EventListener"
+			],
+			[
+				"callb",
+				"callback"
+			],
+			[
+				"callba",
+				"callbackMethod"
+			],
+			[
+				"Cl",
+				"ClassLoader"
+			],
+			[
+				"Event",
+				"EventController"
+			],
+			[
+				"Cla",
+				"ClassLoader  (class)"
+			],
+			[
+				"CLass",
+				"ClassNotFoundException  (class)"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"loaded",
+				"loadedClasses"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"array_l",
+				"array_slice"
+			],
+			[
+				"Comp",
+				"Comparable"
+			],
+			[
+				"ful",
+				"fullPath"
+			],
+			[
+				"tor",
+				"torqueLoader"
+			],
+			[
+				"vers",
+				"versionB"
+			],
+			[
+				"ver",
+				"versionA"
+			],
+			[
+				"comp",
+				"compare"
+			],
+			[
+				"T",
+				"Torque\\Console  (class)"
+			],
+			[
+				"ma",
+				"max"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"array_p",
+				"array_pop"
+			],
+			[
+				"right",
+				"rightOnly"
+			],
+			[
+				"array_s",
+				"array_slice"
+			],
+			[
+				"call_user",
+				"call_user_func_array"
+			],
+			[
+				"fung",
+				"func_num_args"
+			],
+			[
+				"call_",
+				"call_user_func_array"
+			],
+			[
+				"sty",
+				"styleContext"
+			],
+			[
+				"s",
+				"styleContext  (variable)"
+			],
+			[
+				"B",
+				"BlinkNormal  (constant)"
+			],
+			[
+				"it",
+				"italic"
+			],
+			[
+				"fa",
+				"faint"
+			],
+			[
+				"Console",
+				"ConsoleStyle"
+			],
+			[
+				"st",
+				"stdin  (variable)"
+			],
+			[
+				"is",
+				"is_object"
+			],
+			[
+				"Bo",
+				"BookID"
+			],
+			[
+				"Seas",
+				"Seasons"
+			],
+			[
+				"stri",
+				"string"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"stat",
+				"static"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"event",
+				"eventList"
+			],
+			[
+				"NCCQi",
+				"NCCQuizzing\\Season  (class)"
+			],
+			[
+				"exe",
+				"execute"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"in",
+				"individuals"
+			],
+			[
+				"Per",
+				"PersonID"
+			],
+			[
+				"Reg",
+				"RegisteredQuizMasters"
+			],
+			[
+				"Regist",
+				"RegisteredIndividualQuizzers"
+			],
+			[
+				"Regis",
+				"RegisteredTeamQuizzers"
+			],
+			[
+				"Div",
+				"Divisions"
+			],
+			[
+				"Con",
+				"Conferences"
+			],
+			[
+				"Boo",
+				"Books"
+			],
+			[
+				"Se",
+				"SeasonBooks"
+			],
+			[
+				"ncc",
+				"nccquizzing"
+			],
+			[
+				"fu",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/data/Home/Projects/uwwintervarsity/pages/all-life-groups.md",
+			"settings":
+			{
+				"buffer_size": 2761,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Build",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"new",
+				"New Window"
+			],
+			[
+				"men",
+				"View: Toggle Menu"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Quick Commit"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"restar",
+				"Xdebug: Restart Session"
+			],
+			[
+				"xdebug:",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"start",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"xd",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"debu",
+				"Xdebug: Start Debugging"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"projec",
+				"Project: Open Project"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"togg",
+				"View: Toggle Menu"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"com",
+				"Composer: Update"
+			],
+			[
+				"up",
+				"Composer: Update"
+			],
+			[
+				"upd",
+				"Composer: Update"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"prev",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"previo",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"markdown",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"pup",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upl",
+				"FTPSync: Upload current file"
+			],
+			[
+				"u",
+				"FTPSync: Upload current file"
+			],
+			[
+				"upload",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ftps",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ft",
+				"FTPSync: Upload current file"
+			],
+			[
+				"ftp",
+				"FTPSync: Check current file"
+			],
+			[
+				"ct",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"ctags: ",
+				"CTags: Show Symbols (all)"
+			],
+			[
+				"p",
+				"Package Control: Remove Package"
+			],
+			[
+				"gi",
+				"Git: Status"
+			],
+			[
+				"q",
+				"Quick File Creator: Create file"
+			],
+			[
+				"Git:",
+				"Git: Open..."
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 583.0
+	},
+	"console":
+	{
+		"height": 181.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/data/Home/Projects/uwwintervarsity",
+		"/data/Home/Projects/uwwintervarsity/pages"
+	],
+	"file_history":
+	[
+		"/data/Home/Projects/uwwintervarsity/wercker.yml",
+		"/data/Home/Projects/blog/wercker.yml",
+		"/data/Home/Projects/uwwintervarsity/pages/index.md",
+		"/data/Home/Projects/uwwintervarsity/pages/about.md",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/pages/index.md",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/styles/pages/_calendar.scss",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/templates/calendar.twig",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/pages/all-life-groups.md",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/pages/life-groups.md",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/pages/about.md",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/src/InterVarsity/UWWhitewater/Application.php",
+		"/data/Home/Projects/nccquizzing-server/web/templates/layout.mustache",
+		"/data/Home/Projects/nccquizzing-server/database/2012-2013.sql",
+		"/data/Home/Projects/evernote-gnome-client/src/WebFrame.js",
+		"/data/Home/Projects/nccquizzing-server/settings.json",
+		"/data/Home/Projects/blog/config.json",
+		"/data/Home/Projects/blog-legacy/app/config/database.php",
+		"/data/Home/Projects/uwwintervarsity/templates/home.twig",
+		"/data/Home/Projects/uwwintervarsity/styles/layout/_layout.scss",
+		"/data/Home/Projects/uwwintervarsity/styles/pages/_home.scss",
+		"/data/Home/Projects/uwwintervarsity/styles/layout/_header.scss",
+		"/data/Home/Projects/uwwintervarsity/styles/pages/_calendar.scss",
+		"/data/Home/Projects/uwwintervarsity/pages/all-life-groups.md",
+		"/data/Home/Projects/uwwintervarsity/pages/life-groups.md",
+		"/data/Home/Projects/uwwintervarsity/index.php",
+		"/data/Home/Projects/evernote-gnome-client/src/evernote-gnome-client",
+		"/data/Home/Projects/evernote-gnome-client/data/com.coderstephen.EvernoteGnomeClient.Application.desktop",
+		"/data/Home/Projects/evernote-gnome-client/src/evernote-gnome-client.in",
+		"/data/Home/Projects/evernote-gnome-client/src/main.js",
+		"/data/Home/Projects/evernote-gnome-client/src/settings.json",
+		"/data/Home/Projects/evernote-gnome-client/src/Application.js",
+		"/data/Home/Projects/evernote-gnome-client/src/MainWindow.js",
+		"/data/Home/Projects/uwwintervarsity/composer.json",
+		"/data/Home/Projects/uwwintervarsity/build.xml",
+		"/data/Home/Projects/uwwintervarsity/templates/calendar.twig",
+		"/data/Home/Projects/blog/build.xml",
+		"/home/coderstephen/.config/redshift.conf",
+		"/opt/sublime_text/changelog.txt",
+		"/run/user/1000/gvfs/smb-share:server=dlink-e5512f,share=volume_1/Movies/Films/Animated/The Incredible Hulk Animated.nfo",
+		"/data/Home/Projects/uwwintervarsity/styles/base/_typography.scss",
+		"/data/Home/Projects/uwwintervarsity/pages/calendar.md",
+		"/data/Home/Projects/uwwintervarsity/styles/main.scss",
+		"/data/Home/Projects/uwwintervarsity/src/InterVarsity/UWWhitewater/Event.php",
+		"/data/Home/Projects/uwwintervarsity/src/InterVarsity/UWWhitewater/Controller.php",
+		"/data/Home/Projects/uwwintervarsity/.htaccess",
+		"/data/Home/Projects/uwwintervarsity/styles/partials/_icons.scss",
+		"/data/Home/Projects/uwwintervarsity/styles/_typography.scss",
+		"/data/Home/Projects/uwwintervarsity/templates/default.twig",
+		"/data/Home/Projects/uwwintervarsity/src/InterVarsity/UWWhitewater/EventProvider.php",
+		"/data/Home/Projects/uwwintervarsity/web/index.php",
+		"/data/Projects/uwwintervarsity/styles/partials/_calendar.scss",
+		"/data/Projects/uwwintervarsity/composer.json",
+		"/data/Projects/uwwintervarsity/cache/calendar.ics.tmp",
+		"/data/Projects/uwwintervarsity/src/InterVarsity/UWWhitewater/Application.php",
+		"/home/coderstephen/Downloads/basic.ics",
+		"/data/Projects/uwwintervarsity/web/index.php",
+		"/data/Projects/uwwintervarsity/styles/style.scss",
+		"/data/Projects/uwwintervarsity/templates/default.twig",
+		"/home/coderstephen/Type.php",
+		"/data/Projects/uwwintervarsity/build.xml",
+		"/data/Projects/uwwintervarsity/pages/calendar.md",
+		"/data/Projects/uwwintervarsity/pages/index.md",
+		"/data/Projects/uwwintervarsity/styles/partials/_icons.scss",
+		"/data/Projects/uwwintervarsity/pages/life-groups.md",
+		"/data/Projects/uwwintervarsity/styles/_layout.scss",
+		"/data/Projects/uwwintervarsity/styles/_typography.scss",
+		"/data/Projects/uwwintervarsity/styles/partials/_header.scss",
+		"/data/Projects/website/phpunit.xml",
+		"/data/Projects/website/build.xml",
+		"/data/Projects/nccquizzing-server/build.xml",
+		"/data/Projects/uwwintervarsity/styles/partials/_footer.scss",
+		"/data/Projects/uwwintervarsity/styles/_reset.scss",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/partials/_header.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/partials/_home.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/uwwintervarsity.sublime-project",
+		"/home/coderstephen/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/_typography.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/templates/default.twig",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/_base.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/_layout.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/style.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/pages/about.md",
+		"/home/coderstephen/Projects/uwwintervarsity/pages/index.md",
+		"/home/coderstephen/Projects/uwwintervarsity/pages/life-groups.md",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/_grid.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/modules/_responsive.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/src/InterVarsity/UWWhitewater/Application.php",
+		"/home/coderstephen/Projects/uwwintervarsity/src/InterVarsity/UWWhitewater/Controller.php",
+		"/home/coderstephen/.config/sublime-text-3/Packages/User/Markdown.sublime-settings",
+		"/home/coderstephen/Projects/uwwintervarsity/build.xml",
+		"/home/coderstephen/Projects/stephencoakley.com/stephencoakley.com.sublime-project",
+		"/home/coderstephen/Projects/stephencoakley.com/web.config",
+		"/home/coderstephen/Projects/stephencoakley.com/.gitignore",
+		"/home/coderstephen/Dropbox/Projects/stephencoakley.com/build.xml",
+		"/home/coderstephen/Projects/zombie-war/ZombieWar.cpp",
+		"/home/coderstephen/Projects/nccquizzing-server/.gitignore",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/vendor/semantic.gs/grid.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/grid.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/styles/typography.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/web/index.php",
+		"/home/coderstephen/Projects/uwwintervarsity/src/InterVarsity/UWWhitewater/Router.php",
+		"/home/coderstephen/Projects/uwwintervarsity/composer.json",
+		"/home/coderstephen/Projects/seffig/composer.json",
+		"/home/coderstephen/Projects/torque/composer.json",
+		"/home/coderstephen/Projects/uwwintervarsity/scss/layout2.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/scss/layout.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/templates/default2.twig",
+		"/home/coderstephen/Projects/uwwintervarsity/.htaccess",
+		"/home/coderstephen/Projects/nccquizzing/public_html/.htaccess",
+		"/home/coderstephen/Projects/uwwintervarsity/scss/typography.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/scss/style.scss",
+		"/home/coderstephen/Projects/uwwintervarsity/.gitignore",
+		"/home/coderstephen/Projects/seffig/.gitignore",
+		"/data/Dropbox/Projects/uwwintervarsity/templates/default2.twig",
+		"/data/Dropbox/Projects/uwwintervarsity/pages/about.md",
+		"/data/Dropbox/Projects/uwwintervarsity/templates/default.twig",
+		"/data/Dropbox/Projects/uwwintervarsity/templates/home.twig",
+		"/data/Dropbox/Projects/uwwintervarsity/scss/typography.scss",
+		"/data/Dropbox/Projects/uwwintervarsity/scss/home.scss",
+		"/data/Dropbox/Projects/uwwintervarsity/scss/style.scss",
+		"/data/Dropbox/Projects/stephencoakley.com/app/sass/modules/typography.scss",
+		"/data/Dropbox/Projects/uwwintervarsity/scss/theme.scss",
+		"/data/Dropbox/Projects/uwwintervarsity/uwwintervarsity.sublime-project",
+		"/data/Dropbox/Projects/uwwintervarsity/pages/index.md",
+		"/data/Dropbox/Projects/uwwintervarsity/index.php",
+		"/data/Dropbox/Projects/uwwintervarsity/css/style.scss",
+		"/data/Dropbox/Projects/uwwintervarsity/build.xml"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\((\\w+@uww\\.edu)\\)",
+			"&",
+			"\\((\\w+@uww\\.edu)\\)",
+			"\\(([a-z]+@uww\\.edu)\\)",
+			"\\(([A-z]+@uww\\.edu)\\)",
+			"$vcalendar",
+			"Hyland Hall 2203",
+			"2014",
+			".site-",
+			"c++",
+			"c++\\",
+			"c++",
+			"build",
+			"buil",
+			"bui",
+			"bu",
+			"b",
+			"pr",
+			"e",
+			"echo",
+			"\"",
+			"app",
+			"'",
+			"\"",
+			"this",
+			"'",
+			"DIRECTROY_SEPARATOR",
+			"self",
+			"\\n",
+			";",
+			"\"",
+			"* **",
+			"*   **",
+			" static",
+			"Assert::areIdentical",
+			"VAR_John",
+			"VAR_LastEvent",
+			"VAR_Season",
+			"VAR_Book",
+			"VAR_LastEvent,",
+			"(VAR_Book",
+			"(VAR_Translation, VAR_Book,",
+			"\n                </li>",
+			"</b>\n                    ",
+			"-",
+			":",
+			"<li><b>John ",
+			"PRIMARY KEY AUTO_INCREMENT",
+			"PRIMARY KEY,",
+			"', ",
+			", ",
+			"', ",
+			", ",
+			"Skranji",
+			"Bubblegum Sans",
+			"pointer",
+			"index",
+			"elements",
+			"'",
+			"Object",
+			"	",
+			"result table",
+			"DatabaseAdapter::",
+			"Handle",
+			"statement",
+			"abstract ",
+			"	",
+			"1",
+			"	"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"([$1](mailto:$1))",
+			"and",
+			"([$1](mailto:$1))",
+			"$this->vCalendar",
+			".page-",
+			"'",
+			"this",
+			"\"",
+			"'",
+			"app",
+			"\"",
+			"DIRECTORY_SEPARATOR",
+			"static",
+			";",
+			"\\n",
+			"'",
+			"- **",
+			"-**",
+			"* **",
+			"",
+			"$this->assertEquals",
+			"#this->assertEquals",
+			"@John",
+			"@LastEvent",
+			"@Season",
+			"VAR_John",
+			"VAR_LastEvent - 2,",
+			"(VAR_Season, VAR_LastEvent, VAR_Book",
+			"(VAR_Book,",
+			"'),",
+			", '",
+			", ",
+			",",
+			"(VAR_Translation, VAR_Book, ",
+			"AUTO_INCREMENT PRIMARY KEY",
+			"PRIMARY KEY AUTO_INCREMENT,",
+			"',\\r\\n",
+			",\\r\\n",
+			",\\n",
+			"Sofadi One",
+			"Skranji",
+			"id",
+			"offset",
+			"fixedArray",
+			"\"",
+			"Component",
+			"    ",
+			"result set",
+			"DatabaseAdapterInterface::",
+			"handle",
+			"",
+			"    "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/data/Home/Projects/uwwintervarsity/pages/all-life-groups.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": true,
+									"php": "/usr/bin/php",
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.composer":
+	{
+		"height": 94.0
+	},
+	"output.exec":
+	{
+		"height": 121.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 122.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"project": "uwwintervarsity.sublime-project",
+	"replace":
+	{
+		"height": 82.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 550.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/continuity/continuity.sublime-project"
+			]
+		],
+		"width": 418.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"113":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"20":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"21":
+				{
+					"group": 0,
+					"index": 2
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						2,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.678947368421,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.7,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 226.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
