@@ -50,8 +50,8 @@ function weather
     command weather -q KJVL | awk '{if(NR>2)print}'
 end
 
-function lss --description "Show more detailed 'ls' output"
-    ls -l --human-readable --classify --color=always $argv | less -XRF
+function ls --description "Show more detailed 'ls' output"
+    command ls -l -a --human-readable --classify --color=always $argv | less -XRF
 end
 
 function fish_greeting
