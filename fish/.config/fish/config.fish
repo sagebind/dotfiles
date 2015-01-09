@@ -29,6 +29,7 @@ function fish_greeting
     #fortune -s | cowsay -f tux
     if begin; [ "$TERM" = "screen" ]; not set -q TMUX; end
         tmux
+        exit
     end
 end
 
