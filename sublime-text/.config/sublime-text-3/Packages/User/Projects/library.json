@@ -1,15 +1,11 @@
 [
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/assembly-labs.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/blog.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/data-structures-labs.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/evernote-gnome-client.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/evflow.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/frivolous-fuchsia.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/nccquizzing-server.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/phackager.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/phio.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/switchbox.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/torque.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/uwwintervarsity.sublime-project",
-	"/home/coderstephen/.config/sublime-text-3/Packages/User/Projects/version-aware-word-documents-doceng2014.sublime-project"
+	"/data/Home/Projects/Tron/tron.sublime-project",
+	"/data/Home/Projects/beloitfmc/beloitfmc.sublime-project",
+	"/data/Home/Projects/blog/blog.sublime-project",
+	"/data/Home/Projects/evflow/evflow.sublime-project",
+	"/data/Home/Projects/robo-ftp/robo-ftp.sublime-project",
+	"/data/Home/Projects/switchbox/switchbox.sublime-project",
+	"/data/Home/Projects/uwwintervarsity/uwwintervarsity.sublime-project",
+	"/data/Home/Projects/windows-registry/windows-registry.sublime-project",
+	"/home/coderstephen/Projects/dotfiles/dotfiles.sublime-project"
 ]
