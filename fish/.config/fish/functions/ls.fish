@@ -1,3 +1,3 @@
-function ls --description "Show more detailed 'ls' output"
-    command ls -l -A --human-readable --classify --color=always --group-directories-first $argv | less -XRF
+function ls -d "Show more detailed 'ls' output"
+    command ls -l --human-readable --classify --color=always --group-directories-first $argv
 end

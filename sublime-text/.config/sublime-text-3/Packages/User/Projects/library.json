@@ -1,11 +1,7 @@
 [
-	"/data/Home/Projects/Tron/tron.sublime-project",
-	"/data/Home/Projects/beloitfmc/beloitfmc.sublime-project",
-	"/data/Home/Projects/blog/blog.sublime-project",
-	"/data/Home/Projects/evflow/evflow.sublime-project",
-	"/data/Home/Projects/robo-ftp/robo-ftp.sublime-project",
-	"/data/Home/Projects/switchbox/switchbox.sublime-project",
-	"/data/Home/Projects/uwwintervarsity/uwwintervarsity.sublime-project",
-	"/data/Home/Projects/windows-registry/windows-registry.sublime-project",
-	"/home/coderstephen/Projects/dotfiles/dotfiles.sublime-project"
+	"/data/home/Projects/tronament/tronament.sublime-project",
+	"/home/coderstephen/Dropbox/College/cs-381/cs-381.sublime-project",
+	"/home/coderstephen/Dropbox/College/cs-433/cs-433.sublime-project",
+	"/home/coderstephen/Projects/walrus/walrus.sublime-project",
+	"/home/coderstephen/dotfiles/dotfiles.sublime-project"
 ]

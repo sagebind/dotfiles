@@ -1,4 +1,4 @@
-function apt --description "Short and friendly command wrapper for apt-get"
+function apt -d "Short and friendly command wrapper for apt-get"
     if test (count $argv) -lt 1
         echo "No command specified."
         return 1
