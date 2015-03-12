@@ -7,14 +7,14 @@
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"font_face": "Source Code Pro",
-	"font_size": 11,
+	"font_size": 10,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Emmet",
-		"Xdebug Client",
-		"Vintage"
+		"Vintage",
+		"GitGutter"
 	],
 	"menu_visible": false,
 	"overlay_scroll_bars": "enabled",

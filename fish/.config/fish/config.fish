@@ -1,7 +1,7 @@
 # always run inside tmux
 function fish_greeting
     if begin; [ "$TERM" = "screen" ]; not set -q TMUX; end
-        tmux has-session -t local; and tmux attach-session -t local; or tmux new-session -s local; and exit
+        tmux; and exit
     end
 end
 
@@ -26,5 +26,5 @@ function reboot
     sudo reboot
 end
 
-set -gx COMPOSER_HOME /usr/local/composer
+set -gx COMPOSER_HOME $HOME/.composer
 set -gx PATH $PATH $COMPOSER_HOME/vendor/bin

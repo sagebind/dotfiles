@@ -1,0 +1,5 @@
+{
+    "phpcs_sniffer_run": false,
+    "php_cs_fixer_on_save": true,
+    "php_cs_fixer_executable_path": "/home/coderstephen/.composer/vendor/bin/php-cs-fixer"
+}
