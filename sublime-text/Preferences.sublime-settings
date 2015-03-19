@@ -7,20 +7,23 @@
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"font_face": "Source Code Pro",
-	"font_size": 10,
+	"font_size": 11,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Emmet",
-		"Vintage",
-		"GitGutter"
+		"Vintage"
 	],
 	"menu_visible": false,
 	"overlay_scroll_bars": "enabled",
 	"phoenix_color_darkblue": false,
 	"phoenix_highlight_current_tab": true,
 	"piatto_folder_icons": true,
+	"rulers":
+	[
+		80
+	],
 	"shift_tab_unindent": true,
 	"spacegray_sidebar_font_large": true,
 	"spacegray_tabs_auto_width": false,

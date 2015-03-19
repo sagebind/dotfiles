@@ -1,4 +1,4 @@
-function en -d "Simple wrapper around Geeknote"
+function en -d "Command for accessing Evernote using Geeknote"
     if test (count $argv) -lt 1
         echo "No command specified."
         return 1

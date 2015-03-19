@@ -1,0 +1,61 @@
+[
+    {
+        "clean": [
+            "~",
+            "~/.config",
+            "~/.config/fish",
+            "~/.oh-my-fish",
+            "~/.config/sublime-text-3/Packages/User",
+            "~/.composer"
+        ]
+    },
+    {
+        "link": {
+            "~/.config/fish/config.fish": {
+                "path": "fish/config.fish",
+                "force": true
+            },
+            "~/.config/fish/functions": {
+                "path": "fish/functions",
+                "force": true
+            },
+            "~/.oh-my-fish/custom/plugins": {
+                "path": "fish/plugins",
+                "create": true,
+                "force": true
+            },
+
+            "~/.composer/composer.json": {
+                "path": "composer.json",
+                "force": true
+            },
+
+            "~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings": {
+                "path": "sublime-text/Preferences.sublime-settings",
+                "force": true
+            },
+            "~/.config/sublime-text-3/Packages/User/Package Control.sublime-settings": {
+                "path": "sublime-text/Package Control.sublime-settings",
+                "force": true
+            },
+            "~/.config/sublime-text-3/Packages/User/phpcs.sublime-settings": {
+                "path": "sublime-text/phpcs.sublime-settings",
+                "force": true
+            },
+            "~/.config/redshift.conf": {
+                "path": "redshift.conf",
+                "force": true
+            },
+
+            "~/.tmux.conf": {
+                "path": "tmux.conf",
+                "force": true
+            }
+        }
+    },
+    {
+        "shell": [
+            ["git submodule update --init --recursive", "Installing submodules"]
+        ]
+    }
+]

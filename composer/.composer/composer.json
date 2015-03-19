@@ -1,6 +1,0 @@
-{
-    "require": {
-        "codegyre/robo": "0.5.*",
-        "fabpot/php-cs-fixer": "~1.5"
-    }
-}
