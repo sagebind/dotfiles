@@ -14,7 +14,7 @@ set fish_theme robbyrussell
 # All built-in plugins can be found at ~/.oh-my-fish/plugins/
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 # Enable plugins by adding their name separated by a space to the line below.
-set fish_plugins theme evernote
+set fish_plugins theme composer evernote
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
@@ -22,6 +22,3 @@ set fish_plugins theme evernote
 function reboot
     sudo reboot
 end
-
-set -gx COMPOSER_HOME $HOME/.composer
-set -gx PATH $PATH $COMPOSER_HOME/vendor/bin
