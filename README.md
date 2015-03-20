@@ -22,7 +22,7 @@ dotfiles:
 - Every terminal window is also a [tmux](http://tmux.sourceorge.net) window and supports multiple panes.
   All terminal windows belong to the same session and you can easily switch between tmux windows from
   within any terminal.
-- Integration with [autojump](http://github.com/joelthelion/autojump), the learning cd command
+- Integration with [autojump](http://github.com/joelthelion/autojump), the learning cd command.
 
 Provided are also a few commands that I have written for my convenience, implemented as fish functions.
 Here are a few of them:
