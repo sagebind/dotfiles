@@ -1,7 +1,9 @@
 # always run inside tmux
 function fish_greeting
     if begin; [ "$TERM" = "screen" ]; not set -q TMUX; end
-        tmux -2; and exit
+        tmux new-session -t local \; new-window
+        or tmux new-session -s local
+        and exit
     end
 end
 
