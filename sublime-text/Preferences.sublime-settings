@@ -6,8 +6,8 @@
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
-	"font_face": "Courier Prime Source",
-	"font_size": 11,
+	"font_face": "Input Sans",
+	"font_size": 10,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -15,7 +15,7 @@
 		"Emmet",
 		"Vintage"
 	],
-	"line_padding_bottom": 1,
+	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"menu_visible": false,
 	"overlay_scroll_bars": "enabled",
