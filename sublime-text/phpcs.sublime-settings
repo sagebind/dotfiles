@@ -3,6 +3,6 @@
     "php_cs_fixer_on_save": true,
     "php_cs_fixer_executable_path": "/home/coderstephen/.composer/vendor/bin/php-cs-fixer",
     "php_cs_fixer_additional_args": {
-        "--fixers=-psr0,-blankline_after_open_tag,-return": ""
+        "--fixers=-psr0,-blankline_after_open_tag,-return,-spaces_cast": ""
     }
 }
