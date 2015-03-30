@@ -35,7 +35,7 @@ function apt -d "Short and friendly command wrapper for apt-get"
         case update up
             sudo apt-get update
         case upgrade
-            if set -q argv[2] and test $argv[2] = dist
+            if test (count $argv) -ge 2; and test $argv[2] = dist
                 sudo apt-get dist-upgrade
             else
                 sudo apt-get upgrade
