@@ -13,7 +13,7 @@ function apt -d "Short and friendly command wrapper for apt-get"
         case policy
             env LANG=C apt-cache policy
         case ppa
-            if set -q argv[2]
+            if test (count $argv) -ge 2
                 if test $argv[2] = remove
                     sudo add-apt-repository --remove ppa:$argv[3]
                 else if test $argv[2] = purge
