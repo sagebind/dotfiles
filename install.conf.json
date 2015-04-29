@@ -38,22 +38,27 @@
                 "path": "sublime-text/Package Control.sublime-settings",
                 "force": true
             },
-            "~/.config/sublime-text-3/Packages/User/phpcs.sublime-settings": {
-                "path": "sublime-text/phpcs.sublime-settings",
-                "force": true
-            },
             "~/.config/sublime-text-3/Packages/User/Markdown.sublime-settings": {
                 "path": "sublime-text/Markdown.sublime-settings",
                 "force": true
             },
-            "~/.config/sublime-text-3/Packages/User/Xdebug.sublime-settings": {
-                "path": "sublime-text/Xdebug.sublime-settings",
+            "~/.config/sublime-text-3/Packages/User/phpcs.sublime-settings": {
+                "path": "sublime-text/phpcs.sublime-settings",
+                "force": true
+            },
+            "~/.config/sublime-text-3/Packages/User/SublimeCodeIntel.sublime-settings": {
+                "path": "sublime-text/SublimeCodeIntel.sublime-settings",
                 "force": true
             },
             "~/.config/sublime-text-3/Packages/User/View In Browser.sublime-settings": {
                 "path": "sublime-text/View In Browser.sublime-settings",
                 "force": true
             },
+            "~/.config/sublime-text-3/Packages/User/Xdebug.sublime-settings": {
+                "path": "sublime-text/Xdebug.sublime-settings",
+                "force": true
+            },
+
             "~/.config/redshift.conf": {
                 "path": "redshift.conf",
                 "force": true
