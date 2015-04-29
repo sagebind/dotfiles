@@ -5,34 +5,22 @@
 	"installed_packages":
 	[
 		"Codeivate",
+		"Colorsublime",
 		"DocBlockr",
-		"Emmet",
+		"Dotfiles Syntax Highlighting",
 		"fish-shell",
 		"Git",
 		"GitGutter",
-		"GTKDarkThemeVariantSetter",
-		"HTML Mustache",
 		"HTML-CSS-JS Prettify",
-		"HTMLBeautify",
-		"LaTeXing",
-		"Markdown Preview",
+		"MarkdownEditing",
 		"MIPS Syntax",
-		"Missing Palette Commands",
+		"Numix Theme",
 		"Package Control",
 		"Phpcs",
 		"Project Manager",
 		"Sass",
-		"SideBarEnhancements",
 		"SublimeCodeIntel",
-		"SublimeLinter",
-		"SublimeLinter-json",
-		"Theme - Spacegray",
 		"View In Browser",
 		"Xdebug Client"
-	],
-	"repositories":
-	[
-		"https://github.com/SublimeLinter/SublimeLinter/tree/sublime-text-3",
-		"https://github.com/kemayo/sublime-text-git/tree/python3"
 	]
 }
