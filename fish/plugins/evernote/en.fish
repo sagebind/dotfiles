@@ -4,8 +4,14 @@ function en -d "Command for accessing Evernote using Geeknote"
         return 1
     end
     switch $argv[1]
+        case create
+            geeknote $argv
+            geeknote find
+            geeknote edit 1
         case list
             geeknote --help
+        case manual
+            geeknote show geeknote
         case show
             geeknote show $argv[2..-1] | markdown2 | lynx -stdin -nomargins -nomore -notitle
         case '*'
