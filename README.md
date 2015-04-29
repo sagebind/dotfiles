@@ -36,6 +36,8 @@ Here are a few of them:
 Modified configuration is also provided for the following programs:
 
 - [Sublime Text](http://www.sublimetext.com)
+- [tmux](http://tmux.sourceorge.net)
+- [Composer](http://getcomposer.org)
 - [Redshift](http://jonls.dk/redshift/)
 
 ## License
