@@ -3,6 +3,8 @@
         "codegyre/robo": "@stable",
         "fabpot/php-cs-fixer": "@stable",
         "phpunit/phpunit": "@stable",
-        "phing/phing": "@stable"
+        "phing/phing": "@stable",
+        "kherge/box": "@stable",
+        "psy/psysh": "@stable"
     }
 }
