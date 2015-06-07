@@ -67,6 +67,15 @@
             "~/.tmux.conf": {
                 "path": "tmux.conf",
                 "force": true
+            },
+
+            "~/.conkyrc": {
+                "path": "conky/conkyrc",
+                "force": true
+            },
+            "~/.conky.lua": {
+                "path": "conky/conky.lua",
+                "force": true
             }
         }
     },
