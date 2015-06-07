@@ -14,7 +14,7 @@ set fish_path $HOME/.oh-my-fish
 set fish_theme l
 
 # set some plugins to be loaded
-set fish_plugins theme autojump bd trash perforce composer evernote
+set fish_plugins theme autojump bd perforce composer evernote
 
 # load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
