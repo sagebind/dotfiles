@@ -32,7 +32,7 @@ draw_outline no
 draw_borders no
 draw_graph_borders no
 
-default_color 202020
+default_color 009CDE
 #default_shade_color 7a999c
 default_outline_color green
 
@@ -48,11 +48,11 @@ TEXT
 ${voffset 95}${offset 55}${font URW Gothic L:size=23}${time %H:%M}
 #${offset 90}${voffset -30}${color #000000}${font URW Gothic L:size=13}${time %e}. ${time %B}
 ${offset 65}${voffset 170}${color}${font URW Gothic L:size=25}CPU
-${offset 90}${voffset -20}${color #000000}${font URW Gothic L:size=11}${cpu cpu2}%
+${offset 90}${voffset -20}${color}${font URW Gothic L:size=11}${cpu cpu2}%
 ${offset 55}${voffset 110}${color}${font URW Gothic L:size=25}RAM
-${offset 82}${voffset -20}${color #000000}${font URW Gothic L:size=11}${memperc}%
+${offset 82}${voffset -20}${color}${font URW Gothic L:size=11}${memperc}%
 ${offset 220}${voffset -80}${color}${font URW Gothic L:size=25}BAT
-${offset 235}${voffset -20}${color #000000}${font URW Gothic L:size=11}${battery_percent BAT1}%
+${offset 235}${voffset -20}${color}${font URW Gothic L:size=11}${battery_percent BAT1}%
 #$if_mpd_playing
 #${offset 165}${voffset -530}${font URW Gothic L:size=15}${color}${mpd_title}
 #${offset 190}${font URW Gothic L:size=12}${mpd_artist}
