@@ -6,7 +6,7 @@
 	"atomic_save": false,
 	"bold_folder_labels": true,
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Snappy (SL).tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Acai.tmTheme",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
@@ -17,10 +17,10 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Emmet",
+		"Markdown",
 		"Textile",
-		"Markdown"
+		"Emmet",
+		"Vintage"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
@@ -32,7 +32,8 @@
 	"remember_open_files": true,
 	"rulers":
 	[
-		80
+		80,
+		120
 	],
 	"shift_tab_unindent": true,
 	"spacegray_sidebar_font_large": true,
