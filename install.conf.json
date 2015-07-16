@@ -42,8 +42,8 @@
                 "path": "sublime-text/Markdown.sublime-settings",
                 "force": true
             },
-            "~/.config/sublime-text-3/Packages/User/phpcs.sublime-settings": {
-                "path": "sublime-text/phpcs.sublime-settings",
+            "~/.config/sublime-text-3/Packages/phpfmt/phpfmt.sublime-settings": {
+                "path": "sublime-text/phpfmt.sublime-settings",
                 "force": true
             },
             "~/.config/sublime-text-3/Packages/User/SublimeCodeIntel.sublime-settings": {
