@@ -44,5 +44,3 @@ function apt -d "Short and friendly command wrapper for apt-get"
             apt-cache show $argv
     end
 end
-
-complete -c apt -a 'autoremove clean install in policy ppa purge remove re search show update up upgrade'

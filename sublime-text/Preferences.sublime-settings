@@ -17,10 +17,10 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Markdown",
+		"Vintage",
 		"Textile",
 		"Emmet",
-		"Vintage"
+		"Markdown"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,

@@ -1,4 +1,4 @@
-# always run inside tmux
+# Always run inside tmux
 function fish_greeting
     if begin; [ "$TERM" = "screen" ]; not set -q TMUX; end
         tmux new-session -t local \; new-window
@@ -7,18 +7,22 @@ function fish_greeting
     end
 end
 
-# set the oh-my-fish config path
+# Set the oh-my-fish config path
 set fish_path $HOME/.oh-my-fish
 
-# use the "l" fish theme and some options
-set fish_theme l
-
-# set some plugins to be loaded
-set fish_plugins theme autojump bd perforce composer evernote
-
-# load oh-my-fish configuration.
+# Load oh-my-fish configuration
 . $fish_path/oh-my-fish.fish
 
-function reboot
-    sudo reboot
-end
+# Use the "l" fish theme and some options
+Theme "l"
+
+# Load some plugins
+Plugin "apt"
+Plugin "autojump"
+Plugin "bd"
+Plugin "composer"
+Plugin "evernote"
+Plugin "extract"
+Plugin "peco"
+Plugin "perforce"
+Plugin "theme"

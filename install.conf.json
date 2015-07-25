@@ -25,6 +25,12 @@
                 "force": true
             },
 
+            "~/.config/peco/config.json": {
+                "path": "peco.json",
+                "create": true,
+                "force": true
+            },
+
             "~/.composer/composer.json": {
                 "path": "composer.json",
                 "force": true
