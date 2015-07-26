@@ -31,6 +31,11 @@
                 "force": true
             },
 
+            "~/.config/devilspie2": {
+                "path": "devilspie2",
+                "force": true
+            },
+
             "~/.composer/composer.json": {
                 "path": "composer.json",
                 "force": true
