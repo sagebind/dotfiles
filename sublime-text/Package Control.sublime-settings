@@ -11,6 +11,7 @@
 		"fish-shell",
 		"Git",
 		"GitGutter",
+		"GTKDarkThemeVariantSetter",
 		"HTML Mustache",
 		"HTML-CSS-JS Prettify",
 		"IntelliDocs",
@@ -18,7 +19,6 @@
 		"MarkdownEditing",
 		"MIPS Syntax",
 		"Missing Palette Commands",
-		"Numix Theme",
 		"Package Control",
 		"phpfmt",
 		"Project Manager",
@@ -26,6 +26,8 @@
 		"Sass",
 		"SublimeCodeIntel",
 		"SublimeGDB",
+		"Theme - Spacegray",
+		"TOML",
 		"View In Browser",
 		"Xdebug Client"
 	]

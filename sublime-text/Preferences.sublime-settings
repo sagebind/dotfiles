@@ -6,7 +6,7 @@
 	"atomic_save": false,
 	"bold_folder_labels": true,
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Colorsublime - Themes/Acai.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/Chelevra.tmTheme",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
@@ -18,8 +18,8 @@
 	"ignored_packages":
 	[
 		"Vintage",
-		"Textile",
 		"Emmet",
+		"Textile",
 		"Markdown"
 	],
 	"line_padding_bottom": 2,
@@ -41,7 +41,7 @@
 	"spacegray_tabs_font_large": true,
 	"spacegray_tabs_xlarge": true,
 	"spell_check": true,
-	"theme": "Numix.sublime-theme",
+	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true
