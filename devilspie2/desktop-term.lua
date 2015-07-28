@@ -1,5 +1,5 @@
 if (get_window_role() == "desktop-term") then
-   set_window_geometry(88,24,1536,1024);
+   set_window_geometry(84,14,1540,1032);
    undecorate_window();
    set_skip_pager(true);
    set_skip_tasklist(true);
