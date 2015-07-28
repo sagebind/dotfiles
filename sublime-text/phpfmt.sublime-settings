@@ -4,6 +4,7 @@
     "enable_auto_align": false,
     "format_on_save": true,
     "MergeElseif": true,
+    "PrettyPrintDocBlocks": true,
     "psr1": true,
     "psr2": true,
     "smart_linebreak_after_curly": true,
