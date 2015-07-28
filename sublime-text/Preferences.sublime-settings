@@ -23,7 +23,7 @@
 		"Markdown"
 	],
 	"line_padding_bottom": 2,
-	"line_padding_top": 2,
+	"line_padding_top": 3,
 	"menu_visible": false,
 	"overlay_scroll_bars": "enabled",
 	"phoenix_color_darkblue": false,
@@ -37,7 +37,7 @@
 	],
 	"shift_tab_unindent": true,
 	"spacegray_sidebar_font_large": true,
-	"spacegray_tabs_auto_width": false,
+	"spacegray_sidebar_tree_xlarge": true,
 	"spacegray_tabs_font_large": true,
 	"spacegray_tabs_xlarge": true,
 	"spell_check": true,
