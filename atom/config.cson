@@ -1,0 +1,40 @@
+"*":
+  "exception-reporting":
+    userId: "885fd0a8-bdb4-f4bf-9842-bbb135f14731"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "one-dark-ui"
+      "peacocks-in-space-syntax"
+    ]
+    autoHideMenuBar: true
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    tabLength: 4
+    fontFamily: "Input Mono"
+  "atom-notifier":
+    unfocused: true
+  docblockr:
+    short_primitives: true
+  "git-log": {}
+  "git-plus": {}
+  "highlight-selected": {}
+  linter: {}
+  "linter-php": {}
+  "markdown-preview":
+    useGitHubStyle: true
+  minimap: {}
+  "one-light-ui":
+    fontSize: 12
+  "php-cs-fixer":
+    fixers: "-psr0,-blankline_after_open_tag,-return,-spaces_cast"
+  "php-debug": {}
+  term2:
+    titleTemplate: "Terminal"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
