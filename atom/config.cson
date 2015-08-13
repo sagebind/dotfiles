@@ -14,12 +14,14 @@
     showIndentGuide: true
     tabLength: 4
     fontFamily: "Input Mono"
+    softWrap: true
   "atom-notifier":
     unfocused: true
   docblockr:
     short_primitives: true
   "git-log": {}
   "git-plus": {}
+  "gtk-dark-theme": {}
   "highlight-selected": {}
   linter: {}
   "linter-php": {}
