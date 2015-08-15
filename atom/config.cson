@@ -9,34 +9,56 @@
       "peacocks-in-space-syntax"
     ]
     autoHideMenuBar: true
+    disabledPackages: [
+      "autocomplete-haskell"
+      "haskell-ghc-mod"
+      "welcome"
+      "metrics"
+      "background-tips"
+    ]
   editor:
     invisibles: {}
     showIndentGuide: true
     tabLength: 4
     fontFamily: "Input Mono"
     softWrap: true
+    fontSize: 13
+    scrollPastEnd: true
+  "atom-autocomplete-php": {}
+  "atom-beautify":
+    css_convert_quotes: "double"
+    language_php_beautify_on_save: true
+    php_cs_fixer_path: "/home/coderstephen/.composer/vendor/bin/php-cs-fixer"
+    php_level: "psr2"
+    php_fixers: "-psr0,-blankline_after_open_tag,-return,-spaces_cast"
+    _analyticsUserId: "6afb0758-76f2-40c0-b860-5768be7f53d4"
+    analytics: false
   "atom-notifier":
     unfocused: true
+  "autocomplete-plus": {}
   docblockr:
     short_primitives: true
   "git-log": {}
   "git-plus": {}
   "gtk-dark-theme": {}
+  "haskell-ghc-mod": {}
   "highlight-selected": {}
-  linter: {}
+  linter:
+    showErrorTabLine: true
+    showErrorInline: false
   "linter-php": {}
   "markdown-preview":
     useGitHubStyle: true
   minimap: {}
   "one-light-ui":
     fontSize: 12
-  "php-cs-fixer":
-    fixers: "-psr0,-blankline_after_open_tag,-return,-spaces_cast"
   "php-debug": {}
+  "status-bar": {}
+  tabs:
+    usePreviewTabs: true
   term2:
     titleTemplate: "Terminal"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
