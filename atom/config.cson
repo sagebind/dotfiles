@@ -5,16 +5,15 @@
     showOnStartup: false
   core:
     themes: [
-      "one-dark-ui"
+      "quantum-ui"
       "peacocks-in-space-syntax"
     ]
     autoHideMenuBar: true
     disabledPackages: [
-      "autocomplete-haskell"
-      "haskell-ghc-mod"
       "welcome"
       "metrics"
       "background-tips"
+      "linter-gcc"
     ]
   editor:
     invisibles: {}
@@ -22,15 +21,16 @@
     tabLength: 4
     fontFamily: "Input Mono"
     softWrap: true
-    fontSize: 13
     scrollPastEnd: true
+    autoIndentOnPaste: false
+    fontSize: 13
   "atom-autocomplete-php": {}
   "atom-beautify":
     css_convert_quotes: "double"
     language_php_beautify_on_save: true
     php_cs_fixer_path: "/home/coderstephen/.composer/vendor/bin/php-cs-fixer"
     php_level: "psr2"
-    php_fixers: "-psr0,-blankline_after_open_tag,-return,-spaces_cast"
+    php_fixers: "-blankline_after_open_tag,-return,-spaces_cast,phpdoc_params"
     _analyticsUserId: "6afb0758-76f2-40c0-b860-5768be7f53d4"
     analytics: false
   "atom-notifier":
@@ -58,7 +58,26 @@
     usePreviewTabs: true
   term2:
     titleTemplate: "Terminal"
+    fontSize: "12"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+  atomatigit: {}
+  "merge-conflicts": {}
+  "tool-bar":
+    iconSize: "16px"
+    position: "Right"
+    visible: false
+  "build-tools": {}
+  "flex-tool-bar": {}
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "source.php"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+    ]
