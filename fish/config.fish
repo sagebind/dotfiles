@@ -1,28 +1,13 @@
-# Always run inside tmux
-function fish_greeting
-    if begin; [ "$TERM" = "screen" ]; not set -q TMUX; end
-        tmux new-session -t local \; new-window
-        or tmux new-session -s local
-        and exit
-    end
-end
+# Path to oh-my-fish.
+set -g OMF_PATH $HOME/.local/share/omf
 
-# Set the oh-my-fish config path
-set fish_path $HOME/.oh-my-fish
+# Path to oh-my-fish configuration.
+set -g OMF_CONFIG $HOME/.config/omf
 
-# Load oh-my-fish configuration
-. $fish_path/oh-my-fish.fish
+### Configuration required to load oh-my-fish ###
+# Note: Only add configurations that are required to be set before oh-my-fish is loaded.
+# For common configurations, we advise you to add them to your $OMF_CONFIG/init.fish file or
+# to create a custom plugin instead.
 
-# Use the "l" fish theme and some options
-Theme "l"
-
-# Load some plugins
-Plugin "apt"
-Plugin "autojump"
-Plugin "bd"
-Plugin "composer"
-Plugin "evernote"
-Plugin "extract"
-Plugin "peco"
-Plugin "perforce"
-Plugin "theme"
+# Load oh-my-fish configuration.
+source $OMF_PATH/init.fish

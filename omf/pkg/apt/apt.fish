@@ -1,3 +1,7 @@
+function init --on-event init_apt
+    complete -c apt -a 'autoremove clean install in policy ppa purge remove rm search show update up upgrade'
+end
+
 function apt -d "Short and friendly command wrapper for apt-get"
     if test (count $argv) -lt 1
         echo "No command specified."
@@ -26,7 +30,7 @@ function apt -d "Short and friendly command wrapper for apt-get"
             end
         case purge
             sudo apt-get --purge remove $argv[2..-1]
-        case remove re
+        case remove rm
             sudo apt-get remove $argv[2..-1]
         case search
             apt-cache search $argv[2..-1]

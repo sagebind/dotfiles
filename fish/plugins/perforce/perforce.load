@@ -1,1 +1,0 @@
-set -gx P4CONFIG ~/.p4env

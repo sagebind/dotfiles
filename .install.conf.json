@@ -19,8 +19,18 @@
                 "path": "fish/functions",
                 "force": true
             },
-            "~/.oh-my-fish/custom/plugins": {
-                "path": "fish/plugins",
+            "~/.config/omf/pkg": {
+                "path": "omf/pkg",
+                "create": true,
+                "force": true
+            },
+            "~/.config/omf/bundle": {
+                "path": "omf/bundle",
+                "create": true,
+                "force": true
+            },
+            "~/.config/omf/theme": {
+                "path": "omf/theme",
                 "create": true,
                 "force": true
             },
