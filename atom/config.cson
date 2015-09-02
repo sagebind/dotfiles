@@ -49,9 +49,6 @@
   "linter-php": {}
   "markdown-preview":
     useGitHubStyle: true
-  minimap: {}
-  "one-light-ui":
-    fontSize: 12
   "php-debug": {}
   "status-bar": {}
   tabs:
@@ -64,14 +61,6 @@
     hideVcsIgnoredFiles: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
-  atomatigit: {}
-  "merge-conflicts": {}
-  "tool-bar":
-    iconSize: "16px"
-    position: "Right"
-    visible: false
-  "build-tools": {}
-  "flex-tool-bar": {}
   "spell-check":
     grammars: [
       "source.asciidoc"
