@@ -1,28 +1,43 @@
 function init --on-event init_apt
-    complete -c apt -a 'autoremove clean install in policy ppa purge remove rm search show update up upgrade'
+    complete -c apt -a 'autoremove check clean configure install in policy ppa purge remove rm search show update up upgrade'
 end
+
 
 function apt -d "Short and friendly command wrapper for apt-get"
     if test (count $argv) -lt 1
         echo "No command specified."
         return 1
     end
+
     switch $argv[1]
         case autoremove
             sudo apt-get autoremove
+        case check
+            sudo apt-get check
         case clean
             sudo apt-get autoclean
+        case configure
+            sudo dpkg-reconfigure $argv[2..-1]
         case install in
             sudo apt-get install $argv[2..-1]
         case policy
             env LANG=C apt-cache policy
         case ppa
             if test (count $argv) -ge 2
-                if test $argv[2] = remove
+                switch $argv[2]
+                case list
+                    for APT in (find /etc/apt/ -name \*.list)
+                        grep -o "^deb http://ppa.launchpad.net/[a-z0-9\-]\+/[a-z0-9\-]\+" $APT | while read ENTRY
+                            set USER (echo $ENTRY | cut -d/ -f4)
+                            set PPA (echo $ENTRY | cut -d/ -f5)
+                            echo $USER/$PPA
+                        end
+                    end
+                case remove
                     sudo add-apt-repository --remove ppa:$argv[3]
-                else if test $argv[2] = purge
+                case purge
                     sudo ppa-purge ppa:$argv[3]
-                else
+                case '*'
                     sudo add-apt-repository ppa:$argv[2]
                 end
             else
