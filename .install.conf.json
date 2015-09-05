@@ -35,19 +35,19 @@
                 "force": true
             },
 
+            "~/.tmux.conf": {
+                "path": "tmux.conf",
+                "force": true
+            },
+
+            "~/.gitconfig": {
+                "path": "gitconfig",
+                "force": true
+            },
+
             "~/.config/peco/config.json": {
                 "path": "peco.json",
                 "create": true,
-                "force": true
-            },
-
-            "~/.config/devilspie2": {
-                "path": "devilspie2",
-                "force": true
-            },
-
-            "~/.composer/composer.json": {
-                "path": "composer.json",
                 "force": true
             },
 
@@ -89,13 +89,18 @@
                 "force": true
             },
 
+            "~/.composer/composer.json": {
+                "path": "composer.json",
+                "force": true
+            },
+
             "~/.config/redshift.conf": {
                 "path": "redshift.conf",
                 "force": true
             },
 
-            "~/.tmux.conf": {
-                "path": "tmux.conf",
+            "~/.config/devilspie2": {
+                "path": "devilspie2",
                 "force": true
             },
 
