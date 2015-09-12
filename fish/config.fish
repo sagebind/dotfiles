@@ -9,5 +9,7 @@ set -g OMF_CONFIG $HOME/.config/omf
 # For common configurations, we advise you to add them to your $OMF_CONFIG/init.fish file or
 # to create a custom plugin instead.
 
+set -xg P4CONFIG $HOME/.p4config
+
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
