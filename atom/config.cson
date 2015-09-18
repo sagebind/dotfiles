@@ -13,7 +13,6 @@
       "welcome"
       "metrics"
       "background-tips"
-      "linter-gcc"
     ]
   editor:
     invisibles: {}
@@ -23,7 +22,7 @@
     softWrap: true
     scrollPastEnd: true
     autoIndentOnPaste: false
-    fontSize: 13
+    showInvisibles: true
   "atom-autocomplete-php": {}
   "atom-beautify":
     css_convert_quotes: "double"
@@ -45,7 +44,6 @@
   "highlight-selected": {}
   linter:
     showErrorTabLine: true
-    showErrorInline: false
   "linter-php": {}
   "markdown-preview":
     useGitHubStyle: true
@@ -70,3 +68,4 @@
       "text.plain"
       "text.plain.null-grammar"
     ]
+  "linter-rust": {}
