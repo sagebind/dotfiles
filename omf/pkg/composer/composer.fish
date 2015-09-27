@@ -7,9 +7,9 @@ function init --on-event init_composer
 
     # get composer path
     if test -z "$COMPOSER_BIN"
-        if type "composer.phar" > /dev/null
+        if which "composer.phar" > /dev/null
             set -gx COMPOSER_BIN (which composer.phar)
-        else if type "composer" > /dev/null
+        else if which "composer" > /dev/null
             set -gx COMPOSER_BIN (which composer)
         else
             echo "FAILED to find Composer! Please install composer.phar to your PATH."
