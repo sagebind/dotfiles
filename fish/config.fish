@@ -8,8 +8,11 @@ set -g OMF_CONFIG $HOME/.config/omf
 # Note: Only add configurations that are required to be set before oh-my-fish is loaded.
 # For common configurations, we advise you to add them to your $OMF_CONFIG/init.fish file or
 # to create a custom plugin instead.
-
-set -xg P4CONFIG $HOME/.p4config
+function tmux_init
+    tmux new-window weechat
+    tmux swap-window -s 2 -t 1
+    tmux select-window -t 2
+end
 
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish

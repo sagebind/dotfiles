@@ -1,6 +1,7 @@
-theme default
-theme l
 package apt
 package extract
 package gi
 package peco
+package tmux-zen
+theme default
+theme l

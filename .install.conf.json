@@ -29,6 +29,11 @@
                 "create": true,
                 "force": true
             },
+            "~/.config/omf/init.fish": {
+                "path": "omf/init.fish",
+                "create": true,
+                "force": true
+            },
             "~/.config/omf/theme": {
                 "path": "omf/theme",
                 "create": true,
