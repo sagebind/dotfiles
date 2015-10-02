@@ -4,7 +4,6 @@
         "fabpot/php-cs-fixer": "^1.10",
         "phpunit/phpunit": "@stable",
         "phing/phing": "@stable",
-        "kherge/box": "@stable",
         "psy/psysh": "@stable"
     }
 }
