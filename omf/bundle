@@ -1,4 +1,6 @@
 package apt
+package battery
+package copy
 package extract
 package gi
 package peco
