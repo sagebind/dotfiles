@@ -19,23 +19,8 @@
                 "path": "fish/functions",
                 "force": true
             },
-            "~/.config/omf/pkg": {
-                "path": "omf/pkg",
-                "create": true,
-                "force": true
-            },
-            "~/.config/omf/bundle": {
-                "path": "omf/bundle",
-                "create": true,
-                "force": true
-            },
-            "~/.config/omf/init.fish": {
-                "path": "omf/init.fish",
-                "create": true,
-                "force": true
-            },
-            "~/.config/omf/theme": {
-                "path": "omf/theme",
+            "~/.config/omf": {
+                "path": "omf",
                 "create": true,
                 "force": true
             },
@@ -43,6 +28,10 @@
             "~/.tmux.conf": {
                 "path": "tmux.conf",
                 "force": true
+            },
+
+            "~/.vimrc": {
+                "path": "vimrc"
             },
 
             "~/.gitconfig": {
