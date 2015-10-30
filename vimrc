@@ -8,6 +8,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'fakeclip'
@@ -22,11 +23,6 @@ Plugin 'VundleVim/Vundle.vim'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#bufferline#enabled = 0
 let g:ctrlp_match_window = 'top,order:ttb'
-let g:ctrlp_open_new_file = 't'
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
-    \ 'AcceptSelection("t")': ['<cr>'],
-    \ }
 
 call vundle#end()
 filetype plugin indent on
@@ -71,16 +67,23 @@ set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
 
+" Dealing with files.
 set nobackup
 set noswapfile
 
 
-" Visual theme and customization.
+" Visual interface customization.
+set hidden
 set laststatus=2
 set fillchars+=vert:│
 syntax enable
 set background=dark
 colorscheme solarized
+
+" File tree browser.
+map <C-k><C-b> :NERDTreeToggle<CR>
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 
 " Use some 'modern' keyboard shortcuts (I should be ashamed of myself).
@@ -88,22 +91,27 @@ nnoremap ; :
 
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>==gi
-nnoremap <C-q> :q<CR>
-inoremap <C-q> <Esc>:q<CR>
-nnoremap <C-x> :wq<CR>
-inoremap <C-x> <Esc>:wq<CR>==gi
+nnoremap <C-q> :bd<CR>
+inoremap <C-q> <Esc>:bd<CR>
+nnoremap <F4> :q<CR>
+inoremap <F4> <Esc>:q<CR>
 
 " Text and buffer navigation.
-nnoremap <silent> <C-end> G
-nnoremap <silent> <C-home> gg
+nnoremap <C-end> G
+vnoremap <C-end> G
+nnoremap <C-home> gg
+vnoremap <C-home> gg
 nnoremap <CR> :noh<CR><CR>
-nnoremap <tab> :tabn<CR>
+nnoremap <silent> <tab> :bnext<CR>
+nnoremap <backspace> i<backspace>
 
 " Awesome system clipboard integration.
 nmap <C-c> <Plug>(fakeclip-y)
 vmap <C-c> <Plug>(fakeclip-y)
-imap <C-v> <Plug>(fakeclip-insert-p)
+nmap <C-x> <Plug>(fakeclip-d)
+vmap <C-x> <Plug>(fakeclip-d)
 nmap <C-v> <Plug>(fakeclip-p)
+imap <C-v> <Plug>(fakeclip-insert-p)
 
 " Easy and quick undo.
 nnoremap <C-z> u
@@ -111,9 +119,8 @@ inoremap <C-z> <Esc>u<CR>==gi
 
 " Move lines up and down with Ctrl-up and Ctrl-down
 nnoremap <silent> <C-up> :m-2<CR>==
-nnoremap <silent> <C-down> :m+<CR>==
 inoremap <C-up> <Esc>:m-2<CR>==gi
-inoremap <C-down> <Esc>:m+<CR>==gi
 vnoremap <C-up> :m-2<CR>gv=gv
+nnoremap <silent> <C-down> :m+<CR>==
+inoremap <C-down> <Esc>:m+<CR>==gi
 vnoremap <C-down> :m'>+<CR>gv=gv
-
