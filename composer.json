@@ -1,9 +1,0 @@
-{
-    "require": {
-        "codegyre/robo": "@stable",
-        "fabpot/php-cs-fixer": "^1.10",
-        "phpunit/phpunit": "@stable",
-        "phing/phing": "@stable",
-        "psy/psysh": "@stable"
-    }
-}
