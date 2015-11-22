@@ -122,7 +122,7 @@ colorscheme solarized
 nnoremap <C-p> :Unite -start-insert file buffer<CR>
 
 " File tree browser
-autocmd vimenter * VimFilerExplorer
+"autocmd vimenter * VimFilerExplorer
 autocmd FileType vimfiler
     \ nmap <buffer> <2-LeftMouse> <Plug>(vimfiler_smart_l)
 autocmd FileType vimfiler setlocal nonumber

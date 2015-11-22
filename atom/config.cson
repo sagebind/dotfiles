@@ -12,6 +12,9 @@
     disabledPackages: [
       "welcome"
       "background-tips"
+      "remote-edit"
+      "Remote-FTP"
+      "language-gfm"
     ]
   editor:
     invisibles: {}
@@ -25,7 +28,6 @@
   "atom-autocomplete-php": {}
   "atom-beautify":
     css_convert_quotes: "double"
-    language_php_beautify_on_save: true
     php_cs_fixer_path: "/home/coderstephen/.composer/vendor/bin/php-cs-fixer"
     php_level: "psr2"
     php_fixers: "-blankline_after_open_tag,-return,-spaces_cast,phpdoc_params"
@@ -46,6 +48,11 @@
   "linter-php": {}
   "markdown-preview":
     useGitHubStyle: true
+    grammars: [
+      "source.markdown"
+      "text.md"
+      "text.plain"
+    ]
   "php-debug": {}
   "status-bar": {}
   tabs:
@@ -70,3 +77,15 @@
   "linter-rust": {}
   build:
     saveOnBuild: true
+  deprecated:
+    tool:
+      cargo: true
+  "remote-edit": {}
+  autoprefixer: {}
+  "markdown-deluxe":
+    fontFamily: "inherit"
+    width: "64em"
+  "linter-gcc": {}
+"source.gfm":
+  editor:
+    softWrap: true
