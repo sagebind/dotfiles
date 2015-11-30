@@ -5,7 +5,8 @@ package extract
 package gi
 package peco
 package shark
+package title
 package tmux-zen
 package weather
 theme default
-theme l
+theme eclm
