@@ -1,0 +1,71 @@
+- clean:
+    - '~'
+    - ~/.config
+    - ~/.config/fish
+    - ~/.config/peco
+    - ~/.config/sublime-text-3/Packages/User
+    - ~/.composer
+
+- link:
+    ~/.config/fish/config.fish:
+        path: fish/config.fish
+        create: true
+        force: true
+    ~/.config/omf:
+        path: omf
+        force: true
+
+    ~/.tmux.conf:
+        path: tmux.conf
+        force: true
+
+    ~/.vimrc:
+        path: vimrc
+
+    ~/.gitconfig:
+        path: gitconfig
+        force: true
+
+    ~/.config/peco/config.json:
+        path: peco.json
+        create: true
+        force: true
+
+    ~/.atom/config.cson:
+        path: atom/config.cson
+        force: true
+    ~/.atom/keymap.cson:
+        path: atom/keymap.cson
+        force: true
+    ~/.atom/styles.less:
+        path: atom/styles.less
+        force: true
+
+    ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings:
+        path: sublime-text/Preferences.sublime-settings
+        force: true
+    ~/.config/sublime-text-3/Packages/User/Package Control.sublime-settings:
+        path: sublime-text/Package Control.sublime-settings
+        force: true
+    ~/.config/sublime-text-3/Packages/User/Markdown.sublime-settings:
+        path: sublime-text/Markdown.sublime-settings
+        force: true
+    ~/.config/sublime-text-3/Packages/User/phpcs.sublime-settings:
+        path: sublime-text/phpcs.sublime-settings
+        force: true
+    ~/.config/sublime-text-3/Packages/User/SublimeCodeIntel.sublime-settings:
+        path: sublime-text/SublimeCodeIntel.sublime-settings
+        force: true
+    ~/.config/sublime-text-3/Packages/User/View In Browser.sublime-settings:
+        path: sublime-text/View In Browser.sublime-settings
+        force: true
+    ~/.config/sublime-text-3/Packages/User/Xdebug.sublime-settings:
+        path: sublime-text/Xdebug.sublime-settings
+        force: true
+
+    ~/.config/redshift.conf:
+        path: redshift.conf
+        force: true
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
