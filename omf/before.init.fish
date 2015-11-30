@@ -1,6 +1,6 @@
 # Load env variables
-if test -f ~/env.fish
-    source ~/env.fish
+if test -f ~/.env.fish
+    source ~/.env.fish
 end
 
 # Set the terminal window to use a dark GTK theme.

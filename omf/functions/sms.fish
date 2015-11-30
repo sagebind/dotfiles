@@ -1,4 +1,4 @@
-function sms
+function sms -d "Send an SMS to someone via your Android phone"
     if not set -q MAKER_KEY
         echo "IFTTT Maker API key not set."
         return 1
