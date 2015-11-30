@@ -4,6 +4,7 @@ package copy
 package extract
 package gi
 package peco
+package shark
 package tmux-zen
 package weather
 theme default
