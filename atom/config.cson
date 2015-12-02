@@ -12,8 +12,6 @@
     disabledPackages: [
       "welcome"
       "background-tips"
-      "remote-edit"
-      "Remote-FTP"
       "language-gfm"
     ]
   editor:
