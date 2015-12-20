@@ -1,5 +1,6 @@
 package apt
 package battery
+package composer
 package copy
 package extract
 package gi
