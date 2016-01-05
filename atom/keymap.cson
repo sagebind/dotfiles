@@ -4,3 +4,6 @@
 'atom-workspace atom-text-editor':
     'ctrl-shift-up': 'editor:move-line-up'
     'ctrl-shift-down': 'editor:move-line-down'
+
+'.platform-linux atom-text-editor':
+    'ctrl-g': 'atom-ctags:toggle-project-symbols'

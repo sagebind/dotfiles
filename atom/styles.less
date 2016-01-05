@@ -1,5 +1,10 @@
-@font-size: 0.9rem;
+@font-size: 0.85rem;
 
 html, body, linter-message, .status-bar, .tree-view, .tab-bar, .tab {
-    font-size: @font-size;
+    //font-size: @font-size;
+}
+
+// Spell-check highlight has z-index -1 which makes it disappear under cursor-line
+atom-text-editor::shadow .spell-check-misspelling .region {
+  z-index: 0;
 }

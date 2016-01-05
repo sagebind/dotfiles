@@ -5,14 +5,16 @@
     showOnStartup: false
   core:
     themes: [
-      "quantum-ui"
+      "nucleus-dark-ui"
       "peacocks-in-space-syntax"
     ]
     autoHideMenuBar: true
     disabledPackages: [
-      "welcome"
+      "atom-autocomplete-php"
       "background-tips"
       "language-gfm"
+      "symbols-view"
+      "welcome"
     ]
   editor:
     invisibles: {}
@@ -84,6 +86,9 @@
     fontFamily: "inherit"
     width: "64em"
   "linter-gcc": {}
+  "build-cargo": {}
+  up2date: {}
+  "atom-ctags": {}
 "source.gfm":
   editor:
     softWrap: true
