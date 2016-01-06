@@ -25,6 +25,9 @@
     ~/.gitconfig:
         path: gitconfig
         force: true
+    ~/.gitignore_global:
+        path: gitignore
+        force: true
 
     ~/.config/peco/config.json:
         path: peco.json

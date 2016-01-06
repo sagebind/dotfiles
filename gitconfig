@@ -3,6 +3,7 @@
 	name  = Stephen Coakley
 [core]
 	editor = atom -w
+	excludesfile = /home/stephen/.gitignore_global
 [color]
 	branch      = true
 	diff        = true
