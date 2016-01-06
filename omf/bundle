@@ -3,6 +3,7 @@ package battery
 package composer
 package copy
 package extract
+package getopts
 package gi
 package peco
 package shark
