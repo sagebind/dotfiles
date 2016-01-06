@@ -20,7 +20,7 @@ end
 function prompt_root
   set -l uid (id -u $USER)
   if test $uid -eq 0
-    prompt_segment red $__theme_su_glyph
+    prompt_segment red $__chain_su_glyph
   end
 end
 
@@ -31,10 +31,10 @@ end
 function prompt_git
   if [ (_git_branch_name) ]
     set -l git_branch (_git_branch_name)
-    prompt_segment blue "$__theme_git_branch_glyph $git_branch"
+    prompt_segment blue "$__chain_git_branch_glyph $git_branch"
 
     if [ (_is_git_dirty) ]
-      prompt_segment yellow $__theme_git_dirty_glyph
+      prompt_segment yellow $__chain_git_dirty_glyph
     end
   end
 end
@@ -47,7 +47,7 @@ function prompt_arrow
     echo -n "($last_status)"
   end
 
-  echo -n "$__theme_prompt_glyph "
+  echo -n "$__chain_prompt_glyph "
 end
 
 function fish_prompt
