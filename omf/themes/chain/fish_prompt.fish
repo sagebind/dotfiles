@@ -5,7 +5,7 @@ set __chain_su_glyph "⚡"
 
 function prompt_segment
   set_color $argv[1]
-  echo -n -s "⦗" $argv[2..-1] "⦘─"
+  echo -n -s "[" $argv[2..-1] "]─"
   set_color normal
 end
 
@@ -20,7 +20,7 @@ end
 function prompt_root
   set -l uid (id -u $USER)
   if test $uid -eq 0
-    prompt_segment red $__chain_su_glyph
+    prompt_segment yellow $__chain_su_glyph
   end
 end
 
@@ -29,11 +29,11 @@ function prompt_dir
 end
 
 function prompt_git
-  if [ (_git_branch_name) ]
+  if test (_git_branch_name)
     set -l git_branch (_git_branch_name)
     prompt_segment blue "$__chain_git_branch_glyph $git_branch"
 
-    if [ (_is_git_dirty) ]
+    if test (_is_git_dirty)
       prompt_segment yellow $__chain_git_dirty_glyph
     end
   end
