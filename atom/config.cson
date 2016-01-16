@@ -1,13 +1,28 @@
 "*":
-  "exception-reporting":
-    userId: "885fd0a8-bdb4-f4bf-9842-bbb135f14731"
-  welcome:
-    showOnStartup: false
+  "atom-autocomplete-php": {}
+  "atom-beautify":
+    _analyticsUserId: "6afb0758-76f2-40c0-b860-5768be7f53d4"
+    analytics: false
+    css_convert_quotes: "double"
+    language_c_beautify_on_save: true
+    language_cpp_beautify_on_save: true
+    language_cs_beautify_on_save: true
+    language_js_beautify_on_save: true
+    language_json_beautify_on_save: true
+    language_rust_beautify_on_save: true
+    language_xml_beautify_on_save: true
+    php_cs_fixer_path: "/home/coderstephen/.composer/vendor/bin/php-cs-fixer"
+    php_fixers: "-blankline_after_open_tag,-return,-spaces_cast,phpdoc_params"
+    php_level: "psr2"
+    rust_rustfmt_path: "/home/stephen/.cargo/bin/rustfmt"
+  "atom-ctags": {}
+  "atom-notifier":
+    unfocused: true
+  "autocomplete-plus": {}
+  build:
+    saveOnBuild: true
+  "build-cargo": {}
   core:
-    themes: [
-      "nucleus-dark-ui"
-      "peacocks-in-space-syntax"
-    ]
     autoHideMenuBar: true
     disabledPackages: [
       "atom-autocomplete-php"
@@ -16,55 +31,44 @@
       "symbols-view"
       "welcome"
     ]
-  editor:
-    invisibles: {}
-    showIndentGuide: true
-    tabLength: 4
-    fontFamily: "Input Mono"
-    softWrap: true
-    scrollPastEnd: true
-    autoIndentOnPaste: false
-    showInvisibles: true
-  "atom-autocomplete-php": {}
-  "atom-beautify":
-    css_convert_quotes: "double"
-    php_cs_fixer_path: "/home/coderstephen/.composer/vendor/bin/php-cs-fixer"
-    php_level: "psr2"
-    php_fixers: "-blankline_after_open_tag,-return,-spaces_cast,phpdoc_params"
-    _analyticsUserId: "6afb0758-76f2-40c0-b860-5768be7f53d4"
-    analytics: false
-  "atom-notifier":
-    unfocused: true
-  "autocomplete-plus": {}
+    themes: [
+      "nucleus-dark-ui"
+      "peacocks-in-space-syntax"
+    ]
+  deprecated:
+    tool:
+      cargo: true
   docblockr:
     short_primitives: true
-  "git-log": {}
+  editor:
+    autoIndentOnPaste: false
+    fontFamily: "Input Mono"
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "885fd0a8-bdb4-f4bf-9842-bbb135f14731"
   "git-plus": {}
   "gtk-dark-theme": {}
-  "haskell-ghc-mod": {}
   "highlight-selected": {}
+  "language-markdown":
+    disableLanguageGfm: false
   linter:
     showErrorTabLine: true
+  "linter-gcc": {}
   "linter-php": {}
+  "linter-rust": {}
   "markdown-preview":
-    useGitHubStyle: true
     grammars: [
       "source.markdown"
       "text.md"
       "text.plain"
     ]
+  "markdown-writer": {}
   "php-debug": {}
-  "status-bar": {}
-  tabs:
-    usePreviewTabs: true
-  term2:
-    titleTemplate: "Terminal"
-    fontSize: "12"
-  "tree-view":
-    hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
   "spell-check":
     grammars: [
       "source.asciidoc"
@@ -74,21 +78,20 @@
       "text.plain"
       "text.plain.null-grammar"
     ]
-  "linter-rust": {}
-  build:
-    saveOnBuild: true
-  deprecated:
-    tool:
-      cargo: true
-  "remote-edit": {}
-  autoprefixer: {}
-  "markdown-deluxe":
-    fontFamily: "inherit"
-    width: "64em"
-  "linter-gcc": {}
-  "build-cargo": {}
+  tabs:
+    usePreviewTabs: true
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   up2date: {}
-  "atom-ctags": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".md.text":
+  editor:
+    showInvisibles: true
+    softWrapAtPreferredLineLength: false
 "source.gfm":
   editor:
     softWrap: true
