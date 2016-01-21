@@ -10,5 +10,5 @@ package shark
 package title
 package tmux-zen
 package weather
+theme chain
 theme default
-theme eclm
