@@ -29,6 +29,11 @@
         path: gitignore
         force: true
 
+    ~/.config/htop/htoprc:
+        path: htoprc
+        create: true
+        force: true
+
     ~/.config/peco/config.json:
         path: peco.json
         create: true
