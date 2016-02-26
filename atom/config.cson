@@ -1,43 +1,35 @@
 "*":
-  "atom-autocomplete-php": {}
   "atom-beautify":
     _analyticsUserId: "6afb0758-76f2-40c0-b860-5768be7f53d4"
-    analytics: false
-    css_convert_quotes: "double"
-    language_c_beautify_on_save: true
-    language_cpp_beautify_on_save: true
-    language_cs_beautify_on_save: true
-    language_js_beautify_on_save: true
-    language_json_beautify_on_save: true
+    language_php_beautify_on_save: true
     language_rust_beautify_on_save: true
-    language_xml_beautify_on_save: true
-    php_cs_fixer_path: "/home/coderstephen/.composer/vendor/bin/php-cs-fixer"
-    php_fixers: "-blankline_after_open_tag,-return,-spaces_cast,phpdoc_params"
-    php_level: "psr2"
+    php_cs_fixer_path: "/home/stephen/.composer/vendor/bin/php-cs-fixer"
+    php_fixers: "-blankline_after_open_tag,-return,-spaces_cast,-unused_use,phpdoc_params,ordered_use,no_blank_lines_before_namespace,multiline_spaces_before_semicolon,concat_with_spaces"
+    php_level: "symfony"
     rust_rustfmt_path: "/home/stephen/.cargo/bin/rustfmt"
-  "atom-ctags": {}
-  "atom-notifier":
-    unfocused: true
-  "autocomplete-plus": {}
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
+    cmd: "/usr/bin/ctags"
+    cmdArgs: "--options=/home/stephen/.ctags.conf"
   build:
     saveOnBuild: true
+    scrollOnError: true
   "build-cargo": {}
   core:
     autoHideMenuBar: true
     disabledPackages: [
-      "atom-autocomplete-php"
       "background-tips"
       "language-gfm"
       "symbols-view"
       "welcome"
+      "metrics"
+      "php-debug"
+      "atom-autocomplete-php"
     ]
     themes: [
       "nucleus-dark-ui"
-      "peacocks-in-space-syntax"
+      "duotone-dark-space-syntax"
     ]
-  deprecated:
-    tool:
-      cargo: true
   docblockr:
     short_primitives: true
   editor:
@@ -51,16 +43,25 @@
     tabLength: 4
   "exception-reporting":
     userId: "885fd0a8-bdb4-f4bf-9842-bbb135f14731"
+  "file-icons":
+    coloured: false
   "git-plus": {}
-  "gtk-dark-theme": {}
+  "gtk-dark-theme":
+    enabled: false
   "highlight-selected": {}
   "language-markdown":
     disableLanguageGfm: false
   linter:
+    errorPanelHeight: 220
     showErrorTabLine: true
+  "linter-flake8":
+    flakeErrors: true
+    pep8ErrorsToWarnings: true
   "linter-gcc": {}
-  "linter-php": {}
-  "linter-rust": {}
+  "linter-php":
+    executablePath: "/home/stephen/.phps/7.0.2/bin/php"
+  "linter-rust":
+    cargoCommand: "rustc"
   "markdown-preview":
     grammars: [
       "source.markdown"
@@ -68,7 +69,8 @@
       "text.plain"
     ]
   "markdown-writer": {}
-  "php-debug": {}
+  racer:
+    racerBinPath: "/home/stephen/.cargo/bin/racer"
   "spell-check":
     grammars: [
       "source.asciidoc"
@@ -80,9 +82,10 @@
     ]
   tabs:
     usePreviewTabs: true
+  "tool-bar":
+    iconSize: "16px"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   up2date: {}
   welcome:
     showOnStartup: false
