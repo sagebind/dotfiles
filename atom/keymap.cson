@@ -1,6 +1,3 @@
-'body':
-    'ctrl-alt-p': 'project-manager:list-projects'
-
 'atom-workspace atom-text-editor':
     'ctrl-shift-up': 'editor:move-line-up'
     'ctrl-shift-down': 'editor:move-line-down'

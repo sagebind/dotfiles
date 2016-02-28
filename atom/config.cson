@@ -1,6 +1,7 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "6afb0758-76f2-40c0-b860-5768be7f53d4"
+    _loggerLevel: "verbose"
+    analytics: false
     language_php_beautify_on_save: true
     language_rust_beautify_on_save: true
     php_cs_fixer_path: "/home/stephen/.composer/vendor/bin/php-cs-fixer"
@@ -11,23 +12,37 @@
     autoBuildTagsWhenActive: true
     cmd: "/usr/bin/ctags"
     cmdArgs: "--options=/home/stephen/.ctags.conf"
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        red: 96
+        green: 125
+        blue: 139
+        alpha: 1
+      predefinedColor: "Blue Grey"
+    fonts: {}
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
   build:
     saveOnBuild: true
     scrollOnError: true
-  "build-cargo": {}
   core:
     autoHideMenuBar: true
     disabledPackages: [
-      "background-tips"
-      "language-gfm"
-      "symbols-view"
       "welcome"
-      "metrics"
-      "php-debug"
-      "atom-autocomplete-php"
+      "language-gfm"
+      "background-tips"
+      "symbols-view"
     ]
     themes: [
-      "nucleus-dark-ui"
+      "atom-material-ui"
       "duotone-dark-space-syntax"
     ]
   docblockr:
@@ -36,65 +51,21 @@
     autoIndentOnPaste: false
     fontFamily: "Input Mono"
     invisibles: {}
+    lineHeight: 1.75
+    preferredLineLength: 120
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
+    softWrapHangingIndent: 4
     tabLength: 4
   "exception-reporting":
-    userId: "885fd0a8-bdb4-f4bf-9842-bbb135f14731"
-  "file-icons":
-    coloured: false
-  "git-plus": {}
-  "gtk-dark-theme":
-    enabled: false
+    userId: "80f2aaed-634f-74f8-2de2-a34a726b98e6"
   "highlight-selected": {}
-  "language-markdown":
-    disableLanguageGfm: false
-  linter:
-    errorPanelHeight: 220
-    showErrorTabLine: true
-  "linter-flake8":
-    flakeErrors: true
-    pep8ErrorsToWarnings: true
-  "linter-gcc": {}
   "linter-php":
     executablePath: "/home/stephen/.phps/7.0.2/bin/php"
-  "linter-rust":
-    cargoCommand: "rustc"
-  "markdown-preview":
-    grammars: [
-      "source.markdown"
-      "text.md"
-      "text.plain"
-    ]
-  "markdown-writer": {}
-  racer:
-    racerBinPath: "/home/stephen/.cargo/bin/racer"
-  "spell-check":
-    grammars: [
-      "source.asciidoc"
-      "source.gfm"
-      "source.php"
-      "text.git-commit"
-      "text.plain"
-      "text.plain.null-grammar"
-    ]
   tabs:
+    enableVcsColoring: true
     usePreviewTabs: true
-  "tool-bar":
-    iconSize: "16px"
-  "tree-view":
-    hideIgnoredNames: true
-  up2date: {}
-  welcome:
-    showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
-".md.text":
-  editor:
-    showInvisibles: true
-    softWrapAtPreferredLineLength: false
-"source.gfm":
-  editor:
-    softWrap: true
