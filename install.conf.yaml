@@ -29,6 +29,9 @@
         path: gitignore
         force: true
 
+    ~/.uncrustify.cfg:
+        path: uncrustify.cfg
+
     ~/.config/htop/htoprc:
         path: htoprc
         create: true
