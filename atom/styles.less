@@ -1,20 +1,5 @@
 atom-text-editor::shadow {
-    .gutter[gutter-name="line-number"] {
-        z-index: 1;
-        overflow: visible !important;
-    }
-
     .line.cursor-line, .line-number.cursor-line-no-selection {
         background-color: rgba(128, 160, 192, 0.1) !important;
-    }
-
-    .line-number.cursor-line-no-selection::before {
-        display: block;
-        position: absolute;
-        background-color: inherit;
-        content: " ";
-        width: 14px;
-        height: 1.5rem;
-        margin-left: 38px;
     }
 }
