@@ -1,9 +1,16 @@
 "*":
   "atom-beautify":
-    _loggerLevel: "verbose"
     analytics: false
     c_configPath: "/home/stephen/.uncrustify.cfg"
     language_c_beautify_on_save: true
+    language_cpp_beautify_on_save: true
+    language_cs_beautify_on_save: true
+    language_css_beautify_on_save: true
+    language_html_beautify_on_save: true
+    language_java_beautify_on_save: true
+    language_js_beautify_on_save: true
+    language_json_beautify_on_save: true
+    language_mustache_beautify_on_save: true
     language_php_beautify_on_save: true
     language_rust_beautify_on_save: true
     php_cs_fixer_path: "/home/stephen/.composer/vendor/bin/php-cs-fixer"
@@ -43,16 +50,27 @@
       "background-tips"
       "symbols-view"
     ]
+    ignoredNames: [
+      "*.aux"
+      "*.fdb_latexmk"
+      "*.fls"
+      "*.synctex.gz"
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+    ]
     themes: [
       "atom-material-ui"
-      "duotone-dark-space-syntax"
+      "one-light-syntax"
     ]
   docblockr:
     short_primitives: true
   editor:
     autoIndentOnPaste: false
     fontFamily: "Input Mono"
-    fontSize: 13
     invisibles: {}
     lineHeight: 1.75
     preferredLineLength: 120
@@ -65,18 +83,47 @@
   "exception-reporting":
     userId: "80f2aaed-634f-74f8-2de2-a34a726b98e6"
   "highlight-selected": {}
+  "jour-nuit":
+    firstTime: true
+  latex:
+    alwaysOpenResultInAtom: true
   "linter-php":
     executablePath: "/home/stephen/.phps/7.0.2/bin/php"
   "markdown-preview":
     breakOnSingleNewline: true
     openPreviewInSplitPane: false
   "markdown-writer": {}
+  nvatom:
+    directory: "/home/stephen/Dropbox/Notes"
   "pdf-view": {}
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.html.basic"
+      "text.plain"
+      "text.md"
+      "text.plain.null-grammar"
+      "text.tex.latex"
+    ]
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
+  "theme-switcher":
+    syntaxThemeOne: "duotone-dark-sea-syntax"
+    syntaxThemeTwo: "one-light-syntax"
+    uiThemeOne: "atom-material-ui"
+    uiThemeTwo: "atom-material-ui"
+  "tree-view":
+    hideIgnoredNames: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+".gfm.nvatom.source":
+  editor:
+    autoIndent: true
+    preferredLineLength: 120
+    softWrapHangingIndent: 4
 ".md.text":
   editor:
     preferredLineLength: 120
