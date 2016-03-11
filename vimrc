@@ -3,44 +3,6 @@ set encoding=utf8
 set shell=/bin/bash
 set nocompatible
 filetype off
-
-" Initialize and load plugins
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
-Plugin 'fakeclip'
-Plugin 'godlygeek/tabular'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'johnsyweb/vim-makeshift'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'rust-lang/rust.vim'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/vimfiler.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-sleuth'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'Yggdroot/indentLine'
-
-" Build systems for makeshift
-let g:makeshift_systems = {
-            \'Cargo.toml': 'cargo build',
-            \}
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#bufferline#enabled = 0
-let g:airline_powerline_fonts = 1
-let g:indentLine_char = '¦'
-let g:indentLine_noConcealCursor=1
-let g:unite_prompt='» '
-let g:vimfiler_as_default_explorer = 1
-let g:vimfiler_ignore_pattern = ['^\.git$']
-
-call vundle#end()
 filetype plugin indent on
 
 
@@ -122,7 +84,6 @@ colorscheme solarized
 nnoremap <C-p> :Unite -start-insert file buffer<CR>
 
 " File tree browser
-"autocmd vimenter * VimFilerExplorer
 autocmd FileType vimfiler
     \ nmap <buffer> <2-LeftMouse> <Plug>(vimfiler_smart_l)
 autocmd FileType vimfiler setlocal nonumber
