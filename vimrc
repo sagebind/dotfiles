@@ -80,7 +80,6 @@ set laststatus=2
 set fillchars+=vert:│
 syntax enable
 set background=dark
-colorscheme solarized
 nnoremap <C-p> :Unite -start-insert file buffer<CR>
 
 " File tree browser
