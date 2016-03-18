@@ -22,25 +22,14 @@ dotfiles:
 - Every terminal window is also a [tmux](http://tmux.sourceorge.net) window and supports multiple panes.
   All terminal windows belong to the same session and you can easily switch between tmux windows from
   within any terminal.
-- Integration with [autojump](http://github.com/joelthelion/autojump), the learning cd command.
 
-Provided are also a few commands that I have written for my convenience, implemented as fish functions.
-Here are a few of them:
+Modified configuration is also provided some programs. Here are a few:
 
-- `apt`: A convenience wrapper around `apt-get` and friends to turn convoluted install commands into
-  memorizable one-liners. For example, to view the details of a package, simply use `apt <package>`.
-- `en`: A tiny wrapper around [Geeknote](http://www.geeknote.me/) that adds some extra functionality,
-  such as pretty-printing Evernote notes inside the console.
-- `composer-install`: A short script for installing [Composer](http://getcomposer.org) system-wide.
-
-Modified configuration is also provided for the following programs:
-
-- [Sublime Text](http://www.sublimetext.com)
-- [tmux](http://tmux.sourceorge.net)
-- [Composer](http://getcomposer.org)
+- [Atom](http://atom.io)
+- [Git](http://git-scm.org)
+- [tmux](http://tmux.github.io)
 - [Redshift](http://jonls.dk/redshift/)
 
 ## License
 All files unless otherwise bundled with a separate license is released under the MIT license. See
 [LICENSE](LICENSE) for details.
-
