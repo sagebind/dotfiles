@@ -1,6 +1,3 @@
-# Load autojump
-source /usr/share/autojump/autojump.fish
-
 # Hide greeting
 function fish_greeting
 end
@@ -11,5 +8,5 @@ set -x LS_COLORS "no=00:fi=00:di=34:ow=34;40:ln=35:pi=30;44:so=35;44:do=35;44:bd
 function fish_title
   test (count $argv) -gt 0
     and echo $argv[1]
-    or echo $_
+    or prompt_pwd
 end

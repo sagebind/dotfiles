@@ -1,9 +1,0 @@
-{
-    "codeintel_language_settings": {
-        "PHP": {
-            "php": "/usr/bin/php",
-            "codeintel_scan_files_in_project": true,
-            "codeintel_max_recursive_dir_depth": 15
-        }
-    }
-}

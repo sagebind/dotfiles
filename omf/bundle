@@ -1,9 +1,10 @@
 package apt
 package composer
 package fasd
-package phpbrew
+package foreign-env
 package hash
 package pbcopy
+package phpbrew
 package shark
 package title
 package tmux-zen
