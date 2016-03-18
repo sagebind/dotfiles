@@ -4,6 +4,8 @@
     "ctrl-g": "atom-ctags:toggle-project-symbols"
 
 "atom-workspace atom-text-editor":
+    "alt-\\": "pane:split-right"
+    "alt--": "pane:split-down"
     "ctrl-l": "unset!"
     "ctrl-l": "nvatom:toggle"
     "ctrl-shift-up": "editor:move-line-up"

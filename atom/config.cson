@@ -22,13 +22,6 @@
     cmd: "/usr/bin/ctags"
     cmdArgs: "--options=/home/stephen/.ctags.conf"
   "atom-material-ui":
-    colors:
-      abaseColor:
-        red: 96
-        green: 125
-        blue: 139
-        alpha: 1
-      predefinedColor: "Blue Grey"
     fonts: {}
     tabs:
       compactTabs: true
@@ -64,13 +57,14 @@
     ]
     themes: [
       "atom-material-ui"
-      "one-light-syntax"
+      "rain-syntax"
     ]
   docblockr:
     short_primitives: true
   editor:
     autoIndentOnPaste: false
     fontFamily: "Input Mono"
+    fontSize: 13
     invisibles: {}
     lineHeight: 1.75
     preferredLineLength: 120
@@ -78,7 +72,6 @@
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
-    softWrapHangingIndent: 4
     tabLength: 4
   "exception-reporting":
     userId: "80f2aaed-634f-74f8-2de2-a34a726b98e6"
@@ -87,15 +80,22 @@
     firstTime: true
   latex:
     alwaysOpenResultInAtom: true
+  "linter-flake8": {}
   "linter-php":
-    executablePath: "/home/stephen/.phps/7.0.2/bin/php"
+    executablePath: "/home/stephen/.phpbrew/php/php-7.0.4/bin/php"
   "markdown-preview":
     breakOnSingleNewline: true
-    openPreviewInSplitPane: false
+    liveUpdate: false
   "markdown-writer": {}
+  minimap:
+    absoluteMode: true
   nvatom:
     directory: "/home/stephen/Dropbox/Notes"
   "pdf-view": {}
+  "project-plus":
+    folderBlacklist: ".git, rebase-merge"
+  racer:
+    racerBinPath: "/home/stephen/.cargo/bin/racer"
   "spell-check":
     grammars: [
       "source.asciidoc"
@@ -112,13 +112,15 @@
     usePreviewTabs: true
   "theme-switcher":
     syntaxThemeOne: "duotone-dark-sea-syntax"
-    syntaxThemeTwo: "one-light-syntax"
+    syntaxThemeTwo: "rain-syntax"
     uiThemeOne: "atom-material-ui"
     uiThemeTwo: "atom-material-ui"
   "tree-view":
     hideIgnoredNames: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+  wordcount:
+    ignorecode: true
 ".gfm.nvatom.source":
   editor:
     autoIndent: true
@@ -127,4 +129,4 @@
 ".md.text":
   editor:
     preferredLineLength: 120
-    softWrapHangingIndent: 4
+    softWrapHangingIndent: 0
