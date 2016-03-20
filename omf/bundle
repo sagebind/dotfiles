@@ -4,6 +4,7 @@ package fasd
 package foreign-env
 package hash
 package pbcopy
+package peco
 package phpbrew
 package shark
 package title
