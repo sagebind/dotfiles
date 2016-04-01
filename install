@@ -1,12 +1,73 @@
-#!/bin/bash
+#!/usr/bin/env fish
+# Bootstrap script for installing dotfiles.
 
-CONFIG="install.conf.yaml"
-DOTBOT_DIR="dotbot"
+# Set up configuration variables.
+set REPO (dirname (status -f))
 
-DOTBOT_BIN="bin/dotbot"
-BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-cd "${BASEDIR}"
-git submodule update --init --recursive ${DOTBOT_DIR}
+function log
+  set -l s $status
+  set_color green; echo $argv; set_color normal
+  return $s
+end
 
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" $@
+function error
+  set -l s $status
+  set_color red; echo $argv >&1; set_color normal
+  set -g ERROR 1
+  return $s
+end
+
+function clean -a dir
+  test -e $dir
+    or return 1
+
+  # Find links in the target directory.
+  for link in (find -P $dir -nowarn -maxdepth 1 -type l)
+    # Check if the link points to somewhere in the repo.
+    set -l target (readlink $link)
+    if echo $target | grep -q "^$REPO"
+      # If the link is invalid, remove it.
+      if not test -e $target
+        rm $link
+          and log "Removed invalid link: $link -> $target"
+          or error "Failed to remove link: $link"
+      end
+    end
+  end
+end
+
+function link -a dest src
+  set src "$REPO/$src"
+  set dir (dirname $dest)
+
+  if test $src = (readlink -q $dest; or echo)
+    log "Link exists: $dest -> $src"
+    return
+  else if test -e $dest -o -L $dest
+    rm $dest
+      and log "Removed existing file: $dest"
+      or error "Failed to remove file: $dest"
+      or return 1
+  end
+
+  mkdir -p $dir
+    or error "Failed to create directory: $dir"
+    or return 1
+  test -e $src
+    or error "Link target missing: $src"
+    or return 1
+  ln -s $src $dest
+    or error "Failed to create link: $dest"
+    or return 1
+  log "Created link: $dest -> $src"
+end
+
+# Execute configuration.
+source $REPO/install.conf
+
+# Report errors.
+echo; set -q ERROR
+  and error "Some actions failed."
+  and exit $ERROR
+  or log "All actions finished successfully."

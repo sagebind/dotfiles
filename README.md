@@ -7,10 +7,10 @@ and terminal enhancements. Perhaps these may be helpful for you too. Feel free t
 when tweaking your own system.
 
 ## Using it
-Configuration is managed using [Dotbot](http://github.com/anishathalye/dotbot) which manages installation
+Configuration is managed using a simple Fish shell script which manages installation
 and symbolic links in a sane and portable way. To use these dotfiles, simply clone this repo and run the
-`./install` script in the project folder to install the dotfiles using Dotbot. To see how its done, check
-out the [`install.conf.json`](install.conf.json) file to see what symlinks are made.
+`./install` script in the project folder to install the dotfiles. To see how its done, check
+out the [`install.conf`](install.conf) file to see what symlinks are made.
 
 ## My setup
 I use the amazingly powerful [Fish Shell](http://fishshell.com) as my default command line shell, so most
