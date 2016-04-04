@@ -28,7 +28,7 @@ function maybe-fix-nvidia
     usr/lib32/vdpau/libvdpau_nvidia.so.1
 
   for file in $blacklist
-    if test -e $file
+    if test -e /$file
       mkdir -p /var/nvidia-removed/(dirname $file)
       mv -f /$file /var/nvidia-removed/$file
     end

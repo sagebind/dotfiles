@@ -6,7 +6,6 @@
     language_cpp_beautify_on_save: true
     language_cs_beautify_on_save: true
     language_css_beautify_on_save: true
-    language_html_beautify_on_save: true
     language_java_beautify_on_save: true
     language_js_beautify_on_save: true
     language_json_beautify_on_save: true
@@ -14,7 +13,7 @@
     language_php_beautify_on_save: true
     language_rust_beautify_on_save: true
     php_cs_fixer_path: "/home/stephen/.composer/vendor/bin/php-cs-fixer"
-    php_fixers: "-blankline_after_open_tag,-return,-spaces_cast,-unused_use,phpdoc_params,ordered_use,no_blank_lines_before_namespace,multiline_spaces_before_semicolon,concat_with_spaces"
+    php_fixers: "-blankline_after_open_tag,-phpdoc_params,-return,-spaces_cast,-unused_use,ordered_use,no_blank_lines_before_namespace,multiline_spaces_before_semicolon,concat_with_spaces"
     php_level: "symfony"
     rust_rustfmt_path: "/home/stephen/.cargo/bin/rustfmt"
   "atom-ctags":
@@ -76,7 +75,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Input Mono"
-    fontSize: 13
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.75
     preferredLineLength: 120
