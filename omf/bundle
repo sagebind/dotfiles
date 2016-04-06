@@ -3,7 +3,6 @@ package composer
 package fasd
 package foreign-env
 package hash
-package https://github.com/fishery/getopts
 package https://github.com/fishery/shark
 package https://github.com/oh-my-fish/plugin-spark
 package pbcopy
