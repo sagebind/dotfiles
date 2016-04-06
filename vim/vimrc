@@ -15,6 +15,14 @@ set noerrorbells
 set backspace=indent,eol,start
 
 
+" Set drawing and color scheme, and enable 256 colors
+syntax enable
+set t_Co=256
+"set t_ut=
+set background=dark
+colorscheme gruvbox
+set nolazyredraw
+
 " Display setting for lines and wrapping
 set number          " Show line numbers
 set wrap            " Turn on soft wrapping
@@ -78,8 +86,6 @@ set spell spelllang=en_us
 set hidden
 set laststatus=2
 set fillchars+=vert:│
-syntax enable
-set background=dark
 nnoremap <C-p> :Unite -start-insert file buffer<CR>
 
 " File tree browser

@@ -71,3 +71,4 @@ echo; set -q ERROR
   and error "Some actions failed."
   and exit $ERROR
   or log "All actions finished successfully."
+  or exit 0
