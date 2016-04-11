@@ -1,4 +1,4 @@
-function fzf -d 'Run fzf in a tmux split pane'
+function fzf-split -d 'Run fzf in a tmux split pane'
   if begin; set -q TMUX; and test "$argv[1]" != '-h' -a "$argv[1]" != '--help'; end
     set -l random (tr -dc 'a-zA-Z0-9' < /dev/urandom | head -c 12)
     set -l in /tmp/fzf.$random.in

@@ -1,0 +1,13 @@
+O   Open in default program
+    xdg-open "%f"
+
+A   Open in Atom
+    atom "%f"
+
+= t r
+V   Open in Vim
+    tmux new-window "vim %f"
+
+= t x
+E   Execute
+    fish -c "%f"

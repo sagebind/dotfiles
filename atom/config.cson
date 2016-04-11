@@ -2,6 +2,7 @@
   "atom-beautify":
     analytics: false
     c_configPath: "/home/stephen/.uncrustify.cfg"
+    js_wrap_line_length: 120
     language_c_beautify_on_save: true
     language_cpp_beautify_on_save: true
     language_cs_beautify_on_save: true
@@ -10,7 +11,6 @@
     language_js_beautify_on_save: true
     language_json_beautify_on_save: true
     language_mustache_beautify_on_save: true
-    language_php_beautify_on_save: true
     language_rust_beautify_on_save: true
     php_cs_fixer_path: "/home/stephen/.composer/vendor/bin/php-cs-fixer"
     php_fixers: "-blankline_after_open_tag,-phpdoc_params,-return,-spaces_cast,-unused_use,ordered_use,no_blank_lines_before_namespace,multiline_spaces_before_semicolon,concat_with_spaces"
@@ -20,6 +20,7 @@
     autoBuildTagsWhenActive: true
     cmd: "/usr/bin/ctags"
     cmdArgs: "--options=/home/stephen/.ctags.conf"
+  "atom-html-preview": {}
   "atom-material-ui":
     colors:
       abaseColor:
@@ -75,7 +76,7 @@
   editor:
     autoIndentOnPaste: false
     fontFamily: "Input Mono"
-    fontSize: 12
+    fontSize: 13
     invisibles: {}
     lineHeight: 1.75
     preferredLineLength: 120
@@ -99,13 +100,13 @@
     liveUpdate: false
     useGitHubStyle: true
   "markdown-writer": {}
-  minimap:
-    absoluteMode: true
+  minimap: {}
   nvatom:
     directory: "/home/stephen/Dropbox/Notes"
   "pdf-view": {}
   "project-plus":
-    folderBlacklist: ".git, rebase-merge"
+    autoDiscover: false
+    showPath: true
   racer:
     racerBinPath: "/home/stephen/.cargo/bin/racer"
   "spell-check":
