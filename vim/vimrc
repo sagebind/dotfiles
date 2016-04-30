@@ -1,12 +1,7 @@
-" Base settings
+" Basic settings.
 set encoding=utf8
-set shell=/bin/bash
 set nocompatible
-filetype off
 filetype plugin indent on
-
-
-" Misc. sane defaults
 set history=1000
 set undolevels=1000
 set title
@@ -14,43 +9,39 @@ set visualbell
 set noerrorbells
 set backspace=indent,eol,start
 
-
-" Set drawing and color scheme, and enable 256 colors
-syntax enable
+" Enable syntax highlighting and set theme.
 set t_Co=256
-"set t_ut=
 set background=dark
+syntax enable
 colorscheme gruvbox
-set nolazyredraw
+highlight Normal ctermbg=none
+highlight ColorColumn ctermbg=darkgray
 
-" Display setting for lines and wrapping
+" Customize interface.
+set colorcolumn=120
+set cursorline      " Highlight the cursor line
+set fillchars+=vert:│
+set hidden
+set laststatus=2
+set lazyredraw
+set showmatch       " Highlight matching parenthesis
+
+" Display settings for lines and wrapping.
 set number          " Show line numbers
 set wrap            " Turn on soft wrapping
 set linebreak
 set nolist
 set breakindent     " Line up indentation when soft wrapping
 
-" Show a wrap guide at 120 characters
-set colorcolumn=120
-highlight ColorColumn ctermbg=darkgray
-
-" Set default indentation settings (These may be overridden by tab detection later)
+" Set default indentation settings.
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set shiftround
 set expandtab
 set smarttab        " Insert tabs on the start of a line according to shiftwidth, not tabstop
-
-" Auto indenting
 set autoindent
 set copyindent
-
-" Highlight matching parenthesis
-set showmatch
-
-" Highlight the cursor line
-set cursorline
 
 " Search settings
 set ignorecase      " Ignore case when searching
@@ -62,7 +53,7 @@ set incsearch       " Show search matches as you type
 set wildmenu
 set wildmode=list:longest,full
 
-" Epic GUI-like mouse and keyboard integration.
+" Enable mouse wheel and selection.
 set mouse=a
 set selectmode=mouse,key
 set keymodel=startsel
@@ -70,7 +61,8 @@ set keymodel=startsel
 " Dealing with files
 set nobackup
 set noswapfile
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e " trim trailing whitespace
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " Code folding
 set foldmethod=indent
@@ -82,66 +74,48 @@ set foldlevel=1
 set spell spelllang=en_us
 
 
-" Visual interface customization
-set hidden
-set laststatus=2
-set fillchars+=vert:│
-nnoremap <C-p> :Unite -start-insert file buffer<CR>
-
-" File tree browser
-autocmd FileType vimfiler
-    \ nmap <buffer> <2-LeftMouse> <Plug>(vimfiler_smart_l)
-autocmd FileType vimfiler setlocal nonumber
-autocmd BufEnter * if (winnr('$') == 1 && &filetype ==# 'vimfiler') |
-    \ q | endif
-
-
-" Use some 'modern' keyboard shortcuts (I should be ashamed of myself)
-nnoremap ; :
-" List key bindings in case I forget
-nnoremap <F1> :map<CR>
-nnoremap <F6> :<C-U>MakeshiftBuild<CR>
-
+" File keyboard shortcuts.
 nnoremap <C-s> :w<CR>
-inoremap <C-s> <Esc>:w<CR>==gi
-nnoremap <C-q> :bd<CR>
-inoremap <C-q> <Esc>:bd<CR>
-nnoremap <F4> :q<CR>
-inoremap <F4> <Esc>:q<CR>
+inoremap <C-s> <C-o>:w<CR>
+nnoremap <C-q> :q<CR>
+inoremap <C-q> <C-o>:q<CR>
+nnoremap <F4> :bd<CR>
+inoremap <F4> <C-o>:bd<CR>
+" Reload config!
+nnoremap <F12> :so $MYVIMRC<CR>
 
 " Text and buffer navigation
 nnoremap <C-end> G
 vnoremap <C-end> G
 nnoremap <C-home> gg
 vnoremap <C-home> gg
-nnoremap <CR> :noh<CR><CR>
-nnoremap <silent> <C-Tab> :bnext<CR>
-nnoremap <backspace> i<backspace>
+nnoremap <C-tab> :bnext<CR>
 
-" Awesome system clipboard integration
-nmap <C-c> <Plug>(fakeclip-y)
-vmap <C-c> <Plug>(fakeclip-y)
-nmap <C-x> <Plug>(fakeclip-d)
-vmap <C-x> <Plug>(fakeclip-d)
-nmap <C-v> <Plug>(fakeclip-p)
-imap <C-v> <Plug>(fakeclip-insert-p)
+" Use familiar shortcuts for copy and paste.
+set clipboard=unnamed
+nnoremap <C-c> "+yy
+vnoremap <C-c> "+yy
+nnoremap <C-x> "+dd
+vnoremap <C-x> "+dd
+nnoremap <C-v> "+gP
+inoremap <C-v> <C-\><C-o>"+gP
 
-" Easy and quick undo
+" Undo and redo.
 nnoremap <C-z> u
-inoremap <C-z> <Esc>u<CR>==gi
+inoremap <C-z> <C-\><C-o>u
+nnoremap <C-y> :redo<CR>
+inoremap <C-y> <C-\><C-o>:redo<CR>
 
 " Indentation shortcuts
-vnoremap <Tab> >
+inoremap <tab> <C-o>><CR>
+vnoremap <tab> >
+inoremap <S-tab> <C-o><<CR>
 vnoremap <S-tab> <
 
 " Move lines up and down with Ctrl-up and Ctrl-down
-nnoremap <silent> <C-up> :m-2<CR>==
-inoremap <C-up> <Esc>:m-2<CR>==gi
+nnoremap <C-up> :m-2<CR>==
+inoremap <C-up> <C-o>:m-2<CR>
 vnoremap <C-up> :m-2<CR>gv=gv
-nnoremap <silent> <C-down> :m+<CR>==
-inoremap <C-down> <Esc>:m+<CR>==gi
+nnoremap <C-down> :m+<CR>==
+inoremap <C-down> <C-o>:m+<CR>
 vnoremap <C-down> :m'>+<CR>gv=gv
-
-
-" Syntax highlighting settings
-autocmd BufNewFile,BufRead *.json set ft=javascript
