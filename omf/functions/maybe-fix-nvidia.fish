@@ -21,11 +21,19 @@ function maybe-fix-nvidia
     etc/alternatives/x86_64-linux-gnu_libvdpau_nvidia.so \
     etc/alternatives/x86_64-linux-gnu_grub_fb_blacklist \
     etc/modprobe.d/nvidia-graphics-drivers.conf \
+    usr/bin/nvidia-xconfig \
+    usr/bin/nvidia-smi \
+    usr/bin/nvidia-persistenced \
+    usr/bin/nvidia-debugdump \
+    usr/bin/nvidia-cuda-mps-server \
+    usr/bin/nvidia-cuda-mps-control \
+    usr/bin/nvidia-bug-report.sh \
     usr/lib/libvdpau_nvidia.so \
     usr/lib/vdpau/libvdpau_nvidia.so.1 \
     usr/lib/xorg/modules/drivers/nvidia_drv.so \
     usr/lib32/libvdpau_nvidia.so \
-    usr/lib32/vdpau/libvdpau_nvidia.so.1
+    usr/lib32/vdpau/libvdpau_nvidia.so.1 \
+    usr/share/grub-gfxpayload-lists/blacklist/10_proprietary-graphics-drivers
 
   for file in $blacklist
     if test -e /$file
