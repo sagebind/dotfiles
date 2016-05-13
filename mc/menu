@@ -1,3 +1,6 @@
+C   Copy full path
+    printf "copy\nfile://%d/%f\0" | xclip -i -selection clipboard -t x-special/gnome-copied-files
+
 O   Open in default program
     xdg-open "%f"
 
