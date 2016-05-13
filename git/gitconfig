@@ -1,6 +1,7 @@
 [user]
 	email = me@stephencoakley.com
 	name  = Stephen Coakley
+	signingkey = 58F006AF
 [core]
 	editor = atom -w
 	excludesfile = /home/stephen/.gitignore
@@ -15,3 +16,5 @@
 	ui          = true
 [push]
 	default = simple
+[commit]
+	gpgsign = true
