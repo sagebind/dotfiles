@@ -3,12 +3,14 @@ package argu
 package composer
 package config
 package expand
-package fasd
 package foreign-env
 package hash
+package https://github.com/coderstephen/plugin-fasd
 package https://github.com/oh-my-fish/plugin-spark
 package pbcopy
 package phpbrew
+package rustup
+package shark
 package title
 package tmux-zen
 package weather
