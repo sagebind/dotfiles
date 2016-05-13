@@ -10,12 +10,9 @@ set noerrorbells
 set backspace=indent,eol,start
 
 " Enable syntax highlighting and set theme.
-set t_Co=256
 set background=dark
-syntax enable
-colorscheme gruvbox
-highlight Normal ctermbg=none
-highlight ColorColumn ctermbg=darkgray
+syntax on
+colorscheme onedark
 
 " Customize interface.
 set colorcolumn=120
