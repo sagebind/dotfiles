@@ -3,14 +3,6 @@
     analytics: false
     c_configPath: "/home/stephen/.uncrustify.cfg"
     js_wrap_line_length: 120
-    language_c_beautify_on_save: true
-    language_cpp_beautify_on_save: true
-    language_cs_beautify_on_save: true
-    language_css_beautify_on_save: true
-    language_java_beautify_on_save: true
-    language_js_beautify_on_save: true
-    language_json_beautify_on_save: true
-    language_mustache_beautify_on_save: true
     language_rust_beautify_on_save: true
     php_cs_fixer_path: "/home/stephen/.composer/vendor/bin/php-cs-fixer"
     php_fixers: "-blankline_after_open_tag,-phpdoc_params,-return,-spaces_cast,-unused_use,ordered_use,no_blank_lines_before_namespace,multiline_spaces_before_semicolon,concat_with_spaces"
@@ -24,22 +16,16 @@
   "atom-material-ui":
     colors:
       abaseColor:
-        red: 79
-        green: 148
-        blue: 82
+        red: 47
+        green: 52
+        blue: 63
         alpha: 1
-      accentColor:
-        red: 229
-        green: 198
-        blue: 168
-        alpha: 1
-      predefinedColor: "Blue Grey"
+      predefinedColor: "Grey"
     fonts: {}
     tabs:
       compactTabs: true
       tintedTabBar: true
     treeView:
-      blendTabs: true
       compactList: true
     ui:
       panelContrast: true
@@ -54,6 +40,9 @@
       "language-gfm"
       "background-tips"
       "symbols-view"
+      "atom-ctags"
+      "bookmarks"
+      "metrics"
     ]
     ignoredNames: [
       "*.aux"
@@ -69,14 +58,14 @@
     ]
     themes: [
       "atom-material-ui"
-      "peacock-syntax"
+      "peacocks-in-space-syntax"
     ]
   docblockr:
     short_primitives: true
   editor:
     autoIndentOnPaste: false
     fontFamily: "Input Mono"
-    fontSize: 13
+    fontSize: 12
     invisibles: {}
     lineHeight: 1.75
     preferredLineLength: 120
@@ -87,6 +76,7 @@
     tabLength: 4
   "exception-reporting":
     userId: "80f2aaed-634f-74f8-2de2-a34a726b98e6"
+  "git-plus": {}
   "highlight-selected": {}
   "jour-nuit":
     firstTime: true
@@ -98,7 +88,6 @@
   "markdown-preview":
     breakOnSingleNewline: true
     liveUpdate: false
-    useGitHubStyle: true
   "markdown-writer": {}
   minimap: {}
   nvatom:
@@ -129,11 +118,17 @@
     ignoreWhitespaceOnCurrentLine: false
   wordcount:
     ignorecode: true
+".diff.source":
+  editor:
+    preferredLineLength: 120
 ".gfm.nvatom.source":
   editor:
     autoIndent: true
     preferredLineLength: 120
     softWrapHangingIndent: 4
+".lua.source":
+  editor:
+    preferredLineLength: 120
 ".md.text":
   editor:
     preferredLineLength: 120
