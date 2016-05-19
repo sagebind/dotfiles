@@ -1,4 +1,11 @@
 "*":
+  "activate-power-mode":
+    autoToggle: false
+    particles:
+      size: {}
+      spawnCount: {}
+      totalCount: {}
+    screenShake: {}
   "atom-beautify":
     analytics: false
     c_configPath: "/home/stephen/.uncrustify.cfg"
