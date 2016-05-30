@@ -2,7 +2,8 @@
 # Bootstrap script for installing dotfiles.
 
 # Set up configuration variables.
-set REPO (dirname (status -f))
+set REPO (realpath (dirname (status -f)))
+echo $REPO
 
 
 function log
