@@ -1,7 +1,7 @@
 [user]
 	email = me@stephencoakley.com
-	name  = Stephen Coakley
-	signingkey = 58F006AF
+	name  = Stephen M. Coakley
+	signingkey = 8C430813
 [core]
 	editor = atom -w
 	excludesfile = /home/stephen/.gitignore
