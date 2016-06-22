@@ -1,15 +1,18 @@
+'body':
+    'ctrl-tab ^ctrl': 'unset!'
+    'ctrl-tab': 'pane:show-next-item'
+    'ctrl-shift-tab ^ctrl': 'unset!'
+    'ctrl-shift-tab': 'pane:show-previous-item'
+
 "atom-workspace":
-    "ctrl-l": "unset!"
-    "ctrl-l": "nvatom:toggle"
     "ctrl-g": "atom-ctags:toggle-project-symbols"
 
 "atom-workspace atom-text-editor":
-    "alt-\\": "pane:split-right"
-    "alt--": "pane:split-down"
-    "ctrl-l": "unset!"
-    "ctrl-l": "nvatom:toggle"
+    "alt-h": "pane:split-right"
+    "alt-v": "pane:split-down"
     "ctrl-shift-up": "editor:move-line-up"
     "ctrl-shift-down": "editor:move-line-down"
+    "f12": "atom-ctags:go-to-declaration"
 
 "atom-text-editor:not([mini])":
     "shift-ctrl-K": "markdown-writer:insert-link"
