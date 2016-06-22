@@ -13,6 +13,8 @@ set backspace=indent,eol,start
 set background=dark
 syntax on
 colorscheme onedark
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
 
 " Customize interface.
 set colorcolumn=120
@@ -124,3 +126,8 @@ vnoremap <C-left> b
 nnoremap <C-right> w
 inoremap <C-right> <C-\><C-o>w
 vnoremap <C-right> w
+
+" Tell Vim to handle xterm keys in a `screen*` terminal as well.
+if &term =~ '^screen'
+    execute "set term=xterm-256color"
+endif
