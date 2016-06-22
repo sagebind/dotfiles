@@ -12,6 +12,3 @@ function fish_title
     and echo $argv[1]
     or prompt_pwd
 end
-
-# GPG info
-fenv (gpg-agent --daemon) true
