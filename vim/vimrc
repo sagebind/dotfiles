@@ -116,3 +116,11 @@ vnoremap <C-up> :m-2<CR>gv=gv
 nnoremap <C-down> :m+<CR>==
 inoremap <C-down> <C-o>:m+<CR>
 vnoremap <C-down> :m'>+<CR>gv=gv
+
+" Move through words with Ctrl-left and Ctrl-right
+nnoremap <C-left> b
+inoremap <C-left> <C-\><C-o>b
+vnoremap <C-left> b
+nnoremap <C-right> w
+inoremap <C-right> <C-\><C-o>w
+vnoremap <C-right> w
