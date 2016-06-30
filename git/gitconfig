@@ -3,7 +3,7 @@
 	name  = Stephen M. Coakley
 	signingkey = 8C430813
 [core]
-	editor = vscode -w
+	editor = code -w
 	excludesfile = /home/stephen/.gitignore
 [color]
 	branch      = true

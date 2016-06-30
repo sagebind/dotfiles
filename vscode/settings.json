@@ -1,0 +1,11 @@
+{
+    "editor.fontFamily": "'Input Mono', monospace",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 22,
+    "editor.rulers": [120],
+    "editor.renderWhitespace": true,
+    "editor.wrappingColumn": 0,
+    "files.trimTrailingWhitespace": true,
+    "explorer.workingFiles.dynamicHeight": false,
+    "terminal.integrated.fontFamily": "'Input Mono', monospace"
+}
