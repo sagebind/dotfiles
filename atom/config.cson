@@ -7,14 +7,19 @@
       totalCount: {}
     screenShake: {}
   "atom-beautify":
-    analytics: false
-    c_configPath: "/home/stephen/.uncrustify.cfg"
-    js_wrap_line_length: 120
-    language_rust_beautify_on_save: true
-    php_cs_fixer_path: "/home/stephen/.composer/vendor/bin/php-cs-fixer"
-    php_fixers: "-blankline_after_open_tag,-phpdoc_params,-return,-spaces_cast,-unused_use,ordered_use,no_blank_lines_before_namespace,multiline_spaces_before_semicolon,concat_with_spaces"
-    php_level: "symfony"
-    rust_rustfmt_path: "/home/stephen/.cargo/bin/rustfmt"
+    c:
+      configPath: "/home/stephen/.uncrustify.cfg"
+    general:
+      _analyticsUserId: "97b66e2b-19db-4d41-95dc-985c45800b5b"
+      analytics: false
+    js:
+      wrap_line_length: 120
+    php:
+      cs_fixer_path: "/home/stephen/.composer/vendor/bin/php-cs-fixer"
+      fixers: "-blankline_after_open_tag,-phpdoc_params,-return,-spaces_cast,-unused_use,ordered_use,no_blank_lines_before_namespace,multiline_spaces_before_semicolon,concat_with_spaces"
+      level: "symfony"
+    rust:
+      rustfmt_path: "/home/stephen/.cargo/bin/rustfmt"
   "atom-ctags":
     autoBuildTagsWhenActive: true
     cmd: "/usr/bin/ctags"
@@ -23,16 +28,17 @@
   "atom-material-ui":
     colors:
       abaseColor:
-        red: 47
-        green: 52
-        blue: 63
+        red: 96
+        green: 125
+        blue: 139
         alpha: 1
-      predefinedColor: "Grey"
+      predefinedColor: "Blue Grey"
     fonts: {}
     tabs:
       compactTabs: true
       tintedTabBar: true
     treeView:
+      blendTabs: true
       compactList: true
     ui:
       panelContrast: true
@@ -47,7 +53,6 @@
       "language-gfm"
       "background-tips"
       "symbols-view"
-      "atom-ctags"
       "bookmarks"
       "metrics"
     ]
@@ -65,14 +70,13 @@
     ]
     themes: [
       "atom-material-ui"
-      "peacocks-in-space-syntax"
+      "rain-syntax"
     ]
   docblockr:
     short_primitives: true
   editor:
     autoIndentOnPaste: false
     fontFamily: "Input Mono"
-    fontSize: 12
     invisibles: {}
     lineHeight: 1.75
     preferredLineLength: 120
@@ -89,9 +93,10 @@
     firstTime: true
   latex:
     alwaysOpenResultInAtom: true
+  linter: {}
   "linter-flake8": {}
   "linter-php":
-    executablePath: "/home/stephen/.phpbrew/php/php-7.0.4/bin/php"
+    executablePath: "/home/stephen/.phpbrew/php/php-7.0.6/bin/php"
   "markdown-preview":
     breakOnSingleNewline: true
     liveUpdate: false
@@ -119,8 +124,16 @@
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
+  term3:
+    colors:
+      background:
+        red: 69
+        green: 84
+        blue: 99
+        alpha: 1
   "tree-view":
     hideIgnoredNames: true
+    showOnRightSide: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
   wordcount:
@@ -140,3 +153,7 @@
   editor:
     preferredLineLength: 120
     softWrapHangingIndent: 0
+    tabLength: 4
+".rust.source":
+  editor:
+    preferredLineLength: 120
