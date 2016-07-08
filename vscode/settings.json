@@ -1,11 +1,23 @@
 {
     "editor.fontFamily": "'Input Mono', monospace",
     "editor.fontSize": 13,
+    "editor.formatOnType": true,
     "editor.lineHeight": 22,
-    "editor.rulers": [120],
+    "editor.mouseWheelZoom": true,
+    "editor.renderIndentGuides": true,
     "editor.renderWhitespace": true,
+    "editor.rulers": [120],
     "editor.wrappingColumn": 0,
+    "explorer.openEditors.dynamicHeight": false,
     "files.trimTrailingWhitespace": true,
-    "explorer.workingFiles.dynamicHeight": false,
-    "terminal.integrated.fontFamily": "'Input Mono', monospace"
+    "php.validate.executablePath": "/home/stephen/.phpbrew/php/php-7.0.6/bin/php",
+    "phpcs.standard": "psr-2",
+    "rust.cargoPath": "/home/stephen/.cargo/bin/cargo",
+    "rust.formatOnSave": true,
+    "rust.racerPath": "/home/stephen/.cargo/bin/racer",
+    "rust.rustfmtPath": "/home/stephen/.cargo/bin/rustfmt",
+    "rust.rustLangSrcPath": "/usr/local/src/rust/src",
+    "terminal.integrated.fontFamily": "'Input Mono', monospace",
+    "window.openFilesInNewWindow": false,
+    "rust.checkOnSave": true
 }

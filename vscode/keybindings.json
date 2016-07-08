@@ -1,0 +1,17 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "ctrl+,",
+        "command": "workbench.action.openGlobalSettings"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus"
+    }
+]
