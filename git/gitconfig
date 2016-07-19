@@ -1,10 +1,9 @@
 [user]
 	email = me@stephencoakley.com
 	name  = Stephen M. Coakley
-	signingkey = 8C430813
 [core]
 	editor = code -w
-	excludesfile = /home/stephen/.gitignore
+	excludesfile = ~/.gitignore
 [color]
 	branch      = true
 	diff        = true
