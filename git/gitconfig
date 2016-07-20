@@ -1,6 +1,7 @@
 [user]
 	email = me@stephencoakley.com
 	name  = Stephen M. Coakley
+	signingkey = 494C4FC0
 [core]
 	editor = code -w
 	excludesfile = ~/.gitignore
@@ -21,3 +22,5 @@
 	default = simple
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg2
