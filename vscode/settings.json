@@ -8,16 +8,18 @@
     "editor.renderWhitespace": true,
     "editor.rulers": [120],
     "editor.wrappingColumn": 0,
-    "explorer.openEditors.dynamicHeight": false,
+    "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "php.validate.executablePath": "/home/stephen/.phpbrew/php/php-7.0.6/bin/php",
+    "php.validate.run": "onType",
     "phpcs.standard": "psr-2",
+    "phpformatter.onSave": true,
     "rust.cargoPath": "/home/stephen/.cargo/bin/cargo",
+    "rust.checkOnSave": true,
     "rust.formatOnSave": true,
     "rust.racerPath": "/home/stephen/.cargo/bin/racer",
     "rust.rustfmtPath": "/home/stephen/.cargo/bin/rustfmt",
     "rust.rustLangSrcPath": "/usr/local/src/rust/src",
     "terminal.integrated.fontFamily": "'Input Mono', monospace",
-    "window.openFilesInNewWindow": false,
-    "rust.checkOnSave": true
+    "window.openFilesInNewWindow": false
 }
