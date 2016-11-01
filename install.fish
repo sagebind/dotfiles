@@ -60,7 +60,7 @@ function link -a dest src
   end
 
   set src "$REPO/$src"
-  set dir (dirname $dest)
+  set dir (dirname "$dest")
 
   if test $src = (readlink $dest ^ /dev/null; or echo)
     log "Link exists: $dest -> $src"

@@ -106,9 +106,11 @@ nnoremap <C-y> :redo<CR>
 inoremap <C-y> <C-\><C-o>:redo<CR>
 
 " Indentation shortcuts
-inoremap <tab> <C-o>><CR>
+nnoremap <tab> >>
+inoremap <tab> <C-t>
 vnoremap <tab> >
-inoremap <S-tab> <C-o><<CR>
+nnoremap <S-tab> <<
+inoremap <S-tab> <C-d>
 vnoremap <S-tab> <
 
 " Move lines up and down with Ctrl-up and Ctrl-down

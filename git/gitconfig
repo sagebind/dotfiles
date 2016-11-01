@@ -24,3 +24,5 @@
 	gpgsign = true
 [gpg]
 	program = gpg2
+[pocket]
+	dir = /home/stephen/Dropbox/.git-pocket

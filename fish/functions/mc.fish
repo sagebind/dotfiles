@@ -1,6 +1,6 @@
 function mc
   set -l wdfile "/tmp/mc.pwd.%self"
-  command mc --printwd=$wdfile $argv
+  command mc -x --printwd=$wdfile $argv
 
   if test -f $wdfile
     read -l dir < $wdfile
