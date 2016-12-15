@@ -1,10 +1,10 @@
 {
     "editor.fontFamily": "'Input Mono', monospace",
-    "editor.fontSize": 13,
+    "editor.fontSize": 12,
     "editor.formatOnType": true,
     "editor.lineHeight": 22,
     "editor.renderIndentGuides": true,
-    "editor.renderWhitespace": true,
+    "editor.renderWhitespace": "all",
     "editor.rulers": [120],
     "editor.wrappingColumn": 0,
     "extensions.autoUpdate": true,
@@ -12,11 +12,6 @@
     "files.trimTrailingWhitespace": true,
     "php.validate.executablePath": "/home/stephen/.phpbrew/php/php-7.0.6/bin/php",
     "php.validate.run": "onType",
-    "phpcs.standard": "psr-2",
-    "phpformatter.notifications": false,
-    "phpformatter.onSave": false,
-    "phpformatter.pharPath": "/usr/local/bin/php-cs-fixer",
-    "phpformatter.phpPath": "/home/stephen/.phpbrew/php/php-7.0.6/bin/php",
     "rust.cargoPath": "/home/stephen/.cargo/bin/cargo",
     "rust.checkOnSave": true,
     "rust.racerPath": "/home/stephen/.cargo/bin/racer",
@@ -26,5 +21,9 @@
     "terminal.integrated.fontFamily": "'Input Mono', monospace",
     "terminal.integrated.shell.linux": "/usr/bin/env",
     "terminal.integrated.shellArgs.linux": ["NO_TMUX=1", "fish"],
-    "window.openFilesInNewWindow": false
+    "window.openFilesInNewWindow": false,
+    "workbench.sideBar.location": "right",
+    "window.zoomLevel": 0,
+    "window.fullScreenZenMode": false,
+    "editor.renderLineHighlight": "all"
 }
