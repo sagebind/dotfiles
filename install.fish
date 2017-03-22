@@ -84,6 +84,9 @@ function link -a dest src
   log "Created link: $dest -> $src"
 end
 
+# Define OS.
+set -g os (uname | tr '[:upper:]' '[:lower:]')
+
 # Execute configuration.
 source $REPO/install.conf
 

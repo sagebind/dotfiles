@@ -5,7 +5,9 @@ function gpg-open
 
   set -l source_file "$argv[1]"
   set -e argv[1]
-  set -l tmpfs /run/user/(id -u)/gpg
+  test -d /run/user
+    and set -l tmpfs /run/user/(id -u)/gpg
+    or set -l tmpfs /tmp/(id -u)/gpg
   mkdir -p $tmpfs
 
   echo -n "Password: "
