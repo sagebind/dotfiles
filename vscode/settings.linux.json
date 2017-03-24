@@ -1,4 +1,6 @@
 {
+    "debug.inlineValues": true,
+    "editor.dragAndDrop": true,
     "editor.fontFamily": "'Input Mono', monospace",
     "editor.fontSize": 12,
     "editor.formatOnType": true,
@@ -9,10 +11,12 @@
     "editor.rulers": [120],
     "editor.wordWrap": "off",
     "extensions.autoUpdate": true,
+    "files.hotExit": "onExitAndWindowClose",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "html.format.extraLiners": "",
     "html.format.indentInnerHtml": true,
+    "markdown.preview.fontSize": 18,
     "php.validate.executablePath": "/home/stephen/.phpbrew/php/php-7.0.6/bin/php",
     "php.validate.run": "onType",
     "rust.actionOnSave": "build",
@@ -27,9 +31,29 @@
     "terminal.integrated.fontFamily": "'Input Mono', monospace",
     "terminal.integrated.shell.linux": "/usr/bin/env",
     "terminal.integrated.shellArgs.linux": ["NO_TMUX=1", "fish"],
+    "window.menuBarVisibility": "toggle",
     "window.openFilesInNewWindow": "off",
-    "window.zoomLevel": 0,
+    "window.openFoldersInNewWindow": "on",
+    "window.reopenFolders": "one",
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     "workbench.iconTheme": "vs-minimal",
     "workbench.sideBar.location": "right",
-    "zenMode.fullScreen": false
+    "workbench.welcome.enabled": false,
+    "zenMode.fullScreen": false,
+    "[c]": {
+        "editor.quickSuggestions": false
+    },
+    "[cpp]": {
+        "editor.quickSuggestions": false
+    },
+    "[markdown]": {
+        "editor.folding": false,
+        "editor.lineNumbers": "off",
+        "editor.renderWhitespace": "none",
+        "editor.rulers": [],
+        "editor.wrappingIndent": "indent",
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 120
+    },
+    "terminal.integrated.fontSize": 12
 }
