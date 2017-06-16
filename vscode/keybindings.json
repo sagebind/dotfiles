@@ -13,5 +13,15 @@
         "key": "ctrl+down",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
     }
 ]
