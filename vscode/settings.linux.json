@@ -1,14 +1,17 @@
 {
     "debug.inlineValues": true,
-    "editor.dragAndDrop": true,
+    "editor.dragAndDrop": false,
     "editor.fontFamily": "'Input Mono', monospace",
     "editor.fontSize": 12,
     "editor.formatOnType": true,
     "editor.lineHeight": 22,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
     "editor.rulers": [120],
+    "editor.showFoldingControls": "always",
     "editor.wordWrap": "off",
     "extensions.autoUpdate": true,
     "files.hotExit": "onExitAndWindowClose",
@@ -17,35 +20,24 @@
     "html.format.extraLiners": "",
     "html.format.indentInnerHtml": true,
     "markdown.preview.fontSize": 18,
-    "php.validate.executablePath": "/home/stephen/.phpbrew/php/php-7.0.6/bin/php",
-    "php.validate.run": "onType",
-    "rust.actionOnSave": "build",
     "rust.cargoPath": "/home/stephen/.cargo/bin/cargo",
-    "rust.checkOnSave": true,
-    "rust.formatOnSave": false,
-    "rust.racerPath": "/home/stephen/.cargo/bin/racer",
-    "rust.rustfmtPath": "/home/stephen/.cargo/bin/rustfmt",
-    "rust.rustLangSrcPath": "/usr/local/src/rust/src",
+    "rust.rls": {
+        "executable": "rustup",
+        "args": ["run", "nightly", "rls"],
+        "revealOutputChannelOn": "never"
+    },
     "rust.showOutput": false,
-    "rust.useJsonErrors": false,
     "terminal.integrated.fontFamily": "'Input Mono', monospace",
-    "terminal.integrated.shell.linux": "/usr/bin/env",
-    "terminal.integrated.shellArgs.linux": ["NO_TMUX=1", "fish"],
     "window.menuBarVisibility": "toggle",
     "window.openFilesInNewWindow": "off",
     "window.openFoldersInNewWindow": "on",
     "window.reopenFolders": "one",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+    "workbench.colorTheme": "Peacock",
     "workbench.iconTheme": "vs-minimal",
     "workbench.sideBar.location": "right",
     "workbench.welcome.enabled": false,
     "zenMode.fullScreen": false,
-    "[c]": {
-        "editor.quickSuggestions": false
-    },
-    "[cpp]": {
-        "editor.quickSuggestions": false
-    },
     "[markdown]": {
         "editor.folding": false,
         "editor.lineNumbers": "off",
@@ -55,5 +47,4 @@
         "editor.wordWrap": "bounded",
         "editor.wordWrapColumn": 120
     },
-    "terminal.integrated.fontSize": 12
 }
