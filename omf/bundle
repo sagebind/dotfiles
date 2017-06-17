@@ -13,7 +13,6 @@ package rustup
 package spark
 package technicolor
 package title
-package tmux-zen
 package vcs
 package weather
 theme chain
