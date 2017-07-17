@@ -20,11 +20,13 @@
     "html.format.extraLiners": "",
     "html.format.indentInnerHtml": true,
     "markdown.preview.fontSize": 18,
-    "rust.cargoPath": "/home/stephen/.cargo/bin/cargo",
+    "rust.mode": "rls",
     "rust.rls": {
-        "executable": "rustup",
-        "args": ["run", "nightly", "rls"],
-        "revealOutputChannelOn": "never"
+        "useRustfmt": true
+    },
+    "rust.rustup": {
+        "toolchain": "stable-x86_64-unknown-linux-gnu",
+        "nightlyToolchain": "nightly-x86_64-unknown-linux-gnu"
     },
     "rust.showOutput": false,
     "terminal.integrated.cursorBlinking": true,
@@ -36,12 +38,10 @@
     "window.menuBarVisibility": "toggle",
     "window.openFilesInNewWindow": "off",
     "window.openFoldersInNewWindow": "on",
-    "window.reopenFolders": "one",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     "workbench.colorTheme": "Peacock",
     "workbench.iconTheme": "vs-minimal",
     "workbench.sideBar.location": "right",
-    "workbench.welcome.enabled": false,
     "zenMode.fullScreen": false,
     "[markdown]": {
         "editor.folding": false,
