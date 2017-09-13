@@ -6,23 +6,31 @@
 	editor = code -w
 	excludesfile = ~/.gitignore
 [alias]
+	alias = config --get-regexp "^alias\\."
+	# abbreviations
+	c = commit
+	ch = checkout
+	cm = commit -m
+	m = merge
+	s = status --short --branch
+	# workflow
+	amend = commit -a --amend
+	cb = "!git checkout $(git branch -a --format '%(refname)' | sed -e 's#^refs/heads/##' -e 's#^refs/remotes/[^/]*/##' | sort | uniq | $FILTER)"
+	pub = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
+	save = !git add -A && git commit -m wip
+	squash = rebase -i
+	tags = tag --list
+	undo = reset HEAD~1 --mixed
+	up = pull --rebase
+	update = "!git stash && git pull && git stash pop"
+	wip = commit -am wip
+	# index
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
-	ignored = !git ls-files -v | grep "^[[:lower:]]"
-[color]
-	branch      = true
-	diff        = true
-	decorate    = true
-	grep        = true
-	interactive = true
-	showbranch  = true
-	status      = true
-	ui          = true
+	ignored = "!git ls-files -v | grep '^[[:lower:]]'"
 [push]
 	default = simple
 [commit]
 	gpgsign = true
 [gpg]
 	program = gpg2
-[pocket]
-	dir = /home/stephen/Dropbox/.git-pocket
