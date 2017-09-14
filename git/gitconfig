@@ -17,13 +17,12 @@
 	amend = commit -a --amend
 	cb = "!git checkout $(git branch -a --format '%(refname)' | sed -e 's#^refs/heads/##' -e 's#^refs/remotes/[^/]*/##' | sort | uniq | $FILTER)"
 	pub = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
-	save = !git add -A && git commit -m wip
 	squash = rebase -i
 	tags = tag --list
 	undo = reset HEAD~1 --mixed
 	up = pull --rebase
 	update = "!git stash && git pull && git stash pop"
-	wip = commit -am wip
+	wip = !git add -A && git commit -m wip
 	# index
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
