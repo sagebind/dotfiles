@@ -20,6 +20,10 @@
         "command": "workbench.action.navigateForward"
     },
     {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
         "key": "shift+alt+up",
         "command": "editor.action.insertCursorAbove",
         "when": "editorTextFocus"
