@@ -14,13 +14,13 @@
 	m = merge
 	s = status --short --branch
 	# workflow
-	amend = commit -a --amend
+	amend = commit --amend
 	cb = "!git checkout $(git branch -a --format '%(refname)' | sed -e 's#^refs/heads/##' -e 's#^refs/remotes/[^/]*/##' | sort | uniq | $FILTER)"
 	pub = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
 	squash = rebase -i
 	tags = tag --list
 	undo = reset HEAD~1 --mixed
-	up = pull --rebase
+	up = !git stash && git pull --rebase && git stash pop
 	update = "!git stash && git pull && git stash pop"
 	wip = !git add -A && git commit -m wip
 	# index
@@ -33,3 +33,5 @@
 	gpgsign = true
 [gpg]
 	program = gpg2
+[color]
+	ui = true
