@@ -117,6 +117,9 @@ colors:
     cyan:    '0x8ec07c'
     white:   '0xebdbb2'
 
+# Background opacity
+background_opacity: 0.9
+
 
 # Visual Bell
 #
