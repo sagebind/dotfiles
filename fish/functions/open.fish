@@ -1,4 +1,7 @@
 function open -d 'Open files using the default associated application(s)'
+  set -q argv[1]
+    or set argv[1] $PWD
+
   if type -fq xdg-open
     command xdg-open $argv
   else if type -fq open
