@@ -11,6 +11,7 @@
 	c = commit
 	ch = checkout
 	cm = commit -m
+	contains = merge-base --is-ancestor
 	m = merge
 	s = status --short --branch
 	# workflow
