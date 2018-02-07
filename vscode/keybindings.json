@@ -1,4 +1,5 @@
 [
+    // Workbench-level key bindings. Many of these start with a "`" prefix key.
     {
         "key": "ctrl+,",
         "command": "workbench.action.openGlobalSettings"
@@ -12,24 +13,58 @@
         "command": "workbench.action.previousEditorInGroup"
     },
     {
-        "key": "alt+left",
-        "command": "workbench.action.navigateBack"
-    },
-    {
-        "key": "alt+right",
-        "command": "workbench.action.navigateForward"
-    },
-    {
         "key": "ctrl+`",
         "command": "workbench.action.terminal.focus"
     },
     {
-        "key": "shift+alt+up",
+        "key": "alt+space down",
+        "command": "workbench.action.navigateDown",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+space left",
+        "command": "workbench.action.navigateLeft",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+space right",
+        "command": "workbench.action.navigateRight",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+space up",
+        "command": "workbench.action.navigateUp",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+space space",
+        "command": "workbench.action.toggleEditorGroupLayout",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+space o",
+        "command": "workbench.action.quickOpen",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+space p",
+        "command": "workbench.action.openRecent",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "alt+space ;",
+        "command": "workbench.action.showCommands",
+        "when": "!terminalFocus"
+    },
+
+    // Editor-level key bindings.
+    {
+        "key": "ctrl+shift+up",
         "command": "editor.action.insertCursorAbove",
         "when": "editorTextFocus"
     },
     {
-        "key": "shift+alt+down",
+        "key": "ctrl+shift+down",
         "command": "editor.action.insertCursorBelow",
         "when": "editorTextFocus"
     },
