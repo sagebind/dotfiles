@@ -1,5 +1,5 @@
 [
-    // Workbench-level key bindings. Many of these start with a "`" prefix key.
+    // General action key bindings. Many of these start with an "alt+space" prefix.
     {
         "key": "ctrl+,",
         "command": "workbench.action.openGlobalSettings"
@@ -56,8 +56,17 @@
         "command": "workbench.action.showCommands",
         "when": "!terminalFocus"
     },
-
-    // Editor-level key bindings.
+    {
+        "key": "alt+space f",
+        "command": "editor.action.formatDocument",
+        "when": "!editorHasSelection && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+space f",
+        "command": "editor.action.formatSelection",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+    },
+    // Text editing key bindings.
     {
         "key": "ctrl+shift+up",
         "command": "editor.action.insertCursorAbove",
