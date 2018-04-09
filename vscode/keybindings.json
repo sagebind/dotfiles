@@ -66,6 +66,10 @@
         "command": "editor.action.formatSelection",
         "when": "editorHasSelection && editorTextFocus && !editorReadonly"
     },
+    {
+        "key": "alt+space shift+/",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
     // Text editing key bindings.
     {
         "key": "ctrl+shift+up",
