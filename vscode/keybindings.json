@@ -5,6 +5,10 @@
         "command": "workbench.action.openGlobalSettings"
     },
     {
+        "key": "alt+space shift+/",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
         "key": "ctrl+tab",
         "command": "workbench.action.nextEditorInGroup"
     },
@@ -67,8 +71,8 @@
         "when": "editorHasSelection && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+space shift+/",
-        "command": "workbench.action.openGlobalKeybindings"
+        "key": "alt+space r",
+        "command": "code-runner.run"
     },
     // Text editing key bindings.
     {
