@@ -5,6 +5,8 @@ if status --is-interactive
   abbr dc docker-compose
   abbr dm docker-machine
 
+  abbr ed code
+
   abbr g git
   abbr gc 'git checkout'
   abbr gcd 'git checkout develop'
