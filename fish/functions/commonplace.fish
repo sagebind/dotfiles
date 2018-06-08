@@ -1,3 +1,3 @@
 function commonplace
-  ed $HOME/commonplace
+  code $HOME/commonplace
 end
