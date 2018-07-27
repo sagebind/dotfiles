@@ -20,6 +20,15 @@
     "files.trimTrailingWhitespace": true,
     "html.format.extraLiners": "",
     "html.format.indentInnerHtml": true,
+    "script.commands": {
+        "commands": [
+            {
+                "id": "sagebind.run",
+                "displayName": "Run command",
+                "script": "/Users/scoakley/.vscode/scripts/run.js"
+            }
+        ]
+    },
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.focusActiveEditorGroup",
         "workbench.action.focusFirstEditorGroup",
@@ -52,5 +61,15 @@
     "workbench.commandPalette.preserveInput": true,
     "workbench.quickOpen.closeOnFocusLost": false,
     "workbench.startupEditor": "none",
-    "zenMode.fullScreen": false
+    "zenMode.fullScreen": false,
+    "[asciidoc]": {
+        "editor.lineNumbers": "off",
+        "editor.glyphMargin": false,
+        "editor.wordWrap": "bounded"
+    },
+    "[markdown]": {
+        "editor.lineNumbers": "off",
+        "editor.glyphMargin": false,
+        "editor.wordWrap": "bounded"
+    }
 }

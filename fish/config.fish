@@ -15,7 +15,7 @@ function fish_title
 end
 
 set -gx FILTER fzf
-set -gx LESS R
+set -gx LESS RS
 
 # Set the terminal window to use a dark GTK theme.
 if begin; type -q xprop; and set -q WINDOWID; end
