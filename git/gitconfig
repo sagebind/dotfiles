@@ -17,7 +17,6 @@
 	# workflow
 	amend = commit --amend
 	cb = "!git checkout $(git branch -a --format '%(refname)' | sed -e 's#^refs/heads/##' -e 's#^refs/remotes/[^/]*/##' | sort | uniq | $FILTER)"
-	prune = remote prune origin
 	pub = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
 	snapshot = commit --allow-empty-message -m ''
 	squash = rebase -i

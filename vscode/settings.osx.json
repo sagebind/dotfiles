@@ -19,7 +19,6 @@
     "files.hotExit": "onExitAndWindowClose",
     "html.format.extraLiners": "",
     "html.format.indentInnerHtml": true,
-    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/scoakley/.vscode/extensions/GabrielBB.vscode-lombok-0.9.4/server/lombok.jar\" -Xbootclasspath/a:\"/Users/scoakley/.vscode/extensions/GabrielBB.vscode-lombok-0.9.4/server/lombok.jar\"",
     "script.commands": {
         "commands": [
             {
@@ -54,7 +53,7 @@
     "window.openFoldersInNewWindow": "on",
     "window.zoomLevel": -1,
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Monokai Pro",
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
     "workbench.sideBar.location": "left",

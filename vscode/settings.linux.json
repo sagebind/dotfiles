@@ -57,7 +57,7 @@
     "window.openFoldersInNewWindow": "on",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Jewel (rainglow)",
+    "workbench.colorTheme": "Monokai Pro",
     "workbench.commandPalette.preserveInput": true,
     "workbench.quickOpen.closeOnFocusLost": false,
     "workbench.startupEditor": "none",
