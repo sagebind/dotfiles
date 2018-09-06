@@ -1,4 +1,5 @@
 {
+    "breadcrumbs.enabled": true,
     "debug.inlineValues": true,
     "editor.cursorStyle": "block",
     "editor.fontFamily": "'Input Mono', monospace",
@@ -15,20 +16,15 @@
     "explorer.openEditors.visible": 0,
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
+    "files.defaultLanguage": "markdown",
     "files.hotExit": "onExitAndWindowClose",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+        "**/target/**": true
+    },
     "html.format.extraLiners": "",
     "html.format.indentInnerHtml": true,
-    "script.commands": {
-        "commands": [
-            {
-                "id": "sagebind.run",
-                "displayName": "Run command",
-                "script": "/Users/scoakley/.vscode/scripts/run.js"
-            }
-        ]
-    },
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.focusActiveEditorGroup",
         "workbench.action.focusFirstEditorGroup",
@@ -57,10 +53,13 @@
     "window.openFoldersInNewWindow": "on",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Monokai Pro",
+    "workbench.colorTheme": "βui - Monokai Pro",
     "workbench.commandPalette.preserveInput": true,
+    "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
+    "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
+    "workbench.statusBar.feedback.visible": false,
     "zenMode.fullScreen": false,
     "[asciidoc]": {
         "editor.lineNumbers": "off",
