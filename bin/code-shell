@@ -1,4 +1,0 @@
-#!/bin/sh
-SESSION="code-$(pwd | md5)"
-
-tmux attach -d -t $SESSION || exec tmux new -s $SESSION 'tmux set status off; fish'
