@@ -4,6 +4,7 @@ if status --is-interactive
   abbr d docker
   abbr dc docker-compose
   abbr dm docker-machine
+  abbr k kubectl
 
   abbr ed code
 

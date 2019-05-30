@@ -5,14 +5,16 @@
 [core]
     editor = code -w
     excludesfile = ~/.gitignore
+    hooksPath = /dev/null
 [alias]
-    alias = config --get-regexp "^alias\\."
+    aliases = config --get-regexp "^alias\\."
     all = "!find . -type d -name .git -prune -execdir pwd ';' -execdir git $@ ';' #"
     amend = commit --amend
     cb = "!git checkout $(git branch -a --format '%(refname)' | sed -e 's#^refs/heads/##' -e 's#^refs/remotes/[^/]*/##' | sort | uniq | $FILTER)"
     contains = merge-base --is-ancestor
     ignore = update-index --assume-unchanged
     ignored = "!git ls-files -v | grep '^[[:lower:]]'"
+    prune-local = "!git fetch -p && git branch --format '%(refname:short) %(upstream:track)' | grep '\\[gone\\]$' | cut -d' ' -f1 | xargs git branch -D"
     pub = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
     s = status --short --branch
     snapshot = commit --allow-empty-message -m ''
