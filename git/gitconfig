@@ -3,7 +3,6 @@
     name  = Stephen M. Coakley
     signingkey = 494C4FC0
 [core]
-    editor = code -w
     excludesfile = ~/.gitignore
     hooksPath = /dev/null
 [alias]
@@ -11,6 +10,8 @@
     all = "!find . -type d -name .git -prune -execdir pwd ';' -execdir git $@ ';' #"
     amend = commit --amend
     cb = "!git checkout $(git branch -a --format '%(refname)' | sed -e 's#^refs/heads/##' -e 's#^refs/remotes/[^/]*/##' | sort | uniq | $FILTER)"
+    churn = "!git log --all -M -C --name-only --format='format:' \"$@\" | sort | grep -v '^$' | uniq -c | sort -n -r | awk 'BEGIN {print \"count\tfile\"} {print $1 \"\t\" $2}' | less"
+    clear = !git reset --hard && git clean -dfx
     contains = merge-base --is-ancestor
     ignore = update-index --assume-unchanged
     ignored = "!git ls-files -v | grep '^[[:lower:]]'"
@@ -25,16 +26,11 @@
     undo = reset HEAD~1 --mixed
     unignore = update-index --no-assume-unchanged
     up = !git stash && git pull --rebase && git stash pop
-    update = "!git stash && git pull && git stash pop"
     wip = !git add -A && git commit -m wip
     yank-tag = "!git tag -d $1 && git push origin :refs/tags/$1 #"
     uncommit = reset --soft HEAD^
     unstage = reset
 [push]
     default = simple
-[commit]
-    gpgsign = true
-[gpg]
-    program = gpg2
 [color]
     ui = true

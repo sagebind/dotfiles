@@ -14,6 +14,7 @@ function fish_title
     or prompt_pwd
 end
 
+set -gx EDITOR code -w
 set -gx FILTER fzf
 set -gx LESS RS
 
