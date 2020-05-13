@@ -1,4 +1,4 @@
-DotJoshJohnson.xml
+13xforever.language-x86-64-assembly
 a5huynh.vscode-ron
 alefragnani.project-manager
 amoosbr.markdown-nomnoml
@@ -7,10 +7,13 @@ bierner.markdown-mermaid
 bmalehorn.vscode-fish
 bungcip.better-toml
 dbaeumer.vscode-eslint
+DotJoshJohnson.xml
 eamodio.gitlens
 earshinov.permute-lines
 EditorConfig.EditorConfig
 formulahendry.auto-close-tag
+Fudge.auto-using
+GitHub.vscode-pull-request-github
 humao.rest-client
 joaompinto.asciidoctor-vscode
 joaompinto.vscode-graphviz
@@ -24,6 +27,7 @@ ms-dotnettools.csharp
 ms-vscode.cpptools
 ms-vscode.wordcount
 mtxr.sqltools
+octref.vetur
 raidou.calc
 redhat.vscode-yaml
 robertrossmann.remedy
@@ -33,5 +37,6 @@ slevesque.vscode-hexdump
 stkb.rewrap
 streetsidesoftware.code-spell-checker
 vadimcn.vscode-lldb
+xoronic.pestfile
 Yukai.map-replace-js
 yzhang.markdown-all-in-one

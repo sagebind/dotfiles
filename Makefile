@@ -21,4 +21,4 @@ install-vscode-extensions:
 
 .FORCE: update-vscode-extensions
 update-vscode-extensions:
-	@code --list-extensions > vscode-extensions.txt
+	@code --list-extensions | tee vscode-extensions.txt

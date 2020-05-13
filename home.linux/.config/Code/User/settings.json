@@ -43,7 +43,7 @@
     "window.openFilesInNewWindow": "off",
     "window.openFoldersInNewWindow": "on",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-    "workbench.colorTheme": "Earthsong (rainglow)",
+    "workbench.colorTheme": "Remedy - Dark (Tilted)",
     "workbench.commandPalette.preserveInput": true,
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
