@@ -28,10 +28,12 @@
     "files.watcherExclude": {
         "**/target/**": true
     },
+    "githubIssues.issueCompletions.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.statusBar.enabled": false,
     "html.format.extraLiners": "",
     "html.format.indentInnerHtml": true,
+    "markdown.extension.italic.indicator": "_",
     "markdown.extension.list.indentationSize": "inherit",
     "projectManager.git.baseFolders": [
         "$home/src"
