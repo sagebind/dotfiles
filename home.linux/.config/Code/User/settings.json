@@ -38,6 +38,7 @@
     "projectManager.git.baseFolders": [
         "$home/src"
     ],
+    "rust-analyzer.updates.askBeforeDownload": false,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.fontWeight": "bold",
     "window.enableMenuBarMnemonics": false,
