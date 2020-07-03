@@ -21,6 +21,7 @@
     pr-apply = "!gh pr diff $@ | git apply - #"
     prune-local = "!git fetch -p && git branch --format '%(refname:short) %(upstream:track)' | grep '\\[gone\\]$' | cut -d' ' -f1 | xargs git branch -D"
     pub = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
+    remotes = remote --verbose
     s = status --short --branch
     snapshot = commit --allow-empty-message -m ''
     squash = rebase -i
