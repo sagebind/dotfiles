@@ -1,24 +1,20 @@
 OS := $(shell uname | tr '[:upper:]' '[:lower:]')
 PACKAGES := home "home.$(OS)"
 
-.FORCE: install
+.PHONY: install
 install: link install-vscode-extensions
 
-.FORCE: uninstall
+.PHONY: uninstall
 uninstall: unlink
 
-.FORCE: link
+.PHONY: link
 link:
 	stow --stow --override=".*" -vv -d "$(PWD)" -t "$(HOME)" $(PACKAGES)
 
-.FORCE: unlink
+.PHONY: unlink
 unlink:
 	stow --delete -vv -d "$(PWD)" -t "$(HOME)" $(PACKAGES)
 
-.FORCE: install-vscode-extensions
-install-vscode-extensions:
-	@code --list-extensions | sort -f | diff --new-line-format= --unchanged-line-format= vscode-extensions.txt - | xargs -L1 echo code --install-extension
-
-.FORCE: update-vscode-extensions
-update-vscode-extensions:
-	@code --list-extensions | tee vscode-extensions.txt
+.PHONY: wsl
+wsl:
+	ln -s "home.windows/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/SwitchBetweenWindows.ahk" "/mnt/c/Users/Stephen/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/SwitchBetweenWindows.ahk"
