@@ -17,4 +17,5 @@ unlink:
 
 .PHONY: wsl
 wsl:
-	ln -s "home.windows/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/SwitchBetweenWindows.ahk" "/mnt/c/Users/Stephen/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/SwitchBetweenWindows.ahk"
+	ln -f -s "home.windows/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/SwitchBetweenWindows.ahk" "/mnt/c/Users/Stephen/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/SwitchBetweenWindows.ahk"
+	ln -f -s "home.windows/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/wsl.xlaunch" "/mnt/c/Users/Stephen/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/wsl.xlaunch"
