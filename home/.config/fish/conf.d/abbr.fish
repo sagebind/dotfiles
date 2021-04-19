@@ -5,6 +5,8 @@ if status --is-interactive
   abbr dc docker-compose
   abbr dm docker-machine
   abbr k kubectl
+  abbr kubectx 'kubectl ctx'
+  abbr kubens 'kubectl ns'
 
   abbr ed code
 
