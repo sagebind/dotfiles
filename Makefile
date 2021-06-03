@@ -11,6 +11,10 @@ uninstall: unlink
 link:
 	stow --stow --override=".*" -vv -d "$(PWD)" -t "$(HOME)" $(PACKAGES)
 
+.PHONY: dry-run
+dry-run:
+	stow --simulate --stow --override=".*" -vv -d "$(PWD)" -t "$(HOME)" $(PACKAGES)
+
 .PHONY: unlink
 unlink:
 	stow --delete -vv -d "$(PWD)" -t "$(HOME)" $(PACKAGES)

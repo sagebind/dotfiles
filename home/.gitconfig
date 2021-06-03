@@ -23,10 +23,10 @@
     pub = "!git push -u origin $(git rev-parse --abbrev-ref HEAD)"
     remotes = remote --verbose
     s = status --short --branch
+    sb = "!git stash && git checkout $1 && git stash pop #"
     snapshot = commit --allow-empty-message -m ''
     squash = rebase -i
     staged = diff --staged
-    switch = "!git stash && git checkout $1 && git stash pop #"
     tags = tag --list
     undo = reset HEAD~1 --mixed
     unignore = update-index --no-assume-unchanged
@@ -37,5 +37,9 @@
     unstage = reset
 [push]
     default = simple
+[pull]
+    rebase = true
 [color]
     ui = true
+[includeIf "gitdir:widen/"]
+    path = ~/.config/git/widen.config
