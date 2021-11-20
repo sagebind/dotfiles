@@ -13,7 +13,7 @@ if status --is-interactive
   abbr g git
   abbr gc 'git checkout'
   abbr gcd 'git checkout develop'
-  abbr gcm 'git checkout master'
+  abbr gcm 'git cm'
   abbr gm 'git merge'
   abbr gp 'git pull'
   abbr gs 'git s'

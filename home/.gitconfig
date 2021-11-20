@@ -11,6 +11,7 @@
     amend = commit --amend
     browse = "!gh repo view --web"
     cb = "!git checkout $(git branch -a --format '%(refname)' | sed -e 's#^refs/heads/##' -e 's#^refs/remotes/[^/]*/##' | sort | uniq | $FILTER)"
+    cm = "!git rev-parse --quiet --verify main && git checkout main || git checkout master"
     churn = "!git log --all -M -C --name-only --format='format:' \"$@\" | sort | grep -v '^$' | uniq -c | sort -n -r | awk 'BEGIN {print \"count\tfile\"} {print $1 \"\t\" $2}' | less"
     clear = !git reset --hard && git clean -dfx
     contains = merge-base --is-ancestor
