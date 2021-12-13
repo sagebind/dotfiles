@@ -1,8 +1,3 @@
-# Load env variables
-if test -f ~/.env.fish
-    source ~/.env.fish
-end
-
 # Hide greeting
 function fish_greeting
 end
@@ -14,11 +9,7 @@ function fish_title
     or prompt_pwd
 end
 
-set -gx EDITOR code -w
+set -q EDITOR
+  or set -gx EDITOR code -w
 set -gx FILTER fzf
 set -gx LESS RS
-
-# Set the terminal window to use a dark GTK theme.
-if begin; type -q xprop; and set -q WINDOWID; end
-    xprop -f _GTK_THEME_VARIANT 8u -set _GTK_THEME_VARIANT "dark" -id $WINDOWID
-end
