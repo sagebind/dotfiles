@@ -5,6 +5,8 @@
 [core]
     excludesfile = ~/.gitignore
     hooksPath = /dev/null
+[init]
+    defaultBranch = master
 [alias]
     aliases = config --get-regexp "^alias\\."
     all = "!find . -type d -name .git -prune -execdir pwd ';' -execdir git $@ ';' #"
@@ -32,6 +34,7 @@
     undo = reset HEAD~1 --mixed
     unignore = update-index --no-assume-unchanged
     up = !git stash && git pull --rebase && git stash pop
+    update = "!git fetch origin $1:$1"
     wip = !git add -A && git commit -m wip
     yank-tag = "!git tag -d $1 && git push origin :refs/tags/$1 #"
     uncommit = reset --soft HEAD^
