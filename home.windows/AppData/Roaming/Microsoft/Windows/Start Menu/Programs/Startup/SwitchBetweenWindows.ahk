@@ -1,5 +1,10 @@
 SetTitleMatchMode, 2
 
+RAlt::
+Keywait, RAlt
+Send {F13}
+return
+
 !`::
 #`::
 WinGet, CurrentProgram, ProcessPath, A
