@@ -4,7 +4,6 @@
     signingkey = 494C4FC0
 [core]
     excludesfile = ~/.gitignore
-    hooksPath = /dev/null
 [init]
     defaultBranch = master
 [alias]

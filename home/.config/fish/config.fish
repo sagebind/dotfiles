@@ -9,6 +9,8 @@ function fish_title
     or prompt_pwd
 end
 
+fish_add_path $HOME/.local/bin
+
 set -q EDITOR
   or set -gx EDITOR code -w
 set -gx FILTER fzf
