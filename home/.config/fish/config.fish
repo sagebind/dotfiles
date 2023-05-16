@@ -11,7 +11,14 @@ end
 
 fish_add_path $HOME/.local/bin
 
-set -q EDITOR
-  or set -gx EDITOR code -w
-set -gx FILTER fzf
+# Default programs
+type -fq sk
+  and set -gx FILTER sk
+  or set -gx FILTER fzf
+
+if not set -q EDITOR; or test "$TERM_PROGRAM" = vscode
+  set -gx EDITOR (which code) -w
+end
+
+# Default program options
 set -gx LESS RS
