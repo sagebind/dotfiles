@@ -1,0 +1,3 @@
+--target=~
+--override=.*
+--verbose=2
