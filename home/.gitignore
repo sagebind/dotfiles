@@ -7,6 +7,8 @@
 .idea/dbnavigator.xml
 .idea/dataSources*
 .idea/codeStyles
-.idea/codeStyles/codeStyleConfig.xml .idea/codeStyles/Project.xml
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
+.idea/uiDesigner.xml
 *.http
 *.pem
