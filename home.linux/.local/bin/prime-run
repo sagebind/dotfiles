@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# NVIDIA driver
+export __NV_PRIME_RENDER_OFFLOAD=1
+# noveau driver
+export DRI_PRIME=1
+# OpenGL
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+# Vulkan
+export __VK_LAYER_NV_optimus=NVIDIA_only
+
+exec "$@"
