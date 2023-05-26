@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is my dotfiles repo, containing my configuration files for my Linux machines. There are many like it, but this one is mine. This repo exists so I can easily set up machines with my personalized configuration for various applications and terminal enhancements.
+This is my dotfiles repo, which contains configuration files for my personal computers. There are many like it, but this one is mine. This repo exists so I can easily set up machines with my personalized configuration for various applications and terminal enhancements.
 
 ## Using it
 
@@ -10,7 +10,7 @@ The Makefile also provides a few other useful targets as well to automate other 
 
 ## License
 
-All files unless otherwise bundled with a separate license is released under the MIT license. See [LICENSE] for details.
+All files unless otherwise bundled with a separate license are available under the MIT license. See the [LICENSE] file for details.
 
 
 [Fish Shell]: https://fishshell.com

@@ -3,7 +3,7 @@
     name  = Stephen M. Coakley
     signingkey = 494C4FC0
 [core]
-    excludesfile = ~/.gitignore
+    excludesfile = ~/.config/git/ignore
 [init]
     defaultBranch = master
 [alias]
