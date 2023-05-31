@@ -1,7 +1,9 @@
 # Masquarade Podman as Docker if Docker is not installed.
 
 if not type -fq docker; and type -fq podman
-  set -gx DOCKER_HOST unix://(find $HOME/.local/share/containers/podman -name podman.sock -type s | head -n1)
+  if find $HOME/.local/share/containers/podman -name podman.sock -type s 2> /dev/null | head -n1 | read -l socket_path
+    set -gx DOCKER_HOST "unix://$socket_path"
+  end
 
   function docker -a subcommand
     if test "$subcommand" = 'compose'
