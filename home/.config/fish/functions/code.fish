@@ -1,4 +1,4 @@
-function code
+function code --wraps code
   set -x GTK_IM_MODULE xim
 
   if set -q argv[1]

@@ -13,7 +13,7 @@ if not type -fq docker; and type -fq podman
     end
   end
 
-  if type -fq podman-compose
+  if not type -fq docker-compose; and type -fq podman-compose
     function docker-compose
       command podman-compose $argv
     end

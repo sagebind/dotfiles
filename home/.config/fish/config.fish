@@ -16,7 +16,7 @@ type -fq sk
   and set -gx FILTER sk
   or set -gx FILTER fzf
 
-if not set -q EDITOR; or test "$TERM_PROGRAM" = vscode
+if not set -q EDITOR
   set -gx EDITOR (which code) -w
 end
 
