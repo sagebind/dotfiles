@@ -9,8 +9,6 @@ function fish_title
     or prompt_pwd
 end
 
-fish_add_path $HOME/.local/bin
-
 # Default programs
 type -fq sk
   and set -gx FILTER sk

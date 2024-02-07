@@ -10,6 +10,7 @@
 .idea/codeStyles/codeStyleConfig.xml
 .idea/codeStyles/Project.xml
 .idea/httpRequests/
+.idea/misc.xml
 .idea/uiDesigner.xml
 *.http
 *.pem
