@@ -1,0 +1,27 @@
+# https://espanso.org/docs/
+
+global_vars:
+  - name: gpastehistory
+    type: shell
+    params:
+      cmd: gpaste-client --oneline --raw
+
+matches:
+  - trigger: "me@"
+    replace: "me@stephencoakley.com"
+
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  - trigger: ":clip"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: choice
+        params:
+          values: "{{gpastehistory}}"

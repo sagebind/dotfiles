@@ -9,6 +9,7 @@ set -l paths \
   $HOME/.krew/bin \
   # Homebrew
   /opt/homebrew/bin \
+  /home/linuxbrew/.linuxbrew/bin \
   # GNU POSIX utilities on macOS
   /opt/homebrew/opt/coreutils/libexec/gnubin \
   /opt/homebrew/opt/gnu-sed/libexec/gnubin

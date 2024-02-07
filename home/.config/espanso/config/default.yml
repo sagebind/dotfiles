@@ -1,0 +1,10 @@
+auto_restart: true
+backend: Clipboard
+inject_delay: 5
+search_shortcut: off
+search_trigger: off
+show_notifications: false
+toggle_key: OFF
+
+keyboard_layout:
+  layout: us
