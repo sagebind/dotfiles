@@ -32,7 +32,7 @@
     tags = tag --list
     undo = reset HEAD~1 --mixed
     unignore = update-index --no-assume-unchanged
-    up = !git stash && git pull --rebase && git stash pop
+    up = !git stash push --include-untracked && git pull --rebase && git stash pop
     update = "!git fetch origin $1:$1"
     wip = !git add -A && git commit -m wip
     yank-tag = "!git tag -d $1 && git push origin :refs/tags/$1 #"
