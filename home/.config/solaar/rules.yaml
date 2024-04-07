@@ -1,0 +1,21 @@
+%YAML 1.3
+---
+- Device: A248D1ED
+- Rule:
+  - MouseGesture: Mouse Left
+  - KeyPress:
+    - [Super_L, Page_Down]
+    - click
+- Rule:
+  - MouseGesture: Mouse Right
+  - KeyPress:
+    - [Super_L, Page_Up]
+    - click
+- Rule:
+  - And:
+    - Key: [MultiPlatform Gesture Button, released]
+    - MouseGesture: []
+  - KeyPress:
+    - [Super_L, o]
+    - click
+...
