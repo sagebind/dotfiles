@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+
+output=$(zenity --entry --title="Merge PDFs" --text="Enter filename for merged result:" --entry-text=merged.pdf --ok-label=Merge)
+
+qpdf --empty --pages "$@" -- "$output"
