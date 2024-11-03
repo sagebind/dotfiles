@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+output=$(zenity --entry --title="Merge videos" --text="Enter filename for merged result:" --entry-text=merged.mp4 --ok-label=Merge)
+
+list_file=$(mktemp)
+for file in "$@"; do
+    echo "file '$file'" >> "$list_file"
+done
+
+ffmpeg -f concat -safe 0 -i "$list_file" -c copy "$output"
+rm "$list_file"
