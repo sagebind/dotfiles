@@ -10,3 +10,4 @@ done
 
 ffmpeg -f concat -safe 0 -i "$list_file" -c copy "$output"
 rm "$list_file"
+exit

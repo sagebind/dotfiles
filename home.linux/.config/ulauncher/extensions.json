@@ -41,13 +41,6 @@
         "last_commit": "0ad36c00a888e687b4bfbf76f266f1000040b337",
         "last_commit_time": "2019-07-11T06:53:31"
     },
-    "com.github.pbkhrv.ulauncher-keepassxc": {
-        "id": "com.github.pbkhrv.ulauncher-keepassxc",
-        "url": "https://github.com/pbkhrv/ulauncher-keepassxc",
-        "updated_at": "2025-01-06T18:24:12.963081",
-        "last_commit": "11309e2d7107fd1921dbce0295ba584203475307",
-        "last_commit_time": "2021-06-16T17:57:16"
-    },
     "com.github.kuenzelit.ulauncher-firefox-bookmarks": {
         "id": "com.github.kuenzelit.ulauncher-firefox-bookmarks",
         "url": "https://github.com/KuenzelIT/ulauncher-firefox-bookmarks",

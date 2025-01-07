@@ -38,5 +38,15 @@
         "is_default_search": true,
         "run_without_argument": false,
         "added": 1736208385.8408763
+    },
+    "b8550e08-4850-4a30-bea0-bbe88a99ecb7": {
+        "id": "b8550e08-4850-4a30-bea0-bbe88a99ecb7",
+        "name": "Restart ULauncher",
+        "keyword": "restart-ulauncher",
+        "cmd": "#!/bin/sh\n\nsh -c 'sleep 1; pkill ulauncher; sleep 1; ulauncher --hide-window' &\ndisown",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1736212127.65056
     }
 }
