@@ -1,0 +1,15 @@
+font-family = Hermit
+window-theme = ghostty
+
+# Other themes to try
+# theme = Afterglow
+# theme = Chalkboard
+# theme = Ciapre
+# theme = DoomOne
+# theme = Duotone Dark
+# theme = Hardcore
+# theme = IC_Orange_PPL
+# theme = Red Planet
+theme = synthwave-everything
+
+shell-integration-features = no-cursor
