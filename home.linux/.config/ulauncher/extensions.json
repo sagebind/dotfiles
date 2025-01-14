@@ -55,11 +55,25 @@
         "last_commit": "a419cdc5e73453e4b284bb4905448ca60e4a3864",
         "last_commit_time": "2023-09-12T10:42:25"
     },
-    "com.github.hoaper.ulauncher-zh0per": {
-        "id": "com.github.hoaper.ulauncher-zh0per",
-        "url": "https://github.com/Hoaper/ulauncher-zh0per",
-        "updated_at": "2025-01-06T18:32:03.928504",
-        "last_commit": "037f87bfe40ce8012896ccd9089bf7116b25b1de",
-        "last_commit_time": "2024-11-07T15:25:05"
+    "com.github.qcasey.ulauncher-homeassistant": {
+        "id": "com.github.qcasey.ulauncher-homeassistant",
+        "url": "https://github.com/qcasey/ulauncher-homeassistant",
+        "updated_at": "2025-01-06T20:59:03.350297",
+        "last_commit": "8a187aa6bdff8700cdbfbc0371b98dda33b253d5",
+        "last_commit_time": "2021-05-24T23:54:58"
+    },
+    "com.github.dhelmr.ulauncher-tldr": {
+        "id": "com.github.dhelmr.ulauncher-tldr",
+        "url": "https://github.com/dhelmr/ulauncher-tldr",
+        "updated_at": "2025-01-06T21:57:31.481463",
+        "last_commit": "2e5904451bf89dfa155280dfb6fa3d45ed4cab4c",
+        "last_commit_time": "2023-07-29T11:06:30"
+    },
+    "com.github.lighttigerxiv.ulauncher-terminal-runner-extension": {
+        "id": "com.github.lighttigerxiv.ulauncher-terminal-runner-extension",
+        "url": "https://github.com/lighttigerXIV/ulauncher-terminal-runner-extension",
+        "updated_at": "2025-01-07T23:56:40.011748",
+        "last_commit": "d6bc2157e5c0ef2f812e3051ddde334c7b485c2e",
+        "last_commit_time": "2023-05-02T22:50:12"
     }
 }

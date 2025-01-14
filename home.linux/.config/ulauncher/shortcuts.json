@@ -48,5 +48,35 @@
         "is_default_search": false,
         "run_without_argument": true,
         "added": 1736212127.65056
+    },
+    "213f66d3-e17f-46dc-9474-dc22092fda96": {
+        "id": "213f66d3-e17f-46dc-9474-dc22092fda96",
+        "name": "Lib.rs",
+        "keyword": "lib",
+        "cmd": "https://lib.rs/search?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1736221665.9106586
+    },
+    "5f78e473-8cfd-4c8d-bb5c-af6338079cf7": {
+        "id": "5f78e473-8cfd-4c8d-bb5c-af6338079cf7",
+        "name": "Docs.rs",
+        "keyword": "docs",
+        "cmd": "#!/usr/bin/env fish\nif set -q argv[2]\n  open \"https://docs.rs/$argv[1]?search=$argv[2..]\"\nelse\n  open \"https://docs.rs/releases/search?query=$argv[1]&i-am-feeling-lucky=1\"\nend",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1736221911.9480186
+    },
+    "de23dc0c-ba45-41ef-b369-53e334ab16d3": {
+        "id": "de23dc0c-ba45-41ef-b369-53e334ab16d3",
+        "name": "Espanso search",
+        "keyword": "espanso",
+        "cmd": "#!/bin/sh\nespanso cmd search",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": true,
+        "added": 1736229157.9365988
     }
 }
