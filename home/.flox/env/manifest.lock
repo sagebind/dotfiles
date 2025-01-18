@@ -15,11 +15,20 @@
       "dust": {
         "pkg-path": "dust"
       },
+      "espanso-wayland": {
+        "pkg-path": "espanso-wayland",
+        "systems": [
+          "x86_64-linux"
+        ]
+      },
       "gifski": {
         "pkg-path": "gifski"
       },
       "hurmit": {
         "pkg-path": "nerd-fonts.hurmit"
+      },
+      "k9s": {
+        "pkg-path": "k9s"
       },
       "kubectx": {
         "pkg-path": "kubectx"
@@ -32,6 +41,9 @@
       },
       "tokei": {
         "pkg-path": "tokei"
+      },
+      "xdg-terminal-exec": {
+        "pkg-path": "xdg-terminal-exec"
       },
       "xsv": {
         "pkg-path": "xsv"
@@ -50,6 +62,7 @@
         "x86_64-linux"
       ],
       "allow": {
+        "unfree": true,
         "licenses": []
       },
       "semver": {}
@@ -537,6 +550,36 @@
       "priority": 5
     },
     {
+      "attr_path": "espanso-wayland",
+      "broken": false,
+      "derivation": "/nix/store/yz5acqs1h4xxqrpwd1jgdms3mx6r0hw0-espanso-2.2-unstable-2024-05-14.drv",
+      "description": "Cross-platform Text Expander written in Rust",
+      "install_id": "espanso-wayland",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "espanso-2.2-unstable-2024-05-14",
+      "pname": "espanso-wayland",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "espanso-2.2-unstable-2024-05-14",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/c1iw87z77k5qphzp8kmr8v65iimpghzx-espanso-2.2-unstable-2024-05-14"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "gifski",
       "broken": false,
       "derivation": "/nix/store/30pl0zwhp3s7irhyzzj3r5w00vcxbvbi-gifski-1.32.0.drv",
@@ -771,6 +814,126 @@
       ],
       "outputs": {
         "out": "/nix/store/afs91f3hcgncv1ji2z6jih366l0xwyy1-nerd-fonts-hurmit-3.3.0+2.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/syxya4q3ciyrjpl8mxx41dk49iivf5vy-k9s-0.32.7.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "k9s-0.32.7",
+      "pname": "k9s",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.32.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/j34ib6fncah841fs9f735jydwl9mgrcq-k9s-0.32.7"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/njsacfdgrfk1shpx01p0md3cqd3809rj-k9s-0.32.7.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "k9s-0.32.7",
+      "pname": "k9s",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.32.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0dzcr6jpjyr94rvc05lvpyh3aq0ispbw-k9s-0.32.7"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/h0n2sapizg8qb82lg9p0ywv9z45z2vk4-k9s-0.32.7.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "k9s-0.32.7",
+      "pname": "k9s",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.32.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/fnxpjszlgh4g25jl96xxcm0wxd0n7h0i-k9s-0.32.7"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/rwgizzz85m80d78ns89w57h9v7liaj4r-k9s-0.32.7.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "k9s-0.32.7",
+      "pname": "k9s",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.32.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/acfv4993hw202l9zrrmgrjf3bk7imaym-k9s-0.32.7"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -1263,6 +1426,126 @@
       ],
       "outputs": {
         "out": "/nix/store/6pcf1add9y0czgbjlsf3g02r9w4my10g-tokei-12.1.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xdg-terminal-exec",
+      "broken": false,
+      "derivation": "/nix/store/n8spy62ixzb4sx05bmr4nrxl6mbcbyig-xdg-terminal-exec-0.12.0.drv",
+      "description": "Reference implementation of the proposed XDG Default Terminal Execution Specification",
+      "install_id": "xdg-terminal-exec",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "xdg-terminal-exec-0.12.0",
+      "pname": "xdg-terminal-exec",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/m8m063zppjzp54qjlvvkn9lc3ydhsm2s-xdg-terminal-exec-0.12.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xdg-terminal-exec",
+      "broken": false,
+      "derivation": "/nix/store/mj4xa0dll3kn5angs19kaxp74bnz6slc-xdg-terminal-exec-0.12.0.drv",
+      "description": "Reference implementation of the proposed XDG Default Terminal Execution Specification",
+      "install_id": "xdg-terminal-exec",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "xdg-terminal-exec-0.12.0",
+      "pname": "xdg-terminal-exec",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2qsbaia5fi63k9fh4xivz5ng8kzx242b-xdg-terminal-exec-0.12.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xdg-terminal-exec",
+      "broken": false,
+      "derivation": "/nix/store/sv773rcrqcxk42s2qzb64bqh6ckcldfz-xdg-terminal-exec-0.12.0.drv",
+      "description": "Reference implementation of the proposed XDG Default Terminal Execution Specification",
+      "install_id": "xdg-terminal-exec",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "xdg-terminal-exec-0.12.0",
+      "pname": "xdg-terminal-exec",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5vr202jiif5zcaf7dvv0m828mqpa0wkv-xdg-terminal-exec-0.12.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xdg-terminal-exec",
+      "broken": false,
+      "derivation": "/nix/store/6c01xch9d4k12vg9754b9qncn2jlhs9i-xdg-terminal-exec-0.12.0.drv",
+      "description": "Reference implementation of the proposed XDG Default Terminal Execution Specification",
+      "install_id": "xdg-terminal-exec",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "xdg-terminal-exec-0.12.0",
+      "pname": "xdg-terminal-exec",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7m8axizj8qhc4zhg57cs8ng0286hfpd1-xdg-terminal-exec-0.12.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

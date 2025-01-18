@@ -1,5 +1,8 @@
 font-family = Hermit
+
 window-theme = ghostty
+window-width = 120
+window-height = 36
 
 # Other themes to try
 # theme = Afterglow
