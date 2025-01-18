@@ -3,10 +3,5 @@
 test "$TERM_PROGRAM" = "vscode"; and type -fq code
   or return
 
-# Enable shell integration
-if command code --locate-shell-integration-path fish | read -l file
-  source $file
-end
-
 # Set VSCode as the default editor
-set -gx EDITOR (which code) -w
+set -gx EDITOR (type -fp code) -w
