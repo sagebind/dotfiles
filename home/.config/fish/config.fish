@@ -10,12 +10,14 @@ function fish_title
 end
 
 # Default programs
-type -fq sk
-  and set -gx FILTER sk
-  or set -gx FILTER fzf
+if type -fq sk
+  set -gx FILTER sk
+else if type -fq fzf
+  set -gx FILTER fzf
+end
 
 if not set -q EDITOR
-  set -gx EDITOR (which code) -w
+  set -gx EDITOR (type -fp code) -w
 end
 
 # Default program options
