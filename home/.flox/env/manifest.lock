@@ -15,6 +15,9 @@
       "gifski": {
         "pkg-path": "gifski"
       },
+      "hurmit": {
+        "pkg-path": "nerd-fonts.hurmit"
+      },
       "kubectx": {
         "pkg-path": "kubectx"
       },
@@ -525,6 +528,126 @@
       ],
       "outputs": {
         "out": "/nix/store/g8cm7i9nzdr2glmw0phmcihzj494xijp-gifski-1.32.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nerd-fonts.hurmit",
+      "broken": false,
+      "derivation": "/nix/store/29z83qiwq7wb7lcjhxx9p3jpjk4lw5hm-nerd-fonts-hurmit-3.3.0+2.0.drv",
+      "description": "Nerd Fonts: Symbols stand out from common text",
+      "install_id": "hurmit",
+      "license": "[ OFL-1.1, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "nerd-fonts-hurmit-3.3.0+2.0",
+      "pname": "hurmit",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "nerd-fonts-hurmit-3.3.0+2.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/azz7wy5nflrz1b9d8n3vj98iazlnwnsw-nerd-fonts-hurmit-3.3.0+2.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nerd-fonts.hurmit",
+      "broken": false,
+      "derivation": "/nix/store/h867jdihpqy4jbl9vcwk333v8nixvg73-nerd-fonts-hurmit-3.3.0+2.0.drv",
+      "description": "Nerd Fonts: Symbols stand out from common text",
+      "install_id": "hurmit",
+      "license": "[ OFL-1.1, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "nerd-fonts-hurmit-3.3.0+2.0",
+      "pname": "hurmit",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "nerd-fonts-hurmit-3.3.0+2.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/fzdnpa30yxgkcirw68hvf61n5qikjnjl-nerd-fonts-hurmit-3.3.0+2.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nerd-fonts.hurmit",
+      "broken": false,
+      "derivation": "/nix/store/lr31w4d3wmbjlz2d7ga4w291szn6sm81-nerd-fonts-hurmit-3.3.0+2.0.drv",
+      "description": "Nerd Fonts: Symbols stand out from common text",
+      "install_id": "hurmit",
+      "license": "[ OFL-1.1, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "nerd-fonts-hurmit-3.3.0+2.0",
+      "pname": "hurmit",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "nerd-fonts-hurmit-3.3.0+2.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/dhv1m60ahi2vqivxl5skc0pb0ib0mh7q-nerd-fonts-hurmit-3.3.0+2.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nerd-fonts.hurmit",
+      "broken": false,
+      "derivation": "/nix/store/30s2k4c3x7higfp8zgxcnidr9fpjb2rz-nerd-fonts-hurmit-3.3.0+2.0.drv",
+      "description": "Nerd Fonts: Symbols stand out from common text",
+      "install_id": "hurmit",
+      "license": "[ OFL-1.1, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "nerd-fonts-hurmit-3.3.0+2.0",
+      "pname": "hurmit",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "nerd-fonts-hurmit-3.3.0+2.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/afs91f3hcgncv1ji2z6jih366l0xwyy1-nerd-fonts-hurmit-3.3.0+2.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
