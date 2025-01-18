@@ -3,11 +3,20 @@
   "manifest": {
     "version": 1,
     "install": {
+      "_7zz-rar": {
+        "pkg-path": "_7zz-rar"
+      },
       "doggo": {
         "pkg-path": "doggo"
       },
+      "gifski": {
+        "pkg-path": "gifski"
+      },
       "kubectx": {
         "pkg-path": "kubectx"
+      },
+      "xsv": {
+        "pkg-path": "xsv"
       }
     },
     "hook": {},
@@ -27,6 +36,126 @@
   },
   "packages": [
     {
+      "attr_path": "_7zz-rar",
+      "broken": false,
+      "derivation": "/nix/store/35rairs189v7dnyq5d1a56v7r6rik2di-7zz-24.09.drv",
+      "description": "Command line archiver utility",
+      "install_id": "_7zz-rar",
+      "license": "[ LGPL-2.0-or-later, BSD-3-Clause, Unfree ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "7zz-24.09",
+      "pname": "_7zz-rar",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "7zz-24.09",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mxkm26xik1dycip78342vnr2fisjxaa4-7zz-24.09"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "_7zz-rar",
+      "broken": false,
+      "derivation": "/nix/store/hiyi7wixhmvv4p3i2yrrdz48rmp0frzy-7zz-24.09.drv",
+      "description": "Command line archiver utility",
+      "install_id": "_7zz-rar",
+      "license": "[ LGPL-2.0-or-later, BSD-3-Clause, Unfree ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "7zz-24.09",
+      "pname": "_7zz-rar",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "7zz-24.09",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/vlyr1vnq323mnvispsknygnxm0ggjyi5-7zz-24.09"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "_7zz-rar",
+      "broken": false,
+      "derivation": "/nix/store/hrvzdrjwb7si6m3c1f38vrcvd7jniv3c-7zz-24.09.drv",
+      "description": "Command line archiver utility",
+      "install_id": "_7zz-rar",
+      "license": "[ LGPL-2.0-or-later, BSD-3-Clause, Unfree ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "7zz-24.09",
+      "pname": "_7zz-rar",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "7zz-24.09",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6hm4hfiqfg9cwaa5dy7chicym6qslxpa-7zz-24.09"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "_7zz-rar",
+      "broken": false,
+      "derivation": "/nix/store/nff7jd4prkg464q0022j0j5dy45j1n96-7zz-24.09.drv",
+      "description": "Command line archiver utility",
+      "install_id": "_7zz-rar",
+      "license": "[ LGPL-2.0-or-later, BSD-3-Clause, Unfree ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "7zz-24.09",
+      "pname": "_7zz-rar",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "7zz-24.09",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6l7jxp0zys3jhp0qn5yqir571inf5ml3-7zz-24.09"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "doggo",
       "broken": false,
       "derivation": "/nix/store/j2j33zd6khlmlbnd87svm0z3c0jfl8zd-doggo-1.0.5.drv",
@@ -41,6 +170,7 @@
       "rev_date": "2025-01-14T19:41:48Z",
       "scrape_date": "2025-01-16T00:14:48Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -70,6 +200,7 @@
       "rev_date": "2025-01-14T19:41:48Z",
       "scrape_date": "2025-01-16T00:14:48Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -99,6 +230,7 @@
       "rev_date": "2025-01-14T19:41:48Z",
       "scrape_date": "2025-01-16T00:14:48Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -128,6 +260,7 @@
       "rev_date": "2025-01-14T19:41:48Z",
       "scrape_date": "2025-01-16T00:14:48Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -137,6 +270,126 @@
       ],
       "outputs": {
         "out": "/nix/store/rm76hgkr8w1qlsr0pypwi07rad44f2jc-doggo-1.0.5"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gifski",
+      "broken": false,
+      "derivation": "/nix/store/30pl0zwhp3s7irhyzzj3r5w00vcxbvbi-gifski-1.32.0.drv",
+      "description": "GIF encoder based on libimagequant (pngquant)",
+      "install_id": "gifski",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "gifski-1.32.0",
+      "pname": "gifski",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.32.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/h6i9ywcbcwb27z6bzg8952n8paazwv68-gifski-1.32.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gifski",
+      "broken": false,
+      "derivation": "/nix/store/k493xb643pv0gf089p0pp69v4fb1cnd3-gifski-1.32.0.drv",
+      "description": "GIF encoder based on libimagequant (pngquant)",
+      "install_id": "gifski",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "gifski-1.32.0",
+      "pname": "gifski",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.32.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/xkivrkgkd3zrnf1vvci78yaif1zy91k3-gifski-1.32.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gifski",
+      "broken": false,
+      "derivation": "/nix/store/s9smknrjaqk73l0j8xwhq5pwdalrxdib-gifski-1.32.0.drv",
+      "description": "GIF encoder based on libimagequant (pngquant)",
+      "install_id": "gifski",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "gifski-1.32.0",
+      "pname": "gifski",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.32.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bhm9jrgcik8xc7ddxpgzf3f569qqj837-gifski-1.32.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gifski",
+      "broken": false,
+      "derivation": "/nix/store/a1w6bgjm81fgm8plwzwcwcdzdfyrch7j-gifski-1.32.0.drv",
+      "description": "GIF encoder based on libimagequant (pngquant)",
+      "install_id": "gifski",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "gifski-1.32.0",
+      "pname": "gifski",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.32.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/g8cm7i9nzdr2glmw0phmcihzj494xijp-gifski-1.32.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -157,6 +410,7 @@
       "rev_date": "2025-01-14T19:41:48Z",
       "scrape_date": "2025-01-16T00:14:48Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -186,6 +440,7 @@
       "rev_date": "2025-01-14T19:41:48Z",
       "scrape_date": "2025-01-16T00:14:48Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -215,6 +470,7 @@
       "rev_date": "2025-01-14T19:41:48Z",
       "scrape_date": "2025-01-16T00:14:48Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -244,6 +500,7 @@
       "rev_date": "2025-01-14T19:41:48Z",
       "scrape_date": "2025-01-16T00:14:48Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -253,6 +510,126 @@
       ],
       "outputs": {
         "out": "/nix/store/z3lbpfcpzrzs6wsh7838l9fv0rglnp7k-kubectx-0.9.5"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xsv",
+      "broken": false,
+      "derivation": "/nix/store/4fyi0hxvvjr9d42q416aalb8vjg6vz2y-xsv-0.13.0.drv",
+      "description": "Fast CSV toolkit written in Rust",
+      "install_id": "xsv",
+      "license": "[ Unlicense, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "xsv-0.13.0",
+      "pname": "xsv",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.13.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/m6jg5nv5lp4dpd5nwj3mr9wn9gy2hgjl-xsv-0.13.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xsv",
+      "broken": false,
+      "derivation": "/nix/store/asma75547d98ms22vbqdq26xyz2ls28p-xsv-0.13.0.drv",
+      "description": "Fast CSV toolkit written in Rust",
+      "install_id": "xsv",
+      "license": "[ Unlicense, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "xsv-0.13.0",
+      "pname": "xsv",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.13.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5wwn8k6xl875iyzc1hzr37aaddvbb60r-xsv-0.13.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xsv",
+      "broken": false,
+      "derivation": "/nix/store/jxdx6v8rlxd10km2cjnvbrsiqpjpy67p-xsv-0.13.0.drv",
+      "description": "Fast CSV toolkit written in Rust",
+      "install_id": "xsv",
+      "license": "[ Unlicense, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "xsv-0.13.0",
+      "pname": "xsv",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.13.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2i1bspvbn43ialg1yyagwyxy3246lrcj-xsv-0.13.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xsv",
+      "broken": false,
+      "derivation": "/nix/store/xv4v4f7c397xw076jg26px52280y9l87-xsv-0.13.0.drv",
+      "description": "Fast CSV toolkit written in Rust",
+      "install_id": "xsv",
+      "license": "[ Unlicense, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "xsv-0.13.0",
+      "pname": "xsv",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.13.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8mi5dgm4805jjg9kwxc2yk8aidyvhrfv-xsv-0.13.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
