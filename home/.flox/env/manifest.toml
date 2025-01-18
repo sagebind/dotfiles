@@ -3,9 +3,14 @@ version = 1
 [install]
 _7zz-rar.pkg-path = "_7zz-rar"
 doggo.pkg-path = "doggo"
+dust.pkg-path = "dust"
 gifski.pkg-path = "gifski"
 kubectx.pkg-path = "kubectx"
+lla.pkg-path = "lla"
+skim.pkg-path = "skim"
+tokei.pkg-path = "tokei"
 xsv.pkg-path = "xsv"
+yazi.pkg-path = "yazi"
 
 [options]
 systems = [

@@ -9,14 +9,29 @@
       "doggo": {
         "pkg-path": "doggo"
       },
+      "dust": {
+        "pkg-path": "dust"
+      },
       "gifski": {
         "pkg-path": "gifski"
       },
       "kubectx": {
         "pkg-path": "kubectx"
       },
+      "lla": {
+        "pkg-path": "lla"
+      },
+      "skim": {
+        "pkg-path": "skim"
+      },
+      "tokei": {
+        "pkg-path": "tokei"
+      },
       "xsv": {
         "pkg-path": "xsv"
+      },
+      "yazi": {
+        "pkg-path": "yazi"
       }
     },
     "hook": {},
@@ -276,6 +291,126 @@
       "priority": 5
     },
     {
+      "attr_path": "dust",
+      "broken": false,
+      "derivation": "/nix/store/3hw5ym3j9bz3jfijmvr2nm91343b9a9q-du-dust-1.1.1.drv",
+      "description": "du + rust = dust. Like du but more intuitive",
+      "install_id": "dust",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "du-dust-1.1.1",
+      "pname": "dust",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "du-dust-1.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/csyrf9ywxzggwyl1n7qdgg24xbdn6z0c-du-dust-1.1.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dust",
+      "broken": false,
+      "derivation": "/nix/store/8s4q56p71pj0c3m3zbfanc3l1khzyps8-du-dust-1.1.1.drv",
+      "description": "du + rust = dust. Like du but more intuitive",
+      "install_id": "dust",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "du-dust-1.1.1",
+      "pname": "dust",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "du-dust-1.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8sgbx7xqiiwwl4vqpwcgkm2gla4j8l74-du-dust-1.1.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dust",
+      "broken": false,
+      "derivation": "/nix/store/4z1pbgajh013r2b0zxagh0vcb92sc9cd-du-dust-1.1.1.drv",
+      "description": "du + rust = dust. Like du but more intuitive",
+      "install_id": "dust",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "du-dust-1.1.1",
+      "pname": "dust",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "du-dust-1.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/15jbm6c634w0dc2rgwj3c87ykjdrkdj2-du-dust-1.1.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "dust",
+      "broken": false,
+      "derivation": "/nix/store/jwshsldsbccvm3lj6bcxm1l9bzyvyyqm-du-dust-1.1.1.drv",
+      "description": "du + rust = dust. Like du but more intuitive",
+      "install_id": "dust",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "du-dust-1.1.1",
+      "pname": "dust",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "du-dust-1.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/k9jncwwgnh1a5yrrawqvrwcfbfa6g4mv-du-dust-1.1.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "gifski",
       "broken": false,
       "derivation": "/nix/store/30pl0zwhp3s7irhyzzj3r5w00vcxbvbi-gifski-1.32.0.drv",
@@ -516,6 +651,378 @@
       "priority": 5
     },
     {
+      "attr_path": "lla",
+      "broken": false,
+      "derivation": "/nix/store/p4xryribgpy082fpyjf2731xcm7jcqlz-lla-0.3.10.drv",
+      "description": "Blazing-fast `ls` replacement with superpowers",
+      "install_id": "lla",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "lla-0.3.10",
+      "pname": "lla",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.3.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/4qymv1vk1dki3rwy1gamby63r7bjc4s8-lla-0.3.10"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "lla",
+      "broken": false,
+      "derivation": "/nix/store/q6sql1b9abig14mafxx1qs0g1hfajm8r-lla-0.3.10.drv",
+      "description": "Blazing-fast `ls` replacement with superpowers",
+      "install_id": "lla",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "lla-0.3.10",
+      "pname": "lla",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.3.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5rjjkcl1lxg6iqibkiasyy5ii9mbb2hx-lla-0.3.10"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "lla",
+      "broken": false,
+      "derivation": "/nix/store/c9z0b9sdp3azpf546ksis9m9rx4wygxg-lla-0.3.10.drv",
+      "description": "Blazing-fast `ls` replacement with superpowers",
+      "install_id": "lla",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "lla-0.3.10",
+      "pname": "lla",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.3.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ssplacb7vsfhh824gw51kfaa3sn4wkwf-lla-0.3.10"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "lla",
+      "broken": false,
+      "derivation": "/nix/store/fjbz6h493al24ksrjq8177cm4rf5xfvz-lla-0.3.10.drv",
+      "description": "Blazing-fast `ls` replacement with superpowers",
+      "install_id": "lla",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "lla-0.3.10",
+      "pname": "lla",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.3.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1n1xhs6zaqhq56q4ldlsak4a2marzb73-lla-0.3.10"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "skim",
+      "broken": false,
+      "derivation": "/nix/store/vzygs5kb3mmxhk7dpijvx4zma2nazfr2-skim-0.15.7.drv",
+      "description": "Command-line fuzzy finder written in Rust",
+      "install_id": "skim",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "skim-0.15.7",
+      "pname": "skim",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.7",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/gd9qadcbz4ckcx234ani11v0kcvp1smq-skim-0.15.7-man",
+        "out": "/nix/store/3fhqcbmdnxsvb7zbpis98d160dshdsa2-skim-0.15.7",
+        "vim": "/nix/store/rjnpixd41ij9n6jb19c823c8smc2j1dc-skim-0.15.7-vim"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "skim",
+      "broken": false,
+      "derivation": "/nix/store/fm9k6w90zjb2hg7938kq64v0k5yjvj4w-skim-0.15.7.drv",
+      "description": "Command-line fuzzy finder written in Rust",
+      "install_id": "skim",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "skim-0.15.7",
+      "pname": "skim",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.7",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/nqr31mngvdnbs4qcy2vfgsfd31cv767y-skim-0.15.7-man",
+        "out": "/nix/store/4m4p5pwf6c3fcjiha963s43kmprpd7xq-skim-0.15.7",
+        "vim": "/nix/store/zgjbiw4hq08p4f9v4c7prz1v691wlc19-skim-0.15.7-vim"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "skim",
+      "broken": false,
+      "derivation": "/nix/store/52rs73r9114nxqqx4whvamrmc5vg4rwd-skim-0.15.7.drv",
+      "description": "Command-line fuzzy finder written in Rust",
+      "install_id": "skim",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "skim-0.15.7",
+      "pname": "skim",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.7",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/d6nm7s98kzj34j7av6ky6laq0s2g4yw0-skim-0.15.7-man",
+        "out": "/nix/store/9i5y87ii4pyh52plkp2a0dcvy45k1gv3-skim-0.15.7",
+        "vim": "/nix/store/8lncjm2fysjd5cgdjqgrbsf44r37h6v8-skim-0.15.7-vim"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "skim",
+      "broken": false,
+      "derivation": "/nix/store/w33ir4m37v6bhwicqkk819cjp5svxi91-skim-0.15.7.drv",
+      "description": "Command-line fuzzy finder written in Rust",
+      "install_id": "skim",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "skim-0.15.7",
+      "pname": "skim",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.15.7",
+      "outputs_to_install": [
+        "out",
+        "man"
+      ],
+      "outputs": {
+        "man": "/nix/store/hhqv1s024fndng389w61n030bgfmbz5v-skim-0.15.7-man",
+        "out": "/nix/store/3vics7vcygifa5mfaiq7rdjf189ks867-skim-0.15.7",
+        "vim": "/nix/store/03vdip18mbqil9jn4ygmd4bnf3b659vp-skim-0.15.7-vim"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tokei",
+      "broken": false,
+      "derivation": "/nix/store/fxbd0dr4aip836w0m2fnninmmmb6xij5-tokei-12.1.2.drv",
+      "description": "Program that allows you to count your code, quickly",
+      "install_id": "tokei",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "tokei-12.1.2",
+      "pname": "tokei",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "12.1.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8q3s5m67155xiacqa32ycchrff0ihi1k-tokei-12.1.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tokei",
+      "broken": false,
+      "derivation": "/nix/store/x756nqk15xvr44bqny2hy2lrl8mmjdx3-tokei-12.1.2.drv",
+      "description": "Program that allows you to count your code, quickly",
+      "install_id": "tokei",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "tokei-12.1.2",
+      "pname": "tokei",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "12.1.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0rrzyacm43m3h7nch8cdb8slra3m4hgb-tokei-12.1.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tokei",
+      "broken": false,
+      "derivation": "/nix/store/xc0j6z64vhgwj12abafybymgsh299f5j-tokei-12.1.2.drv",
+      "description": "Program that allows you to count your code, quickly",
+      "install_id": "tokei",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "tokei-12.1.2",
+      "pname": "tokei",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "12.1.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pkhax640s4915yrjazbi9f70pza6qijz-tokei-12.1.2"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "tokei",
+      "broken": false,
+      "derivation": "/nix/store/2rkhccz96wfx4yp0v8zdvsfsmpnm10q5-tokei-12.1.2.drv",
+      "description": "Program that allows you to count your code, quickly",
+      "install_id": "tokei",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "tokei-12.1.2",
+      "pname": "tokei",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "12.1.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6pcf1add9y0czgbjlsf3g02r9w4my10g-tokei-12.1.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "xsv",
       "broken": false,
       "derivation": "/nix/store/4fyi0hxvvjr9d42q416aalb8vjg6vz2y-xsv-0.13.0.drv",
@@ -630,6 +1137,126 @@
       ],
       "outputs": {
         "out": "/nix/store/8mi5dgm4805jjg9kwxc2yk8aidyvhrfv-xsv-0.13.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "yazi",
+      "broken": false,
+      "derivation": "/nix/store/khhr4qfrblpdkjgwsb34qiw2fjqhsv7g-yazi-0.4.2.drv",
+      "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
+      "install_id": "yazi",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "yazi-0.4.2",
+      "pname": "yazi",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.4.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2xsibhwn6n41vknx8hqhxag7zvgizwbr-yazi-0.4.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "yazi",
+      "broken": false,
+      "derivation": "/nix/store/s02bdx3nijmcny69xg6gji8lgrc2fzff-yazi-0.4.2.drv",
+      "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
+      "install_id": "yazi",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "yazi-0.4.2",
+      "pname": "yazi",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.4.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0yrq7yfb9njqqs07nj4rb1zdwc7jg2nx-yazi-0.4.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "yazi",
+      "broken": false,
+      "derivation": "/nix/store/bbmlk0r0amys0hpfwj9kd0vacq05nrw6-yazi-0.4.2.drv",
+      "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
+      "install_id": "yazi",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "yazi-0.4.2",
+      "pname": "yazi",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.4.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/cbjhvs9ganilmpzc1hs9pajip5kcdd0k-yazi-0.4.2"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "yazi",
+      "broken": false,
+      "derivation": "/nix/store/1v6vk9jk78dck4vnc9v3abxbj8k3mpid-yazi-0.4.2.drv",
+      "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
+      "install_id": "yazi",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "yazi-0.4.2",
+      "pname": "yazi",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.4.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/05jzzy0cbb0s34sz8crf0b1a86nk7ssq-yazi-0.4.2"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
