@@ -6,6 +6,9 @@
       "_7zz-rar": {
         "pkg-path": "_7zz-rar"
       },
+      "difftastic": {
+        "pkg-path": "difftastic"
+      },
       "doggo": {
         "pkg-path": "doggo"
       },
@@ -168,6 +171,126 @@
       ],
       "outputs": {
         "out": "/nix/store/6l7jxp0zys3jhp0qn5yqir571inf5ml3-7zz-24.09"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "difftastic",
+      "broken": false,
+      "derivation": "/nix/store/4cg7bk1l0wlhd2wlx81nqip4hxf7big9-difftastic-0.62.0.drv",
+      "description": "Syntax-aware diff",
+      "install_id": "difftastic",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "difftastic-0.62.0",
+      "pname": "difftastic",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.62.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/88cnzrj8c21j6j6hdd2rcla9ha2k40hr-difftastic-0.62.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "difftastic",
+      "broken": false,
+      "derivation": "/nix/store/yga137bxl2y9783wbdl9gs43vdm2lnr3-difftastic-0.62.0.drv",
+      "description": "Syntax-aware diff",
+      "install_id": "difftastic",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "difftastic-0.62.0",
+      "pname": "difftastic",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.62.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/yh337gzhksq9pqc97pad443clgkv00vz-difftastic-0.62.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "difftastic",
+      "broken": false,
+      "derivation": "/nix/store/sh33bl8grl3j6cl4zjc2b4lgxipdlh0w-difftastic-0.62.0.drv",
+      "description": "Syntax-aware diff",
+      "install_id": "difftastic",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "difftastic-0.62.0",
+      "pname": "difftastic",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.62.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9pjsmc67q8sfc505zsyr0wbymp76wp5d-difftastic-0.62.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "difftastic",
+      "broken": false,
+      "derivation": "/nix/store/prszwhdbq4j05rq0jq0af8iga52b5bs7-difftastic-0.62.0.drv",
+      "description": "Syntax-aware diff",
+      "install_id": "difftastic",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "difftastic-0.62.0",
+      "pname": "difftastic",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.62.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8zsyfan17mdnnf2dydq3h3fgxdm6siv9-difftastic-0.62.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
