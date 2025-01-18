@@ -1,0 +1,262 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "doggo": {
+        "pkg-path": "doggo"
+      },
+      "kubectx": {
+        "pkg-path": "kubectx"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ],
+      "allow": {
+        "licenses": []
+      },
+      "semver": {}
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "doggo",
+      "broken": false,
+      "derivation": "/nix/store/j2j33zd6khlmlbnd87svm0z3c0jfl8zd-doggo-1.0.5.drv",
+      "description": "Command-line DNS Client for Humans. Written in Golang",
+      "install_id": "doggo",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "doggo-1.0.5",
+      "pname": "doggo",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bhh4xxjnza6487qdv8a3sx5bwghy42i3-doggo-1.0.5"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "doggo",
+      "broken": false,
+      "derivation": "/nix/store/khrw6zx06qxbdrll7p3j1f80c63hrfz4-doggo-1.0.5.drv",
+      "description": "Command-line DNS Client for Humans. Written in Golang",
+      "install_id": "doggo",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "doggo-1.0.5",
+      "pname": "doggo",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8jkj7yzc553nazf0nlmwma3yslca2kcp-doggo-1.0.5"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "doggo",
+      "broken": false,
+      "derivation": "/nix/store/7cjh29pl8iw0x5qyi0qv7x5382y1driv-doggo-1.0.5.drv",
+      "description": "Command-line DNS Client for Humans. Written in Golang",
+      "install_id": "doggo",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "doggo-1.0.5",
+      "pname": "doggo",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/zz4qy3nqgvrp3c5rq51qlzs025yaihg1-doggo-1.0.5"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "doggo",
+      "broken": false,
+      "derivation": "/nix/store/ldi6p7zba2bi5cg6zxilg4x3dmvw97hi-doggo-1.0.5.drv",
+      "description": "Command-line DNS Client for Humans. Written in Golang",
+      "install_id": "doggo",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "doggo-1.0.5",
+      "pname": "doggo",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rm76hgkr8w1qlsr0pypwi07rad44f2jc-doggo-1.0.5"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectx",
+      "broken": false,
+      "derivation": "/nix/store/ijvdyj3lkvw49l9wh0py1q3nqvnqz7jb-kubectx-0.9.5.drv",
+      "description": "Fast way to switch between clusters and namespaces in kubectl!",
+      "install_id": "kubectx",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "kubectx-0.9.5",
+      "pname": "kubectx",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2gjb8051jav5p0gspkhalr54ndgdfc6r-kubectx-0.9.5"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectx",
+      "broken": false,
+      "derivation": "/nix/store/a3zz0hrdpmv3wvv8xis7fw7hrj0xsxw7-kubectx-0.9.5.drv",
+      "description": "Fast way to switch between clusters and namespaces in kubectl!",
+      "install_id": "kubectx",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "kubectx-0.9.5",
+      "pname": "kubectx",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/404v6rr40pfacr0dgjap8k0maw27s8cx-kubectx-0.9.5"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectx",
+      "broken": false,
+      "derivation": "/nix/store/ndzg8nm8nxq125acr8sna0zjvmcbcwa7-kubectx-0.9.5.drv",
+      "description": "Fast way to switch between clusters and namespaces in kubectl!",
+      "install_id": "kubectx",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "kubectx-0.9.5",
+      "pname": "kubectx",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/cfjwdisfb8ih0a8pwrlllamdbs4adql2-kubectx-0.9.5"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectx",
+      "broken": false,
+      "derivation": "/nix/store/6rpsa8793apaxim0qafgkmmjr1n37a72-kubectx-0.9.5.drv",
+      "description": "Fast way to switch between clusters and namespaces in kubectl!",
+      "install_id": "kubectx",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "kubectx-0.9.5",
+      "pname": "kubectx",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/z3lbpfcpzrzs6wsh7838l9fv0rglnp7k-kubectx-0.9.5"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
