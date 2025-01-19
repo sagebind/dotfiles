@@ -2,15 +2,19 @@ version = 1
 
 [install]
 _7zz-rar.pkg-path = "_7zz-rar"
+colima.pkg-path = "colima"
+colima.systems = ["aarch64-darwin"]
 difftastic.pkg-path = "difftastic"
 doggo.pkg-path = "doggo"
 dust.pkg-path = "dust"
 espanso-wayland.pkg-path = "espanso-wayland"
 espanso-wayland.systems = ["x86_64-linux"]
+gh.pkg-path = "gh"
 gifski.pkg-path = "gifski"
 hurmit.pkg-path = "nerd-fonts.hurmit"
 k9s.pkg-path = "k9s"
 kubectx.pkg-path = "kubectx"
+kubernetes-helm.pkg-path = "kubernetes-helm"
 lla.pkg-path = "lla"
 skim.pkg-path = "skim"
 tokei.pkg-path = "tokei"

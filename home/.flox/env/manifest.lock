@@ -6,6 +6,12 @@
       "_7zz-rar": {
         "pkg-path": "_7zz-rar"
       },
+      "colima": {
+        "pkg-path": "colima",
+        "systems": [
+          "aarch64-darwin"
+        ]
+      },
       "difftastic": {
         "pkg-path": "difftastic"
       },
@@ -21,6 +27,9 @@
           "x86_64-linux"
         ]
       },
+      "gh": {
+        "pkg-path": "gh"
+      },
       "gifski": {
         "pkg-path": "gifski"
       },
@@ -33,6 +42,9 @@
       "kubectx": {
         "pkg-path": "kubectx"
       },
+      "kubernetes-helm": {
+        "pkg-path": "kubernetes-helm"
+      },
       "lla": {
         "pkg-path": "lla"
       },
@@ -43,7 +55,10 @@
         "pkg-path": "tokei"
       },
       "xdg-terminal-exec": {
-        "pkg-path": "xdg-terminal-exec"
+        "pkg-path": "xdg-terminal-exec",
+        "systems": [
+          "x86_64-linux"
+        ]
       },
       "xsv": {
         "pkg-path": "xsv"
@@ -186,6 +201,36 @@
         "out": "/nix/store/6l7jxp0zys3jhp0qn5yqir571inf5ml3-7zz-24.09"
       },
       "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "colima",
+      "broken": false,
+      "derivation": "/nix/store/k3xq9ilg4p0yfj9jq5m9yqgx276d1sjc-colima-0.8.1.drv",
+      "description": "Container runtimes with minimal setup",
+      "install_id": "colima",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "colima-0.8.1",
+      "pname": "colima",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.8.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/w31z9xki6gzd4m49nyqjm5n5b3qw7qcm-colima-0.8.1"
+      },
+      "system": "aarch64-darwin",
       "group": "toplevel",
       "priority": 5
     },
@@ -574,6 +619,126 @@
       ],
       "outputs": {
         "out": "/nix/store/c1iw87z77k5qphzp8kmr8v65iimpghzx-espanso-2.2-unstable-2024-05-14"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/zi9vbmxmqdp56l6nv3dr6v1sn4m9n3c8-gh-2.65.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "gh-2.65.0",
+      "pname": "gh",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.65.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/i7c3cxs55v3bbrnx8njarpmh7hqf8j0g-gh-2.65.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/icjvfr087gd82aqxcjjxdhwlw224w8bp-gh-2.65.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "gh-2.65.0",
+      "pname": "gh",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.65.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/vfidcgqi2l5vqs9dm0ygjbprjjg31m1m-gh-2.65.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/wbg59nmg71k7c9zby1nwjbh4f526bbcg-gh-2.65.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "gh-2.65.0",
+      "pname": "gh",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.65.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/10pcvlswasd1wzmb58fil8q77vq9b8g3-gh-2.65.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/vcrdvmbfc6h1p8zcgymzr742qjn0hjk4-gh-2.65.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "gh-2.65.0",
+      "pname": "gh",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.65.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gicqc89lkcpinrjls3mz7b3p6bbjy99j-gh-2.65.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -1060,6 +1225,126 @@
       "priority": 5
     },
     {
+      "attr_path": "kubernetes-helm",
+      "broken": false,
+      "derivation": "/nix/store/smad0smkpkaxr3pp4pfwiik4y4hw04nc-kubernetes-helm-3.16.4.drv",
+      "description": "Package manager for kubernetes",
+      "install_id": "kubernetes-helm",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "kubernetes-helm-3.16.4",
+      "pname": "kubernetes-helm",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.16.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ldyw27qinlywajskcgp06b0vxqi3j7sw-kubernetes-helm-3.16.4"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubernetes-helm",
+      "broken": false,
+      "derivation": "/nix/store/28rx3g6rr9wq1rqa6g290vpb553rxyfx-kubernetes-helm-3.16.4.drv",
+      "description": "Package manager for kubernetes",
+      "install_id": "kubernetes-helm",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "kubernetes-helm-3.16.4",
+      "pname": "kubernetes-helm",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.16.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/lpjy11ccpalk012sbfjxzdgvlbv722a3-kubernetes-helm-3.16.4"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubernetes-helm",
+      "broken": false,
+      "derivation": "/nix/store/x8b94rj9zcdm4wcs00z7a842z0ww3fjf-kubernetes-helm-3.16.4.drv",
+      "description": "Package manager for kubernetes",
+      "install_id": "kubernetes-helm",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "kubernetes-helm-3.16.4",
+      "pname": "kubernetes-helm",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.16.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/f1141pdh3jzcjx033s0w1h00w21vnlwq-kubernetes-helm-3.16.4"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubernetes-helm",
+      "broken": false,
+      "derivation": "/nix/store/4z7zn81ap21lgsx40j0v5b8r2adczpg0-kubernetes-helm-3.16.4.drv",
+      "description": "Package manager for kubernetes",
+      "install_id": "kubernetes-helm",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "name": "kubernetes-helm-3.16.4",
+      "pname": "kubernetes-helm",
+      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
+      "rev_count": 738172,
+      "rev_date": "2025-01-14T19:41:48Z",
+      "scrape_date": "2025-01-16T00:14:48Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.16.4",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/smn3ia62s9svrh2sy8sasl8sgkjcylsp-kubernetes-helm-3.16.4"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "lla",
       "broken": false,
       "derivation": "/nix/store/p4xryribgpy082fpyjf2731xcm7jcqlz-lla-0.3.10.drv",
@@ -1428,96 +1713,6 @@
         "out": "/nix/store/6pcf1add9y0czgbjlsf3g02r9w4my10g-tokei-12.1.2"
       },
       "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "xdg-terminal-exec",
-      "broken": false,
-      "derivation": "/nix/store/n8spy62ixzb4sx05bmr4nrxl6mbcbyig-xdg-terminal-exec-0.12.0.drv",
-      "description": "Reference implementation of the proposed XDG Default Terminal Execution Specification",
-      "install_id": "xdg-terminal-exec",
-      "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
-      "name": "xdg-terminal-exec-0.12.0",
-      "pname": "xdg-terminal-exec",
-      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
-      "rev_count": 738172,
-      "rev_date": "2025-01-14T19:41:48Z",
-      "scrape_date": "2025-01-16T00:14:48Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.12.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/m8m063zppjzp54qjlvvkn9lc3ydhsm2s-xdg-terminal-exec-0.12.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "xdg-terminal-exec",
-      "broken": false,
-      "derivation": "/nix/store/mj4xa0dll3kn5angs19kaxp74bnz6slc-xdg-terminal-exec-0.12.0.drv",
-      "description": "Reference implementation of the proposed XDG Default Terminal Execution Specification",
-      "install_id": "xdg-terminal-exec",
-      "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
-      "name": "xdg-terminal-exec-0.12.0",
-      "pname": "xdg-terminal-exec",
-      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
-      "rev_count": 738172,
-      "rev_date": "2025-01-14T19:41:48Z",
-      "scrape_date": "2025-01-16T00:14:48Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.12.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/2qsbaia5fi63k9fh4xivz5ng8kzx242b-xdg-terminal-exec-0.12.0"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "xdg-terminal-exec",
-      "broken": false,
-      "derivation": "/nix/store/sv773rcrqcxk42s2qzb64bqh6ckcldfz-xdg-terminal-exec-0.12.0.drv",
-      "description": "Reference implementation of the proposed XDG Default Terminal Execution Specification",
-      "install_id": "xdg-terminal-exec",
-      "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
-      "name": "xdg-terminal-exec-0.12.0",
-      "pname": "xdg-terminal-exec",
-      "rev": "eb62e6aa39ea67e0b8018ba8ea077efe65807dc8",
-      "rev_count": 738172,
-      "rev_date": "2025-01-14T19:41:48Z",
-      "scrape_date": "2025-01-16T00:14:48Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.12.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/5vr202jiif5zcaf7dvv0m828mqpa0wkv-xdg-terminal-exec-0.12.0"
-      },
-      "system": "x86_64-darwin",
       "group": "toplevel",
       "priority": 5
     },
