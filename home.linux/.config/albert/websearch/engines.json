@@ -9,14 +9,6 @@
     },
     {
         "fallback": false,
-        "iconPath": ":gpt",
-        "id": "7ca3d0c2",
-        "name": "Chat GPT",
-        "trigger": "gpt",
-        "url": "https://chat.openai.com/?q=%s"
-    },
-    {
-        "fallback": false,
         "iconPath": ":duckduckgo",
         "id": "f95e6de4",
         "name": "DuckDuckGo",
@@ -57,14 +49,6 @@
     },
     {
         "fallback": false,
-        "iconPath": ":scholar",
-        "id": "8a52927e",
-        "name": "Google Scholar",
-        "trigger": "scholar",
-        "url": "https://scholar.google.com/scholar?q=%s"
-    },
-    {
-        "fallback": false,
         "iconPath": ":google_translate",
         "id": "a86db92c",
         "name": "Google Translate",
@@ -72,12 +56,36 @@
         "url": "https://translate.google.com/?text=%s"
     },
     {
-        "fallback": true,
-        "iconPath": "file:/home/stephen/.local/share/albert/websearch/9d16e5cb.png",
-        "id": "9d16e5cb",
-        "name": "Kagi",
-        "trigger": "k",
-        "url": "https://kagi.com/search?q=%s"
+        "fallback": false,
+        "iconPath": ":default",
+        "id": "8d229f97",
+        "name": "Kagi Assistant",
+        "trigger": "ka",
+        "url": "https://kagi.com/assistant?q=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":default",
+        "id": "e90b3d9b",
+        "name": "Reverb.com",
+        "trigger": "rv",
+        "url": "https://reverb.com/marketplace?query=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":default",
+        "id": "3f6409cb",
+        "name": "Sweetwater",
+        "trigger": "sw",
+        "url": "https://sweetwater.com/store/search?s=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":default",
+        "id": "8fdcb34f",
+        "name": "Wikipedia",
+        "trigger": "wp",
+        "url": "https://en.wikipedia.org/wiki/%s"
     },
     {
         "fallback": false,

@@ -30,6 +30,9 @@ global_handler_enabled=false
 [python.firefoxbookmarks]
 enabled=true
 
+[python.kagi]
+enabled=true
+
 [python.kill]
 enabled=true
 
