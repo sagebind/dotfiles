@@ -1,0 +1,98 @@
+[
+    {
+        "fallback": false,
+        "iconPath": ":amazon",
+        "id": "ec80438a",
+        "name": "Amazon",
+        "trigger": "ama",
+        "url": "http://www.amazon.com/s/?field-keywords=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":gpt",
+        "id": "7ca3d0c2",
+        "name": "Chat GPT",
+        "trigger": "gpt",
+        "url": "https://chat.openai.com/?q=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":duckduckgo",
+        "id": "f95e6de4",
+        "name": "DuckDuckGo",
+        "trigger": "dd",
+        "url": "https://duckduckgo.com/?q=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":ebay",
+        "id": "50989271",
+        "name": "Ebay",
+        "trigger": "eb",
+        "url": "http://www.ebay.com/sch/i.html?_nkw=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":github",
+        "id": "4080999c",
+        "name": "GitHub",
+        "trigger": "gh",
+        "url": "https://github.com/search?utf8=✓&q=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":google",
+        "id": "ffd80492",
+        "name": "Google",
+        "trigger": "gg",
+        "url": "https://www.google.com/search?q=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":maps",
+        "id": "2b171b0a",
+        "name": "Google Maps",
+        "trigger": "maps",
+        "url": "https://www.google.com/maps/search/%s/"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":scholar",
+        "id": "8a52927e",
+        "name": "Google Scholar",
+        "trigger": "scholar",
+        "url": "https://scholar.google.com/scholar?q=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":google_translate",
+        "id": "a86db92c",
+        "name": "Google Translate",
+        "trigger": "gt",
+        "url": "https://translate.google.com/?text=%s"
+    },
+    {
+        "fallback": true,
+        "iconPath": "file:/home/stephen/.local/share/albert/websearch/9d16e5cb.png",
+        "id": "9d16e5cb",
+        "name": "Kagi",
+        "trigger": "k",
+        "url": "https://kagi.com/search?q=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":wolfram",
+        "id": "2d04c325",
+        "name": "Wolfram Alpha",
+        "trigger": "wa",
+        "url": "https://www.wolframalpha.com/input/?i=%s"
+    },
+    {
+        "fallback": false,
+        "iconPath": ":youtube",
+        "id": "9f1d5a20",
+        "name": "YouTube",
+        "trigger": "yt",
+        "url": "https://www.youtube.com/results?search_query=%s"
+    }
+]
