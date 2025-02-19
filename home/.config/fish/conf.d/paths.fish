@@ -16,5 +16,5 @@ set -l paths \
 
 for p in $paths
   test -d $p
-    and fish_add_path --move --global $p
+    and fish_add_path --global $p
 end

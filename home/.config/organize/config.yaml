@@ -1,0 +1,149 @@
+rules:
+  - locations: ~/Downloads
+    filters:
+      - extension: apk
+    actions:
+      - move: ~/Seafile/Software/Android/
+
+  - locations: ~/Downloads
+    subfolders: true
+    filters:
+      - regex: '^Pay Date (?P<date>(?P<year>\d{4})-\d{2}-\d{2})\.pdf$'
+      - filecontent: 'Earnings Statement'
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Paystubs/{regex.year}/{regex.date} Earnings Statement.pdf
+          on_conflict: deduplicate
+
+  - locations: ~/Downloads
+    subfolders: true
+    filters:
+      - extension: pdf
+      - filecontent: >-
+          (?P<year>\d{4}) W-2
+      - filecontent: >-
+          (c\s+Employer.s name, address, and ZIP code\s+)+
+          (?P<employer>[A-Z ]+)
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Taxes/{filecontent.year}/{filecontent.year} W-2 {filecontent.employer.title()}.pdf
+          on_conflict: deduplicate
+
+  - locations: ~/Downloads
+    subfolders: true
+    filters:
+      - extension: pdf
+      - filecontent: >-
+          Form 1095-C \((?P<year>\d{4})\)
+      - filecontent: >-
+          (?P<employer>[A-Z]{2,}( [A-Z]{2,})*)\n
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Taxes/{filecontent.year}/{filecontent.year} 1095-C {filecontent.employer.title()}.pdf
+          on_conflict: deduplicate
+
+  - locations: ~/Downloads
+    filters:
+      - regex: '^(?P<name>Pension (Monthly Invoice|Contribution Statement)) \((?P<date>[^)]+)\)\.pdf$'
+    actions:
+      - move: ~/Compass/Financial/Receipts/{today().year}/{regex.date} FMCUSA {regex.name}.pdf
+
+  - locations: ~/Downloads
+    filters:
+      - name
+      - regex: '^Receipt-\d+\.pdf$'
+      - exif:
+          pdf.author: Free Methodist Church
+    actions:
+      - move: ~/Compass/Financial/Receipts/{exif.pdf.createdate.year}/{exif.pdf.createdate.date()} FMCUSA {name}.pdf
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: 'ALLIANT ENERGY\/WPL'
+      - filecontent: '(?P<date>\w{3} \d{2}, \d{4})'
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%b %d, %Y')
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Invoices/{python.year}/{python.strftime('%Y-%m-%d')} Alliant Energy.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: 'SpectrumBusiness.net'
+      - filecontent: '(?P<date>[A-Z][a-z]+ \d{2}, \d{4})'
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%B %d, %Y')
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Invoices/{python.year}/{python.strftime('%Y-%m-%d')} Spectrum.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: 'Invoice'
+      - filecontent: 'Cloudflare, Inc.'
+      - filecontent: 'Compass Church'
+      - filecontent: '(?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})'
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%B %d, %Y')
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Invoices/{python.year}/{python.strftime('%Y-%m-%d')} Cloudflare.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: 'COMMERCE BANK'
+      - filecontent: ' - (?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})'
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Reconciliations/{filecontent.year}/{filecontent.year}-{filecontent.month}-{filecontent.day} Charity Charge Statement.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: 'BMO ELITE BUSINESS CKG'
+      - filecontent: 'ACCOUNT NUMBER\s*\d+(?P<account>\d{4})'
+      - filecontent: '\s+TO\s+(?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{2})'
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Reconciliations/20{filecontent.year}/20{filecontent.year}-{filecontent.month}-{filecontent.day} BMO {filecontent.account} Statement.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - regex: '^Print-\d{8}-\d+\.pdf$'
+      - filecontent: 'COMPASS CHURCH INC'
+      - exif: pdf.pagecount
+      - python: |
+          return exif["pdf"]["pagecount"] > 1
+    actions:
+      - shell: |
+          pdfcpu split "{path}" "{path.parent}"
+      - trash
+
+  - locations: ~/Downloads
+    filters:
+      - regex: '^Print-\d{8}-\d+_\d\.pdf$'
+      - filecontent: 'COMPASS CHURCH INC'
+      - filecontent: '^(?P<firstname>[A-Z][a-z]+)( [A-Z])? (?P<lastname>[A-Z][a-z]+)'
+      - filecontent: '\s+(?P<start>\d{1,2}/\d{1,2}/\d{4}) - (?P<end>\d{1,2}/\d{1,2}/\d{4})'
+      - exif: pdf.pagecount
+      - python: |
+          return exif["pdf"]["pagecount"] == 1
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["end"], '%m/%d/%Y')
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Payroll/{python.year}/Paystubs/{filecontent.firstname} {filecontent.lastname}/{python.strftime('%Y-%m-%d')}.pdf
+          on_conflict: skip
