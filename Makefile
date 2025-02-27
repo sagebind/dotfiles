@@ -10,6 +10,10 @@ apply: link $(if $(HAS_DCONF),dconf)
 link:
 	stow --stow --dir="$(CURDIR)" $(PACKAGES)
 
+.PHONY: relink
+relink:
+	stow --restow --dir="$(CURDIR)" $(PACKAGES)
+
 .PHONY: dry-run
 dry-run:
 	stow --simulate --stow --dir="$(CURDIR)" $(PACKAGES)
