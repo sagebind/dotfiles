@@ -1,4 +1,5 @@
 [General]
+hotkey=Ctrl+Alt+Shift+Space
 telemetry=false
 
 [applications]

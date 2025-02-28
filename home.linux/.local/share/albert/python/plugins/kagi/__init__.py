@@ -6,7 +6,7 @@ from urllib.parse import urlencode
 import json
 
 
-md_iid = "2.3"
+md_iid = "3.0"
 md_version = "1.0"
 md_name = "Kagi"
 md_description = "Kagi search and suggest in Albert"
@@ -16,16 +16,15 @@ md_bin_dependencies = []
 class Plugin(PluginInstance, TriggerQueryHandler):
     def __init__(self):
         PluginInstance.__init__(self)
-        TriggerQueryHandler.__init__(
-            self, self.id, self.name, self.description,
-            defaultTrigger='k '
-        )
+        TriggerQueryHandler.__init__(self)
         self.fbh = FBH(self)
-        self.registerExtension(self.fbh)
         self.iconUrls = [f"file:{Path(__file__).parent}/kagi.svg"]
 
-    def __del__(self):
-        self.deregisterExtension(self.fbh)
+    def extensions(self):
+        return [self, self.fbh]
+
+    def defaultTrigger(self):
+        return "k "
 
     def handleTriggerQuery(self, query):
         if not query.string or not query.string.strip():
@@ -77,8 +76,17 @@ class Plugin(PluginInstance, TriggerQueryHandler):
 
 class FBH(FallbackHandler):
     def __init__(self, p: Plugin):
-        super().__init__(id=p.id + 'fb', name=p.name, description=p.description)
+        super().__init__()
         self.plugin = p
+
+    def id(self):
+        return self.plugin.id() + 'fb'
+
+    def name(self):
+        return self.plugin.name()
+
+    def description(self):
+        return self.plugin.description()
 
     def fallbacks(self, term :str):
         return [item for item in self.plugin._query(term)]

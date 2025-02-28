@@ -5,7 +5,7 @@ from albert import *
 import sqlite3
 
 
-md_iid = "2.3"
+md_iid = "3.0"
 md_version = "1.0"
 md_name = "Firefox Bookmarks"
 md_description = "Show Firefox bookmarks"
@@ -15,12 +15,8 @@ md_bin_dependencies = []
 class Plugin(PluginInstance, TriggerQueryHandler):
     def __init__(self):
         PluginInstance.__init__(self)
-        TriggerQueryHandler.__init__(
-            self, self.id, self.name, self.description,
-            defaultTrigger='bm '
-        )
+        TriggerQueryHandler.__init__(self)
         self.fbh = FBH(self)
-        self.registerExtension(self.fbh)
 
         self._include_toolbar = self.readConfig("include_toolbar", bool) or True
         self._include_menu = self.readConfig("include_menu", bool) or False
@@ -29,8 +25,11 @@ class Plugin(PluginInstance, TriggerQueryHandler):
         self.firefox_root = Path.home() / ".mozilla" / "firefox"
         self.resolved_places_path = str(self._get_places_path())
 
-    def __del__(self):
-        self.deregisterExtension(self.fbh)
+    def extensions(self):
+        return [self, self.fbh]
+
+    def defaultTrigger(self):
+        return "bm "
 
     @property
     def include_toolbar(self):
@@ -125,8 +124,17 @@ class Plugin(PluginInstance, TriggerQueryHandler):
 
 class FBH(FallbackHandler):
     def __init__(self, p: Plugin):
-        super().__init__(id=p.id + 'fb', name=p.name, description=p.description)
+        super().__init__()
         self.plugin = p
+
+    def id(self):
+        return self.plugin.id() + 'fb'
+
+    def name(self):
+        return self.plugin.name()
+
+    def description(self):
+        return self.plugin.description()
 
     def fallbacks(self, term :str):
         return [item for item in self.plugin._query(term, 3)]

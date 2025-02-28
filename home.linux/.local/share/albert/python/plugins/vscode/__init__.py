@@ -4,7 +4,7 @@ from subprocess import run, CalledProcessError
 from albert import *
 
 
-md_iid = "2.3"
+md_iid = "3.0"
 md_version = "1.0"
 md_name = "Visual Studio Code"
 md_description = "Quickly launch Visual Studio Code projects"
@@ -14,11 +14,11 @@ md_bin_dependencies = ["code"]
 class Plugin(PluginInstance, TriggerQueryHandler):
     def __init__(self):
         PluginInstance.__init__(self)
-        TriggerQueryHandler.__init__(
-            self, self.id, self.name, self.description,
-            defaultTrigger='vsc '
-        )
+        TriggerQueryHandler.__init__(self)
         self._root_dir = self.readConfig("root_dir", str) or ""
+
+    def defaultTrigger(self):
+        return "vsc "
 
     @property
     def root_dir(self):
