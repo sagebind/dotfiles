@@ -131,9 +131,12 @@ rules:
           pdfcpu split "{path}" "{path.parent}"
       - trash
 
-  - locations: ~/Downloads
+  - locations:
+      - ~/Downloads
+      - ~/Compass/Financial/Payroll/2025/Paystubs
+    subfolders: true
     filters:
-      - regex: '^Print-\d{8}-\d+_\d\.pdf$'
+      - regex: '^Print-\d{8}-\d+(_\d)?\.pdf$'
       - filecontent: 'COMPASS CHURCH INC'
       - filecontent: '^(?P<firstname>[A-Z][a-z]+)( [A-Z])? (?P<lastname>[A-Z][a-z]+)'
       - filecontent: '\s+(?P<start>\d{1,2}/\d{1,2}/\d{4}) - (?P<end>\d{1,2}/\d{1,2}/\d{4})'
