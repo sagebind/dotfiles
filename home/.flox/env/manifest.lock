@@ -33,6 +33,9 @@
       "gifski": {
         "pkg-path": "gifski"
       },
+      "httplz": {
+        "pkg-path": "httplz"
+      },
       "hurmit": {
         "pkg-path": "nerd-fonts.hurmit"
       },
@@ -836,6 +839,122 @@
       ],
       "outputs": {
         "out": "/nix/store/n5rii9ds2vplhqm35vkg228rad4n8cr9-gifski-1.32.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "httplz",
+      "broken": false,
+      "derivation": "/nix/store/cpbg2lhhr07f6yqj58kslxwlmyycjsb8-httplz-1.13.2.drv",
+      "description": "Basic http server for hosting a folder fast and simply",
+      "install_id": "httplz",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "httplz-1.13.2",
+      "pname": "httplz",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.13.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/j14c1zcr99yldhml55d75nsdd1wdrlrs-httplz-1.13.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "httplz",
+      "broken": false,
+      "derivation": "/nix/store/jah2vzjwb5926dz2lay09wkiihaq0m1m-httplz-1.13.2.drv",
+      "description": "Basic http server for hosting a folder fast and simply",
+      "install_id": "httplz",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "httplz-1.13.2",
+      "pname": "httplz",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.13.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/nkfgnb51mm2qjjglxngxf44yysk3zaq3-httplz-1.13.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "httplz",
+      "broken": false,
+      "derivation": "/nix/store/vw1cqy6ldq1g3v1bfxv0y4pgsc281wy4-httplz-1.13.2.drv",
+      "description": "Basic http server for hosting a folder fast and simply",
+      "install_id": "httplz",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "httplz-1.13.2",
+      "pname": "httplz",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.13.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hd5liz4vbhhd514413gsqj585yidmclb-httplz-1.13.2"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "httplz",
+      "broken": false,
+      "derivation": "/nix/store/6511hknbpfnj5qis05pa7wi3mdv1jw4w-httplz-1.13.2.drv",
+      "description": "Basic http server for hosting a folder fast and simply",
+      "install_id": "httplz",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "httplz-1.13.2",
+      "pname": "httplz",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.13.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/j42kgx9vhjb72fdpc1qzg2z2qyz4k33w-httplz-1.13.2"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

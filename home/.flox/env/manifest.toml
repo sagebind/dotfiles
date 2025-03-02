@@ -23,6 +23,7 @@ xdg-terminal-exec.systems = ["x86_64-linux"]
 xsv.pkg-path = "xsv"
 yazi.pkg-path = "yazi"
 nvtop.pkg-path = "nvtop"
+httplz.pkg-path = "httplz"
 
 [options]
 allow.unfree = true
