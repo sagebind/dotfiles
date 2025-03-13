@@ -43,6 +43,33 @@ rules:
           on_conflict: deduplicate
 
   - locations: ~/Downloads
+    subfolders: true
+    filters:
+      - extension: pdf
+      - filecontent: >-
+          FIDELITY BROKERAGE SERVICES LLC
+      - filecontent: >-
+          Form 1099
+      - filecontent: >-
+          (?P<year>\d{4}) TAX REPORTING STATEMENT
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Taxes/{filecontent.year}/{filecontent.year} 1099 Fidelity.pdf
+          on_conflict: deduplicate
+
+  - locations: ~/Downloads
+    filters:
+      - extension: docx
+      - filecontent: >-
+          Board Meeting Minutes
+      - filecontent: >-
+          (?P<month>[A-Z][a-z]+) (?P<day>\d{1,2}), (?P<year>\d{4})
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Church/Compass/BOA/{filecontent.year}/
+          on_conflict: deduplicate
+
+  - locations: ~/Downloads
     filters:
       - regex: '^(?P<name>Pension (Monthly Invoice|Contribution Statement)) \((?P<date>[^)]+)\)\.pdf$'
     actions:
