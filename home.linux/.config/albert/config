@@ -37,6 +37,9 @@ enabled=true
 [python.kill]
 enabled=true
 
+[python.organize]
+enabled=true
+
 [python.vscode]
 enabled=true
 root_dir=/data/src

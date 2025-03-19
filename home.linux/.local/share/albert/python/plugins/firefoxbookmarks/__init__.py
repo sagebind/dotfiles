@@ -147,7 +147,7 @@ class Places:
     def query(self, term, parent_folders, limit):
         c = self.conn.cursor()
 
-        params = [f"%{term}%"]
+        params = [f"%{term}%", f"%{term}%"]
         params.extend(parent_folders)
         params.append(limit)
 
@@ -169,7 +169,7 @@ class Places:
             JOIN moz_bookmarks root ON root.id = tree.root_id
             JOIN moz_places place ON place.id = bookmark.fk
             WHERE tree.bookmark_id != tree.root_id
-                AND bookmark.title LIKE ?
+                AND (bookmark.title LIKE ? OR place.url LIKE ?)
                 AND root.title IN ({','.join('?' * len(parent_folders))})
             ORDER BY place.frecency DESC
             LIMIT ?
