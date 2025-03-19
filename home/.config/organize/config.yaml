@@ -128,6 +128,17 @@ rules:
   - locations: ~/Downloads
     filters:
       - extension: pdf
+      - filecontent: wisconsin.lrsrecycles.com
+      - filecontent: >-
+          (?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<year>\d{4})
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Invoices/{filecontent.year}/{filecontent.year}-{filecontent.month.zfill(2)}-{filecontent.day.zfill(2)} LRS.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
       - filecontent: 'COMMERCE BANK'
       - filecontent: ' - (?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})'
     actions:
@@ -176,4 +187,18 @@ rules:
     actions:
       - move:
           dest: ~/Compass/Financial/Payroll/{python.year}/Paystubs/{filecontent.firstname} {filecontent.lastname}/{python.strftime('%Y-%m-%d')}.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: Patriot Software
+      - filecontent: Tax Collection
+      - filecontent: >-
+          (?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<year>\d{4})
+      - filecontent: >-
+          (?P<txid>\d{7,})
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Payroll/{filecontent.year}/Tax Collection/{filecontent.year}-{filecontent.month.zfill(2)}-{filecontent.day.zfill(2)} {filecontent.txid}.pdf
           on_conflict: skip
