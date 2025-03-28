@@ -1,3 +1,3 @@
 function trim
-  sed 's/^[ \t]*//;s/[ \t]*$//'
+  sed -z 's/^[ \n\t]*//;s/[ \n\t]*$//'
 end
