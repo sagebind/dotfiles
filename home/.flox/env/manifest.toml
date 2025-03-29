@@ -24,6 +24,7 @@ xsv.pkg-path = "xsv"
 yazi.pkg-path = "yazi"
 nvtop.pkg-path = "nvtop"
 httplz.pkg-path = "httplz"
+direnv.pkg-path = "direnv"
 
 [options]
 allow.unfree = true
