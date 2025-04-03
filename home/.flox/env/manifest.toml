@@ -27,6 +27,7 @@ httplz.pkg-path = "httplz"
 direnv.pkg-path = "direnv"
 yq.pkg-path = "yq"
 doctl.pkg-path = "doctl"
+sox.pkg-path = "sox"
 
 [options]
 allow.unfree = true

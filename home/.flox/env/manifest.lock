@@ -63,6 +63,9 @@
       "skim": {
         "pkg-path": "skim"
       },
+      "sox": {
+        "pkg-path": "sox"
+      },
       "tokei": {
         "pkg-path": "tokei"
       },
@@ -2020,6 +2023,138 @@
         "man": "/nix/store/cyxpqkvvj0zkwzxi8fx2dnngzs9vy5z3-skim-0.16.0-man",
         "out": "/nix/store/p1l7hzi6k36rd4rr1k2avv89x9lfj0fa-skim-0.16.0",
         "vim": "/nix/store/09mbi1r6w4fcyj8dr27i0lnfh2rxkwrc-skim-0.16.0-vim"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "sox",
+      "broken": false,
+      "derivation": "/nix/store/i9z6vf0kjskd4xjak1w0qjn4pngvplj4-sox-unstable-2021-05-09.drv",
+      "description": "Sample Rate Converter for audio",
+      "install_id": "sox",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "sox-unstable-2021-05-09",
+      "pname": "sox",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2021-05-09",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/v91gb0hrpwkd0751kqydszcv7xwyziq0-sox-unstable-2021-05-09-dev",
+        "lib": "/nix/store/lz17z1s18y0055cjdzsd96bfw1irlmym-sox-unstable-2021-05-09-lib",
+        "man": "/nix/store/kh3drb2m5699sjy32mncw4jc4x4dmdlg-sox-unstable-2021-05-09-man",
+        "out": "/nix/store/xlhz7lvsvn57fy7592bx5x36zryyssi0-sox-unstable-2021-05-09"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "sox",
+      "broken": false,
+      "derivation": "/nix/store/fb3n3s52vs5zr386dh0m2fl399g3hrmq-sox-unstable-2021-05-09.drv",
+      "description": "Sample Rate Converter for audio",
+      "install_id": "sox",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "sox-unstable-2021-05-09",
+      "pname": "sox",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2021-05-09",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/h213gmgpym6ap52nj5dqrzcxzcm97ivm-sox-unstable-2021-05-09-dev",
+        "lib": "/nix/store/3hknagdhv4dhhdcjjr2wfxa2xkiriaf9-sox-unstable-2021-05-09-lib",
+        "man": "/nix/store/q1v63qk5w3pni71glk872qrv5qky8gbw-sox-unstable-2021-05-09-man",
+        "out": "/nix/store/jmnk53mnd40xkk97fma2h2x6kbhp6naq-sox-unstable-2021-05-09"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "sox",
+      "broken": false,
+      "derivation": "/nix/store/bhsnvbrxd3pcxrh09f0c0086xaz6dl9y-sox-unstable-2021-05-09.drv",
+      "description": "Sample Rate Converter for audio",
+      "install_id": "sox",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "sox-unstable-2021-05-09",
+      "pname": "sox",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2021-05-09",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/wjxm95ngf1rxvwlbg13hqygf03rpr38p-sox-unstable-2021-05-09-dev",
+        "lib": "/nix/store/60hp9jqip952s899yag3px6dplwbcl37-sox-unstable-2021-05-09-lib",
+        "man": "/nix/store/93c340rr9s55yhc374y0dwmpy62wdggp-sox-unstable-2021-05-09-man",
+        "out": "/nix/store/24gq8x2jpyfr2z3arrkgyiflxm8n83if-sox-unstable-2021-05-09"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "sox",
+      "broken": false,
+      "derivation": "/nix/store/qw3w6qx8ccysyjvmiq9l0sawy2h47cf1-sox-unstable-2021-05-09.drv",
+      "description": "Sample Rate Converter for audio",
+      "install_id": "sox",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "sox-unstable-2021-05-09",
+      "pname": "sox",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2021-05-09",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/ymz7n9yhjyzvvxax1m016zi52wlrlrmy-sox-unstable-2021-05-09-dev",
+        "lib": "/nix/store/q35slnav4bh79lxr2hzs7wlzgv3jxq9z-sox-unstable-2021-05-09-lib",
+        "man": "/nix/store/4vcasyn0xzw44a2gyiir05a4zvw742g0-sox-unstable-2021-05-09-man",
+        "out": "/nix/store/9xaaz6ndynkp60lrasxvs106xq70829v-sox-unstable-2021-05-09"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
