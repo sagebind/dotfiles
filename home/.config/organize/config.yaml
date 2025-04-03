@@ -101,7 +101,7 @@ rules:
     filters:
       - extension: pdf
       - filecontent: 'SpectrumBusiness.net'
-      - filecontent: '(?P<date>[A-Z][a-z]+ \d{2}, \d{4})'
+      - filecontent: '(?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})'
       - python: |
           from datetime import datetime
           return datetime.strptime(filecontent["date"], '%B %d, %Y')
@@ -134,6 +134,18 @@ rules:
     actions:
       - move:
           dest: ~/Compass/Financial/Invoices/{filecontent.year}/{filecontent.year}-{filecontent.month.zfill(2)}-{filecontent.day.zfill(2)} LRS.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: "Eden's Glory"
+      - filecontent: Giving Statement
+      - filecontent: >-
+          (?<! to )(?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})(?! to )
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Receipts/{filecontent.year}/{filecontent.year}-{filecontent.month}-{filecontent.day} Edens Glory.pdf
           on_conflict: skip
 
   - locations: ~/Downloads
