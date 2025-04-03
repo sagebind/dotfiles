@@ -25,6 +25,8 @@ yazi.pkg-path = "yazi"
 nvtop.pkg-path = "nvtop"
 httplz.pkg-path = "httplz"
 direnv.pkg-path = "direnv"
+yq.pkg-path = "yq"
+doctl.pkg-path = "doctl"
 
 [options]
 allow.unfree = true

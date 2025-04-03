@@ -18,6 +18,9 @@
       "direnv": {
         "pkg-path": "direnv"
       },
+      "doctl": {
+        "pkg-path": "doctl"
+      },
       "doggo": {
         "pkg-path": "doggo"
       },
@@ -74,6 +77,9 @@
       },
       "yazi": {
         "pkg-path": "yazi"
+      },
+      "yq": {
+        "pkg-path": "yq"
       }
     },
     "hook": {},
@@ -465,6 +471,122 @@
       ],
       "outputs": {
         "out": "/nix/store/5acgdhnifp5hsvhw2w34jhs5xqjgv0v3-direnv-2.35.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "doctl",
+      "broken": false,
+      "derivation": "/nix/store/x0dsdz7465c3s6sy1pk171v8h3ja55ai-doctl-1.120.2.drv",
+      "description": "Command line tool for DigitalOcean services",
+      "install_id": "doctl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "doctl-1.120.2",
+      "pname": "doctl",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.120.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wagq5si7gmrdkrh7bjpikhj8j9val8yk-doctl-1.120.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "doctl",
+      "broken": false,
+      "derivation": "/nix/store/q24lgkzg3jhb8i7bz79lb5555jibp943-doctl-1.120.2.drv",
+      "description": "Command line tool for DigitalOcean services",
+      "install_id": "doctl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "doctl-1.120.2",
+      "pname": "doctl",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.120.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ybphb89z9wq56d0acp0m3ijc4vxb038v-doctl-1.120.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "doctl",
+      "broken": false,
+      "derivation": "/nix/store/33660qbr75lqnj4zk5a3cxz2q7765sca-doctl-1.120.2.drv",
+      "description": "Command line tool for DigitalOcean services",
+      "install_id": "doctl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "doctl-1.120.2",
+      "pname": "doctl",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.120.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/02nj91psyn3ldkslqg9sx9mlg26m257l-doctl-1.120.2"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "doctl",
+      "broken": false,
+      "derivation": "/nix/store/qd318vvgfif9ys4yqz4y1ldm7mdcjhzn-doctl-1.120.2.drv",
+      "description": "Command line tool for DigitalOcean services",
+      "install_id": "doctl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "doctl-1.120.2",
+      "pname": "doctl",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.120.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/z454d35b79ggyjgrmkz9vppvkphj53zr-doctl-1.120.2"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -2275,6 +2397,126 @@
       ],
       "outputs": {
         "out": "/nix/store/vbgnij8ix2xb4a1y3sbsb4f1bjbz423i-yazi-0.4.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq",
+      "broken": false,
+      "derivation": "/nix/store/7blflnc90y17xnn9lbwmbrl7w5krr817-python3.12-yq-3.4.3.drv",
+      "description": "Command-line YAML/XML/TOML processor - jq wrapper for YAML, XML, TOML documents",
+      "install_id": "yq",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "python3.12-yq-3.4.3",
+      "pname": "yq",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.4.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/65i15w8gkbx5x73qibdrk5bw8igs8xm6-python3.12-yq-3.4.3-dist",
+        "out": "/nix/store/51hijvyc5fnwpc17rqhhp4z6xpl3np4m-python3.12-yq-3.4.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq",
+      "broken": false,
+      "derivation": "/nix/store/cp5yqjp38xaws7qni1nf0yivrymfnsbr-python3.12-yq-3.4.3.drv",
+      "description": "Command-line YAML/XML/TOML processor - jq wrapper for YAML, XML, TOML documents",
+      "install_id": "yq",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "python3.12-yq-3.4.3",
+      "pname": "yq",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.4.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/nzgw5s1zdj3aqcnhbg915m0si78p4ihz-python3.12-yq-3.4.3-dist",
+        "out": "/nix/store/8w4r01phi17sz2w8hf4dnrzv3nc2b9fk-python3.12-yq-3.4.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq",
+      "broken": false,
+      "derivation": "/nix/store/i28fxr53bcwghdkc2jy16fgv9a0djbl1-python3.12-yq-3.4.3.drv",
+      "description": "Command-line YAML/XML/TOML processor - jq wrapper for YAML, XML, TOML documents",
+      "install_id": "yq",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "python3.12-yq-3.4.3",
+      "pname": "yq",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.4.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/8gz13jiwl5lqzfmw4mlq5fy51wi58b9b-python3.12-yq-3.4.3-dist",
+        "out": "/nix/store/cyjgcan8s893ws34czsym2py628nhx10-python3.12-yq-3.4.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq",
+      "broken": false,
+      "derivation": "/nix/store/bl9c7smwdzwa6ya9pi4979zibalx2ivs-python3.12-yq-3.4.3.drv",
+      "description": "Command-line YAML/XML/TOML processor - jq wrapper for YAML, XML, TOML documents",
+      "install_id": "yq",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "python3.12-yq-3.4.3",
+      "pname": "yq",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.4.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/xr1fscgpw10gzi2jnnxy85sk2sgqb507-python3.12-yq-3.4.3-dist",
+        "out": "/nix/store/8iffgndwjvbbp4fd9mr0y6ncnxqwi5k8-python3.12-yq-3.4.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

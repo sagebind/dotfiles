@@ -1,5 +1,5 @@
 [build]
-target-dir = ".cache/cargo"
+# target-dir = ".cache/cargo"
 
 [registries.crates-io]
 protocol = "sparse"
