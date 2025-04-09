@@ -171,6 +171,33 @@ rules:
 
   - locations: ~/Downloads
     filters:
+      - extension: pdf
+      - filecontent: 'Investment Statement'
+      - filecontent: >-
+          Investment #:\s+(?P<id>\d{4})
+      - filecontent: >-
+          - (?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%B %d, %Y')
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Reconciliations/{python.year}/{python.strftime('%Y-%m-%d')} FMLF {filecontent.id} Statement.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: >-
+          (?P<account>[\w ]+)( \(.+\))? Reconciliation Report
+      - filecontent: 'For the Statement Ending (?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})'
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Reconciliations/{filecontent.year}/{filecontent.year}-{filecontent.month}-{filecontent.day} {filecontent.account} Reconciliation.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
       - regex: '^Print-\d{8}-\d+\.pdf$'
       - filecontent: 'COMPASS CHURCH INC'
       - exif: pdf.pagecount
