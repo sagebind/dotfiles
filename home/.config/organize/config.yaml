@@ -128,12 +128,12 @@ rules:
   - locations: ~/Downloads
     filters:
       - extension: pdf
-      - filecontent: wisconsin.lrsrecycles.com
+      - filecontent: GFL Environmental
       - filecontent: >-
-          (?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<year>\d{4})
+          (?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})
     actions:
       - move:
-          dest: ~/Compass/Financial/Invoices/{filecontent.year}/{filecontent.year}-{filecontent.month.zfill(2)}-{filecontent.day.zfill(2)} LRS.pdf
+          dest: ~/Compass/Financial/Invoices/{filecontent.year}/{filecontent.year}-{filecontent.month}-{filecontent.day} GFL Environmental.pdf
           on_conflict: skip
 
   - locations: ~/Downloads
@@ -146,6 +146,35 @@ rules:
     actions:
       - move:
           dest: ~/Compass/Financial/Receipts/{filecontent.year}/{filecontent.year}-{filecontent.month}-{filecontent.day} Edens Glory.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: Mission Igniter
+      - filecontent: We received your Recurring Gift
+      - filecontent: Mellingers
+      - filecontent: >-
+          (?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%b %d, %Y')
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Receipts/{python.year}/{python.strftime('%Y-%m-%d')} Mellingers.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: Patriot Software
+      - filecontent: >-
+          Transaction Type:\s+Monthly Fee
+      - filecontent: >-
+          Transaction Date:\s+(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<year>\d{4})
+    actions:
+      - move:
+          dest: ~/Compass/Financial/Receipts/{filecontent.year}/{filecontent.year}-{filecontent.month.zfill(2)}-{filecontent.day.zfill(2)} Patriot Software.pdf
           on_conflict: skip
 
   - locations: ~/Downloads
@@ -210,12 +239,11 @@ rules:
 
   - locations:
       - ~/Downloads
-      - ~/Compass/Financial/Payroll/2025/Paystubs
     subfolders: true
     filters:
       - regex: '^Print-\d{8}-\d+(_\d)?\.pdf$'
       - filecontent: 'COMPASS CHURCH INC'
-      - filecontent: '^(?P<firstname>[A-Z][a-z]+)( [A-Z])? (?P<lastname>[A-Z][a-z]+)'
+      - filecontent: '^(?P<firstname>[A-Z][a-z]+)( [A-Z][a-z]*)? (?P<lastname>[A-Z][a-z]+)'
       - filecontent: '\s+(?P<start>\d{1,2}/\d{1,2}/\d{4}) - (?P<end>\d{1,2}/\d{1,2}/\d{4})'
       - exif: pdf.pagecount
       - python: |
@@ -231,7 +259,7 @@ rules:
   - locations: ~/Downloads
     filters:
       - extension: pdf
-      - filecontent: Patriot Software
+      - filecontent: Patriot
       - filecontent: Tax Collection
       - filecontent: >-
           (?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<year>\d{4})
