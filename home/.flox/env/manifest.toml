@@ -2,9 +2,13 @@ version = 1
 
 [install]
 _7zz-rar.pkg-path = "_7zz-rar"
+broot.pkg-path = "broot"
+choose.pkg-path = "choose"
 colima.pkg-path = "colima"
 colima.systems = ["aarch64-darwin"]
 difftastic.pkg-path = "difftastic"
+direnv.pkg-path = "direnv"
+doctl.pkg-path = "doctl"
 doggo.pkg-path = "doggo"
 dust.pkg-path = "dust"
 espanso-wayland.pkg-path = "espanso-wayland"
@@ -16,18 +20,19 @@ k9s.pkg-path = "k9s"
 kubectx.pkg-path = "kubectx"
 kubernetes-helm.pkg-path = "kubernetes-helm"
 lla.pkg-path = "lla"
+miniserve.pkg-path = "miniserve"
+numbat.pkg-path = "numbat"
+nvtop.pkg-path = "nvtop"
+pueue.pkg-path = "pueue"
 skim.pkg-path = "skim"
+sox.pkg-path = "sox"
+tio.pkg-path = "tio"
 tokei.pkg-path = "tokei"
 xdg-terminal-exec.pkg-path = "xdg-terminal-exec"
 xdg-terminal-exec.systems = ["x86_64-linux"]
 xsv.pkg-path = "xsv"
 yazi.pkg-path = "yazi"
-nvtop.pkg-path = "nvtop"
-httplz.pkg-path = "httplz"
-direnv.pkg-path = "direnv"
 yq.pkg-path = "yq"
-doctl.pkg-path = "doctl"
-sox.pkg-path = "sox"
 
 [options]
 allow.unfree = true
