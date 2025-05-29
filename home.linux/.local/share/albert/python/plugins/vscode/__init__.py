@@ -1,6 +1,6 @@
 from os import scandir
 from pathlib import Path
-from subprocess import run, CalledProcessError
+from subprocess import Popen, PIPE
 from albert import *
 
 
@@ -8,17 +8,17 @@ md_iid = "3.0"
 md_version = "1.0"
 md_name = "Visual Studio Code"
 md_description = "Quickly launch Visual Studio Code projects"
-md_bin_dependencies = ["code"]
+md_bin_dependencies = ["code", "locate"]
 
 
-class Plugin(PluginInstance, TriggerQueryHandler):
+class Plugin(PluginInstance, IndexQueryHandler):
     def __init__(self):
         PluginInstance.__init__(self)
-        TriggerQueryHandler.__init__(self)
+        IndexQueryHandler.__init__(self)
         self._root_dir = self.readConfig("root_dir", str) or ""
 
     def defaultTrigger(self):
-        return "vsc "
+        return "code "
 
     @property
     def root_dir(self):
@@ -38,27 +38,31 @@ class Plugin(PluginInstance, TriggerQueryHandler):
             }
         ]
 
-    def handleTriggerQuery(self, query):
+    def updateIndexItems(self):
+        self.setIndexItems(list(self._generateIndexItems()))
+
+    def _generateIndexItems(self):
         if not self.root_dir:
             return
 
-        with scandir(self.root_dir) as dirs:
-            for entry in dirs:
-                if not entry.name.startswith('.') and entry.is_dir() and query.string in entry.name:
-                    query.add(
-                        StandardItem(
-                            id=entry.path,
-                            text=entry.name,
-                            subtext=entry.path,
-                            actions=[
-                                Action(
-                                    id="open",
-                                    text="Open in Visual Studio Code",
-                                    callable=lambda path=entry.path: self._launch(path)
-                                )
-                            ]
-                        )
+        with Popen(["locate", f"{self.root_dir}/*/.git"], stdout=PIPE, text=True) as proc:
+            for line in proc.stdout:
+                path = Path(line.strip()).parent
+                yield IndexItem(
+                    string=str(path),
+                    item=StandardItem(
+                        id=str(path),
+                        text=path.name,
+                        subtext=str(path),
+                        actions=[
+                            Action(
+                                id="open",
+                                text="Open in Visual Studio Code",
+                                callable=lambda path=str(path): self._launch(path)
+                            )
+                        ]
                     )
+                )
 
     def _launch(self, path):
         runDetachedProcess(["code", path])
