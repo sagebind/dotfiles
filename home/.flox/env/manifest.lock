@@ -39,6 +39,9 @@
           "x86_64-linux"
         ]
       },
+      "flac": {
+        "pkg-path": "flac"
+      },
       "gh": {
         "pkg-path": "gh"
       },
@@ -100,6 +103,8 @@
         "pkg-path": "yq"
       }
     },
+    "hook": {},
+    "profile": {},
     "options": {
       "systems": [
         "aarch64-darwin",
@@ -108,8 +113,10 @@
         "x86_64-linux"
       ],
       "allow": {
-        "unfree": true
-      }
+        "unfree": true,
+        "licenses": []
+      },
+      "semver": {}
     }
   },
   "packages": [
@@ -1094,6 +1101,142 @@
       ],
       "outputs": {
         "out": "/nix/store/pb1dh5a5ijsfn5x7fjwsadw2g70lx7dk-espanso-2.2-unstable-2024-05-14"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "flac",
+      "broken": false,
+      "derivation": "/nix/store/y82hl3fydwy7ki2v0359wk2h759a2czc-flac-1.4.3.drv",
+      "description": "Library and tools for encoding and decoding the FLAC lossless audio file format",
+      "install_id": "flac",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "flac-1.4.3",
+      "pname": "flac",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.4.3",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/42n5h921x4iwjrxpn8nx1jy0qvgk6yk6-flac-1.4.3-bin",
+        "dev": "/nix/store/76shkyxlf12mdlw61ay3j6lchvqzw5qw-flac-1.4.3-dev",
+        "doc": "/nix/store/l9vhnpkyxnzggh2fmic3r11rhn8s05pa-flac-1.4.3-doc",
+        "man": "/nix/store/701bpbia5wqdd17pmjp3qf7hxp1rjfy8-flac-1.4.3-man",
+        "out": "/nix/store/6klx71f3i9dji72s0x44i1yl0j7bj41f-flac-1.4.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "flac",
+      "broken": false,
+      "derivation": "/nix/store/4ibcikr5qr9anw6ifcqjx7hpppb21z4y-flac-1.4.3.drv",
+      "description": "Library and tools for encoding and decoding the FLAC lossless audio file format",
+      "install_id": "flac",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "flac-1.4.3",
+      "pname": "flac",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.4.3",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/x1w7v1c0a0lv1ziq7z8ks5v1fpc7wcrc-flac-1.4.3-bin",
+        "dev": "/nix/store/iifws6j796b2lv03dzvpqqipivxjpi4c-flac-1.4.3-dev",
+        "doc": "/nix/store/ng7qknyylal1i2xssim3kwc7y7d248q3-flac-1.4.3-doc",
+        "man": "/nix/store/chvr9www4rfsljqv9agv1yy11q9mc8sw-flac-1.4.3-man",
+        "out": "/nix/store/5j677vf617crdrpv6n33b4i0y5wyq5jp-flac-1.4.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "flac",
+      "broken": false,
+      "derivation": "/nix/store/2jriy7w758vjmyy624yz7mlbngwg0wfr-flac-1.4.3.drv",
+      "description": "Library and tools for encoding and decoding the FLAC lossless audio file format",
+      "install_id": "flac",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "flac-1.4.3",
+      "pname": "flac",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.4.3",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/2l2brf2p281rbfjkvrlgz289d03zgjwv-flac-1.4.3-bin",
+        "dev": "/nix/store/yvi6cr7wfkc8q9cqv8xbrlkk7d7dahp5-flac-1.4.3-dev",
+        "doc": "/nix/store/zpvjcr71qnw4nlpr6alcs053fbjhfpi8-flac-1.4.3-doc",
+        "man": "/nix/store/ai1hjsxxph448rhp307w2lgspfd4l1rs-flac-1.4.3-man",
+        "out": "/nix/store/xppdqflb1kd5qxh85f1xws71d4scbk3y-flac-1.4.3"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "flac",
+      "broken": false,
+      "derivation": "/nix/store/2k1kz7sn4jx8w9bnlhsyw69lkb08f9nj-flac-1.4.3.drv",
+      "description": "Library and tools for encoding and decoding the FLAC lossless audio file format",
+      "install_id": "flac",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "flac-1.4.3",
+      "pname": "flac",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.4.3",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/imy2gq78cvv8js1imnnxg92xnzr2vmni-flac-1.4.3-bin",
+        "dev": "/nix/store/fhv3m9a196h1xc342n8mykibi10ib6py-flac-1.4.3-dev",
+        "doc": "/nix/store/z48d7rv9kv0c8jg31a4ql91iqyskr2b0-flac-1.4.3-doc",
+        "man": "/nix/store/gwmdi2rvcsm6ra357injrmh87v95f333-flac-1.4.3-man",
+        "out": "/nix/store/lsi9yjhqpfpgj4lm3nl4gdnvgg44q73l-flac-1.4.3"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

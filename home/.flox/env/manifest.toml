@@ -13,6 +13,7 @@ doggo.pkg-path = "doggo"
 dust.pkg-path = "dust"
 espanso-wayland.pkg-path = "espanso-wayland"
 espanso-wayland.systems = ["x86_64-linux"]
+flac.pkg-path = "flac"
 gh.pkg-path = "gh"
 gifski.pkg-path = "gifski"
 hurmit.pkg-path = "nerd-fonts.hurmit"
