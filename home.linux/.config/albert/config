@@ -1,5 +1,6 @@
 [General]
 hotkey=Ctrl+Alt+Shift+Space
+showTray=false
 telemetry=false
 
 [applications]
