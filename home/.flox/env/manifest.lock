@@ -103,8 +103,6 @@
         "pkg-path": "yq"
       }
     },
-    "hook": {},
-    "profile": {},
     "options": {
       "systems": [
         "aarch64-darwin",
@@ -113,10 +111,8 @@
         "x86_64-linux"
       ],
       "allow": {
-        "unfree": true,
-        "licenses": []
-      },
-      "semver": {}
+        "unfree": true
+      }
     }
   },
   "packages": [
