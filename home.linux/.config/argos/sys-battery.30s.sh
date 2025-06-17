@@ -1,9 +1,23 @@
 #!/usr/bin/env bash
 
-BAT_INFO=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0)
+{
+    read BATTERY_STATE
+    read ENERGY_RATE
+} <<< $(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | awk '
+    /state:/ {
+        print $2
+    }
+    /energy-rate:/ {
+        printf "%.1f", $2
+    }
+')
 
-if ! echo "$BAT_INFO" | grep -q 'state: *charging'; then
-    echo "$BAT_INFO" | awk '/energy-rate/ { printf "<small>%.1f W</small> | iconName=battery-full-charged-symbolic", $2 }'
-else
-    echo "---"
-fi
+case "$BATTERY_STATE" in
+    charging | fully-charged)
+        echo "---"
+        ;;
+
+    *)
+        echo "<small>$ENERGY_RATE W</small> | iconName=battery-full-charged-symbolic"
+        ;;
+esac

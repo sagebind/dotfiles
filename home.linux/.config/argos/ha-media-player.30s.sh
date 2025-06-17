@@ -31,15 +31,15 @@ fi
     read MEDIA_TITLE
 } <<< $(
     curl -s -H "Authorization: Bearer $HA_TOKEN" $HA_ENDPOINT/states/$MEDIA_PLAYER_ID \
-        | jq -r '.state, .attributes.media_title'
+        | jq -r '.state, .attributes.media_title // .attributes.source'
 )
 
 if [ "$MEDIA_PLAYER_STATE" == "playing" ]; then
-    echo "$MEDIA_TITLE | iconName=media-playback-start-symbolic"
+    echo "<small>${MEDIA_TITLE/|/｜}</small> | iconName=media-playback-start-symbolic"
     echo "---"
     echo "Pause | iconName=media-playback-pause-symbolic bash='${BASH_SOURCE[0]}' param1=pause terminal=false refresh=false"
 elif [ "$MEDIA_PLAYER_STATE" == "paused" ]; then
-    echo "$MEDIA_TITLE | iconName=media-playback-pause-symbolic"
+    echo "<small>${MEDIA_TITLE/|/｜}</small> | iconName=media-playback-pause-symbolic"
     echo "---"
     echo "Play | iconName=media-playback-start-symbolic bash='${BASH_SOURCE[0]}' param1=play terminal=false refresh=false"
 else
