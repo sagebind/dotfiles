@@ -87,6 +87,13 @@
       "tokei": {
         "pkg-path": "tokei"
       },
+      "walker": {
+        "pkg-path": "walker",
+        "systems": [
+          "aarch64-linux",
+          "x86_64-linux"
+        ]
+      },
       "xdg-terminal-exec": {
         "pkg-path": "xdg-terminal-exec",
         "systems": [
@@ -3001,6 +3008,64 @@
       ],
       "outputs": {
         "out": "/nix/store/vjak3p2wnsb4qp320ann09xyy4bw9r70-tokei-12.1.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "walker",
+      "broken": false,
+      "derivation": "/nix/store/71ira78m1xafq1279fhqr699skbv728d-walker-0.12.10.drv",
+      "description": "Wayland-native application runner",
+      "install_id": "walker",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "walker-0.12.10",
+      "pname": "walker",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ilz7hfhdcpwlxx7qj307m79lwxp6acz9-walker-0.12.10"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "walker",
+      "broken": false,
+      "derivation": "/nix/store/ha689cbvrr7b2lyaqrgrbmj41x6c0yyd-walker-0.12.10.drv",
+      "description": "Wayland-native application runner",
+      "install_id": "walker",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "walker-0.12.10",
+      "pname": "walker",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.12.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1fz5g806f4kbq3gc1sgpi99w9gvvrmd1-walker-0.12.10"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
