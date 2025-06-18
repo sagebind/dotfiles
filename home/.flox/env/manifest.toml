@@ -36,6 +36,8 @@ yazi.pkg-path = "yazi"
 yq.pkg-path = "yq"
 walker.pkg-path = "walker"
 walker.systems = ["aarch64-linux", "x86_64-linux"]
+libinput-gestures.pkg-path = "libinput-gestures"
+libinput-gestures.systems = ["aarch64-linux", "x86_64-linux"]
 
 [options]
 allow.unfree = true

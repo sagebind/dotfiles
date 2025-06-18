@@ -1,0 +1,252 @@
+app_launch_prefix: ""
+terminal_title_flag: ""
+locale: ""
+close_when_open: true
+theme: custom
+monitor: ""
+hotreload_theme: true
+ignore_mouse: true
+as_window: false
+timeout: 0
+disable_click_to_close: true
+force_keyboard_focus: true
+keys:
+  accept_typeahead:
+    - tab
+  trigger_labels: lalt
+  next:
+    - down
+  prev:
+    - up
+  close:
+    - esc
+  remove_from_history:
+    - shift backspace
+  resume_query:
+    - ctrl r
+  toggle_exact_search:
+    - ctrl m
+  activation_modifiers:
+    keep_open: shift
+    alternate: alt
+events:
+  on_activate: ""
+  on_selection: ""
+  on_exit: ""
+  on_launch: ""
+  on_query_change: ""
+list:
+  dynamic_sub: true
+  keyboard_scroll_style: emacs
+  max_entries: 50
+  show_initial_entries: true
+  single_click: true
+  visibility_threshold: 20
+  placeholder: No Results
+search:
+  argument_delimiter: "#"
+  placeholder: Search...
+  delay: 0
+  resume_last_query: false
+activation_mode:
+  labels: jkl;asdf
+builtins:
+  applications:
+    name: applications
+    placeholder: Applications
+    weight: 5
+    prioritize_new: true
+    hide_actions_with_empty_query: true
+    context_aware: true
+    refresh: true
+    show_sub_when_single: true
+    show_icon_when_single: true
+    show_generic: true
+    history: true
+    actions:
+      enabled: true
+      hide_category: false
+      hide_without_query: true
+    blacklist:
+      - regexp: DaVinci Resolve
+        label: true
+  bookmarks:
+    weight: 5
+    placeholder: Bookmarks
+    name: bookmarks
+    icon: bookmark
+    switcher_only: true
+    entries:
+      - label: Walker
+        url: https://github.com/abenz1267/walker
+        keywords:
+          - walker
+          - github
+  xdph_picker:
+    hidden: true
+    weight: 5
+    placeholder: Screen/Window Picker
+    show_sub_when_single: true
+    name: xdphpicker
+    switcher_only: true
+  calc:
+    require_number: true
+    weight: 5
+    prefix: "="
+    name: calc
+    icon: accessories-calculator
+    placeholder: Calculator
+    min_chars: 4
+  windows:
+    weight: 5
+    icon: view-restore
+    name: windows
+    placeholder: Windows
+    show_icon_when_single: true
+  clipboard:
+    always_put_new_on_top: true
+    exec: wl-copy
+    weight: 5
+    name: clipboard
+    avoid_line_breaks: true
+    placeholder: Clipboard
+    image_height: 300
+    max_entries: 10
+    switcher_only: true
+  commands:
+    name: commands
+    placeholder: Commands
+    icon: utilities-terminal
+    weight: 5
+    switcher_only: false
+  emojis:
+    exec: wl-copy
+    weight: 5
+    name: emojis
+    placeholder: Emojis
+    switcher_only: false
+    prefix: ":"
+    history: true
+    typeahead: true
+    show_unqualified: false
+  symbols:
+    after_copy: ""
+    weight: 5
+    name: symbols
+    placeholder: Symbols
+    switcher_only: true
+    history: true
+    typeahead: true
+  finder:
+    use_fd: false
+    weight: 5
+    icon: file
+    name: finder
+    placeholder: Finder
+    switcher_only: true
+    ignore_gitignore: true
+    refresh: true
+    concurrency: 8
+    show_icon_when_single: true
+    preview_images: false
+  runner:
+    eager_loading: true
+    weight: 1
+    icon: utilities-terminal
+    name: runner
+    placeholder: Runner
+    typeahead: true
+    history: true
+    generic_entry: false
+    refresh: true
+    use_fd: false
+  ssh:
+    weight: 5
+    icon: preferences-system-network
+    name: ssh
+    placeholder: SSH
+    switcher_only: true
+    history: true
+    refresh: true
+  switcher:
+    weight: 5
+    name: switcher
+    placeholder: Switcher
+    prefix: /
+  websearch:
+    weight: 50
+    icon: applications-internet
+    name: websearch
+    placeholder: Websearch
+    entries:
+      - name: Kagi
+        url: https://kagi.com/search?q=%TERM%
+      - name: Kagi Assistant
+        url: https://kagi.com/assistant?q=%TERM%
+  dmenu:
+    hidden: true
+    weight: 5
+    name: dmenu
+    placeholder: Dmenu
+    switcher_only: true
+plugins:
+  - name: hyprland
+    placeholder: Hyprland
+    weight: 50
+    entries:
+      - label: Reload
+        icon: hyprland
+        exec: ~/.config/hypr/scripts/reload.sh
+  - name: kill
+    prefix: "k "
+    src_once: "ps -u $USER -o comm= | sort -u"
+    cmd: "pkill -f %RESULT%"
+  - name: power
+    placeholder: Power
+    weight: 20
+    keep_sort: false
+    recalculate_score: true
+    show_icon_when_single: true
+    entries:
+      - label: Log Out
+        icon: system-shutdown
+        exec: hyprctl dispatch exit
+        searchable: logoff logout log out
+      - label: Suspend
+        icon: system-shutdown
+        exec: systemctl suspend
+        searchable: suspend
+        searchable2: sleep
+      - label: Shutdown
+        icon: system-shutdown
+        exec: shutdown now
+      - label: Reboot
+        icon: system-reboot
+        exec: reboot
+      - label: Lock Screen
+        icon: system-lock-screen
+        exec: playerctl --all-players pause & hyprlock
+  - name: code
+    prefix: "code "
+    weight: 10
+    src_once: >-
+      locate '/data/src/*/.git' | sed 's/\/.git$//'
+    cmd: >-
+      code %RESULT%
+  - name: organize
+    placeholder: Organize
+    weight: 10
+    entries:
+      - label: Simulate
+        exec: >-
+          ghostty -e "organize sim; read -p 'Press enter to close.'"
+      - label: Run
+        exec: >-
+          ghostty -e "organize run; read -p 'Press enter to close.'"
+  - name: resolve
+    placeholder: DaVinci Resolve
+    weight: 6
+    entries:
+      - label: DaVinci Resolve
+        icon: /opt/resolve/graphics/DV_Resolve.png
+        exec: hyprctl dispatch exec ~/.config/hypr/scripts/resolve.sh
