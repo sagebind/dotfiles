@@ -51,6 +51,13 @@
       "hurmit": {
         "pkg-path": "nerd-fonts.hurmit"
       },
+      "hyprshell": {
+        "pkg-path": "hyprshell",
+        "pkg-group": "hyprshell",
+        "systems": [
+          "x86_64-linux"
+        ]
+      },
       "k9s": {
         "pkg-path": "k9s"
       },
@@ -3515,6 +3522,35 @@
       },
       "system": "x86_64-linux",
       "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "hyprshell",
+      "broken": false,
+      "derivation": "/nix/store/9dpm5hsdygfnmwr4bc0ym9c6pdqazrzc-hyprshell-4.2.5.drv",
+      "description": "CLI/GUI that allows switching between windows in Hyprland",
+      "install_id": "hyprshell",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e83b64f727c88a7711a2c463a7b16eedb69a84c",
+      "name": "hyprshell-4.2.5",
+      "pname": "hyprshell",
+      "rev": "9e83b64f727c88a7711a2c463a7b16eedb69a84c",
+      "rev_count": 816272,
+      "rev_date": "2025-06-17T04:31:58Z",
+      "scrape_date": "2025-06-18T01:32:30.259885Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.2.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1jyd08qdm02r0kp88pc42ljwjw6lskd1-hyprshell-4.2.5"
+      },
+      "system": "x86_64-linux",
+      "group": "hyprshell",
       "priority": 5
     }
   ]

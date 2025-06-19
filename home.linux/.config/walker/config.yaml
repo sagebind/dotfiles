@@ -86,7 +86,7 @@ builtins:
     placeholder: Calculator
     min_chars: 4
   windows:
-    weight: 5
+    weight: 100
     icon: view-restore
     name: windows
     placeholder: Windows
@@ -148,14 +148,6 @@ builtins:
     generic_entry: false
     refresh: true
     use_fd: false
-  ssh:
-    weight: 5
-    icon: preferences-system-network
-    name: ssh
-    placeholder: SSH
-    switcher_only: true
-    history: true
-    refresh: true
   switcher:
     weight: 5
     name: switcher
