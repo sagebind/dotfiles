@@ -70,18 +70,6 @@ builtins:
     blacklist:
       - regexp: DaVinci Resolve
         label: true
-  bookmarks:
-    weight: 5
-    placeholder: Bookmarks
-    name: bookmarks
-    icon: bookmark
-    switcher_only: true
-    entries:
-      - label: Walker
-        url: https://github.com/abenz1267/walker
-        keywords:
-          - walker
-          - github
   xdph_picker:
     hidden: true
     weight: 5
@@ -173,22 +161,14 @@ builtins:
     name: switcher
     placeholder: Switcher
     prefix: /
-  websearch:
-    weight: 50
-    icon: applications-internet
-    name: websearch
-    placeholder: Websearch
-    entries:
-      - name: Kagi
-        url: https://kagi.com/search?q=%TERM%
-      - name: Kagi Assistant
-        url: https://kagi.com/assistant?q=%TERM%
   dmenu:
     hidden: true
     weight: 5
     name: dmenu
     placeholder: Dmenu
     switcher_only: true
+
+# Here is where most of the custom goodies are.
 plugins:
   - name: hyprland
     placeholder: Hyprland
@@ -250,3 +230,63 @@ plugins:
       - label: DaVinci Resolve
         icon: /opt/resolve/graphics/DV_Resolve.png
         exec: hyprctl dispatch exec ~/.config/hypr/scripts/resolve.sh
+
+  # Searches for Firefox toolbar bookmarks by page title and URL. Only the top 10
+  # ordered by Firefox's "frecency" are returned at a time, then Walker re-sorts
+  # by distance to search term.
+  - name: firefox_bookmarks
+    placeholder: Firefox Bookmarks
+    weight: 10
+    delay: 1000
+    keep_sort: true
+    parser: json
+    src: >-
+      FIREFOX_DIR=$HOME/.mozilla/firefox
+      PROFILE_ID=$(sed -n 's/^Default=//p' $FIREFOX_DIR/installs.ini)
+      BOOKMARKS_FILE="$FIREFOX_DIR/$PROFILE_ID/places.sqlite"
+
+      SQL="
+        WITH RECURSIVE bookmarks_tree(bookmark_id, root_id) AS (
+          SELECT id AS bookmark_id, id AS root_id
+          FROM moz_bookmarks
+          WHERE parent = 1
+          UNION ALL
+          SELECT b.id AS bookmark_id, tree.root_id
+          FROM moz_bookmarks b
+          JOIN bookmarks_tree tree ON b.parent = tree.bookmark_id
+        )
+        SELECT bookmark.title, place.url, place.preview_image_url, place.frecency
+        FROM bookmarks_tree tree
+        JOIN moz_bookmarks bookmark ON bookmark.id = tree.bookmark_id
+        JOIN moz_bookmarks root ON root.id = tree.root_id
+        JOIN moz_places place ON place.id = bookmark.fk
+        WHERE tree.bookmark_id != tree.root_id
+          AND (bookmark.title LIKE '%%TERM%%' OR place.url LIKE '%%TERM%%')
+          AND root.title = 'toolbar'
+        ORDER BY place.frecency DESC
+        LIMIT 10
+      "
+
+      sqlite3 -json "file:${BOOKMARKS_FILE}?immutable=1" "$SQL" | jq 'map({
+        label: .title,
+        exec: ("xdg-open " + .url),
+        sub: .url,
+        searchable: .title,
+        searchable2: .url
+      })'
+
+  # Offers to open a web search using Kagi, but also returns search term
+  # suggestions.
+  - name: kagi
+    placeholder: Kagi Search
+    weight: 1
+    delay: 2000 # don't spam kagi too much
+    parser: json
+    src: >-
+      curl -s --get --data-urlencode 'q=%TERM%' https://kagi.com/api/autosuggest | jq -r '[.[0]] + .[1] | unique | map({
+        label: .,
+        icon: "'$HOME'/.local/share/albert/python/plugins/kagi/kagi.svg",
+        sub: (@uri "https://kagi.com/search?q=\(.)"),
+        exec: (@sh "xdg-open \(@uri "https://kagi.com/search?q=\(.)")"),
+        exec_alt: (@sh "xdg-open \(@uri "https://kagi.com/assistant?q=\(.)")")
+      })'
