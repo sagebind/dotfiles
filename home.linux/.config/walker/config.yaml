@@ -6,7 +6,6 @@ theme: custom
 monitor: ""
 hotreload_theme: true
 ignore_mouse: true
-as_window: false
 timeout: 0
 disable_click_to_close: true
 force_keyboard_focus: true
@@ -77,14 +76,14 @@ builtins:
     show_sub_when_single: true
     name: xdphpicker
     switcher_only: true
-  calc:
-    require_number: true
-    weight: 5
-    prefix: "="
-    name: calc
-    icon: accessories-calculator
-    placeholder: Calculator
-    min_chars: 4
+  # calc:
+  #   require_number: true
+  #   weight: 5
+  #   prefix: "="
+  #   name: calc
+  #   icon: accessories-calculator
+  #   placeholder: Calculator
+  #   min_chars: 4
   windows:
     weight: 100
     icon: view-restore
@@ -222,6 +221,13 @@ plugins:
       - label: DaVinci Resolve
         icon: /opt/resolve/graphics/DV_Resolve.png
         exec: hyprctl dispatch exec ~/.config/hypr/scripts/resolve.sh
+
+  - name: qalc
+    prefix: "="
+    src: >-
+      qalc '%TERM%'
+    cmd: >-
+      wl-copy '%RESULT%'
 
   # Searches for Firefox toolbar bookmarks by page title and URL. Only the top 10
   # ordered by Firefox's "frecency" are returned at a time, then Walker re-sorts

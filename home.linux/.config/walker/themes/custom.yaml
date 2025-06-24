@@ -22,13 +22,16 @@ ui:
             pixel_size: 24
             theme: ""
       margins:
-        top: 300
+        # top: 300
+        top: 0
       scroll:
         list:
           max_height: 500
           max_width: 400
           min_width: 400
           width: 400
+          min_height: 500
+          height: 500
           item:
             activation_label:
               h_align: fill
