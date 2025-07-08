@@ -197,13 +197,18 @@ plugins:
       - label: Lock Screen
         icon: system-lock-screen
         exec: playerctl --all-players pause & hyprlock
+
+  # Open a directory in vscode, populated from recent workspace history.
   - name: code
     prefix: "code "
     weight: 10
+    # src_once: >-
+    #   locate '/data/src/*/.git' | sed 's/\/.git$//'
     src_once: >-
-      locate '/data/src/*/.git' | sed 's/\/.git$//'
+      jq -r '.profileAssociations.workspaces | keys[] | sub("^file://"; "")' ~/.config/Code/User/globalStorage/storage.json
     cmd: >-
       code %RESULT%
+
   - name: organize
     placeholder: Organize
     weight: 10
