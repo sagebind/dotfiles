@@ -130,6 +130,8 @@ rules:
       - extension: pdf
       - filecontent: GFL Environmental
       - filecontent: >-
+          U\d{11}
+      - filecontent: >-
           (?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})
     actions:
       - move:
@@ -179,28 +181,35 @@ rules:
 
   - locations: ~/Downloads
     filters:
-      - extension: pdf
-      - filecontent: 'COMMERCE BANK'
-      - filecontent: ' - (?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})'
+      - regex: >-
+          ^Statement-(?P<year>\d{4})(?P<month>\d{2})(?P<day>\d{2})\.pdf$
+      - filecontent: COMMERCE BANK
     actions:
       - move:
-          dest: ~/Compass/Financial/Reconciliations/{filecontent.year}/{filecontent.year}-{filecontent.month}-{filecontent.day} Charity Charge Statement.pdf
+          dest: ~/Compass/Financial/Reconciliations/{regex.year}/{regex.year}-{regex.month}-{regex.day} Charity Charge Statement.pdf
           on_conflict: skip
 
   - locations: ~/Downloads
     filters:
-      - extension: pdf
-      - filecontent: 'BMO ELITE BUSINESS CKG'
-      - filecontent: 'ACCOUNT NUMBER\s*\d+(?P<account>\d{4})'
-      - filecontent: '\s+TO\s+(?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{2})'
+      - regex: >-
+          ^\d+-statements-8233\.pdf$
+      - filecontent: BMO ELITE BUSINESS CKG
+      - filecontent: >-
+          Primary Account Number\s*\d+(?P<account>\d{4})
+      - filecontent: >-
+          \s+through\s+(?P<date>[A-Z][a-z]+ \d{2}, \d{4})
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%B %d, %Y')
     actions:
       - move:
-          dest: ~/Compass/Financial/Reconciliations/20{filecontent.year}/20{filecontent.year}-{filecontent.month}-{filecontent.day} BMO {filecontent.account} Statement.pdf
+          dest: ~/Compass/Financial/Reconciliations/{python.year}/{python.strftime('%Y-%m-%d')} BMO {filecontent.account} Statement.pdf
           on_conflict: skip
 
   - locations: ~/Downloads
     filters:
-      - extension: pdf
+      - regex: >-
+          ^\d+ - Investment Statement - .+\.pdf$
       - filecontent: 'Investment Statement'
       - filecontent: >-
           Investment #:\s+(?P<id>\d{4})
