@@ -43,6 +43,20 @@ rules:
           on_conflict: deduplicate
 
   - locations: ~/Downloads
+    filters:
+      - name
+      - regex: >-
+          ^UB\d+_\d+_\d+\.pdf$
+      - filecontent: Janesville Water and Wastewater Utility
+      - filecontent: Stephen Coakley
+      - filecontent: >-
+          Bill Date\s*(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<year>\d{4})
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Receipts/{filecontent.year}-{filecontent.month.zfill(2)}-{filecontent.day.zfill(2)} {name}.pdf
+          on_conflict: deduplicate
+
+  - locations: ~/Downloads
     subfolders: true
     filters:
       - extension: pdf
@@ -227,7 +241,7 @@ rules:
     filters:
       - extension: pdf
       - filecontent: >-
-          (?P<account>[\w ]+)( \(.+\))? Reconciliation Report
+          (?P<account>[\w\- ]+)( \(.+\))? Reconciliation Report
       - filecontent: 'For the Statement Ending (?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})'
     actions:
       - move:
