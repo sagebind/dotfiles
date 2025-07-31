@@ -39,6 +39,9 @@
           "x86_64-linux"
         ]
       },
+      "eza": {
+        "pkg-path": "eza"
+      },
       "flac": {
         "pkg-path": "flac"
       },
@@ -59,7 +62,8 @@
         ]
       },
       "k9s": {
-        "pkg-path": "k9s"
+        "pkg-path": "k9s",
+        "pkg-group": "k9s"
       },
       "kubectx": {
         "pkg-path": "kubectx"
@@ -73,9 +77,6 @@
           "aarch64-linux",
           "x86_64-linux"
         ]
-      },
-      "lla": {
-        "pkg-path": "lla"
       },
       "miniserve": {
         "pkg-path": "miniserve"
@@ -101,12 +102,8 @@
       "tokei": {
         "pkg-path": "tokei"
       },
-      "walker": {
-        "pkg-path": "walker",
-        "systems": [
-          "aarch64-linux",
-          "x86_64-linux"
-        ]
+      "uv": {
+        "pkg-path": "uv"
       },
       "xdg-terminal-exec": {
         "pkg-path": "xdg-terminal-exec",
@@ -137,6 +134,151 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "hyprshell",
+      "broken": false,
+      "derivation": "/nix/store/cnvzib9f8i6zxbcnz1w2jmr8q5fi63rv-hyprshell-4.5.0.drv",
+      "description": "Modern GTK4-based window switcher and application launcher for Hyprland",
+      "install_id": "hyprshell",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "name": "hyprshell-4.5.0",
+      "pname": "hyprshell",
+      "rev": "dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "rev_count": 836203,
+      "rev_date": "2025-07-28T09:26:29Z",
+      "scrape_date": "2025-07-30T01:31:23.033317Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.5.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/3555rgsb7siky8gp9a48mmhvvlr4jf40-hyprshell-4.5.0"
+      },
+      "system": "x86_64-linux",
+      "group": "hyprshell",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/9xam2xami8hmhibq32zh9c72iigjkg1m-k9s-0.50.9.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "name": "k9s-0.50.9",
+      "pname": "k9s",
+      "rev": "dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "rev_count": 836203,
+      "rev_date": "2025-07-28T09:26:29Z",
+      "scrape_date": "2025-07-30T00:28:06.130882Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.50.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9lbspbg4vwqji66y5cjx4fdkzyc6gndc-k9s-0.50.9"
+      },
+      "system": "aarch64-darwin",
+      "group": "k9s",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/lilkphprbayh1lgjs9bj0mqd65slbbjq-k9s-0.50.9.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "name": "k9s-0.50.9",
+      "pname": "k9s",
+      "rev": "dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "rev_count": 836203,
+      "rev_date": "2025-07-28T09:26:29Z",
+      "scrape_date": "2025-07-30T00:47:43.359323Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.50.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/0p2d1lqikd1ybji3zf8nffcj3s24a1lh-k9s-0.50.9"
+      },
+      "system": "aarch64-linux",
+      "group": "k9s",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/9rrwq5mj3rwvf6y9r71acilk990j300s-k9s-0.50.9.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "name": "k9s-0.50.9",
+      "pname": "k9s",
+      "rev": "dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "rev_count": 836203,
+      "rev_date": "2025-07-28T09:26:29Z",
+      "scrape_date": "2025-07-30T01:07:26.495263Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.50.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/fyh4dy9xcyi3wf5rclbhn6ihssxvnn6k-k9s-0.50.9"
+      },
+      "system": "x86_64-darwin",
+      "group": "k9s",
+      "priority": 5
+    },
+    {
+      "attr_path": "k9s",
+      "broken": false,
+      "derivation": "/nix/store/m8p3i4fl4w5phznm4wryvn3d4l4qn1yj-k9s-0.50.9.drv",
+      "description": "Kubernetes CLI To Manage Your Clusters In Style",
+      "install_id": "k9s",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "name": "k9s-0.50.9",
+      "pname": "k9s",
+      "rev": "dc9637876d0dcc8c9e5e22986b857632effeb727",
+      "rev_count": 836203,
+      "rev_date": "2025-07-28T09:26:29Z",
+      "scrape_date": "2025-07-30T01:31:23.497587Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.50.9",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gjlg5swbvf9kx15da6qb6gpgmgf8a8zi-k9s-0.50.9"
+      },
+      "system": "x86_64-linux",
+      "group": "k9s",
+      "priority": 5
+    },
     {
       "attr_path": "_7zz-rar",
       "broken": false,
@@ -1124,6 +1266,130 @@
       "priority": 5
     },
     {
+      "attr_path": "eza",
+      "broken": false,
+      "derivation": "/nix/store/wz4vxn44g6v04xv1cfy1dyvvhqks1r2y-eza-0.20.18.drv",
+      "description": "Modern, maintained replacement for ls",
+      "install_id": "eza",
+      "license": "EUPL-1.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "eza-0.20.18",
+      "pname": "eza",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.20.18",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/dkbajlxyj3fi5yary44axscv0ly84r61-eza-0.20.18-man",
+        "out": "/nix/store/h5g5kxzk3bgn1m2yinwfcr17n7cj153a-eza-0.20.18"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "eza",
+      "broken": false,
+      "derivation": "/nix/store/5ci9253v51nsx27xi1lr7axvc5daam5i-eza-0.20.18.drv",
+      "description": "Modern, maintained replacement for ls",
+      "install_id": "eza",
+      "license": "EUPL-1.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "eza-0.20.18",
+      "pname": "eza",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.20.18",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/js5klkqz9ybg7s5p3nqwz8cncwd81bz1-eza-0.20.18-man",
+        "out": "/nix/store/5yc4i5gpy6rgf974bqi2jji1292bi0b7-eza-0.20.18"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "eza",
+      "broken": false,
+      "derivation": "/nix/store/8ppnzxcd5yil28qc9nb4m1dl4divv17c-eza-0.20.18.drv",
+      "description": "Modern, maintained replacement for ls",
+      "install_id": "eza",
+      "license": "EUPL-1.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "eza-0.20.18",
+      "pname": "eza",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.20.18",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/kpnpjjd1359p6jrbidw9zj0hf6ic19dd-eza-0.20.18-man",
+        "out": "/nix/store/vx5c8ngd5z7485yhx83rwawgnx3159sn-eza-0.20.18"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "eza",
+      "broken": false,
+      "derivation": "/nix/store/210g99am5fkwm6kv4ldr72sqjvz43lvg-eza-0.20.18.drv",
+      "description": "Modern, maintained replacement for ls",
+      "install_id": "eza",
+      "license": "EUPL-1.2",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "eza-0.20.18",
+      "pname": "eza",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.20.18",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "man": "/nix/store/n3wazqa0i736p02y7ykk68x4rc6c9wdg-eza-0.20.18-man",
+        "out": "/nix/store/962mr3q13grdfx7i0phn3plckqnwk8gg-eza-0.20.18"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "flac",
       "broken": false,
       "derivation": "/nix/store/y82hl3fydwy7ki2v0359wk2h759a2czc-flac-1.4.3.drv",
@@ -1608,122 +1874,6 @@
       "priority": 5
     },
     {
-      "attr_path": "k9s",
-      "broken": false,
-      "derivation": "/nix/store/68yxgy24qc1hfvr1kvqyili6pqzqqbdk-k9s-0.32.7.drv",
-      "description": "Kubernetes CLI To Manage Your Clusters In Style",
-      "install_id": "k9s",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "k9s-0.32.7",
-      "pname": "k9s",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.32.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/davyazrjq67v3asr3c166xwh2q4q2wmj-k9s-0.32.7"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "k9s",
-      "broken": false,
-      "derivation": "/nix/store/sijvaqssgdhwkx1v6f3q12fdra3r39xz-k9s-0.32.7.drv",
-      "description": "Kubernetes CLI To Manage Your Clusters In Style",
-      "install_id": "k9s",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "k9s-0.32.7",
-      "pname": "k9s",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.32.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/jkibg8q4phcw1yj8lx5f5avshzbjjr8f-k9s-0.32.7"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "k9s",
-      "broken": false,
-      "derivation": "/nix/store/xi524x3v83dbydq9skb85afh5lqlhly6-k9s-0.32.7.drv",
-      "description": "Kubernetes CLI To Manage Your Clusters In Style",
-      "install_id": "k9s",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "k9s-0.32.7",
-      "pname": "k9s",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.32.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/3j6m04knddvzgcq3xp0vr1551s6ii93s-k9s-0.32.7"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "k9s",
-      "broken": false,
-      "derivation": "/nix/store/n7jiyip445zchpcg3nng2j0bvvr68270-k9s-0.32.7.drv",
-      "description": "Kubernetes CLI To Manage Your Clusters In Style",
-      "install_id": "k9s",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "k9s-0.32.7",
-      "pname": "k9s",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.32.7",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/m8d3pcdzrcfvy3rzkjpgfr0v94a1pf4i-k9s-0.32.7"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
       "attr_path": "kubectx",
       "broken": false,
       "derivation": "/nix/store/xg36l1sykb3zaxnkhi7q00cyv2rw3ax4-kubectx-0.9.5.drv",
@@ -2008,122 +2158,6 @@
       ],
       "outputs": {
         "out": "/nix/store/mdxadr04l3p590anh28ri85aywhaaa6b-libinput-gestures-2.78"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "lla",
-      "broken": false,
-      "derivation": "/nix/store/qyzrh869nldij7c8igw3km8hhibd32fh-lla-0.3.10.drv",
-      "description": "Blazing-fast `ls` replacement with superpowers",
-      "install_id": "lla",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "lla-0.3.10",
-      "pname": "lla",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.3.10",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/3nmmd0971hqzw13snz15887k231d2ppa-lla-0.3.10"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "lla",
-      "broken": false,
-      "derivation": "/nix/store/sdlksq71rsljbmpfxzm9nrpvzhjbnrwh-lla-0.3.10.drv",
-      "description": "Blazing-fast `ls` replacement with superpowers",
-      "install_id": "lla",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "lla-0.3.10",
-      "pname": "lla",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.3.10",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/lglg50mr78gbq8qmjv4rk43ac7njsqqg-lla-0.3.10"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "lla",
-      "broken": false,
-      "derivation": "/nix/store/dnc0kgiiggq53l7nyxw4hwmrn39b1dcx-lla-0.3.10.drv",
-      "description": "Blazing-fast `ls` replacement with superpowers",
-      "install_id": "lla",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "lla-0.3.10",
-      "pname": "lla",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.3.10",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/8l3wlpj4n9l7d0b6xw6lmpif1hzyd5az-lla-0.3.10"
-      },
-      "system": "x86_64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "lla",
-      "broken": false,
-      "derivation": "/nix/store/9iqymsdz72l5544lblpx7p20vfw6rs7w-lla-0.3.10.drv",
-      "description": "Blazing-fast `ls` replacement with superpowers",
-      "install_id": "lla",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "lla-0.3.10",
-      "pname": "lla",
-      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "rev_count": 744133,
-      "rev_date": "2025-01-26T09:59:49Z",
-      "scrape_date": "2025-01-27T03:28:00Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.3.10",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/048nka7jnh0iyvx8lh1lag3nqy2b0wd6-lla-0.3.10"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -3086,15 +3120,15 @@
       "priority": 5
     },
     {
-      "attr_path": "walker",
+      "attr_path": "uv",
       "broken": false,
-      "derivation": "/nix/store/71ira78m1xafq1279fhqr699skbv728d-walker-0.12.10.drv",
-      "description": "Wayland-native application runner",
-      "install_id": "walker",
-      "license": "MIT",
+      "derivation": "/nix/store/qmigc7mhq9qv1f8arg0r201f291mq219-uv-0.5.24.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
       "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "walker-0.12.10",
-      "pname": "walker",
+      "name": "uv-0.5.24",
+      "pname": "uv",
       "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
       "rev_count": 744133,
       "rev_date": "2025-01-26T09:59:49Z",
@@ -3103,27 +3137,56 @@
         "unstable"
       ],
       "unfree": false,
-      "version": "0.12.10",
+      "version": "0.5.24",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/ilz7hfhdcpwlxx7qj307m79lwxp6acz9-walker-0.12.10"
+        "out": "/nix/store/85n218m0018jbnrkbw1kh9r3bkb690j6-uv-0.5.24"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/mj2pbk75ah93m3dn9ffgag3azxkmsxkw-uv-0.5.24.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "uv-0.5.24",
+      "pname": "uv",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.5.24",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/4qrdksh2p2w4ny2mh8zjnfrbnd9nz6c2-uv-0.5.24"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
       "priority": 5
     },
     {
-      "attr_path": "walker",
+      "attr_path": "uv",
       "broken": false,
-      "derivation": "/nix/store/ha689cbvrr7b2lyaqrgrbmj41x6c0yyd-walker-0.12.10.drv",
-      "description": "Wayland-native application runner",
-      "install_id": "walker",
-      "license": "MIT",
+      "derivation": "/nix/store/rv4wqwhif104yl8410qddb9hlb1r33sl-uv-0.5.24.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
       "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
-      "name": "walker-0.12.10",
-      "pname": "walker",
+      "name": "uv-0.5.24",
+      "pname": "uv",
       "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
       "rev_count": 744133,
       "rev_date": "2025-01-26T09:59:49Z",
@@ -3132,12 +3195,41 @@
         "unstable"
       ],
       "unfree": false,
-      "version": "0.12.10",
+      "version": "0.5.24",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/1fz5g806f4kbq3gc1sgpi99w9gvvrmd1-walker-0.12.10"
+        "out": "/nix/store/6kd93sk9sn3qnlrvkn1kzrrcfnjx1175-uv-0.5.24"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/11qkcpby0xs9pf1bfmryhscpf2bwch24-uv-0.5.24.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "uv-0.5.24",
+      "pname": "uv",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.5.24",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2676bcaab4602yc8ynk63bhw81y27axf-uv-0.5.24"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -3522,35 +3614,6 @@
       },
       "system": "x86_64-linux",
       "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "hyprshell",
-      "broken": false,
-      "derivation": "/nix/store/9dpm5hsdygfnmwr4bc0ym9c6pdqazrzc-hyprshell-4.2.5.drv",
-      "description": "CLI/GUI that allows switching between windows in Hyprland",
-      "install_id": "hyprshell",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e83b64f727c88a7711a2c463a7b16eedb69a84c",
-      "name": "hyprshell-4.2.5",
-      "pname": "hyprshell",
-      "rev": "9e83b64f727c88a7711a2c463a7b16eedb69a84c",
-      "rev_count": 816272,
-      "rev_date": "2025-06-17T04:31:58Z",
-      "scrape_date": "2025-06-18T01:32:30.259885Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.2.5",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/1jyd08qdm02r0kp88pc42ljwjw6lskd1-hyprshell-4.2.5"
-      },
-      "system": "x86_64-linux",
-      "group": "hyprshell",
       "priority": 5
     }
   ]
