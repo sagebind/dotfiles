@@ -44,6 +44,20 @@ rules:
 
   - locations: ~/Downloads
     filters:
+      - regex: >-
+          ^reverb-\w{32}\.pdf$
+      - filecontent: >-
+          Order Date:\s*(?P<date>[A-Z][a-z]{2} \d{2}, \d{4})
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%b %d, %Y')
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Receipts/{python.strftime('%Y-%m-%d')} Reverb.pdf
+          on_conflict: deduplicate
+
+  - locations: ~/Downloads
+    filters:
       - name
       - regex: >-
           ^UB\d+_\d+_\d+\.pdf$
