@@ -45,6 +45,9 @@
       "flac": {
         "pkg-path": "flac"
       },
+      "gdu": {
+        "pkg-path": "gdu"
+      },
       "gh": {
         "pkg-path": "gh"
       },
@@ -1520,6 +1523,122 @@
         "doc": "/nix/store/z48d7rv9kv0c8jg31a4ql91iqyskr2b0-flac-1.4.3-doc",
         "man": "/nix/store/gwmdi2rvcsm6ra357injrmh87v95f333-flac-1.4.3-man",
         "out": "/nix/store/lsi9yjhqpfpgj4lm3nl4gdnvgg44q73l-flac-1.4.3"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gdu",
+      "broken": false,
+      "derivation": "/nix/store/nqkr1a8a018qj4llzwjs97gfrnnzqi3x-gdu-5.30.1.drv",
+      "description": "Disk usage analyzer with console interface",
+      "install_id": "gdu",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "gdu-5.30.1",
+      "pname": "gdu",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.30.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qzfx7f1m0bkb62x59wzvzsf5pgn11gys-gdu-5.30.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gdu",
+      "broken": false,
+      "derivation": "/nix/store/1vgqnf53if5vjm5axap4sp8q9fv9jjxv-gdu-5.30.1.drv",
+      "description": "Disk usage analyzer with console interface",
+      "install_id": "gdu",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "gdu-5.30.1",
+      "pname": "gdu",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.30.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/4009lc7vz411r2n13myr06kfsz2kim6r-gdu-5.30.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gdu",
+      "broken": false,
+      "derivation": "/nix/store/sjia1d3zg84gpb4yl7a0xjyn9ag89zhg-gdu-5.30.1.drv",
+      "description": "Disk usage analyzer with console interface",
+      "install_id": "gdu",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "gdu-5.30.1",
+      "pname": "gdu",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.30.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wkl63n65nfsl6mblflmnc9v5hlhmdi99-gdu-5.30.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gdu",
+      "broken": false,
+      "derivation": "/nix/store/d8ax17lpz9zpyzdb3v8c88681l10ra7r-gdu-5.30.1.drv",
+      "description": "Disk usage analyzer with console interface",
+      "install_id": "gdu",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "name": "gdu-5.30.1",
+      "pname": "gdu",
+      "rev": "852ff1d9e153d8875a83602e03fdef8a63f0ecf8",
+      "rev_count": 744133,
+      "rev_date": "2025-01-26T09:59:49Z",
+      "scrape_date": "2025-01-27T03:28:00Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.30.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/54ymjxj3fp6d3bhn8v3dbcayk8ipg9cb-gdu-5.30.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
