@@ -202,9 +202,7 @@ plugins:
   - name: code
     prefix: "code "
     weight: 10
-    # src_once: >-
-    #   locate '/data/src/*/.git' | sed 's/\/.git$//'
-    src_once: >-
+    src: >-
       jq -r '.profileAssociations.workspaces | keys[] | sub("^file://"; "")' ~/.config/Code/User/globalStorage/storage.json
     cmd: >-
       code %RESULT%
