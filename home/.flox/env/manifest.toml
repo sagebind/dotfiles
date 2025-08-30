@@ -18,6 +18,7 @@ flac.pkg-path = "flac"
 gdu.pkg-path = "gdu"
 gh.pkg-path = "gh"
 gifski.pkg-path = "gifski"
+glow.pkg-path = "glow"
 hurmit.pkg-path = "nerd-fonts.hurmit"
 hyprshell.pkg-group = "hyprshell"
 hyprshell.pkg-path = "hyprshell"
@@ -41,7 +42,8 @@ xdg-terminal-exec.pkg-path = "xdg-terminal-exec"
 xdg-terminal-exec.systems = ["x86_64-linux"]
 xsv.pkg-path = "xsv"
 yazi.pkg-path = "yazi"
-yq.pkg-path = "yq"
+yq.pkg-group = "yq"
+yq.pkg-path = "yq-go"
 
 [options]
 allow.unfree = true
