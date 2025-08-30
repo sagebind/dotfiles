@@ -183,7 +183,7 @@ rules:
       - extension: pdf
       - filecontent: Mission Igniter
       - filecontent: We received your Recurring Gift
-      - filecontent: Mellingers
+      - filecontent: Mellinger
       - filecontent: >-
           (?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})
       - python: |
