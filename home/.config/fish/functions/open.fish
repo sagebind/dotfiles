@@ -1,9 +1,10 @@
 function open -d 'Open files using the default associated application(s)'
   set -q argv[1]
-    or set argv[1] $PWD
+    or set argv[1] (pwd)
 
   if type -fq xdg-open
-    command xdg-open $argv
+    command xdg-open $argv >/dev/null 2>/dev/null &
+    disown
   else if type -fq open
     command open $argv
   else if contains open (builtin --names)
