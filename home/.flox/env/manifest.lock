@@ -18,6 +18,9 @@
           "aarch64-darwin"
         ]
       },
+      "crane": {
+        "pkg-path": "crane"
+      },
       "devenv": {
         "pkg-path": "devenv",
         "pkg-group": "devenv"
@@ -104,6 +107,10 @@
       },
       "pueue": {
         "pkg-path": "pueue"
+      },
+      "regctl": {
+        "pkg-path": "regctl",
+        "pkg-group": "regctl"
       },
       "skim": {
         "pkg-path": "skim"
@@ -530,6 +537,102 @@
       "priority": 5
     },
     {
+      "attr_path": "regctl",
+      "broken": false,
+      "derivation": "/nix/store/qsz5mimzmffy9lwid4jikxhfzlp42ic0-regclient-0.9.1.drv",
+      "description": "Docker and OCI Registry Client in Go and tooling using those libraries",
+      "install_id": "regctl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "regclient-0.9.1",
+      "pname": "regctl",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T05:40:14.778280Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gj6w50zbqx9ha87lnlzsvlalpq3a6yqy-regclient-0.9.1",
+        "regbot": "/nix/store/3rfihfs2s1i19a0ixzihcw0kya57jyn1-regclient-0.9.1-regbot",
+        "regctl": "/nix/store/748zhjakf6xi14qn5apv52y5bj50bm7q-regclient-0.9.1-regctl",
+        "regsync": "/nix/store/qn1gd96rdzss8hsi13zp3md40kfgrwkx-regclient-0.9.1-regsync"
+      },
+      "system": "aarch64-darwin",
+      "group": "regctl",
+      "priority": 5
+    },
+    {
+      "attr_path": "regctl",
+      "broken": false,
+      "derivation": "/nix/store/510xfdd1csxs93aq4qarx4rxy304mma1-regclient-0.9.1.drv",
+      "description": "Docker and OCI Registry Client in Go and tooling using those libraries",
+      "install_id": "regctl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "regclient-0.9.1",
+      "pname": "regctl",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T06:12:20.788793Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/czm8vx6j23fwi9fklpx7k9cra45wzfg9-regclient-0.9.1",
+        "regbot": "/nix/store/bw6yvcpw8alfsnfvi06p1vgl4n976cgw-regclient-0.9.1-regbot",
+        "regctl": "/nix/store/9himkmvlcx8x1c6dlsh0fmmml5cq023b-regclient-0.9.1-regctl",
+        "regsync": "/nix/store/fmslsmfvmyap1gdsz7n6cz4b24gfld48-regclient-0.9.1-regsync"
+      },
+      "system": "aarch64-linux",
+      "group": "regctl",
+      "priority": 5
+    },
+    {
+      "attr_path": "regctl",
+      "broken": false,
+      "derivation": "/nix/store/ssnw7d1mbij7n0p88ybza1bbnnf01gvz-regclient-0.9.1.drv",
+      "description": "Docker and OCI Registry Client in Go and tooling using those libraries",
+      "install_id": "regctl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "regclient-0.9.1",
+      "pname": "regctl",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T07:13:06.318685Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/d2k50sibrsplgwlqca1yza7mjr3ii1xp-regclient-0.9.1",
+        "regbot": "/nix/store/gpp0jzkbhac5nabrlgs1izi82z25xidv-regclient-0.9.1-regbot",
+        "regctl": "/nix/store/lmr7qr7cxwzkbx3c5p4jzar4lkrlpjf2-regclient-0.9.1-regctl",
+        "regsync": "/nix/store/xymkhjvc7cpnbm6vx6cy658lkfwhlxn0-regclient-0.9.1-regsync"
+      },
+      "system": "x86_64-linux",
+      "group": "regctl",
+      "priority": 5
+    },
+    {
       "attr_path": "_7zz-rar",
       "broken": false,
       "derivation": "/nix/store/4f9gi03ix947adr5rki4sm08iahwdivh-7zz-24.09.drv",
@@ -836,6 +939,105 @@
         "out": "/nix/store/vq94skd8lgv2j994b0nikcp8pnbw8cww-colima-0.8.1"
       },
       "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "crane",
+      "broken": false,
+      "derivation": "/nix/store/2bzqxvhhybyssfss3rnwmfn6a9i7bk0c-go-containerregistry-0.20.3.drv",
+      "description": "Tools for interacting with remote images and registries including crane and gcrane",
+      "install_id": "crane",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "go-containerregistry-0.20.3",
+      "pname": "crane",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.20.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "crane": "/nix/store/4fc229g19hx3cx8d0j39gvlabpwqaav9-go-containerregistry-0.20.3-crane",
+        "gcrane": "/nix/store/xmf8x20sw9rmyk099c33jimgvglb6vw8-go-containerregistry-0.20.3-gcrane",
+        "out": "/nix/store/apl13rjgc9r5b8nnifj58v24invl6i79-go-containerregistry-0.20.3"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "crane",
+      "broken": false,
+      "derivation": "/nix/store/r0jyzrf29fjik17pn01wnd0w0nhigcr7-go-containerregistry-0.20.3.drv",
+      "description": "Tools for interacting with remote images and registries including crane and gcrane",
+      "install_id": "crane",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "go-containerregistry-0.20.3",
+      "pname": "crane",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.20.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "crane": "/nix/store/sn23brppnh2zf1kyic7rsafg91lmnjzp-go-containerregistry-0.20.3-crane",
+        "gcrane": "/nix/store/0wg1mrfn4x6v97wrpdi844j25r7p87mr-go-containerregistry-0.20.3-gcrane",
+        "out": "/nix/store/p2pnh17ag8mhffr35knfki0lkshy55ln-go-containerregistry-0.20.3"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "crane",
+      "broken": false,
+      "derivation": "/nix/store/j32dvsx4w719in9gfnma9l4b9kbcy5dq-go-containerregistry-0.20.3.drv",
+      "description": "Tools for interacting with remote images and registries including crane and gcrane",
+      "install_id": "crane",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "go-containerregistry-0.20.3",
+      "pname": "crane",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.20.3",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "crane": "/nix/store/nbf77lg5jglvz1jcwxw1i5s6mjshr7ip-go-containerregistry-0.20.3-crane",
+        "gcrane": "/nix/store/v4q34jpzgzfc4dg4b5cxc5q9bryfa313-go-containerregistry-0.20.3-gcrane",
+        "out": "/nix/store/5dp0bblpv1zly6jmv8s0cbsgwim5l4b5-go-containerregistry-0.20.3"
+      },
+      "system": "x86_64-linux",
       "group": "toplevel",
       "priority": 5
     },

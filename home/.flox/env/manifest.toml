@@ -38,6 +38,8 @@ nixfmt.pkg-path = "nixfmt"
 numbat.pkg-path = "numbat"
 nvtop.pkg-path = "nvtop"
 pueue.pkg-path = "pueue"
+regctl.pkg-group = "regctl"
+regctl.pkg-path = "regctl"
 skim.pkg-path = "skim"
 sox.pkg-path = "sox"
 tio.pkg-path = "tio"
@@ -49,6 +51,7 @@ xsv.pkg-path = "xsv"
 yazi.pkg-path = "yazi"
 yq.pkg-group = "yq"
 yq.pkg-path = "yq-go"
+crane.pkg-path = "crane"
 
 [options]
 allow.unfree = true
