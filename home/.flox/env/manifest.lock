@@ -18,11 +18,16 @@
           "aarch64-darwin"
         ]
       },
+      "devenv": {
+        "pkg-path": "devenv",
+        "pkg-group": "devenv"
+      },
       "difftastic": {
         "pkg-path": "difftastic"
       },
       "direnv": {
-        "pkg-path": "direnv"
+        "pkg-path": "direnv",
+        "pkg-group": "direnv"
       },
       "doctl": {
         "pkg-path": "doctl"
@@ -87,6 +92,10 @@
       "miniserve": {
         "pkg-path": "miniserve"
       },
+      "nixfmt": {
+        "pkg-path": "nixfmt",
+        "pkg-group": "nixfmt"
+      },
       "numbat": {
         "pkg-path": "numbat"
       },
@@ -141,19 +150,193 @@
   },
   "packages": [
     {
+      "attr_path": "devenv",
+      "broken": false,
+      "derivation": "/nix/store/iv753i3cb5f5mzlycxh9ymqahbcf2rx5-devenv-1.8.2.drv",
+      "description": "Fast, Declarative, Reproducible, and Composable Developer Environments",
+      "install_id": "devenv",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "devenv-1.8.2",
+      "pname": "devenv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:00:42.675276Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.8.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/s1v0pxz00a2nhsvnp9y2wmqiqh5wy26c-devenv-1.8.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "devenv",
+      "priority": 5
+    },
+    {
+      "attr_path": "devenv",
+      "broken": false,
+      "derivation": "/nix/store/dg6ld6cmm8h500ng1j9ymca4mdl1hibf-devenv-1.8.2.drv",
+      "description": "Fast, Declarative, Reproducible, and Composable Developer Environments",
+      "install_id": "devenv",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "devenv-1.8.2",
+      "pname": "devenv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:29:40.733462Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.8.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/58dy4zm7dlqfwjaj86jax8z9i7aildn0-devenv-1.8.2"
+      },
+      "system": "aarch64-linux",
+      "group": "devenv",
+      "priority": 5
+    },
+    {
+      "attr_path": "devenv",
+      "broken": false,
+      "derivation": "/nix/store/a6nvzhzc3m6k6676g180lkdrnym9rdr2-devenv-1.8.2.drv",
+      "description": "Fast, Declarative, Reproducible, and Composable Developer Environments",
+      "install_id": "devenv",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "devenv-1.8.2",
+      "pname": "devenv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T03:26:56.855524Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.8.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gg8hsic9h6qaf8nhlznab6agrh274q7w-devenv-1.8.2"
+      },
+      "system": "x86_64-linux",
+      "group": "devenv",
+      "priority": 5
+    },
+    {
+      "attr_path": "direnv",
+      "broken": false,
+      "derivation": "/nix/store/mfq972c1sgv16b15jzbrmw1arfkyd9ma-direnv-2.37.1.drv",
+      "description": "Shell extension that manages your environment",
+      "install_id": "direnv",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "direnv-2.37.1",
+      "pname": "direnv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:00:42.695914Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.37.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qdsl1sp5p4hpz1ihifkgx3dnn66yca26-direnv-2.37.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "direnv",
+      "priority": 5
+    },
+    {
+      "attr_path": "direnv",
+      "broken": false,
+      "derivation": "/nix/store/v5wm6099d82rzr9zxh6s2b2cbrjjhin3-direnv-2.37.1.drv",
+      "description": "Shell extension that manages your environment",
+      "install_id": "direnv",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "direnv-2.37.1",
+      "pname": "direnv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:29:40.767067Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.37.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2ihnxlg5z0rqq4pbf3bwr3yqfwj6srcf-direnv-2.37.1"
+      },
+      "system": "aarch64-linux",
+      "group": "direnv",
+      "priority": 5
+    },
+    {
+      "attr_path": "direnv",
+      "broken": false,
+      "derivation": "/nix/store/nn76imprh7arf8fnivcqyp8gd629z8m5-direnv-2.37.1.drv",
+      "description": "Shell extension that manages your environment",
+      "install_id": "direnv",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "direnv-2.37.1",
+      "pname": "direnv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T03:26:56.891498Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.37.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/banmjx561hg41k0sw4bvhmx1sr35fjm1-direnv-2.37.1"
+      },
+      "system": "x86_64-linux",
+      "group": "direnv",
+      "priority": 5
+    },
+    {
       "attr_path": "hyprshell",
       "broken": false,
-      "derivation": "/nix/store/gy365j76rjhmir5m2hskh5vbf4ldcw77-hyprshell-4.5.0.drv",
+      "derivation": "/nix/store/zwc8k24dpfl55qymms2qc4n9v6bdxa6p-hyprshell-4.5.0.drv",
       "description": "Modern GTK4-based window switcher and application launcher for Hyprland",
       "install_id": "hyprshell",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
       "name": "hyprshell-4.5.0",
       "pname": "hyprshell",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:57:29.325367Z",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T03:27:16.627863Z",
       "stabilities": [
         "unstable"
       ],
@@ -163,7 +346,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/3555rgsb7siky8gp9a48mmhvvlr4jf40-hyprshell-4.5.0"
+        "out": "/nix/store/26c238pmhl1i01pjv2q27q0l04qyfbds-hyprshell-4.5.0"
       },
       "system": "x86_64-linux",
       "group": "hyprshell",
@@ -172,17 +355,17 @@
     {
       "attr_path": "k9s",
       "broken": false,
-      "derivation": "/nix/store/9xam2xami8hmhibq32zh9c72iigjkg1m-k9s-0.50.9.drv",
+      "derivation": "/nix/store/vzp05zp2295skljhdx7alzfr2jlhycv1-k9s-0.50.9.drv",
       "description": "Kubernetes CLI To Manage Your Clusters In Style",
       "install_id": "k9s",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
       "name": "k9s-0.50.9",
       "pname": "k9s",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T15:38:54.539973Z",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T05:38:58.542618Z",
       "stabilities": [
         "unstable"
       ],
@@ -192,7 +375,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/9lbspbg4vwqji66y5cjx4fdkzyc6gndc-k9s-0.50.9"
+        "out": "/nix/store/73nhddg42hq5an2nhjxkyps637s0rc4n-k9s-0.50.9"
       },
       "system": "aarch64-darwin",
       "group": "k9s",
@@ -201,17 +384,17 @@
     {
       "attr_path": "k9s",
       "broken": false,
-      "derivation": "/nix/store/lilkphprbayh1lgjs9bj0mqd65slbbjq-k9s-0.50.9.drv",
+      "derivation": "/nix/store/4j881g6n3m89x9y5xnjf9sifijplp1dd-k9s-0.50.9.drv",
       "description": "Kubernetes CLI To Manage Your Clusters In Style",
       "install_id": "k9s",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
       "name": "k9s-0.50.9",
       "pname": "k9s",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:05:28.462033Z",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T06:10:43.118822Z",
       "stabilities": [
         "unstable"
       ],
@@ -221,7 +404,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/0p2d1lqikd1ybji3zf8nffcj3s24a1lh-k9s-0.50.9"
+        "out": "/nix/store/3xdpyzlhw8nw43dkcp576fjccxzwrwl8-k9s-0.50.9"
       },
       "system": "aarch64-linux",
       "group": "k9s",
@@ -230,17 +413,17 @@
     {
       "attr_path": "k9s",
       "broken": false,
-      "derivation": "/nix/store/m8p3i4fl4w5phznm4wryvn3d4l4qn1yj-k9s-0.50.9.drv",
+      "derivation": "/nix/store/78kwidjamfxlrcg0ask97qsnrs4nn2hz-k9s-0.50.9.drv",
       "description": "Kubernetes CLI To Manage Your Clusters In Style",
       "install_id": "k9s",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
       "name": "k9s-0.50.9",
       "pname": "k9s",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:57:29.959474Z",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T07:11:17.379650Z",
       "stabilities": [
         "unstable"
       ],
@@ -250,10 +433,100 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/gjlg5swbvf9kx15da6qb6gpgmgf8a8zi-k9s-0.50.9"
+        "out": "/nix/store/2hgbs9rps8sc7yfyijgvgdksg4bnhrs2-k9s-0.50.9"
       },
       "system": "x86_64-linux",
       "group": "k9s",
+      "priority": 5
+    },
+    {
+      "attr_path": "nixfmt",
+      "broken": false,
+      "derivation": "/nix/store/s6sr414j6gmq01vwx6562pf6nxnvm6ir-nixfmt-1.0.0.drv",
+      "description": "Official formatter for Nix code",
+      "install_id": "nixfmt",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "name": "nixfmt-1.0.0",
+      "pname": "nixfmt",
+      "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "rev_count": 862643,
+      "rev_date": "2025-09-16T15:19:26Z",
+      "scrape_date": "2025-09-19T01:17:03.734422Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/na4wfvlbgf1v51jx65ylrg9gkf5d93sm-nixfmt-1.0.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "nixfmt",
+      "priority": 5
+    },
+    {
+      "attr_path": "nixfmt",
+      "broken": false,
+      "derivation": "/nix/store/7rxkkyq2nxfym7ghpn9dsa6yv963v2j2-nixfmt-1.0.0.drv",
+      "description": "Official formatter for Nix code",
+      "install_id": "nixfmt",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "name": "nixfmt-1.0.0",
+      "pname": "nixfmt",
+      "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "rev_count": 862643,
+      "rev_date": "2025-09-16T15:19:26Z",
+      "scrape_date": "2025-09-19T01:50:02.787844Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ppx9zyxmgiwagphgj1hkd8ax1d4s6vwh-nixfmt-1.0.0"
+      },
+      "system": "aarch64-linux",
+      "group": "nixfmt",
+      "priority": 5
+    },
+    {
+      "attr_path": "nixfmt",
+      "broken": false,
+      "derivation": "/nix/store/7hdwmh13a1nvqn6znhmxv8slylm049qd-nixfmt-1.0.0.drv",
+      "description": "Official formatter for Nix code",
+      "install_id": "nixfmt",
+      "license": "MPL-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "name": "nixfmt-1.0.0",
+      "pname": "nixfmt",
+      "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+      "rev_count": 862643,
+      "rev_date": "2025-09-16T15:19:26Z",
+      "scrape_date": "2025-09-19T02:34:11.171173Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/j1q0xab7mk9qki82libpzzqgrcyngrjk-nixfmt-1.0.0"
+      },
+      "system": "x86_64-linux",
+      "group": "nixfmt",
       "priority": 5
     },
     {
@@ -654,99 +927,6 @@
       ],
       "outputs": {
         "out": "/nix/store/wxwll67ifc7h9q521wc4bxn8s1wd6fj4-difftastic-0.62.0"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "direnv",
-      "broken": false,
-      "derivation": "/nix/store/mhlg9sb4jpx7ja7z86dhc9rks9hzylwk-direnv-2.35.0.drv",
-      "description": "Shell extension that manages your environment",
-      "install_id": "direnv",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "direnv-2.35.0",
-      "pname": "direnv",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.35.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/q00mwz61l0kz3ikjafm8v42df79vw70m-direnv-2.35.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "direnv",
-      "broken": false,
-      "derivation": "/nix/store/xphk5hppva35bci4bxql73biamj0h6ll-direnv-2.35.0.drv",
-      "description": "Shell extension that manages your environment",
-      "install_id": "direnv",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "direnv-2.35.0",
-      "pname": "direnv",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.35.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/5qjaj63mcpkbgg9dd7kq326d3zv1nfsq-direnv-2.35.0"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "direnv",
-      "broken": false,
-      "derivation": "/nix/store/nm3vbgf4ziky3jmvzvdpckm6z4l5bpdz-direnv-2.35.0.drv",
-      "description": "Shell extension that manages your environment",
-      "install_id": "direnv",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "direnv-2.35.0",
-      "pname": "direnv",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.35.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/5acgdhnifp5hsvhw2w34jhs5xqjgv0v3-direnv-2.35.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -3060,27 +3240,27 @@
     {
       "attr_path": "yq-go",
       "broken": false,
-      "derivation": "/nix/store/y2nr86i93l49zr0ik1pwxvm8assa225i-yq-go-4.47.1.drv",
+      "derivation": "/nix/store/3mw5vf65zmi2cxfsc3rlyfw6czyhz9sa-yq-go-4.47.2.drv",
       "description": "Portable command-line YAML processor",
       "install_id": "yq",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "yq-go-4.47.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "yq-go-4.47.2",
       "pname": "yq-go",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T15:40:35.510028Z",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T05:41:31.245559Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "4.47.1",
+      "version": "4.47.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/c60vkx9c2hyp39ajq0v211j1yll5d4as-yq-go-4.47.1"
+        "out": "/nix/store/49zcihlg87hyd9563r5ilg4q8z9h8h0d-yq-go-4.47.2"
       },
       "system": "aarch64-darwin",
       "group": "yq",
@@ -3089,27 +3269,27 @@
     {
       "attr_path": "yq-go",
       "broken": false,
-      "derivation": "/nix/store/hb9pkhs53bdds6yi9nsjfrp5w3alc5lq-yq-go-4.47.1.drv",
+      "derivation": "/nix/store/kdj5kc015dx19i32snqil05px5vr9m2a-yq-go-4.47.2.drv",
       "description": "Portable command-line YAML processor",
       "install_id": "yq",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "yq-go-4.47.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "yq-go-4.47.2",
       "pname": "yq-go",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T16:07:59.493620Z",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T06:13:49.169155Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "4.47.1",
+      "version": "4.47.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/f7n0i12bhhq9ssv8n07pd8pmqarqbvhg-yq-go-4.47.1"
+        "out": "/nix/store/lx0hx78yka2z9zkczyw2lsicprydkqzl-yq-go-4.47.2"
       },
       "system": "aarch64-linux",
       "group": "yq",
@@ -3118,27 +3298,27 @@
     {
       "attr_path": "yq-go",
       "broken": false,
-      "derivation": "/nix/store/xrdpds49jxgw60db7bh47l432w6048qj-yq-go-4.47.1.drv",
+      "derivation": "/nix/store/ish62m8zkplw4clyga39k0lm9mp7nmlk-yq-go-4.47.2.drv",
       "description": "Portable command-line YAML processor",
       "install_id": "yq",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=20075955deac2583bb12f07151c2df830ef346b4",
-      "name": "yq-go-4.47.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=8eaee110344796db060382e15d3af0a9fc396e0e",
+      "name": "yq-go-4.47.2",
       "pname": "yq-go",
-      "rev": "20075955deac2583bb12f07151c2df830ef346b4",
-      "rev_count": 846535,
-      "rev_date": "2025-08-19T15:00:17Z",
-      "scrape_date": "2025-08-24T17:00:00.251626Z",
+      "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+      "rev_count": 864002,
+      "rev_date": "2025-09-19T10:20:10Z",
+      "scrape_date": "2025-09-21T07:14:44.021974Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "4.47.1",
+      "version": "4.47.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/b6j0gv68plxb5cxj2gwjdz8b998rpw87-yq-go-4.47.1"
+        "out": "/nix/store/9mizq6lryrzdk68yh64jc3df0wvs7rbw-yq-go-4.47.2"
       },
       "system": "x86_64-linux",
       "group": "yq",
