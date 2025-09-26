@@ -7,11 +7,13 @@
 .idea/dbnavigator.xml
 .idea/dataSources*
 .idea/copilot/
+.idea/copilot.*.xml
 .idea/codeStyles
 .idea/codeStyles/codeStyleConfig.xml
 .idea/codeStyles/Project.xml
 .idea/httpRequests/
 .idea/misc.xml
 .idea/uiDesigner.xml
+.idea/watcherTasks.xml
 *.http
 *.pem
