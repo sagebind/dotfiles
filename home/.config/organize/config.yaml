@@ -1,4 +1,63 @@
 rules:
+  # Singles from Bandcamp
+  - locations: ~/Downloads
+    filters:
+      - extension: flac
+      - python: |
+          import re
+          import subprocess
+
+          tags = subprocess.run(["metaflac", "--show-all-tags", path], capture_output=True).stdout.decode('utf-8')
+          parsed_tags = {k.lower(): v for k, v in re.findall(r'(\w+)=([^\n]+)', tags)}
+
+          if 'album' in parsed_tags:
+            return False
+          else:
+            return parsed_tags
+    actions:
+      - shell: metaflac "--set-tag=ALBUM={python.title}" "{path}"
+      - move: ~/Seafile/Music/Library/{python.artist}/{python.title}/01 {python.title}.flac
+
+  # Zipped albums from Bandcamp
+  - locations: ~/Downloads
+    filters:
+      - extension: zip
+      - exif:
+          zip.zipfilename: '*.flac'
+    actions:
+      - shell: mkdir -p "/tmp/bandcamp-zips/{path.stem}"
+      - shell: |
+          unzip "{path}" -d "/tmp/bandcamp-zips/{path.stem}"
+      - trash
+
+  # Unzipped albums from Bandcamp
+  - locations: /tmp/bandcamp-zips
+    subfolders: true
+    filters:
+      - extension: flac
+      - python: |
+          import re
+          import subprocess
+
+          tags = subprocess.run(["metaflac", "--show-all-tags", path], capture_output=True).stdout.decode('utf-8')
+          return {k.lower(): v for k, v in re.findall(r'(\w+)=([^\n]+)', tags)}
+    actions:
+      - move: ~/Seafile/Music/Library/{python.artist}/{python.album}/{python.tracknumber.zfill(2)} {python.title}.flac
+
+  # Unzipped albums from Bandcamp (non-flac files)
+  - locations: /tmp/bandcamp-zips
+    subfolders: true
+    filters:
+      - regex: >-
+          .*(?<!\.flac)$
+      - python: |
+          return {
+            'meta': path.parent.name.split(" - ", maxsplit=1),
+            'basename': path.stem.removeprefix(path.parent.name + " - ") + path.suffix.lower()
+          }
+    actions:
+      - move: ~/Seafile/Music/Library/{python.meta[0]}/{python.meta[1]}/{python.basename}
+
   - locations: ~/Downloads
     filters:
       - extension: apk
