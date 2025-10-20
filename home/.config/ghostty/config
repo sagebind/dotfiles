@@ -4,15 +4,10 @@ window-theme = ghostty
 window-width = 120
 window-height = 36
 
-# Other themes to try
-# theme = Afterglow
-# theme = Chalkboard
-# theme = Ciapre
-# theme = DoomOne
-# theme = Duotone Dark
-# theme = Hardcore
-# theme = IC_Orange_PPL
-# theme = Red Planet
-theme = Synthwave Everything
+# theme = Calamity
+theme = Duotone Dark
+# theme = IC Green PPL
+# theme = IC Orange PPL
+# theme = Synthwave Alpha
 
 shell-integration-features = no-cursor
