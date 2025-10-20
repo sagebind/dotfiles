@@ -6,6 +6,7 @@ broot.pkg-path = "broot"
 choose.pkg-path = "choose"
 colima.pkg-path = "colima"
 colima.systems = ["aarch64-darwin"]
+crane.pkg-path = "crane"
 devenv.pkg-group = "devenv"
 devenv.pkg-path = "devenv"
 difftastic.pkg-path = "difftastic"
@@ -45,13 +46,13 @@ sox.pkg-path = "sox"
 tio.pkg-path = "tio"
 tokei.pkg-path = "tokei"
 uv.pkg-path = "uv"
+visidata.pkg-path = "visidata"
 xdg-terminal-exec.pkg-path = "xdg-terminal-exec"
 xdg-terminal-exec.systems = ["x86_64-linux"]
 xsv.pkg-path = "xsv"
 yazi.pkg-path = "yazi"
 yq.pkg-group = "yq"
 yq.pkg-path = "yq-go"
-crane.pkg-path = "crane"
 
 [options]
 allow.unfree = true
