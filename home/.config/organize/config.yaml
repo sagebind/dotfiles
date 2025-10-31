@@ -168,8 +168,11 @@ rules:
       - regex: '^Receipt-\d+\.pdf$'
       - exif:
           pdf.author: Free Methodist Church
+      - filecontent: Free Methodist Church-USA
+      - filecontent: >-
+          (?P<fund>[A-Z]{4}[A-Za-z]+)
     actions:
-      - move: ~/Compass/Financial/Receipts/{exif.pdf.createdate.year}/{exif.pdf.createdate.date()} FMCUSA {name}.pdf
+      - move: ~/Compass/Financial/Receipts/{exif.pdf.createdate.year}/{exif.pdf.createdate.date()} FMCUSA {name} {filecontent.fund}.pdf
 
   - locations: ~/Downloads
     filters:

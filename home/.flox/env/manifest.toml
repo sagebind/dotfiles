@@ -34,6 +34,8 @@ kubernetes-helm.pkg-path = "kubernetes-helm"
 libinput-gestures.pkg-path = "libinput-gestures"
 libinput-gestures.systems = ["aarch64-linux", "x86_64-linux"]
 miniserve.pkg-path = "miniserve"
+msedit.pkg-group = "msedit"
+msedit.pkg-path = "msedit"
 nixfmt.pkg-group = "nixfmt"
 nixfmt.pkg-path = "nixfmt"
 numbat.pkg-path = "numbat"
@@ -53,6 +55,7 @@ xsv.pkg-path = "xsv"
 yazi.pkg-path = "yazi"
 yq.pkg-group = "yq"
 yq.pkg-path = "yq-go"
+rsgain.pkg-path = "rsgain"
 
 [options]
 allow.unfree = true
