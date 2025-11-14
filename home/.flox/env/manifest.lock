@@ -68,13 +68,6 @@
       "hurmit": {
         "pkg-path": "nerd-fonts.hurmit"
       },
-      "hyprshell": {
-        "pkg-path": "hyprshell",
-        "pkg-group": "hyprshell",
-        "systems": [
-          "x86_64-linux"
-        ]
-      },
       "k9s": {
         "pkg-path": "k9s",
         "pkg-group": "k9s"
@@ -136,6 +129,12 @@
       },
       "visidata": {
         "pkg-path": "visidata"
+      },
+      "wev": {
+        "pkg-path": "wev",
+        "systems": [
+          "x86_64-linux"
+        ]
       },
       "xdg-terminal-exec": {
         "pkg-path": "xdg-terminal-exec",
@@ -338,35 +337,6 @@
       },
       "system": "x86_64-linux",
       "group": "direnv",
-      "priority": 5
-    },
-    {
-      "attr_path": "hyprshell",
-      "broken": false,
-      "derivation": "/nix/store/j4h72s2lbbvi5jlapbq7r2kchfrs3c0s-hyprshell-4.7.2.drv",
-      "description": "Modern GTK4-based window switcher and application launcher for Hyprland",
-      "install_id": "hyprshell",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=6a08e6bb4e46ff7fcbb53d409b253f6bad8a28ce",
-      "name": "hyprshell-4.7.2",
-      "pname": "hyprshell",
-      "rev": "6a08e6bb4e46ff7fcbb53d409b253f6bad8a28ce",
-      "rev_count": 883951,
-      "rev_date": "2025-10-25T06:24:58Z",
-      "scrape_date": "2025-10-27T03:01:14.960362Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.7.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/28ikabi8my9bw2k9cylplb2q29jjgy8a-hyprshell-4.7.2"
-      },
-      "system": "x86_64-linux",
-      "group": "hyprshell",
       "priority": 5
     },
     {
@@ -3500,6 +3470,37 @@
       "outputs": {
         "dist": "/nix/store/bzsfgyr3c3iiniq9knscanxkm3m9pcbx-visidata-3.1.1-dist",
         "out": "/nix/store/ivnsz0n8ayxb9l5bbw4vdx0c1mw88mb3-visidata-3.1.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "wev",
+      "broken": false,
+      "derivation": "/nix/store/mbhy6my2risxw101j40brilkg2a6ifn7-wev-1.0.0.drv",
+      "description": "Wayland event viewer",
+      "install_id": "wev",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "wev-1.0.0",
+      "pname": "wev",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.0.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/gz8q5wsrjxvqlrd2sn3vyw4nqf1mfvd6-wev-1.0.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
