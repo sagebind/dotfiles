@@ -287,10 +287,10 @@ binds {
     Mod+Ctrl+Up { move-column-to-workspace-up; }
 
     // === Move Workspaces ===
-    Mod+Shift+Page_Down { move-workspace-down; }
-    Mod+Shift+Page_Up { move-workspace-up; }
-    Mod+Shift+U { move-workspace-down; }
-    Mod+Shift+I { move-workspace-up; }
+    // Mod+Shift+Page_Down { move-workspace-down; }
+    // Mod+Shift+Page_Up { move-workspace-up; }
+    // Mod+Shift+U { move-workspace-down; }
+    // Mod+Shift+I { move-workspace-up; }
 
     // === Mouse Wheel Navigation ===
     Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
@@ -391,6 +391,7 @@ window-rule {
     match app-id=r#"^blueman-manager$"#
     match app-id=r#"^galculator$"#
     match app-id=r#"^gnome-calculator$"#
+    match app-id=r#"^gnome-session-properties$"#
     match app-id=r#"^net\.nokyan\.Resources$"#
     match app-id=r#"^org\.gnome\.Nautilus$"#
     match app-id=r#"^org\.gnome\.SystemMonitor$"#
@@ -424,6 +425,14 @@ window-rule {
     default-floating-position x=10 y=10 relative-to="bottom-right"
 }
 
+window-rule {
+    match app-id=r#"^tuxedo-control-center$"#
+    max-width 800
+    max-height 500
+    open-floating true
+}
+
+// Terminals
 window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     match app-id="Alacritty"

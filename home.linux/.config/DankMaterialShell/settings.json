@@ -100,17 +100,28 @@
   "lockDateFormat": "",
   "mediaSize": 1,
   "dankBarLeftWidgets": [
-    "launcherButton",
-    "workspaceSwitcher",
     {
-      "id": "focusedWindow",
-      "enabled": false
+      "id": "launcherButton",
+      "enabled": true
+    },
+    {
+      "id": "workspaceSwitcher",
+      "enabled": true
     }
   ],
   "dankBarCenterWidgets": [
-    "music",
-    "clock",
-    "weather"
+    {
+      "id": "music",
+      "enabled": true
+    },
+    {
+      "id": "clock",
+      "enabled": true
+    },
+    {
+      "id": "weather",
+      "enabled": true
+    }
   ],
   "dankBarRightWidgets": [
     {
@@ -122,23 +133,23 @@
       "enabled": true
     },
     {
-      "id": "cpuUsage",
-      "enabled": true
-    },
-    {
-      "id": "memUsage",
-      "enabled": true
-    },
-    {
       "id": "idleInhibitor",
       "enabled": true
     },
     {
-      "id": "notificationButton",
+      "id": "cpuUsage",
+      "enabled": true
+    },
+    {
+      "id": "powerUsagePlugin",
       "enabled": true
     },
     {
       "id": "battery",
+      "enabled": true
+    },
+    {
+      "id": "notificationButton",
       "enabled": true
     },
     {
@@ -185,11 +196,11 @@
   "acSuspendTimeout": 0,
   "acSuspendBehavior": 0,
   "batteryMonitorTimeout": 0,
-  "batteryLockTimeout": 0,
-  "batterySuspendTimeout": 0,
+  "batteryLockTimeout": 900,
+  "batterySuspendTimeout": 3600,
   "batterySuspendBehavior": 0,
   "lockBeforeSuspend": false,
-  "preventIdleForMedia": false,
+  "preventIdleForMedia": true,
   "loginctlLockIntegration": true,
   "launchPrefix": "",
   "brightnessDevicePins": {},
@@ -197,7 +208,7 @@
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
   "terminalsAlwaysDark": false,
-  "showDock": true,
+  "showDock": false,
   "dockAutoHide": true,
   "dockGroupByApp": false,
   "dockOpenOnOverview": true,
@@ -211,9 +222,9 @@
   "dankBarAutoHide": false,
   "dankBarOpenOnOverview": true,
   "dankBarVisible": true,
-  "dankBarSpacing": 4,
+  "dankBarSpacing": 0,
   "dankBarBottomGap": 0,
-  "dankBarInnerPadding": 4,
+  "dankBarInnerPadding": 6,
   "dankBarPosition": 0,
   "dankBarSquareCorners": false,
   "dankBarNoBackground": false,
