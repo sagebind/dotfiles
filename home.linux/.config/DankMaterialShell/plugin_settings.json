@@ -1,0 +1,37 @@
+{
+  "dankActions": {
+    "enabled": true,
+    "variants": [
+      {
+        "icon": "terminal",
+        "displayText": "",
+        "displayCommand": "cat /sys/bus/pci/devices/0000:01:00.0/power_state",
+        "clickCommand": "",
+        "middleClickCommand": "",
+        "rightClickCommand": "",
+        "updateInterval": 10,
+        "showIcon": false,
+        "showText": true,
+        "id": "variant_1763177275783",
+        "name": "dGPU State"
+      },
+      {
+        "icon": "terminal",
+        "displayText": "Organize",
+        "displayCommand": "",
+        "clickCommand": "ghostty -e organize sim",
+        "middleClickCommand": "",
+        "rightClickCommand": "",
+        "updateInterval": 0,
+        "showIcon": false,
+        "showText": true,
+        "id": "variant_1763177556891",
+        "name": "Organize"
+      }
+    ]
+  },
+  "powerUsagePlugin": {
+    "enabled": true,
+    "refreshInterval": 30
+  }
+}

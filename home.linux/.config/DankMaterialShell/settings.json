@@ -125,15 +125,19 @@
   ],
   "dankBarRightWidgets": [
     {
+      "id": "dankActions:variant_1763177556891",
+      "enabled": true
+    },
+    {
       "id": "systemTray",
       "enabled": true
     },
     {
-      "id": "clipboard",
+      "id": "idleInhibitor",
       "enabled": true
     },
     {
-      "id": "idleInhibitor",
+      "id": "dankActions:variant_1763177275783",
       "enabled": true
     },
     {
@@ -211,7 +215,7 @@
   "showDock": false,
   "dockAutoHide": true,
   "dockGroupByApp": false,
-  "dockOpenOnOverview": true,
+  "dockOpenOnOverview": false,
   "dockPosition": 1,
   "dockSpacing": 8,
   "dockBottomGap": 0,

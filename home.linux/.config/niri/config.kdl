@@ -13,6 +13,7 @@ environment {
 }
 
 spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
+spawn-sh-at-startup "vicinae server"
 
 gestures {
     hot-corners {
@@ -87,8 +88,8 @@ layout {
         urgent-color "#cc4444"      // Softer red
     }
     focus-ring {
-        width 2
-        active-color "#cccccc"
+        width 1
+        active-color "#888888"
         // active-color "#55aaff"
         inactive-color "#505050"
     }
@@ -109,13 +110,25 @@ overview {
     }
 }
 
+// Integrate with DMS layers.
 layer-rule {
     match namespace="^quickshell$"
     match namespace="dms:blurwallpaper"
     place-within-backdrop true
 }
-// spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
-// spawn-at-startup "/usr/libexec/polkit-mate-authentication-agent-1"
+
+// Add a shadow to the app launcher.
+layer-rule {
+    match namespace="^vicinae$"
+    shadow {
+        on
+        spread 1000
+        softness 0
+        color "#00000055"
+        draw-behind-window true
+    }
+}
+
 hotkey-overlay {
     skip-at-startup
 }
@@ -156,10 +169,16 @@ animations {
 
 
 binds {
-    // === System & Overview ===
+    // Provide some ways to open the overview.
     Mod+S repeat=false { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }
-    Alt+Tab repeat=false { toggle-overview; }
+
+    // Alt Tab has 20 years of muscle memory for me, so use Vicinae's window
+    // switcher to offer something similar enough to GNOME and Windows.
+    Alt+Tab repeat=false {
+        spawn "vicinae" "vicinae://extensions/vicinae/wm/switch-windows";
+    }
+
     // Mod+Super_L repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
 
@@ -168,14 +187,11 @@ binds {
     Mod+E hotkey-overlay-title="Open File Manager" { spawn "nautilus"; }
 
     Menu repeat=false hotkey-overlay-title="Application Launcher" {
-        // spawn "walker";
-        // spawn "dms" "ipc" "call" "spotlight" "toggle";
-        // spawn "rofi" "-show" "combi";
-        spawn "fuzzel";
+        spawn "vicinae" "toggle";
     }
 
     Mod+V hotkey-overlay-title="Clipboard Manager" {
-        spawn "dms" "ipc" "call" "clipboard" "toggle";
+        spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history";
     }
     Mod+M hotkey-overlay-title="Task Manager" {
         spawn "dms" "ipc" "call" "processlist" "toggle";
@@ -364,7 +380,7 @@ binds {
 
 window-rule {
     match is-active=false
-    opacity 0.9
+    opacity 0.85
 }
 
 window-rule {
