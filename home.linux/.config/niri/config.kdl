@@ -177,7 +177,7 @@ switch-events {
 
 binds {
     // Provide some ways to open the overview.
-    Mod+S repeat=false { toggle-overview; }
+    Mod+O repeat=false { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }
 
     // Alt Tab has 20 years of muscle memory for me, so use Vicinae's window

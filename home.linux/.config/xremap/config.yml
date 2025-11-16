@@ -8,7 +8,7 @@ modmap:
         held: LeftMeta
         alone:
           - LeftMeta
-          - S
+          - O
         free_hold: true
 
   - name: Vicinae window switcher selection
