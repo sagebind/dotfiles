@@ -16,17 +16,17 @@
         "name": "dGPU State"
       },
       {
-        "icon": "terminal",
-        "displayText": "Organize",
+        "icon": "search",
+        "displayText": "Vicinae",
         "displayCommand": "",
-        "clickCommand": "ghostty -e organize sim",
+        "clickCommand": "vicinae toggle",
         "middleClickCommand": "",
         "rightClickCommand": "",
         "updateInterval": 0,
-        "showIcon": false,
-        "showText": true,
-        "id": "variant_1763177556891",
-        "name": "Organize"
+        "showIcon": true,
+        "showText": false,
+        "id": "variant_1763242074000",
+        "name": "Vicinae"
       }
     ]
   },

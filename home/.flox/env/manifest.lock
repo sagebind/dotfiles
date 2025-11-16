@@ -41,12 +41,6 @@
       "dust": {
         "pkg-path": "dust"
       },
-      "elephant": {
-        "flake": "github:abenz1267/elephant#elephant-with-providers",
-        "systems": [
-          "x86_64-linux"
-        ]
-      },
       "espanso-wayland": {
         "pkg-path": "espanso-wayland",
         "systems": [
@@ -142,12 +136,6 @@
       "visidata": {
         "pkg-path": "visidata"
       },
-      "walker": {
-        "flake": "github:abenz1267/walker/v2.10.0",
-        "systems": [
-          "x86_64-linux"
-        ]
-      },
       "wev": {
         "pkg-path": "wev",
         "systems": [
@@ -170,9 +158,6 @@
         "pkg-path": "yq-go",
         "pkg-group": "yq"
       }
-    },
-    "hook": {
-      "on-activate": "export ELEPHANT_PROVIDER_DIR=$FLOX_ENV/lib/elephant/providers\n"
     },
     "options": {
       "systems": [
@@ -3832,35 +3817,6 @@
       "priority": 5
     },
     {
-      "install_id": "elephant",
-      "locked-url": "github:abenz1267/elephant/b7acc4fe8a1b6552b071b6b6f2d3a93c8ddec823?narHash=sha256-4Bhteu6s5gMGcNSgniKH4ynmN5WcdDA58Vy2vFlHPdg%3D",
-      "flake-description": "Elephant - a powerful data provider service and backend for building custom application launchers and desktop utilities.\n",
-      "locked-flake-attr-path": "packages.x86_64-linux.elephant-with-providers",
-      "derivation": "/nix/store/q8f1ywk9m2kqrfgf0iaw80jyvsj97drn-elephant-with-providers-2.15.0.drv",
-      "outputs": {
-        "out": "/nix/store/ag10fidljg9hhpf6hl7h403afv5m5sx7-elephant-with-providers-2.15.0"
-      },
-      "output-names": [
-        "out"
-      ],
-      "outputs-to-install": [
-        "out"
-      ],
-      "requested-outputs-to-install": [],
-      "package-system": "x86_64-linux",
-      "system": "x86_64-linux",
-      "name": "elephant-with-providers-2.15.0",
-      "pname": "elephant-with-providers",
-      "version": "2.15.0",
-      "description": "Elephant with all providers (complete installation)",
-      "licenses": [
-        "GPL-3.0-only"
-      ],
-      "broken": false,
-      "unfree": false,
-      "priority": 5
-    },
-    {
       "install_id": "vicinae",
       "locked-url": "github:vicinaehq/vicinae/dc2485f3a03c43082caf7e86517b26447ef4b92d?narHash=sha256-mpZj5Nw/rKr97pATMLzO6RlTlag/ZJyvP/Mh6Ifmv2A%3D",
       "flake-description": "A flake for Vicinae, a high-performance native launcher for Linux.",
@@ -3882,35 +3838,6 @@
       "description": "A focused launcher for your desktop — native, fast, extensible",
       "licenses": [
         "GPL-3.0-or-later"
-      ],
-      "broken": false,
-      "unfree": false,
-      "priority": 5
-    },
-    {
-      "install_id": "walker",
-      "locked-url": "github:abenz1267/walker/e87c8c36468bcf2042a21c6aa878e7f0cdadc8f0?narHash=sha256-72%2BWE0RGSW8TgzPijHU6TtLWfMb0G7ojraM5UifTLVg%3D",
-      "flake-description": "Multi-Purpose Launcher with a lot of features. Highly Customizable and fast.\n",
-      "locked-flake-attr-path": "packages.x86_64-linux.default",
-      "derivation": "/nix/store/zsi2z46zid717a0zr6fwa51zb2bkaw6r-walker-2.10.0.drv",
-      "outputs": {
-        "out": "/nix/store/7lhw0pb07pj7nzkisnz9214xcq546ggc-walker-2.10.0"
-      },
-      "output-names": [
-        "out"
-      ],
-      "outputs-to-install": [
-        "out"
-      ],
-      "requested-outputs-to-install": [],
-      "package-system": "x86_64-linux",
-      "system": "x86_64-linux",
-      "name": "walker-2.10.0",
-      "pname": "walker",
-      "version": "2.10.0",
-      "description": "Wayland-native application runner",
-      "licenses": [
-        "MIT"
       ],
       "broken": false,
       "unfree": false,

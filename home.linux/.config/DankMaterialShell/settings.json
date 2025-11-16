@@ -101,7 +101,7 @@
   "mediaSize": 1,
   "dankBarLeftWidgets": [
     {
-      "id": "launcherButton",
+      "id": "dankActions:variant_1763242074000",
       "enabled": true
     },
     {
@@ -124,10 +124,6 @@
     }
   ],
   "dankBarRightWidgets": [
-    {
-      "id": "dankActions:variant_1763177556891",
-      "enabled": true
-    },
     {
       "id": "systemTray",
       "enabled": true

@@ -14,6 +14,7 @@ environment {
 
 spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
 spawn-sh-at-startup "vicinae server"
+spawn-sh-at-startup "xremap --watch=device --ignore=solaar --ignore=Espanso ~/.config/xremap/config.yml"
 
 gestures {
     hot-corners {
@@ -167,6 +168,12 @@ animations {
     }
 }
 
+switch-events {
+    // Lock session when the lid is closed.
+    lid-close {
+        spawn "dms" "ipc" "call" "lock" "lock";
+    }
+}
 
 binds {
     // Provide some ways to open the overview.
@@ -175,9 +182,9 @@ binds {
 
     // Alt Tab has 20 years of muscle memory for me, so use Vicinae's window
     // switcher to offer something similar enough to GNOME and Windows.
-    Alt+Tab repeat=false {
-        spawn "vicinae" "vicinae://extensions/vicinae/wm/switch-windows";
-    }
+    // Alt+Tab repeat=false {
+    //     spawn "vicinae" "vicinae://extensions/vicinae/wm/switch-windows";
+    // }
 
     // Mod+Super_L repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
@@ -420,6 +427,7 @@ window-rule {
     match app-id=r#"^net\.nokyan\.Resources$"#
     match app-id=r#"^org\.gnome\.Nautilus$"#
     match app-id=r#"^org\.gnome\.SystemMonitor$"#
+    // match app-id=r#"^org\.mozilla\.Thunderbird$"# title="^Write: "
     match app-id=r#"^xdg-desktop-portal$"#
     match title="^Calculator$"
     open-floating true
@@ -451,7 +459,7 @@ window-rule {
     match app-id="code"
     match app-id="obsidian"
     match app-id="org.mozilla.firefox"
-    match app-id="org.mozilla.Thunderbird"
+    match app-id="org.mozilla.Thunderbird" title=" - Mozilla Thunderbird$"
     match app-id="steam" title="Steam"
     open-maximized true
 }
