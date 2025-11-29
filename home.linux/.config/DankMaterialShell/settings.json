@@ -36,9 +36,14 @@
   "showNotificationButton": true,
   "showBattery": true,
   "showControlCenterButton": true,
+  "showCapsLockIndicator": true,
   "controlCenterShowNetworkIcon": true,
   "controlCenterShowBluetoothIcon": true,
   "controlCenterShowAudioIcon": true,
+  "showPrivacyButton": true,
+  "privacyShowMicIcon": false,
+  "privacyShowCameraIcon": false,
+  "privacyShowScreenShareIcon": false,
   "controlCenterWidgets": [
     {
       "id": "volumeSlider",
@@ -101,6 +106,10 @@
   "mediaSize": 1,
   "dankBarLeftWidgets": [
     {
+      "id": "launcherButton",
+      "enabled": true
+    },
+    {
       "id": "dankActions:variant_1763242074000",
       "enabled": true
     },
@@ -137,6 +146,10 @@
       "enabled": true
     },
     {
+      "id": "cpuTemp",
+      "enabled": true
+    },
+    {
       "id": "cpuUsage",
       "enabled": true
     },
@@ -158,14 +171,15 @@
     }
   ],
   "dankBarWidgetOrder": [],
-  "appLauncherViewMode": "list",
+  "appLauncherViewMode": "grid",
   "spotlightModalViewMode": "list",
   "sortAppsAlphabetically": false,
+  "appLauncherGridColumns": 4,
   "weatherLocation": "New York, NY",
   "weatherCoordinates": "40.7128,-74.0060",
   "useAutoLocation": true,
   "weatherEnabled": true,
-  "networkPreference": "auto",
+  "networkPreference": "wifi",
   "vpnLastConnected": "",
   "iconTheme": "System Default",
   "launcherLogoMode": "apps",
@@ -204,6 +218,10 @@
   "loginctlLockIntegration": true,
   "launchPrefix": "",
   "brightnessDevicePins": {},
+  "wifiNetworkPins": {},
+  "bluetoothDevicePins": {},
+  "audioInputDevicePins": {},
+  "audioOutputDevicePins": {},
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
@@ -220,11 +238,12 @@
   "dockIndicatorStyle": "line",
   "notificationOverlayEnabled": false,
   "dankBarAutoHide": false,
+  "dankBarAutoHideDelay": 250,
   "dankBarOpenOnOverview": true,
   "dankBarVisible": true,
   "dankBarSpacing": 0,
   "dankBarBottomGap": 0,
-  "dankBarInnerPadding": 6,
+  "dankBarInnerPadding": 8,
   "dankBarPosition": 0,
   "dankBarSquareCorners": false,
   "dankBarNoBackground": false,
@@ -247,6 +266,13 @@
   "notificationTimeoutCritical": 0,
   "notificationPopupPosition": 0,
   "osdAlwaysShowValue": true,
+  "osdPosition": 5,
+  "osdVolumeEnabled": true,
+  "osdBrightnessEnabled": true,
+  "osdIdleInhibitorEnabled": true,
+  "osdMicMuteEnabled": true,
+  "osdCapsLockEnabled": true,
+  "osdPowerProfileEnabled": true,
   "powerActionConfirm": true,
   "powerMenuActions": [
     "reboot",
@@ -257,6 +283,7 @@
     "restart"
   ],
   "powerMenuDefaultAction": "logout",
+  "powerMenuGridLayout": false,
   "customPowerActionLock": "",
   "customPowerActionLogout": "",
   "customPowerActionSuspend": "",
@@ -266,6 +293,7 @@
   "updaterUseCustomCommand": false,
   "updaterCustomCommand": "",
   "updaterTerminalAdditionalParams": "",
+  "displayNameMode": "system",
   "screenPreferences": {},
   "showOnLastDisplay": {},
   "configVersion": 1

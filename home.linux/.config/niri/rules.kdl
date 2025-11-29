@@ -1,0 +1,120 @@
+// Integrate with DMS layers.
+layer-rule {
+    match namespace="^quickshell$"
+    match namespace="dms:blurwallpaper"
+    place-within-backdrop true
+}
+
+// Add a shadow to the app launcher.
+layer-rule {
+    match namespace="^vicinae$"
+    shadow {
+        on
+        spread 1000
+        softness 0
+        color "#00000055"
+        draw-behind-window true
+    }
+}
+
+window-rule {
+    match is-active=false
+    opacity 0.85
+}
+
+window-rule {
+    geometry-corner-radius 7
+    clip-to-geometry true
+}
+
+window-rule {
+    match app-id=r#"^org\.gnome\."#
+    draw-border-with-background false
+    geometry-corner-radius 12
+}
+
+window-rule {
+    match app-id=r#"^gnome-control-center$"#
+    match app-id=r#"^pavucontrol$"#
+    match app-id=r#"^nm-connection-editor$"#
+    default-column-width { proportion 0.5; }
+    open-floating false
+}
+
+// Windows that should be maximized by default.
+window-rule {
+    match app-id="code"
+    match app-id="obsidian"
+    match app-id="ONLYOFFICE"
+    match app-id="org.mozilla.firefox"
+    match app-id="org.mozilla.Thunderbird" title=" - Mozilla Thunderbird$"
+    match app-id="^resolve$" title="^DaVinci Resolve Studio"
+    match app-id="^steam$" title="^Steam$"
+    open-maximized true
+}
+
+// Windows that should always open floating by default.
+window-rule {
+    match app-id=r#"^blueman-manager$"#
+    match app-id=r#"^galculator$"#
+    match app-id=r#"^gnome-calculator$"#
+    match app-id=r#"^gnome-session-properties$"#
+    match app-id=r#"^net\.nokyan\.Resources$"#
+    match app-id=r#"^org\.gnome\.SystemMonitor$"#
+    match app-id="^digikam$" title="^New Album"
+    match app-id="^resolve$" title="^Project Manager$"
+    match app-id="^resolve$" title="^resolve$"
+    // match app-id=r#"^org\.mozilla\.Thunderbird$"# title="^Write: "
+    match app-id=r#"^xdg-desktop-portal$"#
+    match title="^Calculator$"
+    open-floating true
+}
+
+window-rule {
+    match app-id="^resolve$" title="^Preferences$"
+    open-floating false
+}
+
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+    default-floating-position x=16 y=16 relative-to="bottom-right"
+    geometry-corner-radius 12
+    focus-ring {
+        off
+    }
+    shadow {
+        on
+    }
+}
+
+window-rule {
+    match app-id=r#"^com\.seafile\.seafile-applet$"#
+    open-floating true
+    default-floating-position x=256 y=8 relative-to="top-right"
+    geometry-corner-radius 4
+    draw-border-with-background false
+}
+
+// Steam notification toasts positioning
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
+window-rule {
+    match app-id=r#"^tuxedo-control-center$"#
+    max-width 800
+    max-height 500
+    open-floating true
+}
+
+// Terminals
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    match app-id="Alacritty"
+    match app-id="zen"
+    match app-id="com.mitchellh.ghostty"
+    match app-id="kitty"
+    draw-border-with-background false
+}
