@@ -2,7 +2,6 @@ binds {
     // Provide some ways to open the overview.
     Mod+O repeat=false { toggle-overview; }
 
-    // Mod+Super_L repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // === Application Launchers ===
@@ -39,19 +38,15 @@ binds {
 
     // === Audio Controls ===
     XF86AudioRaiseVolume allow-when-locked=true {
-        // spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+";
         spawn "dms" "ipc" "call" "audio" "increment" "3";
     }
     XF86AudioLowerVolume allow-when-locked=true {
-        // spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-";
         spawn "dms" "ipc" "call" "audio" "decrement" "3";
     }
     XF86AudioMute allow-when-locked=true {
-        // spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
         spawn "dms" "ipc" "call" "audio" "mute";
     }
     XF86AudioMicMute allow-when-locked=true {
-        // spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
         spawn "dms" "ipc" "call" "audio" "micmute";
     }
     XF86AudioPlay allow-when-locked=true {
@@ -66,11 +61,9 @@ binds {
 
     // === Brightness Controls ===
     XF86MonBrightnessUp allow-when-locked=true {
-        // spawn "brightnessctl" "--class=backlight" "set" "+10%";
         spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
     }
     XF86MonBrightnessDown allow-when-locked=true {
-        // spawn "brightnessctl" "--class=backlight" "set" "10%-";
         spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
     }
 
@@ -204,7 +197,7 @@ binds {
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
+
     // === System Controls ===
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
-    Mod+Shift+P { power-off-monitors; }
 }

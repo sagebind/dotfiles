@@ -77,6 +77,16 @@ overview {
     }
 }
 
+recent-windows {
+    highlight {
+        corner-radius 8
+    }
+
+    previews {
+        max-height 240
+    }
+}
+
 hotkey-overlay {
     skip-at-startup
 }

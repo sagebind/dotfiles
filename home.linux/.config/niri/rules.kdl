@@ -19,7 +19,7 @@ layer-rule {
 
 window-rule {
     match is-active=false
-    opacity 0.85
+    opacity 0.9
 }
 
 window-rule {
@@ -64,7 +64,6 @@ window-rule {
     match app-id="^digikam$" title="^New Album"
     match app-id="^resolve$" title="^Project Manager$"
     match app-id="^resolve$" title="^resolve$"
-    // match app-id=r#"^org\.mozilla\.Thunderbird$"# title="^Write: "
     match app-id=r#"^xdg-desktop-portal$"#
     match title="^Calculator$"
     open-floating true
@@ -117,4 +116,33 @@ window-rule {
     match app-id="com.mitchellh.ghostty"
     match app-id="kitty"
     draw-border-with-background false
+}
+
+// Tweak my favorite video player's rendering a bit.
+window-rule {
+    match app-id=r#"^com.github.rafostar.Clapper$"#
+    opacity 1.0
+
+    geometry-corner-radius 12
+
+    // Clapper sometimes has scaling issues that causes horizontal slices of
+    // transparent pixels to appear between video and black bars that look
+    // strange. We can mask this by always drawing a black background behind its
+    // windows.
+    draw-border-with-background true
+    border {
+        on
+        width 0
+        active-color "#000000"
+        inactive-color "#000000"
+    }
+
+    shadow {
+        on
+        spread 1
+        softness 1
+        offset x=0 y=0
+        color "#000000"
+        draw-behind-window true
+    }
 }
