@@ -3,7 +3,6 @@ include "rules.kdl"
 
 environment {
     // Set general graphical environment information for applications to discover.
-    TERMINAL "ghostty"
     XDG_CURRENT_DESKTOP "niri"
 
     // Fix scaling / rendering issues on some apps
@@ -88,7 +87,7 @@ recent-windows {
 }
 
 hotkey-overlay {
-    skip-at-startup
+    // skip-at-startup
 }
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
@@ -135,4 +134,9 @@ switch-events {
     lid-close {
         spawn "dms" "ipc" "call" "lock" "lock";
     }
+}
+
+debug {
+    // Firefox uses an invalid serial for activation on URL open.
+    honor-xdg-activation-with-invalid-serial
 }

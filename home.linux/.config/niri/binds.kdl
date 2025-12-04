@@ -5,7 +5,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // === Application Launchers ===
-    Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
+    Mod+T hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+E hotkey-overlay-title="Open File Manager" { spawn "nautilus"; }
 
     Menu repeat=false hotkey-overlay-title="Application Launcher" {
