@@ -6,6 +6,7 @@
 .idea/codeStyles
 .idea/dbnavigator.xml
 .idea/dataSources*
+.idea/data_source_mapping.xml
 .idea/copilot/
 .idea/copilot.*.xml
 .idea/codeStyles
@@ -13,6 +14,7 @@
 .idea/codeStyles/Project.xml
 .idea/httpRequests/
 .idea/misc.xml
+.idea/sqldialects.xml
 .idea/uiDesigner.xml
 .idea/watcherTasks.xml
 *.http
