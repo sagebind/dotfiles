@@ -76,6 +76,9 @@
         "pkg-path": "k9s",
         "pkg-group": "k9s"
       },
+      "kubectl": {
+        "pkg-path": "kubectl"
+      },
       "kubectx": {
         "pkg-path": "kubectx"
       },
@@ -106,8 +109,14 @@
       "nvtop": {
         "pkg-path": "nvtop"
       },
+      "pdfcpu": {
+        "pkg-path": "pdfcpu"
+      },
       "pueue": {
         "pkg-path": "pueue"
+      },
+      "qpdf": {
+        "pkg-path": "qpdf"
       },
       "regctl": {
         "pkg-path": "regctl",
@@ -806,6 +815,93 @@
       },
       "system": "x86_64-linux",
       "group": "regctl",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq-go",
+      "broken": false,
+      "derivation": "/nix/store/g8ank037hgi9dzr2npnvn1w9rxa3f84h-yq-go-4.49.2.drv",
+      "description": "Portable command-line YAML processor",
+      "install_id": "yq",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=418468ac9527e799809c900eda37cbff999199b6",
+      "name": "yq-go-4.49.2",
+      "pname": "yq-go",
+      "rev": "418468ac9527e799809c900eda37cbff999199b6",
+      "rev_count": 905402,
+      "rev_date": "2025-12-02T09:27:49Z",
+      "scrape_date": "2025-12-04T02:56:15.680308Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.49.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ns352ypll7mdkzjksvjpabcag07cgnig-yq-go-4.49.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "yq",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq-go",
+      "broken": false,
+      "derivation": "/nix/store/nq2lra7grrizvjgcrvgbfd63a0gakgvk-yq-go-4.49.2.drv",
+      "description": "Portable command-line YAML processor",
+      "install_id": "yq",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=418468ac9527e799809c900eda37cbff999199b6",
+      "name": "yq-go-4.49.2",
+      "pname": "yq-go",
+      "rev": "418468ac9527e799809c900eda37cbff999199b6",
+      "rev_count": 905402,
+      "rev_date": "2025-12-02T09:27:49Z",
+      "scrape_date": "2025-12-04T03:05:47.815831Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.49.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pq3as14jxf4akw32dd9aj1zjwpb4mxj8-yq-go-4.49.2"
+      },
+      "system": "aarch64-linux",
+      "group": "yq",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq-go",
+      "broken": false,
+      "derivation": "/nix/store/sk47a8j69p4hdn9hd8dnw9viq56zlkdb-yq-go-4.49.2.drv",
+      "description": "Portable command-line YAML processor",
+      "install_id": "yq",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=418468ac9527e799809c900eda37cbff999199b6",
+      "name": "yq-go-4.49.2",
+      "pname": "yq-go",
+      "rev": "418468ac9527e799809c900eda37cbff999199b6",
+      "rev_count": 905402,
+      "rev_date": "2025-12-02T09:27:49Z",
+      "scrape_date": "2025-12-04T03:23:40.128151Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.49.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/32jpbsfbd1s6n0aqbpbbm89ch20pwb15-yq-go-4.49.2"
+      },
+      "system": "x86_64-linux",
+      "group": "yq",
       "priority": 5
     },
     {
@@ -2293,6 +2389,108 @@
       "priority": 5
     },
     {
+      "attr_path": "kubectl",
+      "broken": false,
+      "derivation": "/nix/store/ib934vd0i54lzga5sz3mv8036m5arxy2-kubectl-1.32.1.drv",
+      "description": "Kubernetes CLI",
+      "install_id": "kubectl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "kubectl-1.32.1",
+      "pname": "kubectl",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.32.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "convert": "/nix/store/4ahm5rn4f326izlh8nh6zfcf066r0jp9-kubectl-1.32.1-convert",
+        "man": "/nix/store/7aqhrqy27487ph8gcqwl92lpn48zczlm-kubectl-1.32.1-man",
+        "out": "/nix/store/18441nqn0dahiwn1rvwilqvrqwqvvknz-kubectl-1.32.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectl",
+      "broken": false,
+      "derivation": "/nix/store/ighhxrv25af51d7jy5zjap1d1zfs8sgy-kubectl-1.32.1.drv",
+      "description": "Kubernetes CLI",
+      "install_id": "kubectl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "kubectl-1.32.1",
+      "pname": "kubectl",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.32.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "convert": "/nix/store/y9kx67c1h6sjr3l4vp7j200v640h32kr-kubectl-1.32.1-convert",
+        "man": "/nix/store/0f95qz0ynbilx8h0z350in0d8kc9aj1m-kubectl-1.32.1-man",
+        "out": "/nix/store/jylypnz6nddbqf85glbyhpmjsbgmlayj-kubectl-1.32.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kubectl",
+      "broken": false,
+      "derivation": "/nix/store/af2yd0f6gq06p1hdmxz9w01pzaprf3ad-kubectl-1.32.1.drv",
+      "description": "Kubernetes CLI",
+      "install_id": "kubectl",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "kubectl-1.32.1",
+      "pname": "kubectl",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.32.1",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "convert": "/nix/store/1lkaw0m4238bichjjl5jkkpqpvxahp43-kubectl-1.32.1-convert",
+        "man": "/nix/store/jb9zc5f93z67xaldz5zmmnv8d5pzc94r-kubectl-1.32.1-man",
+        "out": "/nix/store/v312kkwzk8mibc9z67n53hab6mcc7cn5-kubectl-1.32.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "kubectx",
       "broken": false,
       "derivation": "/nix/store/xg36l1sykb3zaxnkhi7q00cyv2rw3ax4-kubectx-0.9.5.drv",
@@ -2820,6 +3018,99 @@
       "priority": 5
     },
     {
+      "attr_path": "pdfcpu",
+      "broken": false,
+      "derivation": "/nix/store/pciry4hhj5v22h5rnpa4q23zsyal6d1k-pdfcpu-0.9.1.drv",
+      "description": "PDF processor written in Go",
+      "install_id": "pdfcpu",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "pdfcpu-0.9.1",
+      "pname": "pdfcpu",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/7n4l80j9mi16bsjcqq1hgqkc46rxfjx0-pdfcpu-0.9.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "pdfcpu",
+      "broken": false,
+      "derivation": "/nix/store/385bvvll3ml3ylyhbbmc5cgzs8jd3bgq-pdfcpu-0.9.1.drv",
+      "description": "PDF processor written in Go",
+      "install_id": "pdfcpu",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "pdfcpu-0.9.1",
+      "pname": "pdfcpu",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mdg6scbizyv7wgjfskpzqivnjhqjpfdy-pdfcpu-0.9.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "pdfcpu",
+      "broken": false,
+      "derivation": "/nix/store/3yfj017vzh3bcmjbgdnj3lxz7sy8nabv-pdfcpu-0.9.1.drv",
+      "description": "PDF processor written in Go",
+      "install_id": "pdfcpu",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "pdfcpu-0.9.1",
+      "pname": "pdfcpu",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/g0kwavb6qrzrmq4g310p5h3nz7cszzs5-pdfcpu-0.9.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "pueue",
       "broken": false,
       "derivation": "/nix/store/34dy9bk8915jck7b155xqjvwi5jyv1wf-pueue-3.4.1.drv",
@@ -2907,6 +3198,114 @@
       ],
       "outputs": {
         "out": "/nix/store/h378b2z4gl5hb0700x3k63ggzxhblv5v-pueue-3.4.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "qpdf",
+      "broken": false,
+      "derivation": "/nix/store/1av125j8ppqva8x21bcqspv1jq51v5nq-qpdf-11.9.1.drv",
+      "description": "C++ library and set of programs that inspect and manipulate the structure of PDF files",
+      "install_id": "qpdf",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "qpdf-11.9.1",
+      "pname": "qpdf",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "11.9.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/f7hw56fwq5hfmkc5f641n5bpjcmjrgvv-qpdf-11.9.1-bin",
+        "doc": "/nix/store/nwdbalqa3lnn5jhbj5sr053c3xc21a0l-qpdf-11.9.1-doc",
+        "lib": "/nix/store/m99irmpxrj3fhspzwcfn3wg9vhf41r43-qpdf-11.9.1-lib",
+        "man": "/nix/store/whpx7kasi0zl2fim2sh6vhsns0s1320q-qpdf-11.9.1-man",
+        "out": "/nix/store/yyyg6l8q20w5mya9q6knmzvi42a7iy44-qpdf-11.9.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "qpdf",
+      "broken": false,
+      "derivation": "/nix/store/xkkxax5ccnfnmxmm766ic97hxg752vs4-qpdf-11.9.1.drv",
+      "description": "C++ library and set of programs that inspect and manipulate the structure of PDF files",
+      "install_id": "qpdf",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "qpdf-11.9.1",
+      "pname": "qpdf",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "11.9.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/lbaa6zsdggdcj24mqi7nph5hrq3fm5g9-qpdf-11.9.1-bin",
+        "doc": "/nix/store/cx90vllg7hcdxs19mgacd2dyym3q8byr-qpdf-11.9.1-doc",
+        "lib": "/nix/store/wg9czmjb1wm2j9fbmp726ry0rja5vbab-qpdf-11.9.1-lib",
+        "man": "/nix/store/5r7l1all0fwv25k3izwygy720mmrzf10-qpdf-11.9.1-man",
+        "out": "/nix/store/v8sq2860cjnh63anxym6p5alpzw89r6s-qpdf-11.9.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "qpdf",
+      "broken": false,
+      "derivation": "/nix/store/1zk885cm16i1z3nl4msb9hvhn7x89lmd-qpdf-11.9.1.drv",
+      "description": "C++ library and set of programs that inspect and manipulate the structure of PDF files",
+      "install_id": "qpdf",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "qpdf-11.9.1",
+      "pname": "qpdf",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "11.9.1",
+      "outputs_to_install": [
+        "bin",
+        "man"
+      ],
+      "outputs": {
+        "bin": "/nix/store/cl13msq06x265pxvqcim2mjz2sd60xk5-qpdf-11.9.1-bin",
+        "doc": "/nix/store/v5zwr71hzf52cjyh34rz8nr5jg5i5fa5-qpdf-11.9.1-doc",
+        "lib": "/nix/store/ljxzv57p5vbhbli1g4rnvvnz0ym6jdgr-qpdf-11.9.1-lib",
+        "man": "/nix/store/g9vdp5sga0wj2fhzqwvnvbdvmjrnz6gi-qpdf-11.9.1-man",
+        "out": "/nix/store/84br11wkcds57y3l4kzipxpydgnv7x6p-qpdf-11.9.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -3833,93 +4232,6 @@
       },
       "system": "x86_64-linux",
       "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "yq-go",
-      "broken": false,
-      "derivation": "/nix/store/g8ank037hgi9dzr2npnvn1w9rxa3f84h-yq-go-4.49.2.drv",
-      "description": "Portable command-line YAML processor",
-      "install_id": "yq",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=418468ac9527e799809c900eda37cbff999199b6",
-      "name": "yq-go-4.49.2",
-      "pname": "yq-go",
-      "rev": "418468ac9527e799809c900eda37cbff999199b6",
-      "rev_count": 905402,
-      "rev_date": "2025-12-02T09:27:49Z",
-      "scrape_date": "2025-12-04T02:56:15.680308Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.49.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/ns352ypll7mdkzjksvjpabcag07cgnig-yq-go-4.49.2"
-      },
-      "system": "aarch64-darwin",
-      "group": "yq",
-      "priority": 5
-    },
-    {
-      "attr_path": "yq-go",
-      "broken": false,
-      "derivation": "/nix/store/nq2lra7grrizvjgcrvgbfd63a0gakgvk-yq-go-4.49.2.drv",
-      "description": "Portable command-line YAML processor",
-      "install_id": "yq",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=418468ac9527e799809c900eda37cbff999199b6",
-      "name": "yq-go-4.49.2",
-      "pname": "yq-go",
-      "rev": "418468ac9527e799809c900eda37cbff999199b6",
-      "rev_count": 905402,
-      "rev_date": "2025-12-02T09:27:49Z",
-      "scrape_date": "2025-12-04T03:05:47.815831Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.49.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/pq3as14jxf4akw32dd9aj1zjwpb4mxj8-yq-go-4.49.2"
-      },
-      "system": "aarch64-linux",
-      "group": "yq",
-      "priority": 5
-    },
-    {
-      "attr_path": "yq-go",
-      "broken": false,
-      "derivation": "/nix/store/sk47a8j69p4hdn9hd8dnw9viq56zlkdb-yq-go-4.49.2.drv",
-      "description": "Portable command-line YAML processor",
-      "install_id": "yq",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=418468ac9527e799809c900eda37cbff999199b6",
-      "name": "yq-go-4.49.2",
-      "pname": "yq-go",
-      "rev": "418468ac9527e799809c900eda37cbff999199b6",
-      "rev_count": 905402,
-      "rev_date": "2025-12-02T09:27:49Z",
-      "scrape_date": "2025-12-04T03:23:40.128151Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.49.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/32jpbsfbd1s6n0aqbpbbm89ch20pwb15-yq-go-4.49.2"
-      },
-      "system": "x86_64-linux",
-      "group": "yq",
       "priority": 5
     },
     {

@@ -59,6 +59,9 @@ xsv.pkg-path = "xsv"
 yazi.pkg-path = "yazi"
 yq.pkg-group = "yq"
 yq.pkg-path = "yq-go"
+pdfcpu.pkg-path = "pdfcpu"
+qpdf.pkg-path = "qpdf"
+kubectl.pkg-path = "kubectl"
 
 [options]
 allow.unfree = true

@@ -1,13 +1,14 @@
 OS := $(shell uname | tr '[:upper:]' '[:lower:]')
 PACKAGES := home "home.$(OS)"
-HAS_DCONF := $(shell which dconf)
-HAS_BREW := $(shell which brew)
+HAS_DCONF := $(shell which dconf 2>/dev/null)
+HAS_DNF := $(shell which dnf 2>/dev/null)
+HAS_BREW := $(shell which brew 2>/dev/null)
 DCONF_FILES := $(wildcard dconf/*.ini)
 UNFOLDED_DIR_MARKERS := $(shell find $(PACKAGES) -type f -name .no-stow-folding)
 UNFOLDED_DIRS := $(patsubst home.$(OS)/%, $(HOME)/%, $(patsubst home/%, $(HOME)/%, $(dir $(UNFOLDED_DIR_MARKERS))))
 
 .PHONY: apply
-apply: $(if $(HAS_BREW),brew-bundle) link $(if $(HAS_DCONF),dconf)
+apply: $(if $(HAS_DNF),rpm-fedora) $(if $(HAS_BREW),brew-bundle) link $(if $(HAS_DCONF),dconf)
 
 .PHONY: link
 link: $(UNFOLDED_DIRS)
@@ -38,3 +39,13 @@ $(DCONF_FILES):
 .PHONY: brew-bundle
 brew-bundle:
 	brew bundle --file=pkg/Brewfile
+
+RPM_PACKAGES = $(shell cat pkg/rpm/fedora)
+RPM_PACKAGES_NOT_INSTALLED = $(shell rpm -q $(RPM_PACKAGES) | sed -n 's/^package \(\w\+\) is not installed$$/\1/p')
+.PHONY: rpm-fedora
+rpm-fedora:
+ifeq ($(RPM_PACKAGES_NOT_INSTALLED),)
+else
+	@echo "Installing missing RPM packages. Will ask for sudo privileges."
+	sudo dnf install $(RPM_PACKAGES_NOT_INSTALLED)
+endif
