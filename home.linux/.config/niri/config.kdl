@@ -40,11 +40,11 @@ input {
 }
 
 output "eDP-1" {
-    scale 1.35
+    scale 1.3
 }
 
 layout {
-    gaps 4
+    gaps 2
     background-color "transparent"
     preset-column-widths {
         proportion 0.33333
@@ -59,7 +59,7 @@ layout {
     }
     focus-ring {
         width 2
-        active-color "#505050"
+        active-color "#444444"
     }
     shadow {
         on

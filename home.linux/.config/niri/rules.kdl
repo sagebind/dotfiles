@@ -46,11 +46,16 @@ window-rule {
     match app-id="code"
     match app-id="obsidian"
     match app-id="ONLYOFFICE"
-    match app-id="org.mozilla.firefox"
     match app-id="org.mozilla.Thunderbird" title=" - Mozilla Thunderbird$"
-    match app-id="^resolve$" title="^DaVinci Resolve Studio"
     match app-id="^steam$" title="^Steam$"
     open-maximized true
+}
+
+// Windows that should be fully maximized by default.
+window-rule {
+    match app-id="org.mozilla.firefox"
+    match app-id="^resolve$" title="^DaVinci Resolve Studio"
+    open-maximized-to-edges true
 }
 
 // Windows that should always open floating by default.
