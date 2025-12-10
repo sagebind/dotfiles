@@ -11,10 +11,6 @@ environment {
     STEAM_FORCE_DESKTOPUI_SCALING "1.5"
 }
 
-// spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
-spawn-sh-at-startup "vicinae server --replace"
-spawn-sh-at-startup "xremap --watch=device --ignore=solaar --ignore=ydotoold --ignore=Espanso ~/.config/xremap/config.yml"
-
 gestures {
     hot-corners {
         off

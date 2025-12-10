@@ -1,6 +1,6 @@
 [Unit]
 Description=Xremap
-After=default.target
+After=graphical-session.target
 
 [Service]
 ExecStart=/usr/bin/xremap --watch=device --ignore=solaar --ignore=ydotoold --ignore=Espanso %h/.config/xremap/config.yml
@@ -9,4 +9,4 @@ StandardOutput=journal
 StandardError=journal
 
 [Install]
-WantedBy=default.target
+WantedBy=niri.service

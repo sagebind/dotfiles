@@ -55,6 +55,9 @@ window-rule {
 window-rule {
     match app-id="org.mozilla.firefox"
     match app-id="^resolve$" title="^DaVinci Resolve Studio"
+    exclude title="^Open File "
+    exclude title="^File Upload "
+    exclude title="^Save As "
     open-maximized-to-edges true
 }
 

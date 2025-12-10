@@ -9,4 +9,3 @@ modmap:
         alone:
           - LeftMeta
           - O
-        free_hold: true
