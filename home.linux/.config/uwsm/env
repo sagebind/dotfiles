@@ -1,8 +1,0 @@
-# Activate flox to ensure programs in the flox environment are available to
-# hyprland
-if [ -x "$(command -v flox)" ]; then
-  # eval "$(flox activate)"
-fi
-
-# Fix vscode pixelation
-export ELECTRON_OZONE_PLATFORM_HINT=auto
