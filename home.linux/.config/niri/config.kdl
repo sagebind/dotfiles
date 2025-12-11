@@ -63,6 +63,10 @@ layout {
         spread 5
         color "#000000aa"
     }
+    tab-indicator {
+        place-within-column
+        active-color "#cccccc"
+    }
 }
 
 overview {
@@ -135,4 +139,7 @@ switch-events {
 debug {
     // Firefox uses an invalid serial for activation on URL open.
     honor-xdg-activation-with-invalid-serial
+
+    // Fix flickering and random freezes in some GNOME apps.
+    wait-for-frame-completion-before-queueing
 }

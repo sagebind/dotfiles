@@ -9,3 +9,12 @@ modmap:
         alone:
           - LeftMeta
           - O
+
+keymap:
+  - name: Firefox settings shortcut
+    remap:
+      Ctrl-Comma:
+        launch: ["firefox", "about:preferences"]
+    window:
+      only:
+        - / Mozilla Firefox$/
