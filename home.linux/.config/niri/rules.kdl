@@ -53,11 +53,8 @@ window-rule {
 
 // Windows that should be fully maximized by default.
 window-rule {
-    match app-id="org.mozilla.firefox"
     match app-id="^resolve$" title="^DaVinci Resolve Studio"
-    exclude title="^Open File "
-    exclude title="^File Upload "
-    exclude title="^Save As "
+    match app-id="^Openterface Mini-KVM$"
     open-maximized-to-edges true
 }
 
