@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read -r filename; do
+    mogrify -define preserve-timestamp=true -format jpg "$filename"
+done
