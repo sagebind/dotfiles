@@ -41,7 +41,7 @@ brew-bundle:
 	brew bundle --file=pkg/Brewfile
 
 RPM_PACKAGES = $(shell cat pkg/rpm/fedora)
-RPM_PACKAGES_NOT_INSTALLED = $(shell rpm -q $(RPM_PACKAGES) | sed -n 's/^package \(\w\+\) is not installed$$/\1/p')
+RPM_PACKAGES_NOT_INSTALLED = $(shell rpm -q $(RPM_PACKAGES) | sed -n 's/^package \(\S\+\) is not installed$$/\1/p')
 .PHONY: rpm-fedora
 rpm-fedora:
 ifeq ($(RPM_PACKAGES_NOT_INSTALLED),)
