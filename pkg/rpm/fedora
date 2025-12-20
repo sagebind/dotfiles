@@ -3,6 +3,8 @@ kitty
 lsof
 msedit
 prename
+speech-dispatcher
+speech-dispatcher-utils
 vdpauinfo
 wl-clipboard
 ydotool
