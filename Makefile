@@ -2,13 +2,14 @@ OS := $(shell uname | tr '[:upper:]' '[:lower:]')
 PACKAGES := home "home.$(OS)"
 HAS_DCONF := $(shell which dconf 2>/dev/null)
 HAS_DNF := $(shell which dnf 2>/dev/null)
+HAS_FLATPAK := $(shell which flatpak 2>/dev/null)
 HAS_BREW := $(shell which brew 2>/dev/null)
 DCONF_FILES := $(wildcard dconf/*.ini)
 UNFOLDED_DIR_MARKERS := $(shell find $(PACKAGES) -type f -name .no-stow-folding)
 UNFOLDED_DIRS := $(patsubst home.$(OS)/%, $(HOME)/%, $(patsubst home/%, $(HOME)/%, $(dir $(UNFOLDED_DIR_MARKERS))))
 
 .PHONY: apply
-apply: $(if $(HAS_DNF),rpm-fedora) $(if $(HAS_BREW),brew-bundle) link $(if $(HAS_DCONF),dconf)
+apply: $(if $(HAS_DNF),rpm-fedora) $(if $(HAS_FLATPAK),flatpak) $(if $(HAS_BREW),brew-bundle) link $(if $(HAS_DCONF),dconf)
 
 .PHONY: link
 link: $(UNFOLDED_DIRS)
@@ -48,4 +49,14 @@ ifeq ($(RPM_PACKAGES_NOT_INSTALLED),)
 else
 	@echo "Installing missing RPM packages. Will ask for sudo privileges."
 	sudo dnf install $(RPM_PACKAGES_NOT_INSTALLED)
+endif
+
+FLATPAK_PACKAGES = $(shell cat pkg/flatpak)
+FLATPAK_PACKAGES_NOT_INSTALLED = $(shell flatpak list --columns=application | grep -f - -v pkg/flatpak)
+.PHONY: flatpak
+flatpak:
+ifeq ($(FLATPAK_PACKAGES_NOT_INSTALLED),)
+else
+	@echo "Installing missing Flatpak packages."
+	echo flatpak install --user $(FLATPAK_PACKAGES_NOT_INSTALLED)
 endif

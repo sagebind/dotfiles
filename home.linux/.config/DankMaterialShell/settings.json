@@ -80,12 +80,12 @@
       "width": 50
     },
     {
-      "id": "nightMode",
+      "id": "idleInhibitor",
       "enabled": true,
       "width": 50
     },
     {
-      "id": "darkMode",
+      "id": "doNotDisturb",
       "enabled": true,
       "width": 50
     }
@@ -122,7 +122,7 @@
   "useAutoLocation": true,
   "weatherEnabled": true,
   "networkPreference": "wifi",
-  "vpnLastConnected": "",
+  "vpnLastConnected": "2be57e98-bf5d-47b4-aef5-ebbf55631c98",
   "iconTheme": "System Default",
   "launcherLogoMode": "apps",
   "launcherLogoCustomPath": "",
@@ -274,10 +274,6 @@
           "enabled": true
         },
         {
-          "id": "idleInhibitor",
-          "enabled": true
-        },
-        {
           "id": "dankActions:variant_1763177275783",
           "enabled": true
         },
@@ -298,16 +294,20 @@
           "enabled": true
         },
         {
-          "id": "notificationButton",
+          "id": "vpn",
           "enabled": true
         },
         {
           "id": "controlCenterButton",
           "enabled": true
+        },
+        {
+          "id": "notificationButton",
+          "enabled": true
         }
       ],
       "spacing": 0,
-      "innerPadding": 8,
+      "innerPadding": 9,
       "bottomGap": -2,
       "transparency": 1,
       "widgetTransparency": 1,

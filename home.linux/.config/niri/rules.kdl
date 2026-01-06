@@ -62,6 +62,7 @@ window-rule {
     match app-id=r#"^net\.nokyan\.Resources$"#
     match app-id=r#"^org\.gnome\.SystemMonitor$"#
     match app-id="^digikam$" title="^New Album"
+    match app-id="^org.keepassxc.KeePassXC$" title="^KeePassXC - Passkey credentials$"
     match app-id="^resolve$" title="^Project Manager$"
     match app-id="^resolve$" title="^resolve$"
     match app-id=r#"^xdg-desktop-portal$"#
@@ -146,4 +147,19 @@ window-rule {
         color "#000000"
         draw-behind-window true
     }
+}
+
+// Focus KeePassXC unlock window when it appears.
+window-rule {
+    match app-id="org.keepassxc.KeePassXC" title="Unlock Database - KeePassXC"
+    open-floating true
+    open-focused true
+}
+
+// Fix Firefox dialog height.
+window-rule {
+    match app-id="org.mozilla.firefox" title="Removing Cookies and Site Data"
+    open-floating true
+    open-focused true
+    min-height 128
 }
