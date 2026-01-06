@@ -58,5 +58,5 @@ flatpak:
 ifeq ($(FLATPAK_PACKAGES_NOT_INSTALLED),)
 else
 	@echo "Installing missing Flatpak packages."
-	echo flatpak install --user $(FLATPAK_PACKAGES_NOT_INSTALLED)
+	flatpak install --user $(FLATPAK_PACKAGES_NOT_INSTALLED)
 endif
