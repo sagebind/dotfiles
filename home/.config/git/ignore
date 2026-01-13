@@ -6,6 +6,7 @@
 .idea/codeStyles
 .idea/dbnavigator.xml
 .idea/dataSources*
+.idea/dataSources.local.xml
 .idea/data_source_mapping.xml
 .idea/copilot/
 .idea/copilot.*.xml
