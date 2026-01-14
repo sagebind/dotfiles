@@ -43,6 +43,7 @@ window-rule {
     match app-id="ONLYOFFICE"
     match app-id="org.mozilla.Thunderbird" title=" - Mozilla Thunderbird$"
     match app-id="^steam$" title="^Steam$"
+    match app-id="Supersonic"
     open-maximized true
 }
 

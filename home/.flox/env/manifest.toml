@@ -64,6 +64,7 @@ xsv.pkg-path = "xsv"
 yazi.pkg-path = "yazi"
 yq.pkg-group = "yq"
 yq.pkg-path = "yq-go"
+nmap.pkg-path = "nmap"
 
 [options]
 allow.unfree = true
