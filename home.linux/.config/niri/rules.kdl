@@ -64,11 +64,24 @@ window-rule {
     match app-id=r#"^org\.gnome\.SystemMonitor$"#
     match app-id="^digikam$" title="^New Album"
     match app-id="^org.keepassxc.KeePassXC$" title="^KeePassXC - Passkey credentials$"
-    match app-id="^resolve$" title="^Project Manager$"
-    match app-id="^resolve$" title="^resolve$"
     match app-id=r#"^xdg-desktop-portal$"#
     match title="^Calculator$"
     open-floating true
+}
+
+// DaVinci Resolve splash screen.
+window-rule {
+    match app-id="^resolve$" title="^resolve$"
+    open-floating true
+    focus-ring {
+        off
+    }
+    border {
+        off
+    }
+    shadow {
+        on
+    }
 }
 
 window-rule {

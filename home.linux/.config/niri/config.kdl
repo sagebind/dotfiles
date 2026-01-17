@@ -136,6 +136,12 @@ switch-events {
     }
 }
 
+// Disable builtin xwayland-satellite integration so that we can see logs. See
+// https://github.com/YaLTeR/niri/discussions/2228
+xwayland-satellite {
+    path "~/.config/niri/scripts/xwayland-satellite.sh"
+}
+
 debug {
     // Firefox uses an invalid serial for activation on URL open.
     honor-xdg-activation-with-invalid-serial
