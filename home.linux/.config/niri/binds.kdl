@@ -69,6 +69,7 @@ binds {
 
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
+    Alt+F4 repeat=false { close-window; }
     Mod+F { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
     Mod+Shift+T { toggle-window-floating; }
