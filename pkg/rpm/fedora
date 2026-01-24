@@ -1,10 +1,12 @@
 distrobox
 fish
 kitty
+libva-utils
 lsof
 msedit
 NetworkManager-tui
 prename
+rclone
 speech-dispatcher
 speech-dispatcher-utils
 vdpauinfo

@@ -1,3 +1,3 @@
 bind \cc 'commandline ""'
-bind \cr 'omf reload'
+bind \cr 'exec fish'
 bind \ch search-history

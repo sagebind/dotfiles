@@ -37,6 +37,7 @@ input {
 }
 
 output "eDP-1" {
+    mode "2560x1600@240.000"
     scale 1.25
 }
 
