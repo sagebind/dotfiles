@@ -5,7 +5,7 @@
       {
         "icon": "terminal",
         "displayText": "",
-        "displayCommand": "cat /sys/bus/pci/devices/0000:01:00.0/power_state",
+        "displayCommand": "cat /sys/bus/pci/drivers/nvidia/0000:*/power_state",
         "clickCommand": "",
         "middleClickCommand": "",
         "rightClickCommand": "",
@@ -13,7 +13,9 @@
         "showIcon": false,
         "showText": true,
         "id": "variant_1763177275783",
-        "name": "dGPU State"
+        "name": "dGPU State",
+        "visibilityCommand": "",
+        "visibilityInterval": 0
       },
       {
         "icon": "search",

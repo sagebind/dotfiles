@@ -32,6 +32,7 @@ input {
         // macOS / GNOME style trackpad behavior.
         tap
         natural-scroll
+        click-method "clickfinger"
     }
 }
 
@@ -143,6 +144,9 @@ xwayland-satellite {
 }
 
 debug {
+    render-drm-device "/dev/dri/renderD128"
+    ignore-drm-device "/dev/dri/renderD129"
+
     // Firefox uses an invalid serial for activation on URL open.
     honor-xdg-activation-with-invalid-serial
 

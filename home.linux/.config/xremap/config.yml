@@ -1,4 +1,8 @@
 modmap:
+  - name: Bind right ctrl as always the menu button
+    remap:
+      CONTROL_R: MENU
+
   # Niri currently does not support binds on a modifier key when pressed alone.
   # This is a workaround to open the overview when the Mod key is tapped, like
   # GNOME.
