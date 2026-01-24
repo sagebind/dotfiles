@@ -1,3 +1,3 @@
 bind \cc 'commandline ""'
-bind \cr 'exec fish'
+bind \cr reload
 bind \ch search-history
