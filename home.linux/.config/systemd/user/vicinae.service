@@ -1,9 +1,9 @@
 [Unit]
 Description=Vicinae Launcher Daemon
 Documentation=https://docs.vicinae.com
+PartOf=graphical-session.target
 After=graphical-session.target
 Requires=dbus.socket
-PartOf=graphical-session.target
 
 [Service]
 Type=simple
@@ -14,4 +14,4 @@ RestartSec=60
 KillMode=process
 
 [Install]
-WantedBy=graphical-session.target
+WantedBy=niri.service
