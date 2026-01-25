@@ -1,0 +1,13 @@
+[Unit]
+Description=Seafile desktop sync client
+PartOf=graphical-session.target
+After=graphical-session.target
+AssertPathIsDirectory=/mnt/data/Seafile
+
+[Service]
+Type=simple
+ExecStart=seafile-applet
+KillMode=process
+
+[Install]
+WantedBy=graphical-session.target

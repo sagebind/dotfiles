@@ -144,6 +144,13 @@
       "tokei": {
         "pkg-path": "tokei"
       },
+      "tuxedo-rs": {
+        "pkg-path": "tuxedo-rs",
+        "pkg-group": "tuxedo-rs",
+        "systems": [
+          "x86_64-linux"
+        ]
+      },
       "uv": {
         "pkg-path": "uv"
       },
@@ -4424,6 +4431,36 @@
       },
       "system": "x86_64-linux",
       "group": "yq",
+      "priority": 5
+    },
+    {
+      "attr_path": "tuxedo-rs",
+      "broken": false,
+      "derivation": "/nix/store/hw2w7b65r5nm839yqbyvqc0s0sf11ppn-tuxedo-rs-0.3.1.drv",
+      "description": "Rust utilities for interacting with hardware from TUXEDO Computers",
+      "install_id": "tuxedo-rs",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=88d3861acdd3d2f0e361767018218e51810df8a1",
+      "name": "tuxedo-rs-0.3.1",
+      "pname": "tuxedo-rs",
+      "rev": "88d3861acdd3d2f0e361767018218e51810df8a1",
+      "rev_count": 931542,
+      "rev_date": "2026-01-21T18:02:10Z",
+      "scrape_date": "2026-01-23T06:38:50.522633Z",
+      "stabilities": [
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.3.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/4vrdg75xabsmskghj4mj2s41cbqy9ywi-tuxedo-rs-0.3.1"
+      },
+      "system": "x86_64-linux",
+      "group": "tuxedo-rs",
       "priority": 5
     },
     {

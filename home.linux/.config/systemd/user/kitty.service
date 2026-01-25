@@ -1,0 +1,16 @@
+[Unit]
+Description=Kitty terminal (single-instance, hidden)
+Documentation=man:kitty(1)
+Wants=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/kitty --start-as=hidden --single-instance
+Restart=always
+RestartSec=2
+KillMode=process
+Environment=XDG_RUNTIME_DIR=%t
+
+[Install]
+WantedBy=graphical-session.target

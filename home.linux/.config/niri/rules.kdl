@@ -39,6 +39,7 @@ window-rule {
 // Windows that should be maximized by default.
 window-rule {
     match app-id="code"
+    match app-id="logos.exe"
     match app-id="obsidian"
     match app-id="ONLYOFFICE"
     match app-id="org.mozilla.Thunderbird" title=" - Mozilla Thunderbird$"
