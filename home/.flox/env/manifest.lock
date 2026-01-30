@@ -32,9 +32,6 @@
         "pkg-path": "direnv",
         "pkg-group": "direnv"
       },
-      "doctl": {
-        "pkg-path": "doctl"
-      },
       "doggo": {
         "pkg-path": "doggo"
       },
@@ -47,23 +44,20 @@
           "x86_64-linux"
         ]
       },
+      "exiftool": {
+        "pkg-path": "exiftool"
+      },
       "eza": {
         "pkg-path": "eza"
       },
       "flac": {
         "pkg-path": "flac"
       },
-      "gdu": {
-        "pkg-path": "gdu"
-      },
       "gh": {
         "pkg-path": "gh"
       },
       "gifski": {
         "pkg-path": "gifski"
-      },
-      "glow": {
-        "pkg-path": "glow"
       },
       "hurmit": {
         "pkg-path": "nerd-fonts.hurmit"
@@ -98,6 +92,9 @@
       "mitmproxy": {
         "pkg-path": "mitmproxy",
         "pkg-group": "mitmproxy"
+      },
+      "mkvtoolnix-cli": {
+        "pkg-path": "mkvtoolnix-cli"
       },
       "msedit": {
         "pkg-path": "msedit",
@@ -144,13 +141,6 @@
       "tokei": {
         "pkg-path": "tokei"
       },
-      "tuxedo-rs": {
-        "pkg-path": "tuxedo-rs",
-        "pkg-group": "tuxedo-rs",
-        "systems": [
-          "x86_64-linux"
-        ]
-      },
       "uv": {
         "pkg-path": "uv"
       },
@@ -159,9 +149,6 @@
         "systems": [
           "x86_64-linux"
         ]
-      },
-      "visidata": {
-        "pkg-path": "visidata"
       },
       "wev": {
         "pkg-path": "wev",
@@ -177,9 +164,6 @@
       },
       "xsv": {
         "pkg-path": "xsv"
-      },
-      "yazi": {
-        "pkg-path": "yazi"
       },
       "yq": {
         "pkg-path": "yq-go",
@@ -1426,99 +1410,6 @@
       "priority": 5
     },
     {
-      "attr_path": "doctl",
-      "broken": false,
-      "derivation": "/nix/store/x0dsdz7465c3s6sy1pk171v8h3ja55ai-doctl-1.120.2.drv",
-      "description": "Command line tool for DigitalOcean services",
-      "install_id": "doctl",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "doctl-1.120.2",
-      "pname": "doctl",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.120.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/wagq5si7gmrdkrh7bjpikhj8j9val8yk-doctl-1.120.2"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "doctl",
-      "broken": false,
-      "derivation": "/nix/store/q24lgkzg3jhb8i7bz79lb5555jibp943-doctl-1.120.2.drv",
-      "description": "Command line tool for DigitalOcean services",
-      "install_id": "doctl",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "doctl-1.120.2",
-      "pname": "doctl",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.120.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/ybphb89z9wq56d0acp0m3ijc4vxb038v-doctl-1.120.2"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "doctl",
-      "broken": false,
-      "derivation": "/nix/store/qd318vvgfif9ys4yqz4y1ldm7mdcjhzn-doctl-1.120.2.drv",
-      "description": "Command line tool for DigitalOcean services",
-      "install_id": "doctl",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "doctl-1.120.2",
-      "pname": "doctl",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.120.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/z454d35b79ggyjgrmkz9vppvkphj53zr-doctl-1.120.2"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
       "attr_path": "doggo",
       "broken": false,
       "derivation": "/nix/store/sphd4x7kcsd9r95d6qfsx9phzapb3859-doggo-1.0.5.drv",
@@ -1736,6 +1627,102 @@
       "priority": 5
     },
     {
+      "attr_path": "exiftool",
+      "broken": false,
+      "derivation": "/nix/store/j5rgl95d40chb64pmnq58af1xsracaas-perl5.40.0-Image-ExifTool-13.00.drv",
+      "description": "Tool to read, write and edit EXIF meta information",
+      "install_id": "exiftool",
+      "license": "[ GPL-1.0-or-later, Artistic-2.0 ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "perl5.40.0-Image-ExifTool-13.00",
+      "pname": "exiftool",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "13.00",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "devdoc": "/nix/store/9csvr55216zxpw6r1f50w1ysbcacq3n3-perl5.40.0-Image-ExifTool-13.00-devdoc",
+        "out": "/nix/store/0mr9mr0pfg5flm1zcx901h0fkyvlr50r-perl5.40.0-Image-ExifTool-13.00"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "exiftool",
+      "broken": false,
+      "derivation": "/nix/store/n8z19zxfd6ypaj3q4sa50kb7clyg3380-perl5.40.0-Image-ExifTool-13.00.drv",
+      "description": "Tool to read, write and edit EXIF meta information",
+      "install_id": "exiftool",
+      "license": "[ GPL-1.0-or-later, Artistic-2.0 ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "perl5.40.0-Image-ExifTool-13.00",
+      "pname": "exiftool",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "13.00",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "devdoc": "/nix/store/sy90hx5l0k6lqc49kvzmiaa654h4vgjn-perl5.40.0-Image-ExifTool-13.00-devdoc",
+        "out": "/nix/store/albj5458rgpk0pnky2x91czv9z7lsr6s-perl5.40.0-Image-ExifTool-13.00"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "exiftool",
+      "broken": false,
+      "derivation": "/nix/store/smv0xbii44djiqa0k4gnkhvhsh2if61r-perl5.40.0-Image-ExifTool-13.00.drv",
+      "description": "Tool to read, write and edit EXIF meta information",
+      "install_id": "exiftool",
+      "license": "[ GPL-1.0-or-later, Artistic-2.0 ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "perl5.40.0-Image-ExifTool-13.00",
+      "pname": "exiftool",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "13.00",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "devdoc": "/nix/store/srghxjkzgwabshn6rzr07mikh13dw81h-perl5.40.0-Image-ExifTool-13.00-devdoc",
+        "out": "/nix/store/cwi5vd9wsgjs45i7m61khhl7yv8pqd0r-perl5.40.0-Image-ExifTool-13.00"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "eza",
       "broken": false,
       "derivation": "/nix/store/r9jnv0qdcgz7si4pnj2062lki1xh0qp5-eza-0.20.17.drv",
@@ -1943,99 +1930,6 @@
       "priority": 5
     },
     {
-      "attr_path": "gdu",
-      "broken": false,
-      "derivation": "/nix/store/nqkr1a8a018qj4llzwjs97gfrnnzqi3x-gdu-5.30.1.drv",
-      "description": "Disk usage analyzer with console interface",
-      "install_id": "gdu",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "gdu-5.30.1",
-      "pname": "gdu",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "5.30.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/qzfx7f1m0bkb62x59wzvzsf5pgn11gys-gdu-5.30.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "gdu",
-      "broken": false,
-      "derivation": "/nix/store/1vgqnf53if5vjm5axap4sp8q9fv9jjxv-gdu-5.30.1.drv",
-      "description": "Disk usage analyzer with console interface",
-      "install_id": "gdu",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "gdu-5.30.1",
-      "pname": "gdu",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "5.30.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/4009lc7vz411r2n13myr06kfsz2kim6r-gdu-5.30.1"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "gdu",
-      "broken": false,
-      "derivation": "/nix/store/d8ax17lpz9zpyzdb3v8c88681l10ra7r-gdu-5.30.1.drv",
-      "description": "Disk usage analyzer with console interface",
-      "install_id": "gdu",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "gdu-5.30.1",
-      "pname": "gdu",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "5.30.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/54ymjxj3fp6d3bhn8v3dbcayk8ipg9cb-gdu-5.30.1"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
       "attr_path": "gh",
       "broken": false,
       "derivation": "/nix/store/bq5fwhjqhkxpylxbxhl9v7vnwgmb7zc5-gh-2.65.0.drv",
@@ -2216,99 +2110,6 @@
       ],
       "outputs": {
         "out": "/nix/store/n5rii9ds2vplhqm35vkg228rad4n8cr9-gifski-1.32.0"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "glow",
-      "broken": false,
-      "derivation": "/nix/store/b7miqhs16s6kwrdyiqzfwcrxsr2jz14j-glow-2.0.0.drv",
-      "description": "Render markdown on the CLI, with pizzazz!",
-      "install_id": "glow",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "glow-2.0.0",
-      "pname": "glow",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.0.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/8q1q25cbpbnbgd0r84f1x58gsr7vz5jd-glow-2.0.0"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "glow",
-      "broken": false,
-      "derivation": "/nix/store/iicjxhyzcp7c7bc6s7rbb50s4dn6rj03-glow-2.0.0.drv",
-      "description": "Render markdown on the CLI, with pizzazz!",
-      "install_id": "glow",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "glow-2.0.0",
-      "pname": "glow",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.0.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6rjiax4pwx6imgm13fcr5mk6ln5r9k1a-glow-2.0.0"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "glow",
-      "broken": false,
-      "derivation": "/nix/store/9iqbzhrajlaw2d8yqh4jrids6jgqin9j-glow-2.0.0.drv",
-      "description": "Render markdown on the CLI, with pizzazz!",
-      "install_id": "glow",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "glow-2.0.0",
-      "pname": "glow",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2.0.0",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/si64zclivnwa68xdsdfghrkjb7llxx46-glow-2.0.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -2845,6 +2646,99 @@
       ],
       "outputs": {
         "out": "/nix/store/41pfndm8sslm7604il9c4gf3q42s7912-miniserve-0.28.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "mkvtoolnix-cli",
+      "broken": false,
+      "derivation": "/nix/store/9ba1psz82jhjrhn7v2115zwyfxdb15lh-mkvtoolnix-87.0.drv",
+      "description": "Cross-platform tools for Matroska",
+      "install_id": "mkvtoolnix-cli",
+      "license": "GPL-2.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "mkvtoolnix-87.0",
+      "pname": "mkvtoolnix-cli",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "87.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/rpy25x561a23pv0hw96hs1ccld3dbgx4-mkvtoolnix-87.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "mkvtoolnix-cli",
+      "broken": false,
+      "derivation": "/nix/store/mg2cywfycpn1amjvmj1bkkjb6m0bskb8-mkvtoolnix-87.0.drv",
+      "description": "Cross-platform tools for Matroska",
+      "install_id": "mkvtoolnix-cli",
+      "license": "GPL-2.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "mkvtoolnix-87.0",
+      "pname": "mkvtoolnix-cli",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "87.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/2xdw4knfpsl2h0kl5vlfl76kxpqr0apb-mkvtoolnix-87.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "mkvtoolnix-cli",
+      "broken": false,
+      "derivation": "/nix/store/gf1iv5p950h4d1cs44a311f5mlqpksv7-mkvtoolnix-87.0.drv",
+      "description": "Cross-platform tools for Matroska",
+      "install_id": "mkvtoolnix-cli",
+      "license": "GPL-2.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "name": "mkvtoolnix-87.0",
+      "pname": "mkvtoolnix-cli",
+      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
+      "rev_count": 742084,
+      "rev_date": "2025-01-21T14:28:11Z",
+      "scrape_date": "2025-01-23T00:15:48Z",
+      "stabilities": [
+        "stable",
+        "staging",
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "87.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/kdy8w5rbcnhcq03a9jw8kfl5ik0s9g1m-mkvtoolnix-87.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -4003,102 +3897,6 @@
       "priority": 5
     },
     {
-      "attr_path": "visidata",
-      "broken": false,
-      "derivation": "/nix/store/gx7ln00kyl7sajq0jifr1zjcp9fad61q-visidata-3.1.1.drv",
-      "description": "Interactive terminal multitool for tabular data",
-      "install_id": "visidata",
-      "license": "GPL-3.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "visidata-3.1.1",
-      "pname": "visidata",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.1.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "dist": "/nix/store/i0cp0frl32xr2bpl2bi4mnv4rxmhasdb-visidata-3.1.1-dist",
-        "out": "/nix/store/lc6h7k7dy8arl5szc4i68krs4k4s7hdp-visidata-3.1.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "visidata",
-      "broken": false,
-      "derivation": "/nix/store/g3zsah6bbncn3m7n6lix82438lk9c524-visidata-3.1.1.drv",
-      "description": "Interactive terminal multitool for tabular data",
-      "install_id": "visidata",
-      "license": "GPL-3.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "visidata-3.1.1",
-      "pname": "visidata",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.1.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "dist": "/nix/store/m9q55sw18db9sylp013cjx61yyb78b32-visidata-3.1.1-dist",
-        "out": "/nix/store/qxk7pwdiwcg46bhc6r755ff6dc0j3kj1-visidata-3.1.1"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "visidata",
-      "broken": false,
-      "derivation": "/nix/store/24gjcm7rfzjb18gnvym3bpygka5ifvpk-visidata-3.1.1.drv",
-      "description": "Interactive terminal multitool for tabular data",
-      "install_id": "visidata",
-      "license": "GPL-3.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "visidata-3.1.1",
-      "pname": "visidata",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "3.1.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "dist": "/nix/store/bzsfgyr3c3iiniq9knscanxkm3m9pcbx-visidata-3.1.1-dist",
-        "out": "/nix/store/ivnsz0n8ayxb9l5bbw4vdx0c1mw88mb3-visidata-3.1.1"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
       "attr_path": "wev",
       "broken": false,
       "derivation": "/nix/store/mbhy6my2risxw101j40brilkg2a6ifn7-wev-1.0.0.drv",
@@ -4254,99 +4052,6 @@
       "priority": 5
     },
     {
-      "attr_path": "yazi",
-      "broken": false,
-      "derivation": "/nix/store/wh26ajf4zk2255pb0wzmszcfy80m0gnh-yazi-0.4.2.drv",
-      "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
-      "install_id": "yazi",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "yazi-0.4.2",
-      "pname": "yazi",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.4.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/swx810kwyx9apsrml8xi5nzlblnwgl8s-yazi-0.4.2"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "yazi",
-      "broken": false,
-      "derivation": "/nix/store/88ilvfym04p0a9hnwm85r0rqcp53kgrd-yazi-0.4.2.drv",
-      "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
-      "install_id": "yazi",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "yazi-0.4.2",
-      "pname": "yazi",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.4.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/53gx17ikiawzb8ibzxy8zilnlfv6lm64-yazi-0.4.2"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "yazi",
-      "broken": false,
-      "derivation": "/nix/store/6c1zlg6kh2bm0h2gc9lyqydgfrlgw4gj-yazi-0.4.2.drv",
-      "description": "Blazing fast terminal file manager written in Rust, based on async I/O",
-      "install_id": "yazi",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "yazi-0.4.2",
-      "pname": "yazi",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.4.2",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/cal53axygqwy7b2q1kc85ynvcwyjbxp6-yazi-0.4.2"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
       "attr_path": "yq-go",
       "broken": false,
       "derivation": "/nix/store/ch45chn8aail9zk605f78rhd1xyp28k3-yq-go-4.50.1.drv",
@@ -4431,36 +4136,6 @@
       },
       "system": "x86_64-linux",
       "group": "yq",
-      "priority": 5
-    },
-    {
-      "attr_path": "tuxedo-rs",
-      "broken": false,
-      "derivation": "/nix/store/hw2w7b65r5nm839yqbyvqc0s0sf11ppn-tuxedo-rs-0.3.1.drv",
-      "description": "Rust utilities for interacting with hardware from TUXEDO Computers",
-      "install_id": "tuxedo-rs",
-      "license": "GPL-2.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=88d3861acdd3d2f0e361767018218e51810df8a1",
-      "name": "tuxedo-rs-0.3.1",
-      "pname": "tuxedo-rs",
-      "rev": "88d3861acdd3d2f0e361767018218e51810df8a1",
-      "rev_count": 931542,
-      "rev_date": "2026-01-21T18:02:10Z",
-      "scrape_date": "2026-01-23T06:38:50.522633Z",
-      "stabilities": [
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.3.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/4vrdg75xabsmskghj4mj2s41cbqy9ywi-tuxedo-rs-0.3.1"
-      },
-      "system": "x86_64-linux",
-      "group": "tuxedo-rs",
       "priority": 5
     },
     {
