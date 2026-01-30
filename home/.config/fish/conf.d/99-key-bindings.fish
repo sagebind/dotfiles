@@ -1,3 +1,4 @@
-bind \cc 'commandline ""'
-bind \cr reload
-bind \ch search-history
+bind ctrl-c 'commandline ""'
+bind ctrl-r reload
+bind ctrl-h search-history
+bind alt-enter br repaint

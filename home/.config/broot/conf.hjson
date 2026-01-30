@@ -1,0 +1,53 @@
+default_flags: "-gp"
+show_selection_mark: true
+quit_on_last_cancel: true
+content_search_max_file_size: 10MB
+enable_kitty_keyboard: true
+lines_before_match_in_preview: 1
+lines_after_match_in_preview: 1
+
+special_paths: {
+    "/media" : {
+        list: "never"
+        sum: "never"
+    }
+    "/proc" : {
+        list: "never"
+        sum: "never"
+    }
+    "~/Compass": {
+        list: "never"
+        sum: "never"
+    }
+    "~/.config": {
+        show: "always"
+    }
+}
+
+imports: [
+    verbs.hjson
+
+    # This file contains the skin to use when the terminal
+    # is dark (or when this couldn't be determined)
+    {
+        luma: [
+            dark
+            unknown
+        ]
+        # (un)comment to choose your preferred skin
+        file: skins/dark-blue.hjson
+        //file: skins/catppuccin-macchiato.hjson
+        //file: skins/catppuccin-mocha.hjson
+        //file: skins/dark-gruvbox.hjson
+        //file: skins/dark-orange.hjson
+        //file: skins/solarized-dark.hjson
+    }
+
+    # This skin is imported when your terminal is light
+    {
+        luma: light
+        # (un)comment to choose your preferred skin
+        //file: skins/solarized-light.hjson
+        file: skins/white.hjson
+    }
+]
