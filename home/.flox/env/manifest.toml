@@ -62,6 +62,7 @@ xdg-terminal-exec.systems = ["x86_64-linux"]
 xsv.pkg-path = "xsv"
 yq.pkg-group = "yq"
 yq.pkg-path = "yq-go"
+atuin.pkg-path = "atuin"
 
 [options]
 allow.unfree = true
