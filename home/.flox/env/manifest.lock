@@ -38,9 +38,6 @@
       "doggo": {
         "pkg-path": "doggo"
       },
-      "dust": {
-        "pkg-path": "dust"
-      },
       "espanso-wayland": {
         "pkg-path": "espanso-wayland",
         "systems": [
@@ -911,93 +908,6 @@
       "priority": 5
     },
     {
-      "attr_path": "yq-go",
-      "broken": false,
-      "derivation": "/nix/store/ch45chn8aail9zk605f78rhd1xyp28k3-yq-go-4.50.1.drv",
-      "description": "Portable command-line YAML processor",
-      "install_id": "yq",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
-      "name": "yq-go-4.50.1",
-      "pname": "yq-go",
-      "rev": "e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
-      "rev_count": 928726,
-      "rev_date": "2026-01-16T12:01:49Z",
-      "scrape_date": "2026-01-17T03:22:59.313350Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.50.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/ihnllpwbhrpj6wfgmx4cqhv5qjm117fa-yq-go-4.50.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "yq",
-      "priority": 5
-    },
-    {
-      "attr_path": "yq-go",
-      "broken": false,
-      "derivation": "/nix/store/brywc4ymldrlk52ivfby1p2gy75v48nd-yq-go-4.50.1.drv",
-      "description": "Portable command-line YAML processor",
-      "install_id": "yq",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
-      "name": "yq-go-4.50.1",
-      "pname": "yq-go",
-      "rev": "e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
-      "rev_count": 928726,
-      "rev_date": "2026-01-16T12:01:49Z",
-      "scrape_date": "2026-01-17T04:03:16.185262Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.50.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/n9qa1n3chinld0an3mghq2fiwg341csq-yq-go-4.50.1"
-      },
-      "system": "aarch64-linux",
-      "group": "yq",
-      "priority": 5
-    },
-    {
-      "attr_path": "yq-go",
-      "broken": false,
-      "derivation": "/nix/store/3dipwa1ldn96r85bv4qyh8600qdi0kpm-yq-go-4.50.1.drv",
-      "description": "Portable command-line YAML processor",
-      "install_id": "yq",
-      "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
-      "name": "yq-go-4.50.1",
-      "pname": "yq-go",
-      "rev": "e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
-      "rev_count": 928726,
-      "rev_date": "2026-01-16T12:01:49Z",
-      "scrape_date": "2026-01-17T05:21:52.835954Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "4.50.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/6wrfpk1d0y0dzdpsbac6kvph9gya1n64-yq-go-4.50.1"
-      },
-      "system": "x86_64-linux",
-      "group": "yq",
-      "priority": 5
-    },
-    {
       "attr_path": "_7zz-rar",
       "broken": false,
       "derivation": "/nix/store/4f9gi03ix947adr5rki4sm08iahwdivh-7zz-24.09.drv",
@@ -1680,99 +1590,6 @@
       ],
       "outputs": {
         "out": "/nix/store/y5zmvw8c7xrw899bani3zsqail30g3ad-doggo-1.0.5"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "dust",
-      "broken": false,
-      "derivation": "/nix/store/fx52d7cjvsvvbkfxbkjpwfcy84x7sbd7-du-dust-1.1.1.drv",
-      "description": "du + rust = dust. Like du but more intuitive",
-      "install_id": "dust",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "du-dust-1.1.1",
-      "pname": "dust",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.1.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/p1291mjd4wgr3ml7i5zz53xs506b786z-du-dust-1.1.1"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "dust",
-      "broken": false,
-      "derivation": "/nix/store/2dmx0iyqfbrjahbjlqh902qbl29l4p55-du-dust-1.1.1.drv",
-      "description": "du + rust = dust. Like du but more intuitive",
-      "install_id": "dust",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "du-dust-1.1.1",
-      "pname": "dust",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.1.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/lvpddlf9bj9hsryzpf14y0m0qsmfxa28-du-dust-1.1.1"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "dust",
-      "broken": false,
-      "derivation": "/nix/store/50sc0ynghw3dvp5qb1l9879qq41l39kq-du-dust-1.1.1.drv",
-      "description": "du + rust = dust. Like du but more intuitive",
-      "install_id": "dust",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "du-dust-1.1.1",
-      "pname": "dust",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "1.1.1",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/glknz1557q8fysd3cxcxqk59yqlwxy2a-du-dust-1.1.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -4232,6 +4049,93 @@
       },
       "system": "x86_64-linux",
       "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq-go",
+      "broken": false,
+      "derivation": "/nix/store/ch45chn8aail9zk605f78rhd1xyp28k3-yq-go-4.50.1.drv",
+      "description": "Portable command-line YAML processor",
+      "install_id": "yq",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
+      "name": "yq-go-4.50.1",
+      "pname": "yq-go",
+      "rev": "e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
+      "rev_count": 928726,
+      "rev_date": "2026-01-16T12:01:49Z",
+      "scrape_date": "2026-01-17T03:22:59.313350Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.50.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ihnllpwbhrpj6wfgmx4cqhv5qjm117fa-yq-go-4.50.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "yq",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq-go",
+      "broken": false,
+      "derivation": "/nix/store/brywc4ymldrlk52ivfby1p2gy75v48nd-yq-go-4.50.1.drv",
+      "description": "Portable command-line YAML processor",
+      "install_id": "yq",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
+      "name": "yq-go-4.50.1",
+      "pname": "yq-go",
+      "rev": "e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
+      "rev_count": 928726,
+      "rev_date": "2026-01-16T12:01:49Z",
+      "scrape_date": "2026-01-17T04:03:16.185262Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.50.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/n9qa1n3chinld0an3mghq2fiwg341csq-yq-go-4.50.1"
+      },
+      "system": "aarch64-linux",
+      "group": "yq",
+      "priority": 5
+    },
+    {
+      "attr_path": "yq-go",
+      "broken": false,
+      "derivation": "/nix/store/3dipwa1ldn96r85bv4qyh8600qdi0kpm-yq-go-4.50.1.drv",
+      "description": "Portable command-line YAML processor",
+      "install_id": "yq",
+      "license": "[ MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
+      "name": "yq-go-4.50.1",
+      "pname": "yq-go",
+      "rev": "e4bae1bd10c9c57b2cf517953ab70060a828ee6f",
+      "rev_count": 928726,
+      "rev_date": "2026-01-16T12:01:49Z",
+      "scrape_date": "2026-01-17T05:21:52.835954Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.50.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/6wrfpk1d0y0dzdpsbac6kvph9gya1n64-yq-go-4.50.1"
+      },
+      "system": "x86_64-linux",
+      "group": "yq",
       "priority": 5
     },
     {
