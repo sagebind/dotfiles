@@ -1,0 +1,8 @@
+update_check = false
+sync_address = "https://atuin.aperture.coakley.network"
+show_help = false
+show_tabs = false
+enter_accept = false
+
+[sync]
+records = true
