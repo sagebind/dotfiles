@@ -10,7 +10,7 @@
     reprogrammable-keys: false}
   _unitId: 4088E09F
   change-host: null
-  divert-keys: {82: 0, 83: 0, 86: 0, 91: 0, 93: 0, 208: 0}
+  divert-keys: {82: 0, 83: 0, 86: 0, 91: 0, 93: 0, 208: 2}
   hires-scroll-mode: false
   hires-smooth-invert: false
   hires-smooth-resolution: true

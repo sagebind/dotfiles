@@ -5,6 +5,7 @@ content_search_max_file_size: 10MB
 enable_kitty_keyboard: true
 lines_before_match_in_preview: 1
 lines_after_match_in_preview: 1
+show_matching_characters_on_path_searches: false
 
 special_paths: {
     "/media" : {
@@ -23,6 +24,45 @@ special_paths: {
         show: "always"
     }
 }
+
+preview_transformers: [
+    {
+        input_extensions: ["pdf"]
+        output_extension: png
+        mode: image
+        command: ["pdftoppm", "-png", "-singlefile", "{input-path}", "{output-path}"]
+    }
+    {
+        input_extensions: ["heic", "heif"]
+        output_extension: jpg
+        mode: image
+        command: ["magick", "{input-path}", "{output-path}"]
+    }
+    {
+        input_extensions: ["flv", "mkv", "mov", "mp4"]
+        output_extension: jpg
+        mode: image
+        command: ["ffmpeg", "-i", "{input-path}", "-frames:v", "1", "-f", "mjpeg", "{output-path}"]
+    }
+    {
+        input_extensions: ["zip"]
+        output_extension: txt
+        mode: text
+        command: ["7zz", "l", "{input-path}"]
+    }
+    {
+        input_extensions: ["m4a"]
+        output_extension: txt
+        mode: text
+        command: ["exiftool", "{input-path}"]
+    }
+    {
+        input_extensions: ["flac", "mp3", "ogg", "wav"]
+        output_extension: txt
+        mode: text
+        command: ["soxi", "{input-path}"]
+    }
+]
 
 imports: [
     verbs.hjson

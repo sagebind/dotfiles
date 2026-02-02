@@ -3,6 +3,7 @@ version = 1
 [install]
 _7zz-rar.pkg-path = "_7zz-rar"
 atuin.pkg-path = "atuin"
+broot.pkg-group = "broot"
 broot.pkg-path = "broot"
 choose.pkg-path = "choose"
 colima.pkg-path = "colima"

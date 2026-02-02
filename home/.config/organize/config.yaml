@@ -178,6 +178,21 @@ rules:
     filters:
       - extension: pdf
       - filecontent: 'ALLIANT ENERGY\/WPL'
+      - filecontent: '53546'
+      - filecontent: '(?P<date>\w{3} \d{2}, \d{4})'
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%b %d, %Y')
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Receipts/{python.strftime('%Y-%m-%d')} Alliant Energy.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: 'ALLIANT ENERGY\/WPL'
+      - filecontent: '53548'
       - filecontent: '(?P<date>\w{3} \d{2}, \d{4})'
       - python: |
           from datetime import datetime
