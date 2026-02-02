@@ -20,6 +20,14 @@ special_paths: {
         list: "never"
         sum: "never"
     }
+    "~/Google Drive": {
+        list: "never"
+        sum: "never"
+    }
+    "~/Seafile": {
+        list: "never"
+        sum: "never"
+    }
     "~/.config": {
         show: "always"
     }
