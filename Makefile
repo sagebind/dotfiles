@@ -32,7 +32,11 @@ $(UNFOLDED_DIRS):
 
 .PHONY: bootstrap
 bootstrap:
-	ansible-playbook -K bootstrap.yml
+	ansible-playbook bootstrap.yml
+
+.PHONY: bootstrap-dry-run
+bootstrap-dry-run:
+	ansible-playbook --check --diff bootstrap.yml
 
 .PHONY: dconf
 dconf: $(DCONF_FILES)

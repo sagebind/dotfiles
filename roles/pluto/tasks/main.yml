@@ -1,5 +1,18 @@
 ---
 
+- name: Enable CoolerControl repo
+  become: true
+  community.general.copr:
+    name: codifryed/CoolerControl
+    chroot: fedora-{{ ansible_distribution_version }}-{{ ansible_architecture }}
+
+- name: Install CoolerControl for fan control
+  become: true
+  ansible.builtin.dnf:
+    name:
+      - coolercontrol
+    state: present
+
 - name: Copy the /usr directory
   become: true
   ansible.builtin.copy:

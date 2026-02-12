@@ -1,0 +1,18 @@
+- name: Enable Tuxedo repo
+  become: true
+  ansible.builtin.copy:
+    dest: /etc/yum.repos.d/tuxedo.repo
+    content: |
+      [tuxedo]
+      name=tuxedo
+      baseurl=https://rpm.tuxedocomputers.com/fedora/{{ ansible_distribution_version }}/{{ ansible_architecture }}/base
+      enabled=1
+      gpgcheck=1
+      gpgkey=https://rpm.tuxedocomputers.com/fedora/{{ ansible_distribution_version }}/0x54840598.pub.asc
+      skip_if_unavailable=False
+
+- name: Install drivers
+  become: true
+  ansible.builtin.dnf:
+    name: tuxedo-drivers
+    state: present

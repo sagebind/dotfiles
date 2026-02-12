@@ -1,0 +1,33 @@
+- name: xwayland-satellite repo
+  become: true
+  community.general.copr:
+    name: ulysg/xwayland-satellite
+    chroot: fedora-{{ ansible_distribution_version }}-{{ ansible_architecture }}
+
+- name: xremap repo
+  become: true
+  community.general.copr:
+    name: blakegardner/xremap
+    chroot: fedora-{{ ansible_distribution_version }}-{{ ansible_architecture }}
+
+- name: niri repo
+  become: true
+  community.general.copr:
+    name: yalter/niri
+    chroot: fedora-{{ ansible_distribution_version }}-{{ ansible_architecture }}
+
+- name: dms repo
+  become: true
+  community.general.copr:
+    name: avengemedia/dms
+    chroot: fedora-{{ ansible_distribution_version }}-{{ ansible_architecture }}
+
+- name: install packages
+  become: true
+  ansible.builtin.dnf:
+    name:
+      - dms
+      - niri
+      - wayland-utils
+      - xremap-niri
+    state: present

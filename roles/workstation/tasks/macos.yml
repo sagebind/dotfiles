@@ -1,0 +1,25 @@
+- community.general.homebrew:
+    name:
+      - btop
+      - coreutils
+      - docker-buildx
+      - docker-compose
+      - docker
+      - exiftool
+      - fish
+      - gifsicle
+      - gnu-sed
+      - gnu-tar
+      - kubernetes-cli
+      - lftp
+      - media-info
+      - mise
+      - node
+      - parallel
+      - rename
+      - ripgrep
+      - stow
+      - watch
+      - yarn
+      - zenity
+    state: present

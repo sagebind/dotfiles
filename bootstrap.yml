@@ -1,5 +1,6 @@
 - name: Bootstrap development environment
   hosts: localhost
+  connection: local
   roles:
     - workstation
     - role: fedora

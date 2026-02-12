@@ -1,4 +1,9 @@
+- name: Build nvim from source in macOS
+  when: ansible_facts['os_family'] == "Darwin"
+  import_tasks: macos.yml
+
 - name: Install Flatpak applications
+  when: ansible_system == "Linux"
   community.general.flatpak:
     name:
       - app.drey.EarTag

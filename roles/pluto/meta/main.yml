@@ -1,0 +1,3 @@
+dependencies:
+  - role: tuxedo-drivers
+  - role: niri
