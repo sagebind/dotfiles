@@ -1,0 +1,9 @@
+environment {
+    // Prefer integrated GPU in Vulkan calls.
+    MESA_VK_DEVICE_SELECT "1002:150e"
+}
+
+debug {
+    render-drm-device "/dev/dri/renderD128"
+    ignore-drm-device "/dev/dri/renderD129"
+}

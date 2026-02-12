@@ -177,3 +177,9 @@ window-rule {
     open-focused true
     min-height 128
 }
+
+// Games that ought to be fullscreen but don't open that way by default.
+window-rule {
+    match app-id="discipl2.exe"
+    open-fullscreen true
+}
