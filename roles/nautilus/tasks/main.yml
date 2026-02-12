@@ -1,0 +1,41 @@
+- name: Default compression format
+  community.general.dconf:
+    key: /org/gnome/nautilus/compression/default-compression-format
+    value: "'zip'"
+    state: present
+
+- name: Default zoom level
+  community.general.dconf:
+    key: /org/gnome/nautilus/list-view/default-zoom-level
+    value: "'medium'"
+    state: present
+
+- name: Default columns
+  community.general.dconf:
+    key: /org/gnome/nautilus/list-view/default-visible-columns
+    value: "['name', 'size', 'date_modified']"
+    state: present
+
+- name: Default folder view
+  community.general.dconf:
+    key: /org/gnome/nautilus/preferences/default-folder-viewer
+    value: "'list-view'"
+    state: present
+
+- name: Search view
+  community.general.dconf:
+    key: /org/gnome/nautilus/preferences/search-view
+    value: "'list-view'"
+    state: present
+
+- name: Show create link option
+  community.general.dconf:
+    key: /org/gnome/nautilus/preferences/show-create-link
+    value: "true"
+    state: present
+
+- name: Show delete permanently option
+  community.general.dconf:
+    key: /org/gnome/nautilus/preferences/show-delete-permanently
+    value: "true"
+    state: present

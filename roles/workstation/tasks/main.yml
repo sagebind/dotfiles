@@ -1,23 +1,7 @@
-- name: Build nvim from source in macOS
+- name: macOS configuration
   when: ansible_facts['os_family'] == "Darwin"
   import_tasks: macos.yml
 
-- name: Install Flatpak applications
+- name: Linux configuration
   when: ansible_system == "Linux"
-  community.general.flatpak:
-    name:
-      - app.drey.EarTag
-      - ca.littlesvr.asunder
-      - com.github.rafostar.Clapper
-      - com.github.tchx84.Flatseal
-      - com.github.wwmm.easyeffects
-      - com.ranfdev.DistroShelf
-      - com.usebottles.bottles
-      - io.github.dweymouth.supersonic
-      - io.github.kolunmi.Bazaar
-      - md.obsidian.Obsidian
-      - org.keepassxc.KeePassXC
-      - org.localsend.localsend_app
-      - org.mozilla.Thunderbird
-    method: user
-    state: present
+  import_tasks: linux.yml
