@@ -3,7 +3,7 @@
   connection: local
   roles:
     - workstation
-    - role: fedora
-      when: ansible_pkg_mgr == 'dnf5'
     - role: pluto
-      when: ansible_product_name == 'TUXEDO InfinityBook Max 15 AMD Gen10'
+      when: ansible_facts['product_name'] == 'TUXEDO InfinityBook Max 15 AMD Gen10'
+    - role: acquia
+      when: ansible_facts['product_name'] == 'MacBookPro18,2'

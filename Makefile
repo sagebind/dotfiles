@@ -1,13 +1,10 @@
 OS := $(shell uname | tr '[:upper:]' '[:lower:]')
 PACKAGES := home "home.$(OS)"
-HAS_DNF := $(shell which dnf 2>/dev/null)
-HAS_FLATPAK := $(shell which flatpak 2>/dev/null)
-HAS_BREW := $(shell which brew 2>/dev/null)
 UNFOLDED_DIR_MARKERS := $(shell find $(PACKAGES) -type f -name .no-stow-folding)
 UNFOLDED_DIRS := $(patsubst home.$(OS)/%, $(HOME)/%, $(patsubst home/%, $(HOME)/%, $(dir $(UNFOLDED_DIR_MARKERS))))
 
 .PHONY: apply
-apply: $(if $(HAS_DNF),rpm-fedora) $(if $(HAS_FLATPAK),flatpak) $(if $(HAS_BREW),brew-bundle) link
+apply: link bootstrap
 
 .PHONY: link
 link: $(UNFOLDED_DIRS)
@@ -30,32 +27,8 @@ $(UNFOLDED_DIRS):
 
 .PHONY: bootstrap
 bootstrap:
-	ansible-playbook bootstrap.yml
+	ansible-playbook -v bootstrap.yml
 
 .PHONY: bootstrap-dry-run
 bootstrap-dry-run:
-	ansible-playbook --check --diff bootstrap.yml
-
-.PHONY: brew-bundle
-brew-bundle:
-	brew bundle --file=pkg/Brewfile
-
-RPM_PACKAGES = $(shell cat pkg/rpm/fedora)
-RPM_PACKAGES_NOT_INSTALLED = $(shell rpm -q $(RPM_PACKAGES) | sed -n 's/^package \(\S\+\) is not installed$$/\1/p')
-.PHONY: rpm-fedora
-rpm-fedora:
-ifeq ($(RPM_PACKAGES_NOT_INSTALLED),)
-else
-	@echo "Installing missing RPM packages. Will ask for sudo privileges."
-	sudo dnf install $(RPM_PACKAGES_NOT_INSTALLED)
-endif
-
-FLATPAK_PACKAGES = $(shell cat pkg/flatpak)
-FLATPAK_PACKAGES_NOT_INSTALLED = $(shell flatpak list --columns=application | grep -f - -v pkg/flatpak)
-.PHONY: flatpak
-flatpak:
-ifeq ($(FLATPAK_PACKAGES_NOT_INSTALLED),)
-else
-	@echo "Installing missing Flatpak packages."
-	flatpak install --user $(FLATPAK_PACKAGES_NOT_INSTALLED)
-endif
+	ansible-playbook -v --check --diff bootstrap.yml

@@ -2,6 +2,8 @@ version = 1
 
 [install]
 _7zz-rar.pkg-path = "_7zz-rar"
+ansible.pkg-group = "ansible"
+ansible.pkg-path = "ansible"
 atuin.pkg-path = "atuin"
 broot.pkg-group = "broot"
 broot.pkg-path = "broot"

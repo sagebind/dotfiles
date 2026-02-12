@@ -1,0 +1,34 @@
+- community.general.homebrew_tap:
+    name:
+      - buildkite/buildkite
+      - hashicorp/tap
+      - ngrok/ngrok
+      - pulumi/tap
+
+- community.general.homebrew_tap:
+    name: widen/brew
+    url: git@github.com:Widen/brew
+
+- community.general.homebrew_cask:
+    name:
+      - 1password-cli
+      - ngrok
+    state: present
+
+- community.general.homebrew:
+    name:
+      - aws-vault
+      - cmake
+      - groovy
+      - jpeg-xl
+      - mise
+      - node
+      - webp
+      - yarn
+      - buildkite/buildkite/bk@3
+      - hashicorp/tap/nomad
+      - hashicorp/tap/packer
+      - pulumi/tap/pulumi
+      - widen/brew/local-nginx
+      - widen/brew/slipway
+    state: present

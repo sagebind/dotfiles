@@ -1,3 +1,7 @@
+- name: Fedora configuration
+  when: ansible_facts['pkg_mgr'] == 'dnf5'
+  import_tasks: fedora.yml
+
 - name: Install Flatpak applications
   community.general.flatpak:
     name:
