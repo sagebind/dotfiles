@@ -1,0 +1,9 @@
+[Serial Keyboards]
+MatchUdevType=keyboard
+MatchName=xremap
+AttrKeyboardIntegration=internal
+
+[Serial Keyboards]
+MatchUdevType=keyboard
+MatchName=ydotool virtual device
+AttrKeyboardIntegration=internal

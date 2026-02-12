@@ -30,6 +30,10 @@ unlink:
 $(UNFOLDED_DIRS):
 	mkdir -p "$@"
 
+.PHONY: bootstrap
+bootstrap:
+	ansible-playbook -K bootstrap.yml
+
 .PHONY: dconf
 dconf: $(DCONF_FILES)
 

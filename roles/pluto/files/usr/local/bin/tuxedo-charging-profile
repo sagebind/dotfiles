@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo balanced > /sys/devices/platform/tuxedo_keyboard/charging_profile/charging_profile

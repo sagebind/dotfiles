@@ -1,0 +1,9 @@
+[Unit]
+Description=Configure Tuxedo charging profile automatically
+
+[Timer]
+OnBootSec=30
+OnUnitActiveSec=600
+
+[Install]
+WantedBy=timers.target

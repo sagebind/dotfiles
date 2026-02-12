@@ -1,0 +1,6 @@
+[Unit]
+Description=Configure charging profile
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/tuxedo-charging-profile

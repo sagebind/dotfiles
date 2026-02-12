@@ -1,0 +1,19 @@
+- name: Install desired packages
+  become: true
+  ansible.builtin.dnf:
+    name:
+      - distrobox
+      - fish
+      - kitty
+      - libva-utils
+      - lsof
+      - msedit
+      - NetworkManager-tui
+      - prename
+      - rclone
+      - speech-dispatcher
+      - speech-dispatcher-utils
+      - vdpauinfo
+      - wl-clipboard
+      - ydotool
+    state: present

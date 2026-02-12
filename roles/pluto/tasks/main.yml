@@ -1,0 +1,13 @@
+---
+
+- name: Copy the /usr directory
+  become: true
+  ansible.builtin.copy:
+    src: usr
+    dest: /
+
+- name: Copy the /etc directory
+  become: true
+  ansible.builtin.copy:
+    src: etc
+    dest: /
