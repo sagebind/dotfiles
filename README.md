@@ -4,7 +4,9 @@ This is my dotfiles repo, which contains configuration files for my personal com
 
 ## Using it
 
-Configuration is managed using a simple [Makefile] which wraps around [GNU Stow]. To use these dotfiles, simply clone this repo and run `make` in the project folder to install the dotfiles. Files that apply to all systems are in `home` while platform-specific configuration is in `home.$OS`.
+Configuration is managed using a simple [Makefile] which wraps around [GNU Stow]. Most of the top-level directories in this repo are Stow [_packages_](https://www.gnu.org/software/stow/manual/html_node/Installing-Packages.html). These packages are modular and can be optionally installed for different machines.
+
+To use these dotfiles, simply clone this repo and run `make` in the project folder to install the dotfiles. Files that apply to all systems are in the `home` package while platform-specific configuration is in a `home.$OS` package. The Makefile will automatically select the appropriate packages that should be installed.
 
 The Makefile also provides a few other useful targets as well to automate other tasks related to dotfiles and machine setup.
 
