@@ -36,3 +36,16 @@
       - supersonic
       - swiftbar
     state: present
+
+- name: Dark mode
+  community.general.osx_defaults:
+    key: AppleInterfaceStyle
+    type: string
+    value: Dark
+
+- name: Show folders before files in Finder
+  community.general.osx_defaults:
+    domain: com.apple.finder
+    key: _FXSortFoldersFirst
+    type: int
+    value: 1
