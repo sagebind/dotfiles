@@ -1,4 +1,25 @@
----
+- name: Remove packages that conflict with TLP
+  become: true
+  ansible.builtin.dnf:
+    name:
+      - power-profiles-daemon
+      - tuned
+      - tuned-ppd
+    state: absent
+
+- name: Install tlp repo
+  become: true
+  ansible.builtin.dnf:
+    name: 'https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc{{ ansible_distribution_version }}.noarch.rpm'
+    state: present
+
+- name: Install tlp
+  become: true
+  ansible.builtin.dnf:
+    name:
+      - tlp
+      - tlp-pd
+    state: present
 
 - name: Enable CoolerControl repo
   become: true
@@ -24,3 +45,14 @@
   ansible.builtin.copy:
     src: etc
     dest: /
+
+- name: Enable charging profile timer
+  become: true
+  ansible.builtin.systemd_service:
+    daemon_reload: true
+    name: tuxedo-charging-profile.timer
+    state: started
+    enabled: true
+
+- name: Install CC plugin
+  import_tasks: cc-plugin.yml

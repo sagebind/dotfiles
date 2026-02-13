@@ -1,3 +1,9 @@
+- name: Add myself to "input" group to allow unprivileged uinput tools
+  ansible.builtin.user:
+    name: stephen
+    groups: input
+    append: true
+
 - name: Fedora configuration
   when: ansible_facts['pkg_mgr'] == 'dnf5'
   import_tasks: fedora.yml
@@ -20,6 +26,14 @@
       - org.mozilla.Thunderbird
     method: user
     state: present
+
+- name: Remove unused applications
+  community.general.flatpak:
+    name:
+      # Flatpak doesn't work with KeePassXC extension.
+      - org.mozilla.firefox
+    method: system
+    state: absent
 
 - name: Configure Nautilus
   import_role:

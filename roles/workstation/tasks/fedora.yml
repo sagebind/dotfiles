@@ -1,19 +1,49 @@
+- name: Enable VSCode repo
+  become: true
+  ansible.builtin.copy:
+    dest: /etc/yum.repos.d/vscode.repo
+    content: |
+      [code]
+      name=Visual Studio Code
+      baseurl=https://packages.microsoft.com/yumrepos/vscode
+      enabled=1
+      autorefresh=1
+      type=rpm-md
+      gpgcheck=1
+      gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+
 - name: Install desired packages
   become: true
   ansible.builtin.dnf:
     name:
+      - code
       - distrobox
+      - firefox
       - fish
+      - ImageMagick-heic
       - kitty
       - libva-utils
       - lsof
+      - make
       - msedit
       - NetworkManager-tui
       - prename
       - rclone
+      - seafile-client
+      - solaar
       - speech-dispatcher
       - speech-dispatcher-utils
+      - stow
       - vdpauinfo
+      - wireguard-tools
       - wl-clipboard
       - ydotool
     state: present
+
+- name: Remove packages I don't need
+  become: true
+  ansible.builtin.dnf:
+    name:
+      - alacritty
+      - brave-browser
+    state: absent
