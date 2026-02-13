@@ -1,6 +1,7 @@
 - name: Bootstrap development environment
   hosts: localhost
   connection: local
+  become_method: sudo
   roles:
     - workstation
     - role: pluto

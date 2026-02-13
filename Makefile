@@ -26,9 +26,17 @@ $(UNFOLDED_DIRS):
 	mkdir -p "$@"
 
 .PHONY: bootstrap
-bootstrap:
+bootstrap: sudo
 	ansible-playbook -v bootstrap.yml
 
 .PHONY: bootstrap-dry-run
-bootstrap-dry-run:
+bootstrap-dry-run: sudo
 	ansible-playbook -v --check --diff bootstrap.yml
+
+# Prompt for sudo password, but only if needed, so that we don't have to type the
+# password in repeatedly when running Ansible playbooks.
+.PHONY: sudo
+sudo:
+ifeq ($(OS),linux)
+	sudo -v
+endif
