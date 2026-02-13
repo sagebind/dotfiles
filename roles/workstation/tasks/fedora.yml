@@ -20,6 +20,7 @@
       - distrobox
       - firefox
       - fish
+      - gnome-network-displays
       - ImageMagick-heic
       - kitty
       - libva-utils
@@ -27,6 +28,7 @@
       - make
       - msedit
       - NetworkManager-tui
+      - powertop
       - prename
       - rclone
       - seafile-client

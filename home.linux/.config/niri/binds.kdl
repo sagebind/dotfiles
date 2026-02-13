@@ -9,14 +9,14 @@ binds {
     Mod+E hotkey-overlay-title="Open File Manager" { spawn "nautilus"; }
 
     Menu repeat=false hotkey-overlay-title="Application Launcher" {
-        spawn "vicinae" "toggle";
+        spawn "~/.flox/run/x86_64-linux.default.run/bin/vicinae" "toggle";
     }
     XF86MenuKB repeat=false hotkey-overlay-title="Application Launcher" {
-        spawn "vicinae" "toggle";
+        spawn "~/.flox/run/x86_64-linux.default.run/bin/vicinae" "toggle";
     }
 
     Mod+V hotkey-overlay-title="Clipboard Manager" {
-        spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history";
+        spawn "~/.flox/run/x86_64-linux.default.run/bin/vicinae" "vicinae://extensions/vicinae/clipboard/history";
     }
     Mod+M hotkey-overlay-title="Task Manager" {
         spawn "dms" "ipc" "call" "processlist" "toggle";
@@ -28,7 +28,10 @@ binds {
         spawn "dms" "ipc" "call" "dankdash" "wallpaper";
     }
     Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
-    Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+
+    Mod+F4 hotkey-overlay-title="Start/Stop Handy Transcription" {
+        spawn "pkill" "-USR2" "-n" "handy";
+    }
 
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
