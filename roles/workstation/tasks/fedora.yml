@@ -21,6 +21,7 @@
       - firefox
       - fish
       - gnome-network-displays
+      - google-droid-fonts-all
       - ImageMagick-heic
       - kitty
       - libva-utils
