@@ -4,6 +4,6 @@ environment {
 }
 
 debug {
-    render-drm-device "/dev/dri/renderD128"
-    ignore-drm-device "/dev/dri/renderD129"
+    render-drm-device "/dev/dri/by-path/pci-0000:67:00.0-render"
+    ignore-drm-device "/dev/dri/renderD128"
 }
