@@ -149,12 +149,6 @@
       "uv": {
         "pkg-path": "uv"
       },
-      "vicinae": {
-        "flake": "github:vicinaehq/vicinae/v0.16.6",
-        "systems": [
-          "x86_64-linux"
-        ]
-      },
       "wev": {
         "pkg-path": "wev",
         "systems": [
@@ -4225,33 +4219,6 @@
       },
       "system": "x86_64-linux",
       "group": "yq",
-      "priority": 5
-    },
-    {
-      "install_id": "vicinae",
-      "locked-url": "github:vicinaehq/vicinae/dc2485f3a03c43082caf7e86517b26447ef4b92d?narHash=sha256-mpZj5Nw/rKr97pATMLzO6RlTlag/ZJyvP/Mh6Ifmv2A%3D",
-      "flake-description": "A flake for Vicinae, a high-performance native launcher for Linux.",
-      "locked-flake-attr-path": "packages.x86_64-linux.default",
-      "derivation": "/nix/store/cs1bgacql2d2wzxc3dxmfr5q33hbwh5p-vicinae.drv",
-      "outputs": {
-        "out": "/nix/store/fzqjvgy8r1450rsx5bcg03hcqgl9yk5s-vicinae"
-      },
-      "output-names": [
-        "out"
-      ],
-      "outputs-to-install": [
-        "out"
-      ],
-      "requested-outputs-to-install": [],
-      "package-system": "x86_64-linux",
-      "system": "x86_64-linux",
-      "name": "vicinae",
-      "description": "A focused launcher for your desktop — native, fast, extensible",
-      "licenses": [
-        "GPL-3.0-or-later"
-      ],
-      "broken": false,
-      "unfree": false,
       "priority": 5
     }
   ]

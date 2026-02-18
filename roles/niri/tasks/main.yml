@@ -22,12 +22,19 @@
     name: avengemedia/dms
     chroot: fedora-{{ ansible_distribution_version }}-{{ ansible_architecture }}
 
+- name: vicinae repo
+  become: true
+  community.general.copr:
+    name: quadratech188/vicinae
+    chroot: fedora-{{ ansible_distribution_version }}-{{ ansible_architecture }}
+
 - name: install packages
   become: true
   ansible.builtin.dnf:
     name:
       - dms
       - niri
+      - vicinae
       - wayland-utils
       - xremap-niri
     state: present

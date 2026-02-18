@@ -1,13 +1,13 @@
 [Unit]
 Description=Vicinae Launcher Daemon
 Documentation=https://docs.vicinae.com
-PartOf=graphical-session.target
 After=graphical-session.target
 Requires=dbus.socket
+PartOf=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=%h/.flox/run/x86_64-linux.default.run/bin/vicinae server --replace
+ExecStart=/usr/bin/vicinae server --replace
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=always
 RestartSec=60
