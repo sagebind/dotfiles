@@ -1,4 +1,4 @@
-if type -fq flox
+if status is-interactive; and not status is-login; and type -fq flox
   if not set -q FLOX_ENV
     flox activate -d ~ -m run | source
   end
