@@ -39,3 +39,10 @@
       - wayland-utils
       - xremap-niri
     state: present
+
+- name: remove unneeded packages
+  become: true
+  ansible.builtin.dnf:
+    name:
+      - mako
+    state: absent
