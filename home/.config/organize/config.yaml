@@ -314,7 +314,7 @@ rules:
   - locations: ~/Downloads
     filters:
       - regex: >-
-          ^\d+ - Investment Statement - .+\.pdf$
+          ^\d+ - (A-)?Investment Statement - .+\.pdf$
       - filecontent: 'Investment Statement'
       - filecontent: >-
           Investment #:\s+(?P<id>\d{4})
