@@ -54,5 +54,15 @@
     state: started
     enabled: true
 
+- name: Reload udev rules
+  become: true
+  ansible.builtin.command:
+    cmd: udevadm control --reload
+
+- name: Trigger udev rules
+  become: true
+  ansible.builtin.command:
+    cmd: udevadm trigger -v -s leds
+
 - name: Install CC plugin
   import_tasks: cc-plugin.yml

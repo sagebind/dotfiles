@@ -1,0 +1,1 @@
+KERNEL=="rgb:kbd_backlight", SUBSYSTEMS=="leds", RUN+="/usr/bin/chmod a+w /sys/class/leds/rgb:kbd_backlight/brightness"

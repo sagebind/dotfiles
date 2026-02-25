@@ -3,6 +3,12 @@ environment {
     MESA_VK_DEVICE_SELECT "1002:150e"
 }
 
+binds {
+    XF86KbdLightOnOff {
+        spawn "~/.config/niri/scripts/toggle-kbd-backlight.fish";
+    }
+}
+
 debug {
     render-drm-device "/dev/dri/by-path/pci-0000:67:00.0-render"
     ignore-drm-device "/dev/dri/renderD128"

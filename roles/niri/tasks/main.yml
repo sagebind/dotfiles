@@ -34,7 +34,7 @@
     name:
       - dms
       - niri
-      - node # vicinae dependency
+      - nodejs # vicinae dependency
       - vicinae
       - wayland-utils
       - xremap-niri
