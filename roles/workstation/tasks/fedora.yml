@@ -50,4 +50,12 @@
       - alacritty
       - brave-browser
       - libreoffice
+      - libreoffice-base
+      - libreoffice-calc
+      - libreoffice-draw
+      - libreoffice-emailmerge
+      - libreoffice-impress
+      - libreoffice-math
+      - libreoffice-writer
     state: absent
+    autoremove: true
