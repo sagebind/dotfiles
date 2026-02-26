@@ -24,6 +24,7 @@
       - org.keepassxc.KeePassXC
       - org.localsend.localsend_app
       - org.mozilla.Thunderbird
+      - org.onlyoffice.desktopeditors
     method: user
     state: present
 

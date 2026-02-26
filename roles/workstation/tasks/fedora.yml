@@ -49,4 +49,5 @@
     name:
       - alacritty
       - brave-browser
+      - libreoffice
     state: absent
