@@ -1,6 +1,6 @@
 - community.general.homebrew_tap:
     name:
-      - BarutSRB/tap
+      - acsandmann/tap
       - supersonic-app/supersonic
 
 - community.general.homebrew:
@@ -18,9 +18,9 @@
       - kubernetes-cli
       - lftp
       - media-info
-      - omniwm
       - parallel
       - rename
+      - rift
       - ripgrep
       - stow
       - watch
