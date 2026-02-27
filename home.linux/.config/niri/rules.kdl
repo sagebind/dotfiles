@@ -66,6 +66,7 @@ window-rule {
     match app-id="^digikam$" title="^New Album"
     match app-id="^org.keepassxc.KeePassXC$" title="^KeePassXC - Passkey credentials$"
     match app-id=r#"^xdg-desktop-portal$"#
+    match app-id="^zenity$"
     match title="^Calculator$"
     open-floating true
 }

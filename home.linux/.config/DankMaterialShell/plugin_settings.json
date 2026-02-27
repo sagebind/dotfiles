@@ -29,6 +29,21 @@
         "showText": false,
         "id": "variant_1763242074000",
         "name": "Vicinae"
+      },
+      {
+        "icon": "keyboard",
+        "displayText": "Keyboard Color",
+        "displayCommand": "",
+        "clickCommand": "env GSK_RENDERER=gl MESA_VK_DEVICE_SELECT=1002:150e zenity --color-selection --show-palette | sed -n 's/rgb(//;s/)//;s/,/ /g;p' | tee /sys/class/leds/rgb:kbd_backlight*/multi_intensity",
+        "middleClickCommand": "",
+        "rightClickCommand": "",
+        "updateInterval": 0,
+        "showIcon": true,
+        "showText": false,
+        "visibilityCommand": "",
+        "visibilityInterval": 0,
+        "id": "variant_1772170200847",
+        "name": "Keyboard Color"
       }
     ]
   },

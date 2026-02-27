@@ -1,0 +1,1 @@
+DRIVERS=="ite_8291", SUBSYSTEM=="leds", RUN+="/usr/bin/chmod a+w %S%p/brightness %S%p/multi_intensity"
