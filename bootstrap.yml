@@ -3,7 +3,7 @@
   connection: local
   become_method: sudo
   roles:
-    # - workstation
+    - workstation
     - role: pluto
       when: ansible_facts['product_name'] == 'TUXEDO InfinityBook Max 15 AMD Gen10'
     - role: acquia

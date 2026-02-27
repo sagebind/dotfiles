@@ -1,5 +1,7 @@
 - community.general.homebrew_tap:
-    name: supersonic-app/supersonic
+    name:
+      - BarutSRB/tap
+      - supersonic-app/supersonic
 
 - community.general.homebrew:
     name:
@@ -16,6 +18,7 @@
       - kubernetes-cli
       - lftp
       - media-info
+      - omniwm
       - parallel
       - rename
       - ripgrep
@@ -26,7 +29,6 @@
 
 - community.general.homebrew_cask:
     name:
-      - flox
       - font-hurmit-nerd-font
       - font-symbols-only-nerd-font
       - jordanbaird-ice
