@@ -1,5 +1,16 @@
-function download-album-cover -a artist -a album
-  # TODO: Accept folder and extract info using metaflac
+function download-album-cover -a folder
+  set -l existing_files $folder/cover.*
+
+  if count $existing_files > /dev/null
+    echo "Cover art already exists: $existing_files"
+    return
+  end
+
+  metaflac --show-tag=ALBUM $folder/01*.flac | read -d= -l tag album
+  metaflac --show-tag=ALBUMARTIST --show-tag=ARTIST $folder/01*.flac | head -n1 | read -d= -l tag artist
+
+  echo "Artist: $artist"
+  echo "Album: $album"
 
   # First check Genius
   set -l genius_page https://genius.com/albums/(string replace -a " " "-" $artist)/(string replace -a " " "-" $album)
@@ -15,8 +26,24 @@ function download-album-cover -a artist -a album
 
     if test $size -ge 1000
       echo "Found cover art on Genius: $url"
-      curl -L -o cover.jpg $url
-      break
+      echo curl -L -o $folder/cover.jpg $url
+      return
     end
+  end
+
+  # Now try Apple Music, since their covers are usually good quality. Once we get
+  # a link to the album image, we can select a higher quality version by replacing
+  # the dimensions in the URL.
+  xidel -s "https://music.apple.com/us/search?term=$artist $album" \
+    -f '(//*[@aria-label="Top Results"]//a[contains(@href, "/album/")]/@href)[1]' \
+    -e '(//*[@aria-label="Featured"]//picture/source[@type="image/jpeg"]/@srcset)[1]' \
+    | string match -rg '(https://\\S+\\.jpg)' \
+    | string replace -r '\\d+x\\d+' '1000x1000' \
+    | read -l apple_music_img_url
+
+  if test -n "$apple_music_img_url"
+    echo "Found cover art on Apple Music: $apple_music_img_url"
+    echo curl -L -o $folder/cover.jpg $apple_music_img_url
+    return
   end
 end
