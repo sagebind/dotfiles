@@ -161,6 +161,10 @@
           "x86_64-linux"
         ]
       },
+      "xidel": {
+        "pkg-path": "xidel",
+        "pkg-group": "xidel"
+      },
       "xsv": {
         "pkg-path": "xsv"
       },
@@ -4135,6 +4139,93 @@
       },
       "system": "x86_64-linux",
       "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xidel",
+      "broken": false,
+      "derivation": "/nix/store/l2xn9hm00qxjik713apra8wanf1vda14-xidel-unstable-2022-11-01.drv",
+      "description": "Command line tool to download and extract data from HTML/XML pages as well as JSON APIs",
+      "install_id": "xidel",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "xidel-unstable-2022-11-01",
+      "pname": "xidel",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T04:48:38.587934Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2022-11-01",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/y1z3429nylq8c2qpvgfb3hy77b5psb3d-xidel-unstable-2022-11-01"
+      },
+      "system": "aarch64-darwin",
+      "group": "xidel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xidel",
+      "broken": false,
+      "derivation": "/nix/store/74f9jav96r86f8d2n4m1krp7a7zxrk9l-xidel-unstable-2022-11-01.drv",
+      "description": "Command line tool to download and extract data from HTML/XML pages as well as JSON APIs",
+      "install_id": "xidel",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "xidel-unstable-2022-11-01",
+      "pname": "xidel",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T05:27:25.048985Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2022-11-01",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1mrw1xcy0dsbi3gkxa7rl33zgnrivh5p-xidel-unstable-2022-11-01"
+      },
+      "system": "aarch64-linux",
+      "group": "xidel",
+      "priority": 5
+    },
+    {
+      "attr_path": "xidel",
+      "broken": false,
+      "derivation": "/nix/store/pbkw7w9jvcdzgnydicq15z88hb3xkyxm-xidel-unstable-2022-11-01.drv",
+      "description": "Command line tool to download and extract data from HTML/XML pages as well as JSON APIs",
+      "install_id": "xidel",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=2fc6539b481e1d2569f25f8799236694180c0993",
+      "name": "xidel-unstable-2022-11-01",
+      "pname": "xidel",
+      "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+      "rev_count": 953160,
+      "rev_date": "2026-02-23T12:05:20Z",
+      "scrape_date": "2026-02-25T07:03:52.243656Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2022-11-01",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hb7r82inyawhr37psh04gv01by44zbf3-xidel-unstable-2022-11-01"
+      },
+      "system": "x86_64-linux",
+      "group": "xidel",
       "priority": 5
     },
     {
