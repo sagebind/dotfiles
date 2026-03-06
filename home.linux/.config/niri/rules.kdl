@@ -45,6 +45,7 @@ window-rule {
     match app-id="org.mozilla.Thunderbird" title=" - Mozilla Thunderbird$"
     match app-id="^steam$" title="^Steam$"
     match app-id="Supersonic"
+    match title="MusicBrainz Picard"
     open-maximized true
 }
 

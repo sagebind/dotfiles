@@ -1,5 +1,6 @@
 include "binds.kdl"
 include "rules.kdl"
+include "wallpaper.kdl"
 
 environment {
     // Set general graphical environment information for applications to discover.
