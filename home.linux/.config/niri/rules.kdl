@@ -40,7 +40,7 @@ window-rule {
 window-rule {
     match app-id="code"
     match app-id="logos.exe"
-    match app-id="obsidian"
+    match app-id="obsidian" title="Logos"
     match app-id="ONLYOFFICE"
     match app-id="org.mozilla.Thunderbird" title=" - Mozilla Thunderbird$"
     match app-id="^steam$" title="^Steam$"
@@ -84,6 +84,25 @@ window-rule {
     }
     shadow {
         on
+    }
+}
+
+// Logos floating windows.
+window-rule {
+    match app-id="^logos.exe$" is-floating=true
+    geometry-corner-radius 20
+    draw-border-with-background true
+    focus-ring {
+        off
+    }
+    border {
+        on
+        width 0
+        active-color "#000000"
+        inactive-color "#000000"
+    }
+    shadow {
+        off
     }
 }
 
