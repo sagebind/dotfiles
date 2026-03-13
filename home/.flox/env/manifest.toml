@@ -1,9 +1,10 @@
-version = 1
+schema-version = "1.10.0"
 
 [install]
 _7zz-rar.pkg-path = "_7zz-rar"
 ansible.pkg-group = "ansible"
 ansible.pkg-path = "ansible"
+ansible.outputs = "all"
 atuin.pkg-path = "atuin"
 broot.pkg-group = "broot"
 broot.pkg-path = "broot"
@@ -11,6 +12,7 @@ choose.pkg-path = "choose"
 colima.pkg-path = "colima"
 colima.systems = ["aarch64-darwin"]
 crane.pkg-path = "crane"
+crane.outputs = "all"
 devenv.pkg-group = "devenv"
 devenv.pkg-path = "devenv"
 difftastic.pkg-path = "difftastic"
@@ -20,17 +22,21 @@ doggo.pkg-path = "doggo"
 espanso-wayland.pkg-path = "espanso-wayland"
 espanso-wayland.systems = ["x86_64-linux"]
 exiftool.pkg-path = "exiftool"
+exiftool.outputs = "all"
 eza.pkg-path = "eza"
 flac.pkg-path = "flac"
+flac.outputs = "all"
 gh.pkg-path = "gh"
 gifski.pkg-path = "gifski"
 hurmit.pkg-path = "nerd-fonts.hurmit"
 iperf3.pkg-path = "iperf3"
 jq.pkg-group = "jq"
 jq.pkg-path = "jq"
+jq.outputs = "all"
 k9s.pkg-group = "k9s"
 k9s.pkg-path = "k9s"
 kubectl.pkg-path = "kubectl"
+kubectl.outputs = "all"
 kubectx.pkg-path = "kubectx"
 kubernetes-helm.pkg-path = "kubernetes-helm"
 libinput-gestures.pkg-path = "libinput-gestures"
@@ -38,6 +44,7 @@ libinput-gestures.systems = ["aarch64-linux", "x86_64-linux"]
 miniserve.pkg-path = "miniserve"
 mitmproxy.pkg-group = "mitmproxy"
 mitmproxy.pkg-path = "mitmproxy"
+mitmproxy.outputs = "all"
 mkvtoolnix-cli.pkg-path = "mkvtoolnix-cli"
 msedit.pkg-group = "msedit"
 msedit.pkg-path = "msedit"
@@ -49,11 +56,15 @@ nvtop.pkg-path = "nvtop"
 pdfcpu.pkg-path = "pdfcpu"
 pueue.pkg-path = "pueue"
 qpdf.pkg-path = "qpdf"
+qpdf.outputs = "all"
 regctl.pkg-group = "regctl"
 regctl.pkg-path = "regctl"
+regctl.outputs = "all"
 rsgain.pkg-path = "rsgain"
 skim.pkg-path = "skim"
+skim.outputs = "all"
 sox.pkg-path = "sox"
+sox.outputs = "all"
 tio.pkg-path = "tio"
 tokei.pkg-path = "tokei"
 uv.pkg-path = "uv"
@@ -69,8 +80,4 @@ yq.pkg-path = "yq-go"
 
 [options]
 allow.unfree = true
-systems = [
-  "aarch64-darwin",
-  "aarch64-linux",
-  "x86_64-linux",
-]
+systems = ["aarch64-darwin", "aarch64-linux", "x86_64-linux"]

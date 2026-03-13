@@ -1,0 +1,7 @@
+{{
+    colors.primary.default.hex | set_lightness: 50 | set_saturation: 100 | to_color | format: "red"
+}} {{
+    colors.primary.default.hex | set_lightness: 50 | set_saturation: 100 | to_color | format: "green"
+}} {{
+    colors.primary.default.hex | set_lightness: 50 | set_saturation: 100 | to_color | format: "blue"
+}}

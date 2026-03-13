@@ -218,6 +218,19 @@ rules:
   - locations: ~/Downloads
     filters:
       - extension: pdf
+      - filecontent: 'Spectrum Internet'
+      - filecontent: '(?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})'
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%b %d, %Y')
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Receipts/{python.strftime('%Y-%m-%d')} Spectrum.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
       - filecontent: 'Invoice'
       - filecontent: 'Cloudflare, Inc.'
       - filecontent: 'Compass Church'

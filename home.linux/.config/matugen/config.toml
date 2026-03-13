@@ -1,0 +1,6 @@
+[config]
+
+[templates.pluto-kbd]
+input_path = "~/.config/matugen/templates/pluto-kbd.txt"
+output_path = "~/.local/share/pluto-kbd.txt"
+post_hook = "~/.config/matugen/hooks/pluto-kbd.sh"
