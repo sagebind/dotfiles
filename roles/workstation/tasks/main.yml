@@ -5,3 +5,6 @@
 - name: Linux configuration
   when: ansible_facts['system'] == "Linux"
   import_tasks: linux.yml
+
+- name: Install Zed
+  import_tasks: zed.yml
