@@ -10,7 +10,7 @@
 - name: Install tlp repo
   become: true
   ansible.builtin.dnf:
-    name: 'https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc{{ ansible_distribution_version }}.noarch.rpm'
+    name: 'https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc{{ ansible_facts["distribution_version"] }}.noarch.rpm'
     state: present
 
 - name: Install tlp
@@ -25,7 +25,7 @@
   become: true
   community.general.copr:
     name: codifryed/CoolerControl
-    chroot: fedora-{{ ansible_distribution_version }}-{{ ansible_architecture }}
+    chroot: fedora-{{ ansible_facts["distribution_version"] }}-{{ ansible_facts["architecture"] }}
 
 - name: Install CoolerControl for fan control
   become: true
