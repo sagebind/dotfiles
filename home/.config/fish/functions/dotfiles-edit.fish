@@ -1,3 +1,3 @@
 function dotfiles-edit -d "Open the dotfiles repo in an editor"
-  code (dotfiles-path)
+  command $EDITOR (dotfiles-path)
 end

@@ -13,8 +13,14 @@ if not set -q EDITOR
   # If there is a desktop environment, use Visual Studio Code as the default
   # editor.
   if set -q DISPLAY; or not string match -i linux (uname)
-    set -gx EDITOR (type -fp code) -w
+    if type -fq zed
+      set -gx EDITOR (type -fp zed) -w
+    else
+      set -gx EDITOR (type -fp code) -w
+    end
   # Otherwise, use Microsoft Edit if available.
+  else if type -fq msedit
+    set -gx EDITOR (type -fp msedit)
   else if type -fq edit
     set -gx EDITOR (type -fp edit)
   end

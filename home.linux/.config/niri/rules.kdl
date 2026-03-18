@@ -39,6 +39,7 @@ window-rule {
 // Windows that should be maximized by default.
 window-rule {
     match app-id="code"
+    match app-id="dev.zed.Zed"
     match app-id="logos.exe"
     match app-id="obsidian" title="Logos"
     match app-id="ONLYOFFICE"
@@ -52,6 +53,7 @@ window-rule {
 // Windows that should be fully maximized by default.
 window-rule {
     match app-id="^resolve$" title="^DaVinci Resolve Studio"
+    match app-id="^com.moonlight_stream.Moonlight$"
     match app-id="^Openterface Mini-KVM$"
     open-maximized-to-edges true
 }
