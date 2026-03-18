@@ -7,28 +7,31 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "preview_tabs": {
+    "enable_preview_from_project_panel": false,
+  },
   "colorize_brackets": true,
   "inlay_hints": {
     "show_background": false,
-    "enabled": true
+    "enabled": true,
   },
   "toolbar": {
     "selections_menu": false,
     "agent_review": false,
     "quick_actions": false,
-    "breadcrumbs": false
+    "breadcrumbs": false,
   },
   "agent": {
     "button": false,
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "tab_bar": {
-    "show": true
+    "show": true,
   },
   "window_decorations": "client",
   "tabs": {
-    "file_icons": false
+    "file_icons": false,
   },
   "title_bar": {
     "show_branch_icon": true,
@@ -38,13 +41,13 @@
     "show_user_menu": false,
     "show_menus": false,
     "show_user_picture": true,
-    "show_sign_in": false
+    "show_sign_in": false,
   },
   "ui_font_weight": 350.0,
   "ui_font_family": ".ZedSans",
   "edit_predictions": {
     "enabled_in_text_threads": false,
-    "provider": "copilot"
+    "provider": "copilot",
   },
   "disable_ai": false,
   "project_panel": {
@@ -53,55 +56,44 @@
     "indent_size": 24.0,
     "folder_icons": false,
     "file_icons": true,
-    "default_width": 320.0,
-    "dock": "right"
+    "default_width": 360.0,
+    "dock": "right",
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "session": {
-    "trust_all_worktrees": true
+    "trust_all_worktrees": true,
   },
   "terminal": {
     "font_size": 15.0,
     "font_family": "Hermit",
-    "font_fallbacks": [
-      "Hurmit Nerd Font",
-      "monospace"
-    ],
-    "blinking": "on"
+    "font_fallbacks": ["Hurmit Nerd Font", "monospace"],
+    "blinking": "on",
   },
   "multi_cursor_modifier": "cmd_or_ctrl",
   "gutter": {
-    "folds": true
+    "folds": true,
   },
   "minimap": {
-    "show": "never"
+    "show": "never",
   },
   "current_line_highlight": "all",
   "cursor_shape": "block",
-  "buffer_font_fallbacks": [
-    "Hurmit Nerd Font",
-    "monospace"
-  ],
+  "buffer_font_fallbacks": ["Hurmit Nerd Font", "monospace"],
   "buffer_font_family": "Hermit",
   "file_types": {
-    "xml": [
-      "*.axaml"
-    ]
+    "xml": ["*.axaml"],
   },
   "show_whitespaces": "all",
   "show_edit_predictions": true,
   "ensure_final_newline_on_save": true,
   "indent_guides": {
     "coloring": "indent_aware",
-    "enabled": true
+    "enabled": true,
   },
-  "wrap_guides": [
-    82,
-    120
-  ],
+  "wrap_guides": [82, 120],
   "base_keymap": "VSCode",
   "ui_font_size": 18.0,
   "buffer_font_size": 15.0,
