@@ -23,7 +23,7 @@ rules:
     filters:
       - extension: zip
       - exif:
-          zip.zipfilename: '*.flac'
+          zip.zipfilename: "*.flac"
     actions:
       - shell: mkdir -p "/tmp/bandcamp-zips/{path.stem}"
       - shell: |
@@ -68,7 +68,7 @@ rules:
     subfolders: true
     filters:
       - regex: '^Pay Date (?P<date>(?P<year>\d{4})-\d{2}-\d{2})\.pdf$'
-      - filecontent: 'Earnings Statement'
+      - filecontent: "Earnings Statement"
     actions:
       - move:
           dest: ~/Seafile/Documents/Financial/Paystubs/{regex.year}/{regex.date} Earnings Statement.pdf
@@ -177,8 +177,17 @@ rules:
   - locations: ~/Downloads
     filters:
       - extension: pdf
+      - filecontent: I-PASS
+      - filecontent: >-
+          (?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})
+    actions:
+      - move: ~/Compass/Financial/Receipts/{filecontent.year}/{filecontent.year}-{filecontent.month}-{filecontent.day} I-PASS.pdf
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
       - filecontent: 'ALLIANT ENERGY\/WPL'
-      - filecontent: '53546'
+      - filecontent: "53546"
       - filecontent: '(?P<date>\w{3} \d{2}, \d{4})'
       - python: |
           from datetime import datetime
@@ -192,7 +201,7 @@ rules:
     filters:
       - extension: pdf
       - filecontent: 'ALLIANT ENERGY\/WPL'
-      - filecontent: '53548'
+      - filecontent: "53548"
       - filecontent: '(?P<date>\w{3} \d{2}, \d{4})'
       - python: |
           from datetime import datetime
@@ -205,7 +214,7 @@ rules:
   - locations: ~/Downloads
     filters:
       - extension: pdf
-      - filecontent: 'SpectrumBusiness.net'
+      - filecontent: "SpectrumBusiness.net"
       - filecontent: '(?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})'
       - python: |
           from datetime import datetime
@@ -218,7 +227,7 @@ rules:
   - locations: ~/Downloads
     filters:
       - extension: pdf
-      - filecontent: 'Spectrum Internet'
+      - filecontent: "Spectrum Internet"
       - filecontent: '(?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})'
       - python: |
           from datetime import datetime
@@ -231,9 +240,9 @@ rules:
   - locations: ~/Downloads
     filters:
       - extension: pdf
-      - filecontent: 'Invoice'
-      - filecontent: 'Cloudflare, Inc.'
-      - filecontent: 'Compass Church'
+      - filecontent: "Invoice"
+      - filecontent: "Cloudflare, Inc."
+      - filecontent: "Compass Church"
       - filecontent: '(?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})'
       - python: |
           from datetime import datetime
@@ -328,7 +337,7 @@ rules:
     filters:
       - regex: >-
           ^\d+ - (A-)?Investment Statement - .+\.pdf$
-      - filecontent: 'Investment Statement'
+      - filecontent: "Investment Statement"
       - filecontent: >-
           Investment #:\s+(?P<id>\d{4})
       - filecontent: >-
@@ -355,7 +364,7 @@ rules:
   - locations: ~/Downloads
     filters:
       - regex: '^Print-\d{8}-\d+\.pdf$'
-      - filecontent: 'COMPASS CHURCH INC'
+      - filecontent: "COMPASS CHURCH INC"
       - exif: pdf.pagecount
       - python: |
           return exif["pdf"]["pagecount"] > 1
@@ -369,8 +378,8 @@ rules:
     subfolders: true
     filters:
       - regex: '^Print-\d{8}-\d+(_\d)?\.pdf$'
-      - filecontent: 'COMPASS CHURCH INC'
-      - filecontent: '^(?P<firstname>[A-Z][a-z]+)( [A-Z][a-z]*)? (?P<lastname>[A-Z][a-z]+)'
+      - filecontent: "COMPASS CHURCH INC"
+      - filecontent: "^(?P<firstname>[A-Z][a-z]+)( [A-Z][a-z]*)? (?P<lastname>[A-Z][a-z]+)"
       - filecontent: '\s+(?P<start>\d{1,2}/\d{1,2}/\d{4}) - (?P<end>\d{1,2}/\d{1,2}/\d{4})'
       - exif: pdf.pagecount
       - python: |

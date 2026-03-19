@@ -1,12 +1,5 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "format_on_save": "on",
   "preview_tabs": {
     "enable_preview_from_project_panel": false,
   },
@@ -100,6 +93,6 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato",
+    "dark": "Cyberpunk Scarlet Protocol",
   },
 }
