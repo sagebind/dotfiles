@@ -60,7 +60,6 @@
     "trust_all_worktrees": true,
   },
   "terminal": {
-    "font_size": 15.0,
     "font_family": "Hermit",
     "font_fallbacks": ["Hurmit Nerd Font", "monospace"],
     "blinking": "on",
@@ -88,11 +87,22 @@
   },
   "wrap_guides": [82, 120],
   "base_keymap": "VSCode",
-  "ui_font_size": 18.0,
-  "buffer_font_size": 15.0,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Cyberpunk Scarlet Protocol",
+    "dark": "KvS Cyberpunk 2077: Neon Blue",
+  },
+  "linux": {
+    "ui_font_size": 18.0,
+    "buffer_font_size": 15.0,
+    "terminal": {
+      "font_size": 15.0,
+    },
+  },
+  "macos": {
+    "buffer_font_size": 13.0,
+    "terminal": {
+      "font_size": 13.0,
+    },
   },
 }
