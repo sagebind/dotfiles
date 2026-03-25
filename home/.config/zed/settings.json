@@ -85,12 +85,12 @@
     "coloring": "indent_aware",
     "enabled": true,
   },
-  "wrap_guides": [82, 120],
+  "wrap_guides": [80, 120],
   "base_keymap": "VSCode",
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "KvS Cyberpunk 2077: Neon Blue",
+    "dark": "CrystalTheme",
   },
   "linux": {
     "ui_font_size": 18.0,
@@ -106,6 +106,14 @@
       "shell": {
         "program": "/opt/homebrew/bin/fish",
       },
+    },
+  },
+  "languages": {
+    "AsciiDoc": {
+      "soft_wrap": "bounded",
+    },
+    "Markdown": {
+      "soft_wrap": "bounded",
     },
   },
 }
