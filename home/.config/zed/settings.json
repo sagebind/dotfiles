@@ -1,103 +1,108 @@
 {
-  "format_on_save": "on",
-  "preview_tabs": {
-    "enable_preview_from_project_panel": false,
-  },
-  "colorize_brackets": true,
-  "inlay_hints": {
-    "show_background": false,
-    "enabled": true,
-  },
-  "toolbar": {
-    "selections_menu": false,
-    "agent_review": false,
-    "quick_actions": false,
-    "breadcrumbs": false,
-  },
   "agent": {
-    "button": false,
+    "default_model": {
+      "enable_thinking": false,
+      "model": "gpt-4.1",
+      "provider": "copilot_chat",
+    },
     "favorite_models": [],
     "model_parameters": [],
   },
-  "tab_bar": {
-    "show": true,
-  },
-  "window_decorations": "client",
-  "tabs": {
-    "file_icons": false,
-  },
-  "title_bar": {
-    "show_branch_icon": true,
-    "show_branch_name": true,
-    "show_project_items": true,
-    "show_onboarding_banner": false,
-    "show_user_menu": false,
-    "show_menus": false,
-    "show_user_picture": true,
-    "show_sign_in": false,
-  },
-  "ui_font_weight": 350.0,
-  "ui_font_family": ".ZedSans",
+  "base_keymap": "VSCode",
+  "buffer_font_fallbacks": ["Hurmit Nerd Font", "monospace"],
+  "buffer_font_family": "Hermit",
+  "colorize_brackets": true,
+  "current_line_highlight": "all",
+  "cursor_shape": "block",
+  "disable_ai": false,
   "edit_predictions": {
     "enabled_in_text_threads": false,
     "provider": "copilot",
   },
-  "disable_ai": false,
+  "ensure_final_newline_on_save": true,
+  "file_types": {
+    "xml": ["*.axaml"],
+  },
+  "format_on_save": "on",
+  "gutter": {
+    "folds": true,
+  },
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "enabled": true,
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_background": true,
+  },
+  "lsp_document_colors": "inlay",
+  "minimap": {
+    "show": "never",
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "preview_tabs": {
+    "enable_preview_from_project_panel": false,
+  },
   "project_panel": {
-    "hide_root": true,
-    "entry_spacing": "comfortable",
-    "indent_size": 24.0,
-    "folder_icons": false,
-    "file_icons": true,
     "default_width": 360.0,
     "dock": "right",
+    "entry_spacing": "comfortable",
+    "file_icons": true,
+    "folder_icons": false,
+    "hide_root": true,
+    "indent_size": 24.0,
+  },
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "show_edit_predictions": true,
+  "show_whitespaces": "all",
+  "tab_bar": {
+    "show": true,
+  },
+  "tabs": {
+    "file_icons": false,
   },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
   },
-  "session": {
-    "trust_all_worktrees": true,
-  },
   "terminal": {
-    "font_family": "Hermit",
-    "font_fallbacks": ["Hurmit Nerd Font", "monospace"],
     "blinking": "on",
+    "font_fallbacks": ["Hurmit Nerd Font", "monospace"],
+    "font_family": "Hermit",
   },
-  "multi_cursor_modifier": "cmd_or_ctrl",
-  "gutter": {
-    "folds": true,
-  },
-  "minimap": {
-    "show": "never",
-  },
-  "current_line_highlight": "all",
-  "cursor_shape": "block",
-  "buffer_font_fallbacks": ["Hurmit Nerd Font", "monospace"],
-  "buffer_font_family": "Hermit",
-  "file_types": {
-    "xml": ["*.axaml"],
-  },
-  "show_whitespaces": "all",
-  "show_edit_predictions": true,
-  "ensure_final_newline_on_save": true,
-  "indent_guides": {
-    "coloring": "indent_aware",
-    "enabled": true,
-  },
-  "wrap_guides": [80, 120],
-  "base_keymap": "VSCode",
   "theme": {
-    "mode": "system",
+    "dark": "Cyberpunk Scarlet Protocol",
     "light": "One Light",
-    "dark": "CrystalTheme",
+    "mode": "system",
   },
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_branch_name": true,
+    "show_menus": false,
+    "show_onboarding_banner": false,
+    "show_project_items": true,
+    "show_sign_in": false,
+    "show_user_menu": false,
+    "show_user_picture": true,
+  },
+  "toolbar": {
+    "agent_review": false,
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": false,
+  },
+  "ui_font_family": ".ZedSans",
+  "ui_font_weight": 350.0,
+  "window_decorations": "client",
+  "wrap_guides": [80, 120],
   "linux": {
-    "ui_font_size": 18.0,
     "buffer_font_size": 15.0,
     "terminal": {
       "font_size": 15.0,
     },
+    "ui_font_size": 18.0,
   },
   "macos": {
     "buffer_font_size": 13.0,
@@ -114,6 +119,10 @@
     },
     "Markdown": {
       "soft_wrap": "bounded",
+    },
+    "YAML": {
+      "format_on_save": "off",
+      "tab_size": 2,
     },
   },
 }
