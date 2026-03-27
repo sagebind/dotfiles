@@ -1,6 +1,7 @@
 - community.general.homebrew_tap:
     name:
       - acsandmann/tap
+      - SoloAntonio/cartero
       - supersonic-app/supersonic
 
 - community.general.homebrew:
@@ -28,6 +29,7 @@
 
 - community.general.homebrew_cask:
     name:
+      - cartero
       - font-hurmit-nerd-font
       - font-symbols-only-nerd-font
       - jordanbaird-ice
