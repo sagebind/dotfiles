@@ -6,8 +6,8 @@
   },
   {
     "context": "Workspace",
-    "bindings": {
-      "ctrl-e": null,
+    "unbind": {
+      "ctrl-e": "file_finder::Toggle",
     },
   },
   {
@@ -26,8 +26,8 @@
   },
   {
     "context": "(Editor && (showing_code_actions || showing_completions))",
-    "bindings": {
-      "ctrl-p": null,
+    "unbind": {
+      "ctrl-p": "editor::ContextMenuPrevious",
     },
   },
 ]
