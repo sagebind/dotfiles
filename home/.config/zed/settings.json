@@ -16,6 +16,10 @@
   "cursor_shape": "block",
   "disable_ai": false,
   "edit_predictions": {
+    "ollama": {
+      "api_url": "http://ollama.lan.internal:11434",
+      "model": "hf.co/darrowoflykos/zeta-2-Q8_0-GGUF:Q8_0",
+    },
     "enabled_in_text_threads": false,
     "provider": "copilot",
   },
