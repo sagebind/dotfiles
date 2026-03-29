@@ -77,9 +77,9 @@
     "font_family": "Hermit",
   },
   "theme": {
-    "dark": "Cyberpunk Scarlet Protocol",
+    "mode": "dark",
+    "dark": "Kanagawa",
     "light": "One Light",
-    "mode": "system",
   },
   "title_bar": {
     "show_branch_icon": true,
