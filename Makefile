@@ -1,17 +1,15 @@
 OS := $(shell uname | tr '[:upper:]' '[:lower:]')
 PACKAGES := home "home.$(OS)"
-UNFOLDED_DIR_MARKERS := $(shell find $(PACKAGES) -type f -name .no-stow-folding)
-UNFOLDED_DIRS := $(patsubst home.$(OS)/%, $(HOME)/%, $(patsubst home/%, $(HOME)/%, $(dir $(UNFOLDED_DIR_MARKERS))))
 
 .PHONY: apply
 apply: link bootstrap
 
 .PHONY: link
-link: $(UNFOLDED_DIRS)
+link: unfold-dirs
 	stow --stow --dir="$(CURDIR)" $(PACKAGES)
 
 .PHONY: relink
-relink: $(UNFOLDED_DIRS)
+relink:
 	stow --restow --dir="$(CURDIR)" $(PACKAGES)
 
 .PHONY: dry-run
@@ -22,8 +20,9 @@ dry-run:
 unlink:
 	stow --delete --dir="$(CURDIR)" $(PACKAGES)
 
-$(UNFOLDED_DIRS):
-	mkdir -p "$@"
+.PHONY: unfold-dirs
+unfold-dirs:
+	find $(PACKAGES) -type f -name .no-stow-folding -exec sh -c 'mkdir -pv ~/$$(dirname "$$1" | cut -d/ -f2-)' sh '{}' ';'
 
 .PHONY: bootstrap
 bootstrap: sudo
