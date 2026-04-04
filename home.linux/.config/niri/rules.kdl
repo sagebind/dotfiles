@@ -41,7 +41,7 @@ window-rule {
     match app-id="code"
     match app-id="dev.zed.Zed"
     match app-id="logos.exe"
-    match app-id="obsidian" title="Logos"
+    match app-id="obsidian"
     match app-id="ONLYOFFICE"
     match app-id="org.mozilla.Thunderbird" title=" - Mozilla Thunderbird$"
     match app-id="^steam$" title="^Steam$"
