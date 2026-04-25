@@ -43,7 +43,7 @@ output "eDP-1" {
 }
 
 layout {
-    gaps 2
+    gaps 5
     background-color "transparent"
     preset-column-widths {
         proportion 0.33333
@@ -51,20 +51,21 @@ layout {
         proportion 0.66667
     }
     default-column-width {
-        proportion 0.5;
+        proportion 0.5
     }
     border {
-        off
+        width 3
+        active-color "#bbbbbbbb"
+        inactive-color "#66666688"
     }
     focus-ring {
-        width 2
-        active-color "#444444aa"
+        off
     }
     shadow {
         on
-        softness 15
-        spread 5
-        color "#000000aa"
+        softness 16
+        spread 8
+        color "#000000ee"
     }
     tab-indicator {
         place-within-column

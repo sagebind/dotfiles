@@ -1,6 +1,24 @@
 {
+  "cli_default_open_behavior": "new_window",
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
   "agent": {
     "enabled": false,
+    "dock": "left",
+    "default_model": {
+      "enable_thinking": false,
+      "model": "gpt-4.1",
+      "provider": "copilot_chat",
+    },
+    "favorite_models": [],
+    "model_parameters": [],
   },
   "base_keymap": "VSCode",
   "buffer_font_fallbacks": ["Hurmit Nerd Font", "monospace"],
@@ -8,7 +26,6 @@
   "colorize_brackets": true,
   "current_line_highlight": "all",
   "cursor_shape": "block",
-  "disable_ai": false,
   "edit_predictions": {
     "ollama": {
       "api_url": "http://ollama.lan.internal:11434",
