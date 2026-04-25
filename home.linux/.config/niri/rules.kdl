@@ -5,8 +5,11 @@ layer-rule {
         on
         spread 1000
         softness 0
-        color "#00000055"
+        color "#00000044"
         draw-behind-window true
+    }
+    background-effect {
+        xray false
     }
 }
 
