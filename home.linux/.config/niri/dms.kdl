@@ -1,0 +1,16 @@
+include "dms/alttab.kdl"
+include "dms/cursor.kdl"
+include "dms/wpblur.kdl"
+
+layer-rule {
+    match namespace="^quickshell$"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^dms:bar$"
+    background-effect {
+        blur true
+        xray false
+    }
+}

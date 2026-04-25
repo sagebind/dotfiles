@@ -1,4 +1,5 @@
 include "binds.kdl"
+include "dms.kdl"
 include "rules.kdl"
 include "wallpaper.kdl"
 
@@ -55,8 +56,8 @@ layout {
     }
     border {
         width 3
-        active-color "#bbbbbbbb"
-        inactive-color "#66666688"
+        active-color "#999999bb"
+        inactive-color "#44444488"
     }
     focus-ring {
         off
@@ -154,4 +155,4 @@ debug {
     wait-for-frame-completion-before-queueing
 }
 
-include "hosts/pluto.kdl"
+include optional=true "hosts/pluto.kdl"

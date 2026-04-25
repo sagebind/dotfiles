@@ -92,7 +92,6 @@
     "light": "One Light",
   },
   "title_bar": {
-    "show_branch_icon": true,
     "show_branch_name": true,
     "show_menus": false,
     "show_onboarding_banner": false,
@@ -140,143 +139,104 @@
     },
   },
   "profiles": {
-    "work": {
-      "agent": {
-        "profiles": {
-          "ask": {
-            "name": "Ask",
-            "tools": {
-              "diagnostics": true,
-              "fetch": true,
-              "list_directory": true,
-              "project_notifications": false,
-              "now": true,
-              "find_path": true,
-              "read_file": true,
-              "open": true,
-              "grep": true,
-              "spawn_agent": true,
-              "thinking": true,
-              "update_plan": true,
-              "web_search": true,
-            },
-            "enable_all_context_servers": false,
-            "context_servers": {
-              "mcp-server-buildkite": {
-                "tools": {
-                  "list_pipelines": true,
-                },
-              },
-              "mcp-server-github": {
-                "tools": {
-                  "get_file_contents": true,
-                  "search_repositories": true,
-                  "search_pull_requests": true,
-                  "search_issues": true,
-                  "search_code": true,
-                  "pull_request_read": true,
-                  "list_pull_requests": true,
-                  "list_commits": true,
-                  "list_issues": true,
-                  "list_branches": true,
-                },
-              },
-              "com.atlassian/atlassian-mcp-server": {
-                "tools": {
-                  "getJiraIssue": true,
-                  "getAccessibleAtlassianResources": true,
-                },
-              },
-            },
-          },
-        },
-        "default_profile": "write",
-        "dock": "left",
-        "tool_permissions": {
-          "tools": {
-            "mcp:mcp-server-github:list_branches": {
-              "default": "allow",
-            },
-            "mcp:mcp-server-github:get_file_contents": {
-              "default": "allow",
-            },
-            "mcp:mcp-server-github:search_repositories": {
-              "default": "allow",
-            },
-            "mcp:mcp-server-github:search_pull_requests": {
-              "default": "allow",
-            },
-            "mcp:mcp-server-github:search_issues": {
-              "default": "allow",
-            },
-            "mcp:mcp-server-github:pull_request_read": {
-              "default": "allow",
-            },
-            "mcp:mcp-server-buildkite:tail_logs": {
-              "default": "allow",
-            },
-            "mcp:com.atlassian/atlassian-mcp-server:getJiraIssue": {
-              "default": "allow",
-            },
-            "mcp:com.atlassian/atlassian-mcp-server:getAccessibleAtlassianResources": {
-              "default": "allow",
-            },
-            "mcp:mcp-server-buildkite:read_logs": {
-              "default": "allow",
-            },
-            "mcp:mcp-server-buildkite:search_logs": {
-              "default": "allow",
-            },
-            "mcp:mcp-server-buildkite:get_build": {
-              "default": "allow",
-            },
-            "terminal": {
-              "always_allow": [
-                {
-                  "pattern": "^sleep\\s+\\d+\\s*$",
-                },
-                {
-                  "pattern": "^ls[^;$()`|&]*$",
-                },
-                {
-                  "pattern": "^./gradlew[^;$()`|&]*$",
-                },
-                {
-                  "pattern": "^git commit -m \"[^\"$()`]+\"$",
-                },
-                {
-                  "pattern": "^git push$",
-                },
-                {
-                  "pattern": "^git\\s+commit(\\s|$)",
-                },
-              ],
-              "always_deny": [
-                { "pattern": "rm\\s+-rf\\s+(/|~)" },
-                { "pattern": "sudo\\s+rm" },
-                { "pattern": "gradle.+publish" },
-              ],
-              "always_confirm": [{ "pattern": "sudo\\s" }],
-            },
-            "mcp:mcp-server-buildkite:list_builds": {
-              "default": "allow",
-            },
-          },
-        },
-        "default_model": {
-          "effort": "medium",
-          "enable_thinking": true,
-          "model": "claude-sonnet-4.6",
-          "provider": "copilot_chat",
-        },
-        "favorite_models": [],
-        "model_parameters": [],
-        "thread_summary_model": {
-          "provider": "copilot_chat",
-          "model": "gpt-4o",
+    "linux": {
+      "settings": {
+        "theme": {
+          "mode": "dark",
+          "dark": "DankShell Dark Transparent",
+          "light": "DankShell Light Transparent",
         },
       },
-      "format_on_save": "off",
+    },
+    "work": {
+      "settings": {
+        "format_on_save": "off",
+        "agent": {
+          "default_profile": "write",
+          "dock": "left",
+          "tool_permissions": {
+            "tools": {
+              "mcp:mcp-server-github:list_branches": {
+                "default": "allow",
+              },
+              "mcp:mcp-server-github:get_file_contents": {
+                "default": "allow",
+              },
+              "mcp:mcp-server-github:search_repositories": {
+                "default": "allow",
+              },
+              "mcp:mcp-server-github:search_pull_requests": {
+                "default": "allow",
+              },
+              "mcp:mcp-server-github:search_issues": {
+                "default": "allow",
+              },
+              "mcp:mcp-server-github:pull_request_read": {
+                "default": "allow",
+              },
+              "mcp:mcp-server-buildkite:tail_logs": {
+                "default": "allow",
+              },
+              "mcp:com.atlassian/atlassian-mcp-server:getJiraIssue": {
+                "default": "allow",
+              },
+              "mcp:com.atlassian/atlassian-mcp-server:getAccessibleAtlassianResources": {
+                "default": "allow",
+              },
+              "mcp:mcp-server-buildkite:read_logs": {
+                "default": "allow",
+              },
+              "mcp:mcp-server-buildkite:search_logs": {
+                "default": "allow",
+              },
+              "mcp:mcp-server-buildkite:get_build": {
+                "default": "allow",
+              },
+              "terminal": {
+                "always_allow": [
+                  {
+                    "pattern": "^sleep\\s+\\d+\\s*$",
+                  },
+                  {
+                    "pattern": "^ls[^;$()`|&]*$",
+                  },
+                  {
+                    "pattern": "^./gradlew[^;$()`|&]*$",
+                  },
+                  {
+                    "pattern": "^git commit -m \"[^\"$()`]+\"$",
+                  },
+                  {
+                    "pattern": "^git push$",
+                  },
+                  {
+                    "pattern": "^git\\s+commit(\\s|$)",
+                  },
+                ],
+                "always_deny": [
+                  { "pattern": "rm\\s+-rf\\s+(/|~)" },
+                  { "pattern": "sudo\\s+rm" },
+                  { "pattern": "gradle.+publish" },
+                ],
+                "always_confirm": [{ "pattern": "sudo\\s" }],
+              },
+              "mcp:mcp-server-buildkite:list_builds": {
+                "default": "allow",
+              },
+            },
+          },
+          "default_model": {
+            "effort": "medium",
+            "enable_thinking": true,
+            "model": "claude-sonnet-4.6",
+            "provider": "copilot_chat",
+          },
+          "thread_summary_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-4o",
+          },
+        },
+      },
     },
   },
 }

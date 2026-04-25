@@ -14,12 +14,8 @@ binds {
     XF86MenuKB repeat=false hotkey-overlay-title="Application Launcher" {
         spawn "vicinae" "toggle";
     }
-
     Mod+V hotkey-overlay-title="Clipboard Manager" {
         spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history";
-    }
-    Mod+M hotkey-overlay-title="Task Manager" {
-        spawn "dms" "ipc" "call" "processlist" "toggle";
     }
     Mod+Comma hotkey-overlay-title="Settings" {
         spawn "dms" "ipc" "call" "settings" "toggle";
@@ -27,10 +23,14 @@ binds {
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
         spawn "dms" "ipc" "call" "dankdash" "wallpaper";
     }
-    Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
-
+    Mod+N hotkey-overlay-title="Notification Center" {
+        spawn "dms" "ipc" "call" "notifications" "toggle";
+    }
     Mod+F4 hotkey-overlay-title="Start/Stop Handy Transcription" {
         spawn "pkill" "-USR2" "-n" "handy";
+    }
+    Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" {
+        spawn "dms" "ipc" "call" "processlist" "toggle";
     }
 
     // === Security ===
@@ -38,9 +38,6 @@ binds {
         spawn "dms" "ipc" "call" "lock" "lock";
     }
     Mod+Shift+E { quit; }
-    Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" {
-        spawn "dms" "ipc" "call" "processlist" "toggle";
-    }
 
     // === Audio Controls ===
     XF86AudioRaiseVolume allow-when-locked=true {
@@ -81,6 +78,7 @@ binds {
     Mod+Shift+T { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+W { toggle-column-tabbed-display; }
+    Mod+M { maximize-window-to-edges; }
 
     // === Focus Navigation ===
     Mod+Left { focus-column-left; }
