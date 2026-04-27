@@ -18,6 +18,7 @@
 - community.general.homebrew:
     name:
       - aws-vault
+      - bash # Get a newer Bash version needed for running some scripts
       - cmake
       - groovy
       - jpeg-xl
