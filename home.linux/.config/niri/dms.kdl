@@ -8,9 +8,8 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="^dms:bar$"
+    match namespace="^dms:"
     background-effect {
-        blur true
         xray false
     }
 }
