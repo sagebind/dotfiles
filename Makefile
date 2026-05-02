@@ -6,6 +6,7 @@ apply: link bootstrap
 
 .PHONY: link
 link: unfold-dirs
+	sh -c 'chmod +x home.linux/.local/bin/*'
 	stow --stow --dir="$(CURDIR)" $(PACKAGES)
 
 .PHONY: relink
