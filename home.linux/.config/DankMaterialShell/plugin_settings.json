@@ -50,5 +50,8 @@
   "powerUsagePlugin": {
     "enabled": true,
     "refreshInterval": 30
+  },
+  "dankBatteryAlerts": {
+    "enabled": true
   }
 }
