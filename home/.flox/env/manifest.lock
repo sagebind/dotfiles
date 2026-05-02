@@ -206,18 +206,19 @@
     {
       "attr_path": "ansible",
       "broken": false,
-      "derivation": "/nix/store/0alwf7msjgh65hcnhkb2yaray27n9mhd-python3.13-ansible-core-2.20.4.drv",
+      "derivation": "/nix/store/ksdlnlzsy4dlr2wipw3jg0pnn3l950vy-python3.13-ansible-core-2.20.4.drv",
       "description": "Radically simple IT automation",
       "install_id": "ansible",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "ansible-core-2.20.4",
       "pname": "ansible",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:19.685222Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:52:26.843194Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -226,8 +227,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/xrd5zajnp4dd9r1r3dj3wrmdk194dqjc-python3.13-ansible-core-2.20.4-dist",
-        "out": "/nix/store/r3l6mywi0i91adhn9nk2a6hsi4ym6q0c-python3.13-ansible-core-2.20.4"
+        "dist": "/nix/store/0rnf0lz99kb9ci9h8fsnk27qljhwp983-python3.13-ansible-core-2.20.4-dist",
+        "out": "/nix/store/41f8a3jkdi4y55z0k7gcx7x2bdms9mz4-python3.13-ansible-core-2.20.4"
       },
       "system": "aarch64-darwin",
       "group": "ansible",
@@ -236,18 +237,19 @@
     {
       "attr_path": "ansible",
       "broken": false,
-      "derivation": "/nix/store/xzq3vjxg7prgkmsxnayfkp1imbr3d464-python3.13-ansible-core-2.20.4.drv",
+      "derivation": "/nix/store/nnrkw8viihp2qhs24kvp4balf11vl09v-python3.13-ansible-core-2.20.4.drv",
       "description": "Radically simple IT automation",
       "install_id": "ansible",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "ansible-core-2.20.4",
       "pname": "ansible",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:36:36.975188Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:42:17.001025Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -256,8 +258,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/57i2ffi1kq5q8y88abz7rf10spxxijjb-python3.13-ansible-core-2.20.4-dist",
-        "out": "/nix/store/2v8q8sgfbmad0xrs3m6zm3w3y1iigh5p-python3.13-ansible-core-2.20.4"
+        "dist": "/nix/store/mc611yna192wgcwy21qijq40ba4ik6x7-python3.13-ansible-core-2.20.4-dist",
+        "out": "/nix/store/36xmdr78sar8429alidivg3lhnh3sxzj-python3.13-ansible-core-2.20.4"
       },
       "system": "aarch64-linux",
       "group": "ansible",
@@ -266,18 +268,19 @@
     {
       "attr_path": "ansible",
       "broken": false,
-      "derivation": "/nix/store/s3fdyzbyqdd30wda9x3p06nj1lg29g07-python3.13-ansible-core-2.20.4.drv",
+      "derivation": "/nix/store/i233x7zag1m394snac48b8i8hxphmw13-python3.13-ansible-core-2.20.4.drv",
       "description": "Radically simple IT automation",
       "install_id": "ansible",
       "license": "GPL-3.0-or-later",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "ansible-core-2.20.4",
       "pname": "ansible",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T07:44:39.169090Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:09:56.771743Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -286,8 +289,8 @@
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/xsv0xhbf3h7jpi8nzm4v3n62wzjjj41n-python3.13-ansible-core-2.20.4-dist",
-        "out": "/nix/store/k922m861gxjbs3acri67v7agni5h795s-python3.13-ansible-core-2.20.4"
+        "dist": "/nix/store/kmag5q2jd32jaxhfhp8sr8fyxl9v4prg-python3.13-ansible-core-2.20.4-dist",
+        "out": "/nix/store/b2hdm4b9sm0v76qg6ca9dzci00q45lfc-python3.13-ansible-core-2.20.4"
       },
       "system": "x86_64-linux",
       "group": "ansible",
@@ -296,18 +299,19 @@
     {
       "attr_path": "broot",
       "broken": false,
-      "derivation": "/nix/store/fgi29110016f661smilz8n98y65n989w-broot-1.56.2.drv",
+      "derivation": "/nix/store/ch0fw5i3sgrqj12sc3h0pkd42p57wn9d-broot-1.56.2.drv",
       "description": "Interactive tree view, a fuzzy search, a balanced BFS descent and customizable commands",
       "install_id": "broot",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "broot-1.56.2",
       "pname": "broot",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:19.864057Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:52:26.996782Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -316,7 +320,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/kxbppa39b33r0snbic3fmxpd82l5b0aa-broot-1.56.2"
+        "out": "/nix/store/gbipwlkwijv8kmi47330s9ngz84wgw46-broot-1.56.2"
       },
       "system": "aarch64-darwin",
       "group": "broot",
@@ -325,18 +329,19 @@
     {
       "attr_path": "broot",
       "broken": false,
-      "derivation": "/nix/store/xd4im3413c19s97h8ggbcq2yjhfq32qd-broot-1.56.2.drv",
+      "derivation": "/nix/store/7dil3h84dcr292vcfx2w4m1vxjfn4p69-broot-1.56.2.drv",
       "description": "Interactive tree view, a fuzzy search, a balanced BFS descent and customizable commands",
       "install_id": "broot",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "broot-1.56.2",
       "pname": "broot",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:36:37.176992Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:42:17.195773Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -345,7 +350,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/w4spm6h26xhhzxxwgd70ayjs3pi1yf1g-broot-1.56.2"
+        "out": "/nix/store/rqh48zz92813x8ll05an6ay96xclh1rm-broot-1.56.2"
       },
       "system": "aarch64-linux",
       "group": "broot",
@@ -354,18 +359,19 @@
     {
       "attr_path": "broot",
       "broken": false,
-      "derivation": "/nix/store/v3lyin8549w00s5abw5w5zxf1n8bfg52-broot-1.56.2.drv",
+      "derivation": "/nix/store/h41qvizn1799klbl8hch4h022f6rrd2x-broot-1.56.2.drv",
       "description": "Interactive tree view, a fuzzy search, a balanced BFS descent and customizable commands",
       "install_id": "broot",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "broot-1.56.2",
       "pname": "broot",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T07:44:39.395780Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:09:56.988194Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -374,7 +380,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/75fbr83djw7xkkfsyf0mg8b8dzmbwlk0-broot-1.56.2"
+        "out": "/nix/store/q5hkinxfrxbwag3nrqzlfd80g2zz191q-broot-1.56.2"
       },
       "system": "x86_64-linux",
       "group": "broot",
@@ -383,18 +389,19 @@
     {
       "attr_path": "devenv",
       "broken": false,
-      "derivation": "/nix/store/rnh8wy7adhhwgvi2svvhwcdqy6dd6qm9-devenv-2.0.6.drv",
+      "derivation": "/nix/store/56m52kl9ia84c9fghz270jb0v0gcah3x-devenv-2.0.6.drv",
       "description": "Fast, Declarative, Reproducible, and Composable Developer Environments",
       "install_id": "devenv",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "devenv-2.0.6",
       "pname": "devenv",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:20.338780Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:52:27.485703Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -403,7 +410,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/b4fvcwz1s7qqciqq8p1hn6khmxcy6agl-devenv-2.0.6"
+        "out": "/nix/store/6g0v3xkvbkksjs8sxvzqc9c834vd6cjw-devenv-2.0.6"
       },
       "system": "aarch64-darwin",
       "group": "devenv",
@@ -412,18 +419,19 @@
     {
       "attr_path": "devenv",
       "broken": false,
-      "derivation": "/nix/store/yrscbna2qqrwva3pr220zclziyhfpklg-devenv-2.0.6.drv",
+      "derivation": "/nix/store/qlavx4cnxbyspqhk16a0f6174w8g50wr-devenv-2.0.6.drv",
       "description": "Fast, Declarative, Reproducible, and Composable Developer Environments",
       "install_id": "devenv",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "devenv-2.0.6",
       "pname": "devenv",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:36:37.793690Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:42:17.810335Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -432,7 +440,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/j4l859ah8xwzzby8435c37pdxqnvpplk-devenv-2.0.6"
+        "out": "/nix/store/02jrhy8l2y2kz2aks70ri1clhai7lcgy-devenv-2.0.6"
       },
       "system": "aarch64-linux",
       "group": "devenv",
@@ -441,18 +449,19 @@
     {
       "attr_path": "devenv",
       "broken": false,
-      "derivation": "/nix/store/k866jcpaz9apx6bvzkbi18vg16i54hvx-devenv-2.0.6.drv",
+      "derivation": "/nix/store/1q9vs1klvn7hn67cidi2s22prx4hnmyi-devenv-2.0.6.drv",
       "description": "Fast, Declarative, Reproducible, and Composable Developer Environments",
       "install_id": "devenv",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "devenv-2.0.6",
       "pname": "devenv",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T07:44:40.101169Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:09:57.671289Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -461,7 +470,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/7lgagmlc6m17rcam8qkbs7phimajlp25-devenv-2.0.6"
+        "out": "/nix/store/0nlzr74f0awmanm0hy0gi14322r5q159-devenv-2.0.6"
       },
       "system": "x86_64-linux",
       "group": "devenv",
@@ -482,7 +491,9 @@
       "rev_date": "2026-04-18T21:33:21Z",
       "scrape_date": "2026-04-21T06:03:20.365861Z",
       "stabilities": [
-        "unstable"
+        "staging",
+        "unstable",
+        "stable"
       ],
       "unfree": false,
       "version": "2.37.1",
@@ -511,7 +522,9 @@
       "rev_date": "2026-04-18T21:33:21Z",
       "scrape_date": "2026-04-21T06:36:37.830930Z",
       "stabilities": [
-        "unstable"
+        "staging",
+        "unstable",
+        "stable"
       ],
       "unfree": false,
       "version": "2.37.1",
@@ -540,7 +553,9 @@
       "rev_date": "2026-04-18T21:33:21Z",
       "scrape_date": "2026-04-21T07:44:40.144691Z",
       "stabilities": [
-        "unstable"
+        "staging",
+        "unstable",
+        "stable"
       ],
       "unfree": false,
       "version": "2.37.1",
@@ -557,36 +572,33 @@
     {
       "attr_path": "jq",
       "broken": false,
-      "derivation": "/nix/store/y1glsdj47nwma5cg6gkwxaidlcqdvmv1-jq-1.8.1.drv",
+      "derivation": "/nix/store/8m1acd54mxn25zahyn0scbi10a49v91c-jq-1.8.1.drv",
       "description": "Lightweight and flexible command-line JSON processor",
       "install_id": "jq",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "jq-1.8.1",
       "pname": "jq",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:36.263415Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:52:44.509354Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
       "version": "1.8.1",
       "outputs_to_install": [
         "bin",
-        "bin",
-        "bin",
-        "man",
-        "man",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/bb450vb2gl547zwba8sihcyilsg2rqfa-jq-1.8.1-bin",
-        "dev": "/nix/store/irxgyhi0rq34f2y721a26ii09nynq2ha-jq-1.8.1-dev",
-        "doc": "/nix/store/rnkk37licxmcicz44sm368bk2fsrk52j-jq-1.8.1-doc",
-        "man": "/nix/store/vs96fwfhd5gjycxs5yc58wkrizscww92-jq-1.8.1-man",
-        "out": "/nix/store/y4gq3lbz2nq75cl3v28ixrqrr90pk4lf-jq-1.8.1"
+        "bin": "/nix/store/zpaiv3csv85i5qdhwlivlbg8a5clnqmh-jq-1.8.1-bin",
+        "dev": "/nix/store/h46rnp90pvk5ky12r9drbzhl1fqlmjnf-jq-1.8.1-dev",
+        "doc": "/nix/store/iksz05vk9j78ls9agfg9blhax9azgv69-jq-1.8.1-doc",
+        "man": "/nix/store/vs9rx9xgqachcay4mn95m1gwifzxrhm4-jq-1.8.1-man",
+        "out": "/nix/store/inmyqx7646xrcqrwxipacv5gkf3ca6m3-jq-1.8.1"
       },
       "system": "aarch64-darwin",
       "group": "jq",
@@ -595,35 +607,33 @@
     {
       "attr_path": "jq",
       "broken": false,
-      "derivation": "/nix/store/r7xkf6ii1frn2kcdwb48mbwbvikldhmy-jq-1.8.1.drv",
+      "derivation": "/nix/store/6bm9kiq3c81i6f3hs1qdvk281w8sjk1s-jq-1.8.1.drv",
       "description": "Lightweight and flexible command-line JSON processor",
       "install_id": "jq",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "jq-1.8.1",
       "pname": "jq",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:36:58.600239Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:42:38.855216Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
       "version": "1.8.1",
       "outputs_to_install": [
         "bin",
-        "bin",
-        "bin",
-        "man",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/h68aklwk28xbrg7pqaw078w1hvvvf419-jq-1.8.1-bin",
-        "dev": "/nix/store/kzsszlf69lndqilpgysw1j9b4hrfwjfx-jq-1.8.1-dev",
-        "doc": "/nix/store/rr0a4brsd47393640zn9zgw844rbkrsl-jq-1.8.1-doc",
-        "man": "/nix/store/l4npc0sgk51lz2d6jqnl4r18hmn6qckr-jq-1.8.1-man",
-        "out": "/nix/store/5jf55qkwrnd769ri9wxiy7z9kp5zb4ca-jq-1.8.1"
+        "bin": "/nix/store/blgzs73jx017qji4n78v4wg1qxcg3cav-jq-1.8.1-bin",
+        "dev": "/nix/store/lx675fc624glij1dh9iw89pavkvfkv73-jq-1.8.1-dev",
+        "doc": "/nix/store/r992wf8cylhf9ayxwf64lawdfxcr4cl8-jq-1.8.1-doc",
+        "man": "/nix/store/s8h2klkc7rw485yqj3s73ancc5915v2m-jq-1.8.1-man",
+        "out": "/nix/store/2v9443fs97gdg5mz9lk3q603hryhqijm-jq-1.8.1"
       },
       "system": "aarch64-linux",
       "group": "jq",
@@ -632,18 +642,19 @@
     {
       "attr_path": "jq",
       "broken": false,
-      "derivation": "/nix/store/0vb08cn5pf24mzjbibpc7n37g62lacfj-jq-1.8.1.drv",
+      "derivation": "/nix/store/b7xrk5idxkza33wiaizqzs9fqzvw5lqb-jq-1.8.1.drv",
       "description": "Lightweight and flexible command-line JSON processor",
       "install_id": "jq",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "jq-1.8.1",
       "pname": "jq",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T07:45:02.461683Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:10:20.152200Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -651,17 +662,14 @@
       "outputs_to_install": [
         "bin",
         "bin",
-        "bin",
-        "bin",
-        "bin",
         "man"
       ],
       "outputs": {
-        "bin": "/nix/store/fc13hvlj7541i1xmwdka7f61qicdzr5a-jq-1.8.1-bin",
-        "dev": "/nix/store/plinh1rzkh83n4gfpkxl748zgaydpxll-jq-1.8.1-dev",
-        "doc": "/nix/store/ihgrvb9w91mwbhxx3fi3gcwwx3qlsdfv-jq-1.8.1-doc",
-        "man": "/nix/store/crwv17pim6csnfr4jmsd7kf60sp3c5dh-jq-1.8.1-man",
-        "out": "/nix/store/s4w1j16dj8wyriv1ljfypr9s1r39yjwp-jq-1.8.1"
+        "bin": "/nix/store/v5c3inhfq6xshmwg1c254vfbcy4jp3k9-jq-1.8.1-bin",
+        "dev": "/nix/store/p8x5zv9s9qg3ld8b7jdm03hkpdqybjl9-jq-1.8.1-dev",
+        "doc": "/nix/store/g2wlgi44rn837jdirpwi3lk5f2iy13zg-jq-1.8.1-doc",
+        "man": "/nix/store/lsyqny7h1riwhzajwy2vjjdd63viiwvm-jq-1.8.1-man",
+        "out": "/nix/store/09bq2i0kb008ccg3qdbyxv81ggxxnn09-jq-1.8.1"
       },
       "system": "x86_64-linux",
       "group": "jq",
@@ -670,18 +678,19 @@
     {
       "attr_path": "k9s",
       "broken": false,
-      "derivation": "/nix/store/xfx8dgjqhrdqp0fgdih8sk018h13y4ia-k9s-0.50.18.drv",
+      "derivation": "/nix/store/mzl095r1rp80wp4bz1hf1fpk1gafxdp7-k9s-0.50.18.drv",
       "description": "Kubernetes CLI To Manage Your Clusters In Style",
       "install_id": "k9s",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "k9s-0.50.18",
       "pname": "k9s",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:36.415925Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:52:44.658459Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -690,7 +699,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/jf7hmqwvs10nhfn1bd169aciy50x2sip-k9s-0.50.18"
+        "out": "/nix/store/n73c5n190vmjv1dr86k8c9p0ckd9j7qa-k9s-0.50.18"
       },
       "system": "aarch64-darwin",
       "group": "k9s",
@@ -699,18 +708,19 @@
     {
       "attr_path": "k9s",
       "broken": false,
-      "derivation": "/nix/store/fz8d5xsjmsykly8m35s7dd84imm1mmy2-k9s-0.50.18.drv",
+      "derivation": "/nix/store/jl12k8v6fz332gzbz1sxf17phb8ck0g7-k9s-0.50.18.drv",
       "description": "Kubernetes CLI To Manage Your Clusters In Style",
       "install_id": "k9s",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "k9s-0.50.18",
       "pname": "k9s",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:36:58.790191Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:42:39.049502Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -719,7 +729,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/fils0xsram6zkzkhjdxd7lzw6qzyybs5-k9s-0.50.18"
+        "out": "/nix/store/0qbiid6irrxpm828slmz0rxz0cy62gdn-k9s-0.50.18"
       },
       "system": "aarch64-linux",
       "group": "k9s",
@@ -728,18 +738,19 @@
     {
       "attr_path": "k9s",
       "broken": false,
-      "derivation": "/nix/store/nirb91ql70wj8m8cl6w422vwvpg1fwcf-k9s-0.50.18.drv",
+      "derivation": "/nix/store/piqd20kqd78ql6v2zms1f04a5mh4lrwy-k9s-0.50.18.drv",
       "description": "Kubernetes CLI To Manage Your Clusters In Style",
       "install_id": "k9s",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "k9s-0.50.18",
       "pname": "k9s",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T07:45:02.690871Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:10:20.355125Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -748,7 +759,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/4v3bq29pn4j5jqzv3hvvzm2c1w6hqhkh-k9s-0.50.18"
+        "out": "/nix/store/pjj5yxwfcfhcmhz28a2gyspl9g1bvwch-k9s-0.50.18"
       },
       "system": "x86_64-linux",
       "group": "k9s",
@@ -769,8 +780,8 @@
       "rev_date": "2026-04-14T12:31:25Z",
       "scrape_date": "2026-04-16T06:05:40.346854Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "staging",
+        "unstable"
       ],
       "unfree": false,
       "version": "2026.4.6",
@@ -799,8 +810,8 @@
       "rev_date": "2026-04-14T12:31:25Z",
       "scrape_date": "2026-04-16T06:37:47.728329Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "staging",
+        "unstable"
       ],
       "unfree": false,
       "version": "2026.4.6",
@@ -829,8 +840,8 @@
       "rev_date": "2026-04-14T12:31:25Z",
       "scrape_date": "2026-04-16T07:43:18.263908Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "staging",
+        "unstable"
       ],
       "unfree": false,
       "version": "2026.4.6",
@@ -847,29 +858,29 @@
     {
       "attr_path": "mitmproxy",
       "broken": false,
-      "derivation": "/nix/store/l0xz191j46haq6ag28b528bgzc0i6xmi-python3.13-mitmproxy-12.2.1.drv",
+      "derivation": "/nix/store/gc34f9ffdpy933vipw4gqc56cy3qchxz-python3.13-mitmproxy-12.2.2.drv",
       "description": "Man-in-the-middle proxy",
       "install_id": "mitmproxy",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "name": "mitmproxy-12.2.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "name": "mitmproxy-12.2.2",
       "pname": "mitmproxy",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:05:40.362509Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:52:50.540323Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "staging",
+        "unstable"
       ],
       "unfree": false,
-      "version": "12.2.1",
+      "version": "12.2.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/q4brwz22y7awk5pq12d601fbrad26f8m-python3.13-mitmproxy-12.2.1-dist",
-        "out": "/nix/store/d77a9iy8cl60ry8jc2y3n7b8xbhbf9br-python3.13-mitmproxy-12.2.1"
+        "dist": "/nix/store/d01xjy95zqg77c0f79xsbalnc73x1zir-python3.13-mitmproxy-12.2.2-dist",
+        "out": "/nix/store/hh8ys10qllwdsi37cskcfdibdcdrxvmb-python3.13-mitmproxy-12.2.2"
       },
       "system": "aarch64-darwin",
       "group": "mitmproxy",
@@ -878,29 +889,29 @@
     {
       "attr_path": "mitmproxy",
       "broken": false,
-      "derivation": "/nix/store/wglfqsz6rv2593yx9j8gx94pmahqxd9a-python3.13-mitmproxy-12.2.1.drv",
+      "derivation": "/nix/store/p3nizgfn061smywbnfbr8h60ax2m0v72-python3.13-mitmproxy-12.2.2.drv",
       "description": "Man-in-the-middle proxy",
       "install_id": "mitmproxy",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "name": "mitmproxy-12.2.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "name": "mitmproxy-12.2.2",
       "pname": "mitmproxy",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T06:37:47.751695Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:42:51.613910Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "staging",
+        "unstable"
       ],
       "unfree": false,
-      "version": "12.2.1",
+      "version": "12.2.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/7g8fqzshabpn3q1y52p1rg3rwiabvb70-python3.13-mitmproxy-12.2.1-dist",
-        "out": "/nix/store/kdh8wl285xm4xm0sckh6ng0rmzrkm4fl-python3.13-mitmproxy-12.2.1"
+        "dist": "/nix/store/549i02z7ygkxxgnp6ghn4xs48y3871gl-python3.13-mitmproxy-12.2.2-dist",
+        "out": "/nix/store/r45rpypsni2g7gn5vnxyaxw7cvvx0dx8-python3.13-mitmproxy-12.2.2"
       },
       "system": "aarch64-linux",
       "group": "mitmproxy",
@@ -909,29 +920,29 @@
     {
       "attr_path": "mitmproxy",
       "broken": false,
-      "derivation": "/nix/store/yhzbc5prc8hdx40sji8rmbck1ylwbza6-python3.13-mitmproxy-12.2.1.drv",
+      "derivation": "/nix/store/vz3wgwmq7isbhmfvhd4wnapk7q735227-python3.13-mitmproxy-12.2.2.drv",
       "description": "Man-in-the-middle proxy",
       "install_id": "mitmproxy",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "name": "mitmproxy-12.2.1",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "name": "mitmproxy-12.2.2",
       "pname": "mitmproxy",
-      "rev": "4bd9165a9165d7b5e33ae57f3eecbcb28fb231c9",
-      "rev_count": 980183,
-      "rev_date": "2026-04-14T12:31:25Z",
-      "scrape_date": "2026-04-16T07:43:18.287262Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:10:34.765850Z",
       "stabilities": [
-        "unstable",
-        "staging"
+        "staging",
+        "unstable"
       ],
       "unfree": false,
-      "version": "12.2.1",
+      "version": "12.2.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "dist": "/nix/store/jgws6yahf2pd34nfngh78rgjz1rvl0m3-python3.13-mitmproxy-12.2.1-dist",
-        "out": "/nix/store/dg1r5fz1dx97w4c4mjrddn35l3asz209-python3.13-mitmproxy-12.2.1"
+        "dist": "/nix/store/fccshg0y7nsfaf7ciq2aq9w5g9cyfmc3-python3.13-mitmproxy-12.2.2-dist",
+        "out": "/nix/store/m16qmsfw0cjfa9qsak9avp9dchl4q226-python3.13-mitmproxy-12.2.2"
       },
       "system": "x86_64-linux",
       "group": "mitmproxy",
@@ -940,18 +951,19 @@
     {
       "attr_path": "msedit",
       "broken": false,
-      "derivation": "/nix/store/188lsvqx4gdzy2sxynsnvcignjd2pj4k-msedit-1.2.1.drv",
+      "derivation": "/nix/store/jcqfypg85304n5nidzaymi0c27j2m9bg-msedit-1.2.1.drv",
       "description": "Simple editor for simple needs",
       "install_id": "msedit",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "msedit-1.2.1",
       "pname": "msedit",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:42.722054Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:52:51.108662Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -960,7 +972,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/zyk92kkjbx1bsp7h3p5hzbkxrjmsj6lz-msedit-1.2.1"
+        "out": "/nix/store/fd7wd7zym41g2wjjylp8zyab3bphk4g3-msedit-1.2.1"
       },
       "system": "aarch64-darwin",
       "group": "msedit",
@@ -969,18 +981,19 @@
     {
       "attr_path": "msedit",
       "broken": false,
-      "derivation": "/nix/store/qlnmi0dyipkg7kxa9c4r7l0f7csmimwv-msedit-1.2.1.drv",
+      "derivation": "/nix/store/mxdxg1d570w2png1sil53640hhm2vid7-msedit-1.2.1.drv",
       "description": "Simple editor for simple needs",
       "install_id": "msedit",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "msedit-1.2.1",
       "pname": "msedit",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:37:12.724764Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:42:52.428659Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -989,7 +1002,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/32r9i6sazw9v9bkvy9wvjl1b51djqmz7-msedit-1.2.1"
+        "out": "/nix/store/2ypbpdmmd16y03b5g27hwzi1m1pj4y5c-msedit-1.2.1"
       },
       "system": "aarch64-linux",
       "group": "msedit",
@@ -998,18 +1011,19 @@
     {
       "attr_path": "msedit",
       "broken": false,
-      "derivation": "/nix/store/z8py7ih5y3m213fncc1djkil4zmv1cfd-msedit-1.2.1.drv",
+      "derivation": "/nix/store/0ixjip7440lka1qmymly9fs7z8y9k08y-msedit-1.2.1.drv",
       "description": "Simple editor for simple needs",
       "install_id": "msedit",
       "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "msedit-1.2.1",
       "pname": "msedit",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T07:45:19.166298Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:10:35.670627Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -1018,7 +1032,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/j8zv2d3cjl78z2pxngd9ilrg6cx992y8-msedit-1.2.1"
+        "out": "/nix/store/d9nxvvhl3dlk2yqscrvsxjznqid3i6z9-msedit-1.2.1"
       },
       "system": "x86_64-linux",
       "group": "msedit",
@@ -1027,18 +1041,19 @@
     {
       "attr_path": "nixfmt",
       "broken": false,
-      "derivation": "/nix/store/qnj9k36phdhc1lm0haxw2ca2manpphb4-nixfmt-1.2.0.drv",
+      "derivation": "/nix/store/87n72k04xsrm87m2d81d6sx2df9h3cjc-nixfmt-1.2.0.drv",
       "description": "Official formatter for Nix code",
       "install_id": "nixfmt",
       "license": "MPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "nixfmt-1.2.0",
       "pname": "nixfmt",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:03:43.551829Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:52:51.964255Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -1047,7 +1062,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/js6wdady9nz3whaf99flkszzdx9642yc-nixfmt-1.2.0"
+        "out": "/nix/store/cn0f42d8p48g718nh2zsgl96zjx207hi-nixfmt-1.2.0"
       },
       "system": "aarch64-darwin",
       "group": "nixfmt",
@@ -1056,18 +1071,19 @@
     {
       "attr_path": "nixfmt",
       "broken": false,
-      "derivation": "/nix/store/dic2if5jfb400wm787bzpwyrhyx7s60a-nixfmt-1.2.0.drv",
+      "derivation": "/nix/store/1h8a3wdkliavl5xpa2q35j7ra6gl0zm4-nixfmt-1.2.0.drv",
       "description": "Official formatter for Nix code",
       "install_id": "nixfmt",
       "license": "MPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "nixfmt-1.2.0",
       "pname": "nixfmt",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:37:14.122752Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:42:53.763019Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -1076,7 +1092,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/gsd7qz0fn2ll0sgnnrbjq0yc0cgrcnw7-nixfmt-1.2.0"
+        "out": "/nix/store/5a6gar99j4aqhsr47v2q0j1h0aw5dzbw-nixfmt-1.2.0"
       },
       "system": "aarch64-linux",
       "group": "nixfmt",
@@ -1085,18 +1101,19 @@
     {
       "attr_path": "nixfmt",
       "broken": false,
-      "derivation": "/nix/store/lv0048m95iqanwl5zbzg1zcnix7mm01z-nixfmt-1.2.0.drv",
+      "derivation": "/nix/store/p12lrjkryx0ngp9mz8pr7jg1c5a7w961-nixfmt-1.2.0.drv",
       "description": "Official formatter for Nix code",
       "install_id": "nixfmt",
       "license": "MPL-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "nixfmt-1.2.0",
       "pname": "nixfmt",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T07:45:20.680748Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:10:37.139276Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -1105,7 +1122,7 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/m8r6kk7rancjxh4p3hrqwdh0g19yk3hl-nixfmt-1.2.0"
+        "out": "/nix/store/7ps5j106c8a61imxfx85kcflmvbc344s-nixfmt-1.2.0"
       },
       "system": "x86_64-linux",
       "group": "nixfmt",
@@ -1114,18 +1131,19 @@
     {
       "attr_path": "regctl",
       "broken": false,
-      "derivation": "/nix/store/knhxzv5vpxck41krl1m3vzxgh1di0vvd-regclient-0.11.3.drv",
+      "derivation": "/nix/store/izfvwvaq8cpqwjh19nbf19xql326m2kl-regclient-0.11.3.drv",
       "description": "Docker and OCI Registry Client in Go and tooling using those libraries",
       "install_id": "regctl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "regclient-0.11.3",
       "pname": "regctl",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:04:46.228990Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:53:55.266765Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -1134,10 +1152,10 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/hnpnyyzwr0c5zrjxm31b22dj896w4c86-regclient-0.11.3",
-        "regbot": "/nix/store/7s25ygqmqhlhvd4y6rcadpxl2q0h046y-regclient-0.11.3-regbot",
-        "regctl": "/nix/store/9qmldw1962d5ygigham78y537ya801bk-regclient-0.11.3-regctl",
-        "regsync": "/nix/store/ax5ywnp01ddii9kj85jjgy01bp63w5in-regclient-0.11.3-regsync"
+        "out": "/nix/store/52hkii24k4j50j7dkk9yffg0gjl98dvf-regclient-0.11.3",
+        "regbot": "/nix/store/hgafcihmsizl9bgmvk4bgl58jpqh9ad5-regclient-0.11.3-regbot",
+        "regctl": "/nix/store/kd7613nhvnglym31xcqxv23256axnrjh-regclient-0.11.3-regctl",
+        "regsync": "/nix/store/v77517shg2bldh1fvvm4089v6r4kknmc-regclient-0.11.3-regsync"
       },
       "system": "aarch64-darwin",
       "group": "regctl",
@@ -1146,18 +1164,19 @@
     {
       "attr_path": "regctl",
       "broken": false,
-      "derivation": "/nix/store/src4y6m2fn56i2k9dl9vrpfcj1i47w2c-regclient-0.11.3.drv",
+      "derivation": "/nix/store/bjb81c0q1xyfvkh11rm6ajl55g51f627-regclient-0.11.3.drv",
       "description": "Docker and OCI Registry Client in Go and tooling using those libraries",
       "install_id": "regctl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "regclient-0.11.3",
       "pname": "regctl",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:38:34.406301Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:44:11.328634Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -1166,10 +1185,10 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/4s4rjr4bln3c4sbl8i11ajgkwwj017bb-regclient-0.11.3",
-        "regbot": "/nix/store/zlmksyxlr6c8gvg79m8p1r5r79f9m3m4-regclient-0.11.3-regbot",
-        "regctl": "/nix/store/i3qb4ib2f4qpfd57wqjsmhx3msly6s1g-regclient-0.11.3-regctl",
-        "regsync": "/nix/store/n0bi4q1y5k3hn6cxmp2v6m8924y1wgfr-regclient-0.11.3-regsync"
+        "out": "/nix/store/c3ja1pmdifdj58habljw3xnvpl9ip9w9-regclient-0.11.3",
+        "regbot": "/nix/store/0xr32dbmj18p59y0nlcypv9zvkm22fzi-regclient-0.11.3-regbot",
+        "regctl": "/nix/store/xvw57b87hqs66vacgls8if6b5vxwcrpi-regclient-0.11.3-regctl",
+        "regsync": "/nix/store/wr4sl44m2l6myxvz46jan6i6scg30nb7-regclient-0.11.3-regsync"
       },
       "system": "aarch64-linux",
       "group": "regctl",
@@ -1178,18 +1197,19 @@
     {
       "attr_path": "regctl",
       "broken": false,
-      "derivation": "/nix/store/kwrwmjn8rxy90x9b6rnv58khp58p3k4j-regclient-0.11.3.drv",
+      "derivation": "/nix/store/swjhvh9154jpkn7qahjncc8dbadadwhh-regclient-0.11.3.drv",
       "description": "Docker and OCI Registry Client in Go and tooling using those libraries",
       "install_id": "regctl",
       "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
       "name": "regclient-0.11.3",
       "pname": "regctl",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T07:46:46.474721Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:11:59.172396Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
@@ -1198,10 +1218,10 @@
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/gz39lw2q23wr2fq0a2b2ifvwwg0qrn43-regclient-0.11.3",
-        "regbot": "/nix/store/9jdaxy6nsgfid4zz35snak9a1vn8wrdm-regclient-0.11.3-regbot",
-        "regctl": "/nix/store/lva00kkyakbjqh49z6lbcjh654q645ax-regclient-0.11.3-regctl",
-        "regsync": "/nix/store/jk1nw518j3v3pcbqcdbn8jbslldy6mrf-regclient-0.11.3-regsync"
+        "out": "/nix/store/gdg3a4km6hm6d42y1y92smr6758ss14z-regclient-0.11.3",
+        "regbot": "/nix/store/gsyz5iv0mbwn34dcwhk3232hyckgxqgd-regclient-0.11.3-regbot",
+        "regctl": "/nix/store/pw6x51341c94f1hq48h409j018x75j87-regclient-0.11.3-regctl",
+        "regsync": "/nix/store/8kyzj19whcb1ah1cdd4xbgbkxf8csm7s-regclient-0.11.3-regsync"
       },
       "system": "x86_64-linux",
       "group": "regctl",
@@ -1222,8 +1242,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": true,
@@ -1253,8 +1273,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": true,
@@ -1284,8 +1304,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": true,
@@ -1315,8 +1335,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1346,8 +1366,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1377,8 +1397,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1408,8 +1428,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1439,8 +1459,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1470,8 +1490,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1501,8 +1521,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1532,8 +1552,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1565,8 +1585,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1598,8 +1618,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1631,8 +1651,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1662,8 +1682,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1693,8 +1713,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1724,8 +1744,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1755,8 +1775,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1786,8 +1806,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1817,8 +1837,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1848,8 +1868,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1880,8 +1900,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1912,8 +1932,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1944,8 +1964,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -1977,8 +1997,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2010,8 +2030,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2043,8 +2063,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2079,8 +2099,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2115,8 +2135,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2151,8 +2171,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2182,8 +2202,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2213,8 +2233,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2244,8 +2264,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2275,8 +2295,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2306,8 +2326,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2337,8 +2357,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2368,8 +2388,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2399,8 +2419,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2430,8 +2450,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2463,8 +2483,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2496,8 +2516,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2529,8 +2549,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2563,8 +2583,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2597,8 +2617,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2631,8 +2651,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2662,8 +2682,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2693,8 +2713,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2724,8 +2744,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2755,8 +2775,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2786,8 +2806,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2817,8 +2837,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2848,8 +2868,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2879,8 +2899,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2910,8 +2930,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2941,8 +2961,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -2972,8 +2992,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3003,8 +3023,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3034,8 +3054,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3065,8 +3085,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3096,8 +3116,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3127,8 +3147,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3158,8 +3178,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3189,8 +3209,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3220,8 +3240,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3251,8 +3271,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3282,8 +3302,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3313,8 +3333,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3344,8 +3364,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3375,8 +3395,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3406,8 +3426,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3437,8 +3457,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3468,8 +3488,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3499,8 +3519,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3530,8 +3550,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3566,8 +3586,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3602,8 +3622,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3638,8 +3658,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3669,8 +3689,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3700,8 +3720,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3731,8 +3751,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3765,8 +3785,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3799,8 +3819,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3833,8 +3853,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3868,8 +3888,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3903,8 +3923,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3938,8 +3958,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -3969,8 +3989,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4000,8 +4020,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4031,8 +4051,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4062,8 +4082,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4093,8 +4113,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4124,8 +4144,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4155,8 +4175,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4186,8 +4206,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4217,8 +4237,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4248,8 +4268,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4279,8 +4299,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4310,8 +4330,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4341,8 +4361,8 @@
       "rev_date": "2025-01-21T14:28:11Z",
       "scrape_date": "2025-01-23T00:15:48Z",
       "stabilities": [
-        "unstable",
         "staging",
+        "unstable",
         "stable"
       ],
       "unfree": false,
@@ -4372,7 +4392,9 @@
       "rev_date": "2026-04-18T21:33:21Z",
       "scrape_date": "2026-04-21T06:06:04.862047Z",
       "stabilities": [
-        "unstable"
+        "staging",
+        "unstable",
+        "stable"
       ],
       "unfree": false,
       "version": "2022-11-01",
@@ -4401,7 +4423,9 @@
       "rev_date": "2026-04-18T21:33:21Z",
       "scrape_date": "2026-04-21T06:40:17.423818Z",
       "stabilities": [
-        "unstable"
+        "staging",
+        "unstable",
+        "stable"
       ],
       "unfree": false,
       "version": "2022-11-01",
@@ -4430,7 +4454,9 @@
       "rev_date": "2026-04-18T21:33:21Z",
       "scrape_date": "2026-04-21T07:48:35.975741Z",
       "stabilities": [
-        "unstable"
+        "staging",
+        "unstable",
+        "stable"
       ],
       "unfree": false,
       "version": "2022-11-01",
@@ -4447,27 +4473,28 @@
     {
       "attr_path": "yq-go",
       "broken": false,
-      "derivation": "/nix/store/lcsn3i2wwa12cwxiiffw1027fi5a1xh3-yq-go-4.52.5.drv",
+      "derivation": "/nix/store/2kw6kwmpd7z8w658mw31z8685rywfcdk-yq-go-4.53.2.drv",
       "description": "Portable command-line YAML processor",
       "install_id": "yq",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "yq-go-4.52.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "name": "yq-go-4.53.2",
       "pname": "yq-go",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:06:06.082281Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T19:55:17.193989Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "4.52.5",
+      "version": "4.53.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/p2c2wwxns1n6w151c0cvlhmsg82rn3wl-yq-go-4.52.5"
+        "out": "/nix/store/l71i1w1yp0n8hbc5kxn7c4zliw2zfgag-yq-go-4.53.2"
       },
       "system": "aarch64-darwin",
       "group": "yq",
@@ -4476,27 +4503,28 @@
     {
       "attr_path": "yq-go",
       "broken": false,
-      "derivation": "/nix/store/rlc99m9gk7252gh3fgpa9lnlphhgp6b8-yq-go-4.52.5.drv",
+      "derivation": "/nix/store/jv50s6x87c85nvyxv9rkpsggdichkkxj-yq-go-4.53.2.drv",
       "description": "Portable command-line YAML processor",
       "install_id": "yq",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "yq-go-4.52.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "name": "yq-go-4.53.2",
       "pname": "yq-go",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T06:40:19.338743Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T20:45:53.055342Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "4.52.5",
+      "version": "4.53.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/lnm08wjicdm5a0ry3ijwalskxrgigczq-yq-go-4.52.5"
+        "out": "/nix/store/kjxyjgagpg303nc5r3qrg6vsaxg55v5a-yq-go-4.53.2"
       },
       "system": "aarch64-linux",
       "group": "yq",
@@ -4505,27 +4533,28 @@
     {
       "attr_path": "yq-go",
       "broken": false,
-      "derivation": "/nix/store/68kn0iwya1h3rgfhx8dq7v1bq26pz3lf-yq-go-4.52.5.drv",
+      "derivation": "/nix/store/7z6ydmzj9k4g4qs60j0ijbx59nr1mny1-yq-go-4.53.2.drv",
       "description": "Portable command-line YAML processor",
       "install_id": "yq",
       "license": "[ MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "name": "yq-go-4.52.5",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "name": "yq-go-4.53.2",
       "pname": "yq-go",
-      "rev": "b12141ef619e0a9c1c84dc8c684040326f27cdcc",
-      "rev_count": 982522,
-      "rev_date": "2026-04-18T21:33:21Z",
-      "scrape_date": "2026-04-21T07:48:38.087654Z",
+      "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
+      "rev_count": 987561,
+      "rev_date": "2026-04-27T05:36:01Z",
+      "scrape_date": "2026-04-29T23:13:46.928488Z",
       "stabilities": [
+        "staging",
         "unstable"
       ],
       "unfree": false,
-      "version": "4.52.5",
+      "version": "4.53.2",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "out": "/nix/store/b72l95minifsrvdmrwwjzdl1fn7spfdf-yq-go-4.52.5"
+        "out": "/nix/store/carfqfrwa2am86fm7ms8xp9bb5bh6jmv-yq-go-4.53.2"
       },
       "system": "x86_64-linux",
       "group": "yq",
