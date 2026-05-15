@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Try extra hard to run a program without it discovering the dGPU, to make it
+# not only select the iGPU, but also prevent it from waking the dGPU
+# unnecessarily.
+
+export DXVK_FILTER_DEVICE_NAME="AMD Radeon 890M Graphics (RADV STRIX1)"
+export VKD3D_FILTER_DEVICE_NAME="AMD Radeon 890M Graphics (RADV STRIX1)"
+export MESA_VK_DEVICE_SELECT="1002:150e"
+export __GLX_VENDOR_LIBRARY_NAME="mesa"
+export __EGL_VENDOR_LIBRARY_FILENAMES="/usr/share/glvnd/egl_vendor.d/50_mesa.json"
+export __NV_PRIME_RENDER_OFFLOAD="0"
+export __VK_LAYER_NV_optimus="non_NVIDIA_only"
+export LIBVA_DRIVER_NAME="radeonsi"
+export VDPAU_DRIVER="va_gl"
+export WLR_RENDER_DRM_DEVICE="/dev/dri/by-path/pci-0000:67:00.0-render"
+export VK_DRIVER_FILES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+export DRI_PRIME=0
+
+exec "$@"
