@@ -83,5 +83,6 @@ yq.pkg-group = "yq"
 yq.pkg-path = "yq-go"
 
 [options]
+activate.mode = "run"
 allow.unfree = true
 systems = ["aarch64-darwin", "aarch64-linux", "x86_64-linux"]
