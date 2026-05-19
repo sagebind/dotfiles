@@ -29,9 +29,11 @@
   "edit_predictions": {
     "ollama": {
       "api_url": "http://ollama.lan.internal:11434",
-      "model": "hf.co/darrowoflykos/zeta-2-Q8_0-GGUF:Q8_0",
+      "model": "hf.co/adilkairolla/zeta-2.1-GGUF:Q4_K_M",
+      "prompt_format": "zeta2_1",
+      "max_output_tokens": 512,
     },
-    "provider": "copilot",
+    "provider": "ollama",
   },
   "ensure_final_newline_on_save": true,
   "file_types": {
