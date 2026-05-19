@@ -40,3 +40,8 @@ sudo:
 ifeq ($(OS),linux)
 	sudo -v
 endif
+
+.PHONY: flox-upgrade-commit
+flox-upgrade-commit:
+	flox upgrade
+	git commit -m "flox upgrade" -- "$(CURDIR)/home/.flox"
