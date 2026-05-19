@@ -4,6 +4,7 @@
 .settings
 .tags*
 .idea/codeStyles
+.idea/db-forest-config.xml
 .idea/dbnavigator.xml
 .idea/dataSources*
 .idea/dataSources.local.xml
