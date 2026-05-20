@@ -1,3 +1,10 @@
+spawn-sh-at-startup "~/.config/niri/scripts/wallpaper.fish"
+
 overview {
     backdrop-color "#000000"
+}
+
+layer-rule {
+    match namespace="^phonto$"
+    place-within-backdrop true
 }
