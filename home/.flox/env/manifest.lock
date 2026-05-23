@@ -4,7 +4,10 @@
     "schema-version": "1.10.0",
     "install": {
       "_7zz-rar": {
-        "pkg-path": "_7zz-rar"
+        "pkg-path": "_7zz-rar",
+        "systems": [
+          "x86_64-linux"
+        ]
       },
       "ansible": {
         "pkg-path": "ansible",
@@ -1207,68 +1210,6 @@
       },
       "system": "x86_64-linux",
       "group": "regctl",
-      "priority": 5
-    },
-    {
-      "attr_path": "_7zz-rar",
-      "broken": false,
-      "derivation": "/nix/store/4f9gi03ix947adr5rki4sm08iahwdivh-7zz-24.09.drv",
-      "description": "Command line archiver utility",
-      "install_id": "_7zz-rar",
-      "license": "[ LGPL-2.0-or-later, BSD-3-Clause, Unfree ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "7zz-24.09",
-      "pname": "_7zz-rar",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "unstable",
-        "staging",
-        "stable"
-      ],
-      "unfree": true,
-      "version": "24.09",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/vhqqk4diqqd71a5krb4sbyxim7fdz7qj-7zz-24.09"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "_7zz-rar",
-      "broken": false,
-      "derivation": "/nix/store/mll8pq1g4kr7b0hhj21zx2jvdw6v2yg2-7zz-24.09.drv",
-      "description": "Command line archiver utility",
-      "install_id": "_7zz-rar",
-      "license": "[ LGPL-2.0-or-later, BSD-3-Clause, Unfree ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "7zz-24.09",
-      "pname": "_7zz-rar",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "unstable",
-        "staging",
-        "stable"
-      ],
-      "unfree": true,
-      "version": "24.09",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/md455ks2yhvb66pv1xdfh9pn28m4hd18-7zz-24.09"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
       "priority": 5
     },
     {

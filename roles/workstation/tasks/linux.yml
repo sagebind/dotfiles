@@ -1,4 +1,5 @@
 - name: Add myself to "input" group to allow unprivileged uinput tools
+  become: true
   ansible.builtin.user:
     name: stephen
     groups: input
@@ -8,34 +9,8 @@
   when: ansible_facts['pkg_mgr'] == 'dnf5'
   import_tasks: fedora.yml
 
-- name: Install Flatpak applications
-  community.general.flatpak:
-    name:
-      - app.drey.EarTag
-      - ca.littlesvr.asunder
-      - com.github.rafostar.Clapper
-      - com.github.tchx84.Flatseal
-      - com.github.wwmm.easyeffects
-      - com.ranfdev.DistroShelf
-      - com.usebottles.bottles
-      - es.danirod.Cartero
-      - io.github.dweymouth.supersonic
-      - io.github.kolunmi.Bazaar
-      - md.obsidian.Obsidian
-      - org.keepassxc.KeePassXC
-      - org.localsend.localsend_app
-      - org.mozilla.Thunderbird
-      - org.onlyoffice.desktopeditors
-    method: user
-    state: present
-
-- name: Remove unused applications
-  community.general.flatpak:
-    name:
-      # Flatpak doesn't work with KeePassXC extension.
-      - org.mozilla.firefox
-    method: system
-    state: absent
+- name: Install Flatpak apps
+  import_tasks: flatpak.yml
 
 - name: Configure Nautilus
   import_role:

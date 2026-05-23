@@ -8,7 +8,19 @@ Configuration is managed using a simple [Makefile] which wraps around [GNU Stow]
 
 To use these dotfiles, simply clone this repo and run `make` in the project folder to install the dotfiles. Files that apply to all systems are in the `home` package while platform-specific configuration is in a `home.$OS` package. The Makefile will automatically select the appropriate packages that should be installed.
 
-The Makefile also provides a few other useful targets as well to automate other tasks related to dotfiles and machine setup.
+This can be as simple as:
+
+```sh
+git clone https://github.com/sagebind/dotfiles ~/.dotfiles
+cd ~/.dotfiles
+make
+```
+
+The Makefile also provides a few other useful targets as well to automate other tasks related to dotfiles and machine setup. If this is for a brand new machine I am setting up, you can have it also generate a new SSH keypair for connecting to GitHub, and other useful steps, by running:
+
+```sh
+make new-machine
+```
 
 ## History
 
@@ -19,7 +31,6 @@ The ability to use Git to revert to prior versions of configuration proved to be
 ## License
 
 All files unless otherwise bundled with a separate license are available under the MIT license. See the [LICENSE] file for details.
-
 
 [Fish Shell]: https://fishshell.com
 [GNU Stow]: https://www.gnu.org/software/stow/

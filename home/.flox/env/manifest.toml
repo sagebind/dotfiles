@@ -2,6 +2,7 @@ schema-version = "1.10.0"
 
 [install]
 _7zz-rar.pkg-path = "_7zz-rar"
+_7zz-rar.systems = ["x86_64-linux"]
 ansible.outputs = "all"
 ansible.pkg-group = "ansible"
 ansible.pkg-path = "ansible"

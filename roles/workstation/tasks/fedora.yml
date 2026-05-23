@@ -1,22 +1,7 @@
-- name: Enable VSCode repo
-  become: true
-  ansible.builtin.copy:
-    dest: /etc/yum.repos.d/vscode.repo
-    content: |
-      [code]
-      name=Visual Studio Code
-      baseurl=https://packages.microsoft.com/yumrepos/vscode
-      enabled=1
-      autorefresh=1
-      type=rpm-md
-      gpgcheck=1
-      gpgkey=https://packages.microsoft.com/keys/microsoft.asc
-
 - name: Install desired packages
   become: true
   ansible.builtin.dnf:
     name:
-      - code
       - distrobox
       - firefox
       - fish

@@ -6,5 +6,8 @@
     - workstation
     - role: pluto
       when: ansible_facts['product_name'] == 'TUXEDO InfinityBook Max 15 AMD Gen10'
+    - role: zoran
+      when: >-
+        'asahi' in ansible_facts['kernel']
     - role: acquia
       when: ansible_facts['product_name'] == 'MacBookPro18,2'

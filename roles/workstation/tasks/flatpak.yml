@@ -1,0 +1,48 @@
+- name: Ensure Flathub is available for user installs
+  community.general.flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+    method: user
+
+- name: Install system Flatpak applications
+  community.general.flatpak:
+    name:
+      - io.github.kolunmi.Bazaar
+    method: system
+    state: present
+
+- name: Install user Flatpak applications
+  community.general.flatpak:
+    name:
+      - app.drey.EarTag
+      - ca.littlesvr.asunder
+      - com.github.rafostar.Clapper
+      - com.github.tchx84.Flatseal
+      - com.github.wwmm.easyeffects
+      - com.ranfdev.DistroShelf
+      - es.danirod.Cartero
+      - io.github.dweymouth.supersonic
+      - md.obsidian.Obsidian
+      - org.keepassxc.KeePassXC
+      - org.localsend.localsend_app
+      - org.onlyoffice.desktopeditors
+    method: user
+    state: present
+
+- name: Install x64-only user Flatpak applications
+  when: ansible_facts["architecture"] == "x86_64"
+  community.general.flatpak:
+    name:
+      - com.usebottles.bottles
+      - org.mozilla.Thunderbird
+    method: user
+    state: present
+
+- name: Remove unused applications
+  community.general.flatpak:
+    name:
+      # Flatpak doesn't work with KeePassXC extension.
+      - org.mozilla.firefox
+    method: system
+    state: absent
