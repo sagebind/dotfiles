@@ -45,4 +45,7 @@
   ansible.builtin.dnf:
     name:
       - mako
+      - waybar
     state: absent
+
+- import_tasks: systemd.yml
