@@ -4,6 +4,18 @@
 # not only select the iGPU, but also prevent it from waking the dGPU
 # unnecessarily.
 
+# First, check if this machine even has a dGPU. If it doesn't, just run the
+# requested command as there is nothing to do.
+if test (count /sys/class/drm/renderD*) -lt 2
+  exec $argv
+end
+
+# To continue, we need bwrap. Complain if we don't have it.
+if not type -fq bwrap
+  echo "bwrap is not installed"
+  exit 1
+end
+
 # export DXVK_FILTER_DEVICE_NAME="AMD Radeon 890M Graphics (RADV STRIX1)"
 # export VKD3D_FILTER_DEVICE_NAME="AMD Radeon 890M Graphics (RADV STRIX1)"
 # export MESA_VK_DEVICE_SELECT="1002:150e"
@@ -35,8 +47,17 @@ if test -z "$fresh_cache_file"
   find /usr -name '*nvidia*.so*' -type f 2> /dev/null > $cache_file_path
 end
 
+# Find the NVIDIA DRM device, so we can block it.
+set -l dri_name (path basename /sys/module/nvidia/drivers/pci:nvidia/*/drm/renderD*)
+set -l dri_path /dev/dri/$dri_name
+
+# Start building the args we will pass to bwrap.
 set -l bwrap_args --dev-bind / /
 
+# Map DRI path to empty file.
+set -a bwrap_args --bind /dev/zero $dri_path
+
+# Map libraries to empty files.
 while read -l file
   set -a bwrap_args --bind /dev/zero $file
 end < $cache_file_path
