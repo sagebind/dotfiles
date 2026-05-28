@@ -1,5 +1,6 @@
 OS := $(shell uname | tr '[:upper:]' '[:lower:]')
 PACKAGES := home "home.$(OS)"
+ANSIBLE_PLAYBOOK := bootstrap.yml
 
 .PHONY: apply
 apply: link bootstrap
@@ -27,11 +28,15 @@ unfold-dirs:
 
 .PHONY: bootstrap
 bootstrap:
-	ansible-playbook -v --ask-become-pass bootstrap.yml
+	ansible-playbook -v --ask-become-pass $(ANSIBLE_PLAYBOOK)
 
 .PHONY: bootstrap-dry-run
 bootstrap-dry-run:
-	ansible-playbook -v --ask-become-pass --check --diff bootstrap.yml
+	ansible-playbook -v --ask-become-pass --check --diff $(ANSIBLE_PLAYBOOK)
+
+.PHONY: zed
+zed:
+	ansible-playbook -v $(ANSIBLE_PLAYBOOK) --tags zed
 
 .PHONY: ansible-facts
 ansible-facts:
