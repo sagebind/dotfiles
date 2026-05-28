@@ -1,0 +1,11 @@
+[tools]
+"nix:stow" = "latest"
+pipx = "latest"
+
+[tools."pipx:ansible"]
+version = "latest"
+uvx = "false"
+pipx_args = "--include-deps"
+
+[tasks.zed]
+run = "ansible-playbook -v bootstrap.yml --tags zed"
