@@ -35,7 +35,7 @@
   community.general.flatpak:
     name:
       - com.usebottles.bottles
-      - org.mozilla.Thunderbird
+      - org.mozilla.thunderbird
     method: user
     state: present
 
