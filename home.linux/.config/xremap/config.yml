@@ -22,3 +22,11 @@ keymap:
     window:
       only:
         - / Mozilla Firefox$/
+
+  - name: Obsidian close settings with ESC
+    remap:
+      Esc:
+        launch: ["niri", "msg", "action", "close-window"]
+    window:
+      only:
+        - /^Settings - .+ - Obsidian \d+\.\d+\.\d+$/

@@ -111,6 +111,17 @@ window-rule {
 }
 
 window-rule {
+    match app-id="obsidian" title="^Settings - "
+    open-floating true
+    default-column-width {
+        proportion 0.6;
+    }
+    default-window-height {
+        proportion 0.8;
+    }
+}
+
+window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
     default-floating-position x=16 y=16 relative-to="bottom-right"
