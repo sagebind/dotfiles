@@ -48,7 +48,7 @@ window-rule {
 
 // Windows that should be fully maximized by default.
 window-rule {
-    match app-id="^resolve$" title="^DaVinci Resolve Studio"
+    match app-id="^resolve(-real)?$" title="^DaVinci Resolve Studio"
     match app-id="^com.moonlight_stream.Moonlight$"
     match app-id="^Openterface Mini-KVM$"
     open-maximized-to-edges true
@@ -73,7 +73,7 @@ window-rule {
 
 // DaVinci Resolve splash screen.
 window-rule {
-    match app-id="^resolve$" title="^resolve$"
+    match app-id="^resolve(-real)?$" title="^resolve$"
     open-floating true
     focus-ring {
         off
@@ -106,7 +106,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="^resolve$" title="^Preferences$"
+    match app-id="^resolve(-real)?$" title="^Preferences$"
     open-floating false
 }
 
