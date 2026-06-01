@@ -122,6 +122,11 @@
       "id": "doNotDisturb",
       "enabled": true,
       "width": 50
+    },
+    {
+      "id": "plugin_dankKDEConnect",
+      "enabled": true,
+      "width": 50
     }
   ],
   "showWorkspaceIndex": false,
