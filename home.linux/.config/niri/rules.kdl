@@ -73,7 +73,7 @@ window-rule {
 
 // DaVinci Resolve splash screen.
 window-rule {
-    match app-id="^resolve(-real)?$" title="^resolve$"
+    match app-id="^resolve(-real)?$" title="^resolve(-real)?$"
     open-floating true
     focus-ring {
         off
