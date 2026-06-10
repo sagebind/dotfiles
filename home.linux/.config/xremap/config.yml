@@ -30,3 +30,11 @@ keymap:
     window:
       only:
         - /^Settings - .+ - Obsidian \d+\.\d+\.\d+$/
+
+  - name: Nicer quit
+    remap:
+      Super-Q: Ctrl-Q
+    application:
+      only:
+        - /^resolve(-real)?$/
+        - dev.zed.Zed
