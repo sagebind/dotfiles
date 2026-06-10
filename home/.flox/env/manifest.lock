@@ -113,10 +113,6 @@
       "miniserve": {
         "pkg-path": "miniserve"
       },
-      "mise": {
-        "pkg-path": "mise",
-        "pkg-group": "mise"
-      },
       "mitmproxy": {
         "pkg-path": "mitmproxy",
         "pkg-group": "mitmproxy",
@@ -758,93 +754,6 @@
       },
       "system": "x86_64-linux",
       "group": "k9s",
-      "priority": 5
-    },
-    {
-      "attr_path": "mise",
-      "broken": false,
-      "derivation": "/nix/store/w4vwx47lb1lxmj3kb2f6p4cwkm8751pf-mise-2026.5.15.drv",
-      "description": "Front-end to your dev env",
-      "install_id": "mise",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=a799d3e3886da994fa307f817a6bc705ae538eeb",
-      "name": "mise-2026.5.15",
-      "pname": "mise",
-      "rev": "a799d3e3886da994fa307f817a6bc705ae538eeb",
-      "rev_count": 1011622,
-      "rev_date": "2026-06-06T12:30:50Z",
-      "scrape_date": "2026-06-08T03:14:42.807702Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026.5.15",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/l5j7p5lrgrzkx08fz046a7m255ai153a-mise-2026.5.15"
-      },
-      "system": "aarch64-darwin",
-      "group": "mise",
-      "priority": 5
-    },
-    {
-      "attr_path": "mise",
-      "broken": false,
-      "derivation": "/nix/store/q1h9pnhnc3mjxwhcl4a9yc60d4i6zv7v-mise-2026.5.15.drv",
-      "description": "Front-end to your dev env",
-      "install_id": "mise",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=a799d3e3886da994fa307f817a6bc705ae538eeb",
-      "name": "mise-2026.5.15",
-      "pname": "mise",
-      "rev": "a799d3e3886da994fa307f817a6bc705ae538eeb",
-      "rev_count": 1011622,
-      "rev_date": "2026-06-06T12:30:50Z",
-      "scrape_date": "2026-06-08T03:47:28.537891Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026.5.15",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/a8ypxn4569w4jyd12s86nqb0bbh6p2jr-mise-2026.5.15"
-      },
-      "system": "aarch64-linux",
-      "group": "mise",
-      "priority": 5
-    },
-    {
-      "attr_path": "mise",
-      "broken": false,
-      "derivation": "/nix/store/d83rkg08qi1iqdmq79zq09mk54pqhvsd-mise-2026.5.15.drv",
-      "description": "Front-end to your dev env",
-      "install_id": "mise",
-      "license": "MIT",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=a799d3e3886da994fa307f817a6bc705ae538eeb",
-      "name": "mise-2026.5.15",
-      "pname": "mise",
-      "rev": "a799d3e3886da994fa307f817a6bc705ae538eeb",
-      "rev_count": 1011622,
-      "rev_date": "2026-06-06T12:30:50Z",
-      "scrape_date": "2026-06-08T04:53:55.496564Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "2026.5.15",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/zz610z809lkmx8nfiad8l5x7c2wqhiim-mise-2026.5.15"
-      },
-      "system": "x86_64-linux",
-      "group": "mise",
       "priority": 5
     },
     {
