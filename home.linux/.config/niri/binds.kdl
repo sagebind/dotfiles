@@ -15,7 +15,7 @@ binds {
         spawn "vicinae" "toggle";
     }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
-        spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history";
+        spawn "vicinae" "vicinae://launch/clipboard/history";
     }
     Mod+Comma hotkey-overlay-title="Settings" {
         spawn "dms" "ipc" "call" "settings" "toggle";
