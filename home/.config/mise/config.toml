@@ -7,7 +7,6 @@ edit = "latest"
 eza = "latest"
 gh = "latest"
 "github:Nukesor/pueue" = "latest"
-"github:canop/broot" = "latest"
 "github:complexlogic/rsgain" = "latest"
 "github:ip7z/7zip" = "latest"
 "github:skim-rs/skim" = "latest"
@@ -17,6 +16,11 @@ kubectl = "latest"
 regctl = "latest"
 tokei = "latest"
 yq = "latest"
+
+[tools."github:canop/broot"]
+version = "1.57.0"
+platforms.linux-x64.bin_path = "x86_64-unknown-linux-musl"
+platforms.macos-arm64.bin_path = "aarch64-apple-darwin"
 
 [tools."github:benibela/xidel"]
 version = "0.9.8"
