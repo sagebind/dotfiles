@@ -145,6 +145,9 @@
       - context: (Editor && (showing_code_actions || showing_completions))
         unbind:
           ctrl-p: editor::ContextMenuPrevious
+      - context: ProjectPanel
+        bindings:
+          ctrl-shift-n: project_panel::NewDirectory
   ansible.builtin.copy:
     content: "{{ keymap | to_nice_json(indent=2) }}\n"
     dest: "~/.config/zed/keymap.json"
