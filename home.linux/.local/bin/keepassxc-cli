@@ -1,0 +1,3 @@
+#!/usr/bin/env fish
+
+command flatpak run --command=keepassxc-cli org.keepassxc.KeePassXC $argv
