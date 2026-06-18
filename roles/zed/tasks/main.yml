@@ -1,8 +1,9 @@
-- name: Install Zed for Linux using script
-  when: ansible_facts['system'] == "Linux"
-  ansible.builtin.command:
-    cmd: "curl -f https://zed.dev/install.sh | sh"
-    creates: "~/.local/bin/zed"
+- name: Install Zed for Fedora using Terra
+  when: ansible_facts['pkg_mgr'] == 'dnf5'
+  become: true
+  ansible.builtin.dnf:
+    name:
+      - zed
 
 - name: Install Zed for macOS using Homebrew
   when: ansible_facts['os_family'] == "Darwin"
