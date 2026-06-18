@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+
+flox upgrade
+git commit -m "flox upgrade" -- "$PWD/home/.flox"

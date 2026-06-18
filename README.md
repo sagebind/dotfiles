@@ -4,22 +4,16 @@ This is my dotfiles repo, which contains configuration files for my personal com
 
 ## Using it
 
-Configuration is managed using a simple [Makefile] which wraps around [GNU Stow]. Most of the top-level directories in this repo are Stow [_packages_](https://www.gnu.org/software/stow/manual/html_node/Installing-Packages.html). These packages are modular and can be optionally installed for different machines.
+Everything is managed using [mise](https://mise.jdx.dev), which provides dependencies used to setup dotfiles as well as globally available tools. First requirement is to install mise on your machine in whatever way works.
 
-To use these dotfiles, simply clone this repo and run `make` in the project folder to install the dotfiles. Files that apply to all systems are in the `home` package while platform-specific configuration is in a `home.$OS` package. The Makefile will automatically select the appropriate packages that should be installed.
+Once mise is installed, clone this repo and run `mise run apply` in the repo root to install the dotfiles, which wraps [GNU Stow](https://www.gnu.org/software/stow/). Most of the top-level directories in this repo are Stow [_packages_](https://www.gnu.org/software/stow/manual/html_node/Installing-Packages.html). These packages are modular and can be optionally installed for different machines. Files that apply to all systems are in the `home` package while platform-specific configuration is in a `home.$OS` package. The install script will automatically select the appropriate packages that should be installed.
 
 This can be as simple as:
 
 ```sh
 git clone https://github.com/sagebind/dotfiles ~/.dotfiles
 cd ~/.dotfiles
-make
-```
-
-The Makefile also provides a few other useful targets as well to automate other tasks related to dotfiles and machine setup. If this is for a brand new machine I am setting up, you can have it also generate a new SSH keypair for connecting to GitHub, and other useful steps, by running:
-
-```sh
-make new-machine
+mise run apply
 ```
 
 ## History
@@ -30,9 +24,4 @@ The ability to use Git to revert to prior versions of configuration proved to be
 
 ## License
 
-All files unless otherwise bundled with a separate license are available under the MIT license. See the [LICENSE] file for details.
-
-[Fish Shell]: https://fishshell.com
-[GNU Stow]: https://www.gnu.org/software/stow/
-[LICENSE]: LICENSE
-[Makefile]: https://www.gnu.org/software/make/
+All files unless otherwise bundled with a separate license are available under the MIT license. See the [LICENSE](LICENSE) file for details.

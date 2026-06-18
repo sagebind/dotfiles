@@ -1,0 +1,12 @@
+#!/usr/bin/env fish
+
+set -l packages home
+
+# Determine extra stow packages to install
+if status build-info | string match -q '*apple*'
+  set -a packages home.darwin
+else if status build-info | string match -q '*linux*'
+  set -a packages home.linux
+end
+
+stow --restow --dir="$PWD" $packages
