@@ -1,3 +1,3 @@
 function dotfiles -d "Apply dotfiles again"
-  make -C (dotfiles-path) $argv
+  mise -C (dotfiles-path) run apply
 end

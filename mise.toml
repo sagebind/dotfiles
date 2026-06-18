@@ -12,3 +12,6 @@ ansible-facts = "ansible localhost -m ansible.builtin.setup"
 bootstrap = "ansible-playbook -v --ask-become-pass bootstrap.yml"
 bootstrap-dry-run = "ansible-playbook -v --ask-become-pass --check --diff bootstrap.yml"
 zed = "ansible-playbook -v bootstrap.yml --tags zed"
+
+[tasks.apply]
+depends = ["bootstrap", "link"]
