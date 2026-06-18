@@ -1,0 +1,51 @@
+#!/usr/bin/env fish
+
+function fedora-version
+  grep VERSION_ID /etc/os-release | cut -d= -f2
+end
+
+if grep -q TUXEDO /sys/devices/virtual/dmi/id/chassis_vendor
+  # Enable Tuxedo repository
+  if type -fq dnf
+    if not rpm -q tuxedo-repository > /dev/null
+      set -l version_id (fedora-version)
+      set -l url_root https://rpm.tuxedocomputers.com/fedora/(fedora-version)/x86_64/base/
+      set -l filename (curl -s $url_root | rg -m1 -o 'tuxedo-repository-[\\-\\d\\w\\.]+' | head -n1)
+      curl -L -o /tmp/tuxedo-repository.rpm "$url_root/$filename"
+      sudo dnf install /tmp/tuxedo-repository.rpm
+      rm /tmp/tuxedo-repository.rpm
+    end
+
+    if not rpm -q tuxedo-drivers > /dev/null
+      sudo dnf install tuxedo-drivers
+    end
+  end
+end
+
+if grep -q "TUXEDO InfinityBook Max 15 AMD Gen10" /sys/devices/virtual/dmi/id/product_name
+  echo "detected device: pluto"
+
+  if not type -fq tlp
+    echo "installing tlp"
+
+    echo "removing packages that conflict with TLP"
+    sudo dnf remove power-profiles-daemon tuned tuned-ppd
+
+    echo "installing tlp repository"
+    curl -L -o /tmp/tlp-release.rpm https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc(fedora-version).noarch.rpm
+    sudo dnf install /tmp/tlp-release.rpm
+    rm /tmp/tlp-release.rpm
+
+    echo "installing tlp"
+    sudo dnf install tlp tlp-pd
+  end
+
+  if not type -fq coolercontrold
+    echo "installing CoolerControl"
+
+    dnf copr list | grep -q codifryed/CoolerControl
+      or sudo dnf copr enable codifryed/CoolerControl
+
+    sudo dnf install coolercontrol
+  end
+end

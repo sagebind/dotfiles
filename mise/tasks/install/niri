@@ -1,0 +1,12 @@
+#!/usr/bin/env fish
+
+for copr in ulysg/xwayland-satellite blakegardner/xremap yalter/niri avengemedia/dms
+  dnf copr list | grep -q $copr
+    or sudo dnf copr enable $copr
+end
+
+sudo dnf install dms niri nodejs vicinae wayland-utils xremap-niri
+sudo dnf remove mako waybar
+
+systemctl enable --user dms.service
+systemctl enable --user vicinae.service
