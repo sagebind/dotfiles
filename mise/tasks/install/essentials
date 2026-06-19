@@ -1,0 +1,32 @@
+#!/usr/bin/env fish
+
+if type -fq flatpak
+  # Ensure Flathub is available for user installs
+  if flatpak remotes --user | not grep -q flathub
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+  end
+
+  flatpak install --noninteractive --system io.github.kolunmi.Bazaar
+  flatpak install --noninteractive --user \
+    app.drey.EarTag \
+    ca.littlesvr.asunder \
+    com.github.rafostar.Clapper \
+    com.github.tchx84.Flatseal \
+    com.github.wwmm.easyeffects \
+    com.ranfdev.DistroShelf \
+    es.danirod.Cartero \
+    io.github.dweymouth.supersonic \
+    md.obsidian.Obsidian \
+    org.keepassxc.KeePassXC \
+    org.localsend.localsend_app \
+    org.onlyoffice.desktopeditors
+
+  # Install x64-only user Flatpak applications
+  if status build-info | grep -q x86_64
+    flatpak install --noninteractive --user com.usebottles.bottles org.mozilla.thunderbird
+  end
+
+  # Flatpak doesn't work with KeePassXC extension.
+  flatpak uninstall --noninteractive --system org.mozilla.firefox
+    or true
+end

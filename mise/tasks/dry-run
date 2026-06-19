@@ -9,4 +9,4 @@ else if status build-info | string match -q '*linux*'
   set -a packages home.linux
 end
 
-stow --simulate --stow --dir="$PWD" $packages
+stow --simulate --restow --dir="$PWD/packages" $packages

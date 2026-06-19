@@ -2,6 +2,7 @@
 "nix:stow" = "latest"
 pipx = "latest"
 ripgrep = "latest"
+yq = "latest"
 
 [tools."pipx:ansible"]
 version = "latest"

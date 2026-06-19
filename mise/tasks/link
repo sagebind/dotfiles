@@ -16,4 +16,4 @@ chmod +x home.linux/.local/bin/*
 find $packages -type f -name .no-stow-folding -exec sh -c 'mkdir -pv ~/$(dirname "$1" | cut -d/ -f2-)' sh '{}' ';'
 
 # Run stow to make symlinks
-stow --stow --dir="$PWD" $packages
+stow --stow --dir="$PWD/packages" $packages

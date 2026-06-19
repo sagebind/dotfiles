@@ -1,0 +1,11 @@
+#!/usr/bin/env fish
+
+if type -fq zed
+  exit
+end
+
+if type -fq dnf
+  sudo dnf install zed
+else if type -fq brew
+  brew install --cask zed
+end

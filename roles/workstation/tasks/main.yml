@@ -1,7 +1,0 @@
-- name: macOS configuration
-  when: ansible_facts['os_family'] == "Darwin"
-  import_tasks: macos.yml
-
-- name: Linux configuration
-  when: ansible_facts['system'] == "Linux"
-  import_tasks: linux.yml
