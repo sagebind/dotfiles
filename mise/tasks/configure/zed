@@ -2,9 +2,6 @@
 
 set -l config_dir "$HOME/.config/zed"
 
-# Apply the keymap
-yq . config/zed/keymap.yaml -ojson > $config_dir/keymap.json
-
 # If the settings file does not exist, write it, otherwise we need to merge it.
 if test -f ~/.config/zed/settings.json
   yq eval-all '. as $item ireduce ({}; . * $item)' $config_dir/settings.json config/zed/settings.yaml --input-format yaml --output-format json > $config_dir/settings.json.tmp

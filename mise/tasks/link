@@ -13,7 +13,7 @@ end
 chmod +x packages/home.linux/.local/bin/*
 
 # Unfold any directories containing .no-stow-folding
-find $packages -type f -name .no-stow-folding -exec sh -c 'mkdir -pv ~/$(dirname "$1" | cut -d/ -f2-)' sh '{}' ';'
+find packages/$packages -type f -name .no-stow-folding -exec sh -c 'mkdir -pv ~/$(dirname "$1" | cut -d/ -f2-)' sh '{}' ';'
 
 # Run stow to make symlinks
 stow --stow --dir="$PWD/packages" $packages

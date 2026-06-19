@@ -1,7 +1,2 @@
 #!/usr/bin/env fish
-#MISE depends=["link", "configure:macos", "configure:zed"]
-
-if type -fq dconf; and type -fq nautilus
-  echo "dconf and Nautilus detected, configuring Nautilus"
-  dconf load /org/gnome/nautilus/ < config/dconf/nautilus.ini
-end
+#MISE depends=["link", "configure:*"]

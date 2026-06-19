@@ -1,0 +1,6 @@
+#!/usr/bin/env fish
+
+if type -fq dconf; and type -fq nautilus
+  echo "dconf and Nautilus detected, configuring Nautilus"
+  dconf load /org/gnome/nautilus/ < config/dconf/nautilus.ini
+end

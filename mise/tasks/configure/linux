@@ -1,0 +1,10 @@
+#!/usr/bin/env fish
+
+if status build-info | not string match -q '*linux*'
+  exit 0
+end
+
+if groups | not string match -q '*input*'
+  echo "adding myself to input group to allow unprivileged uinput use"
+  sudo usermod -a -G input (whoami)
+end

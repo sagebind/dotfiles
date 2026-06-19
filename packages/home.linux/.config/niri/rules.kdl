@@ -125,7 +125,11 @@ window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
     default-floating-position x=16 y=16 relative-to="bottom-right"
+    max-height 200
     geometry-corner-radius 12
+    border {
+        off
+    }
     focus-ring {
         off
     }

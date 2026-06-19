@@ -1,16 +1,4 @@
 [tools]
 "nix:stow" = "latest"
-pipx = "latest"
 ripgrep = "latest"
 yq = "latest"
-
-[tools."pipx:ansible"]
-version = "latest"
-uvx = "false"
-pipx_args = "--include-deps"
-
-[tasks]
-ansible-facts = "ansible localhost -m ansible.builtin.setup"
-bootstrap = "ansible-playbook -v --ask-become-pass bootstrap.yml"
-bootstrap-dry-run = "ansible-playbook -v --ask-become-pass --check --diff bootstrap.yml"
-zed = "ansible-playbook -v bootstrap.yml --tags zed"

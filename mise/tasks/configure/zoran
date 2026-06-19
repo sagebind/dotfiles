@@ -1,0 +1,7 @@
+#!/usr/bin/env fish
+
+if uname -a | not string match -q '*asahi*'
+  exit 0
+end
+
+mise run install:niri
