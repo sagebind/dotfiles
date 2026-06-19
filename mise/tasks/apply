@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
-#MISE depends=["link"]
+#MISE depends=["link", "configure:macos", "configure:zed"]
 
 if type -fq dconf; and type -fq nautilus
   echo "dconf and Nautilus detected, configuring Nautilus"

@@ -10,7 +10,7 @@ else if status build-info | string match -q '*linux*'
 end
 
 # Set executable bit on binaries that might be missing it
-chmod +x home.linux/.local/bin/*
+chmod +x packages/home.linux/.local/bin/*
 
 # Unfold any directories containing .no-stow-folding
 find $packages -type f -name .no-stow-folding -exec sh -c 'mkdir -pv ~/$(dirname "$1" | cut -d/ -f2-)' sh '{}' ';'
