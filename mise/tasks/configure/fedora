@@ -25,7 +25,6 @@ set -l desired_packages \
   solaar \
   speech-dispatcher \
   speech-dispatcher-utils \
-  stow \
   vdpauinfo \
   wireguard-tools \
   wl-clipboard \
@@ -61,9 +60,9 @@ for package in $undesired_packages
 end
 
 if set -q packages_to_install[1]
-  sudo dnf install $packages_to_install
+  sudo dnf install -y $packages_to_install
 end
 
 if set -q packages_to_remove[1]
-  sudo dnf remove $packages_to_remove
+  sudo dnf remove -y $packages_to_remove
 end
