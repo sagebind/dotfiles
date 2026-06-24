@@ -22,6 +22,7 @@ brew "stow"
 brew "watch"
 brew "zenity"
 
+cask "block-goose"
 cask "cartero"
 cask "font-hurmit-nerd-font"
 cask "font-symbols-only-nerd-font"
@@ -31,3 +32,30 @@ cask "localsend"
 cask "middleclick"
 cask "supersonic"
 cask "swiftbar"
+
+if `hostname`.strip == "MacBook-Pro-StephenCoakley"
+  tap "buildkite/buildkite"
+  tap "hashicorp/tap"
+  tap "ngrok/ngrok"
+  tap "pulumi/tap"
+  tap "widen/brew", "git@github.com:Widen/brew"
+
+  brew "aws-vault"
+  brew "bash" # Get a newer Bash version needed for running some scripts
+  brew "cmake"
+  brew "groovy"
+  brew "jpeg-xl"
+  brew "mise"
+  brew "node"
+  brew "webp"
+  brew "yarn"
+  brew "buildkite/buildkite/bk@3", trusted: true
+  brew "hashicorp/tap/nomad", trusted: true
+  brew "hashicorp/tap/packer", trusted: true
+  brew "pulumi/tap/pulumi", trusted: true
+  brew "widen/brew/local-nginx", trusted: true
+  brew "widen/brew/slipway", trusted: true
+
+  cask "1password-cli"
+  cask "ngrok"
+end
