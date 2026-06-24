@@ -1,0 +1,12 @@
+[
+  {
+    "allow_concurrent_runs": false,
+    "command": "fish -c \"gh browse ${ZED_RELATIVE_FILE}\"",
+    "hide": "on_success",
+    "label": "github browse",
+    "reveal": "never",
+    "reveal_target": "dock",
+    "shell": "system",
+    "use_new_terminal": false,
+  },
+]
