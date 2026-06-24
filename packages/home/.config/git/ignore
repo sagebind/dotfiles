@@ -21,3 +21,4 @@
 .idea/watcherTasks.xml
 *.http
 *.pem
+.idea/gradle.xml

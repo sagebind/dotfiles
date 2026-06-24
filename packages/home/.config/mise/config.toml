@@ -3,7 +3,6 @@ experimental = true
 
 [tools]
 atuin = "latest"
-edit = "latest"
 eza = "latest"
 gh = "latest"
 "github:Nukesor/pueue" = "latest"
@@ -15,9 +14,14 @@ k9s = "latest"
 kubectl = "latest"
 regctl = "latest"
 ripgrep = "latest"
+rush = "latest"
 tokei = "latest"
 usage = "latest"
 yq = "latest"
+
+[tools.edit]
+version = "latest"
+os = ["linux"]
 
 [tools."github:canop/broot"]
 version = "1.57.0"
