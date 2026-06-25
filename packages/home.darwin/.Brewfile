@@ -3,6 +3,7 @@ tap "SoloAntonio/cartero"
 tap "supersonic-app/supersonic"
 
 brew "btop"
+brew "colima"
 brew "coreutils"
 brew "docker-buildx"
 brew "docker-compose"
