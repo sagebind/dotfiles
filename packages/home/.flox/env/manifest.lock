@@ -18,9 +18,6 @@
       "hurmit": {
         "pkg-path": "nerd-fonts.hurmit"
       },
-      "kubectx": {
-        "pkg-path": "kubectx"
-      },
       "kubernetes-helm": {
         "pkg-path": "kubernetes-helm"
       },
@@ -47,20 +44,12 @@
         "pkg-path": "qpdf",
         "outputs": "all"
       },
-      "regctl": {
-        "pkg-path": "regctl",
-        "pkg-group": "regctl",
-        "outputs": "all"
-      },
       "sox": {
         "pkg-path": "sox",
         "outputs": "all"
       },
       "tio": {
         "pkg-path": "tio"
-      },
-      "uv": {
-        "pkg-path": "uv"
       },
       "wev": {
         "pkg-path": "wev",
@@ -175,102 +164,6 @@
       },
       "system": "x86_64-linux",
       "group": "devenv",
-      "priority": 5
-    },
-    {
-      "attr_path": "regctl",
-      "broken": false,
-      "derivation": "/nix/store/wcla0yn71g9ij71szjb2afwwvhl9bch0-regclient-0.11.3.drv",
-      "description": "Docker and OCI Registry Client in Go and tooling using those libraries",
-      "install_id": "regctl",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "regclient-0.11.3",
-      "pname": "regctl",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T03:14:47.916439Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.3",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/880dpjp50qh7q4xr81m48736rm89db27-regclient-0.11.3",
-        "regbot": "/nix/store/82k3q7bvizx867nn82z1a19r1sxx5418-regclient-0.11.3-regbot",
-        "regctl": "/nix/store/rw10qmsgf990b988xzrybimha43b1hck-regclient-0.11.3-regctl",
-        "regsync": "/nix/store/4rfyvywkpr58mafidm45ndbhfq73y118-regclient-0.11.3-regsync"
-      },
-      "system": "aarch64-darwin",
-      "group": "regctl",
-      "priority": 5
-    },
-    {
-      "attr_path": "regctl",
-      "broken": false,
-      "derivation": "/nix/store/vzcym9r3ll7dbgl7v307ybwz30pm51ik-regclient-0.11.3.drv",
-      "description": "Docker and OCI Registry Client in Go and tooling using those libraries",
-      "install_id": "regctl",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "regclient-0.11.3",
-      "pname": "regctl",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T03:46:12.023122Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.3",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/njqk5bfywbpywcvwd4k1sdpdw208g8f0-regclient-0.11.3",
-        "regbot": "/nix/store/494ymg3fz18380djiyakrgphb5haghzs-regclient-0.11.3-regbot",
-        "regctl": "/nix/store/hyp27y4dm0smqgfgdndj0jmjcwrlnv6c-regclient-0.11.3-regctl",
-        "regsync": "/nix/store/2hk1gmlkf15ksjv8nsvz81q1bxmz0llq-regclient-0.11.3-regsync"
-      },
-      "system": "aarch64-linux",
-      "group": "regctl",
-      "priority": 5
-    },
-    {
-      "attr_path": "regctl",
-      "broken": false,
-      "derivation": "/nix/store/9s9975zzsrafr1y1xj68m9ardp65gpm8-regclient-0.11.3.drv",
-      "description": "Docker and OCI Registry Client in Go and tooling using those libraries",
-      "install_id": "regctl",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "name": "regclient-0.11.3",
-      "pname": "regctl",
-      "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-      "rev_count": 1017464,
-      "rev_date": "2026-06-16T02:33:49Z",
-      "scrape_date": "2026-06-17T04:49:14.035485Z",
-      "stabilities": [
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.11.3",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/fhci973ny17m1adcjlfy5111z4nn4a84-regclient-0.11.3",
-        "regbot": "/nix/store/f0bpffcx9gr7bz7dzbdgl19bdfr5ylwx-regclient-0.11.3-regbot",
-        "regctl": "/nix/store/hmaxbxlp743a2fyqzbs0a9k1yggz7sl7-regclient-0.11.3-regctl",
-        "regsync": "/nix/store/dsywzjy7pqkgd1wdmdhsf2ldv0yxm87x-regclient-0.11.3-regsync"
-      },
-      "system": "x86_64-linux",
-      "group": "regctl",
       "priority": 5
     },
     {
@@ -565,99 +458,6 @@
       ],
       "outputs": {
         "out": "/nix/store/8ja37bmvzmmm8l3mapqd0h2qg8l8ky0l-nerd-fonts-hurmit-3.3.0+2.0"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "kubectx",
-      "broken": false,
-      "derivation": "/nix/store/xg36l1sykb3zaxnkhi7q00cyv2rw3ax4-kubectx-0.9.5.drv",
-      "description": "Fast way to switch between clusters and namespaces in kubectl!",
-      "install_id": "kubectx",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "kubectx-0.9.5",
-      "pname": "kubectx",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.9.5",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/qdw308qk5h9zl0skci8p4hr3z13id0bj-kubectx-0.9.5"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "kubectx",
-      "broken": false,
-      "derivation": "/nix/store/lbp3h14pdy7y4nlmd049dg1vj5ny2sif-kubectx-0.9.5.drv",
-      "description": "Fast way to switch between clusters and namespaces in kubectl!",
-      "install_id": "kubectx",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "kubectx-0.9.5",
-      "pname": "kubectx",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.9.5",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/hx8rrzf830c7h3dsqy9nmbhb8lqj9lzm-kubectx-0.9.5"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "kubectx",
-      "broken": false,
-      "derivation": "/nix/store/y4dx3s488q8mx4g9db79858f8cqh3dxm-kubectx-0.9.5.drv",
-      "description": "Fast way to switch between clusters and namespaces in kubectl!",
-      "install_id": "kubectx",
-      "license": "Apache-2.0",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "kubectx-0.9.5",
-      "pname": "kubectx",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.9.5",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/3fgr9xvrkz57gxawpmaf4vjzwlxh09hq-kubectx-0.9.5"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -1491,99 +1291,6 @@
       ],
       "outputs": {
         "out": "/nix/store/z37xsrrj0b7gdzmmndq2n5w2717488vl-tio-3.8"
-      },
-      "system": "x86_64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/wyg9d88mvys5xdsah461q5zqmnk8gsjf-uv-0.5.21.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "uv-0.5.21",
-      "pname": "uv",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.5.21",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/2mamk7zzhmw281fbcqqpk3rc0nzbjjsk-uv-0.5.21"
-      },
-      "system": "aarch64-darwin",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/niy0nyyicg5kwp76w9iql4vva4i03qpy-uv-0.5.21.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "uv-0.5.21",
-      "pname": "uv",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.5.21",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/i4jazf289dqbwsm5vc7rw1ipbpg4c69b-uv-0.5.21"
-      },
-      "system": "aarch64-linux",
-      "group": "toplevel",
-      "priority": 5
-    },
-    {
-      "attr_path": "uv",
-      "broken": false,
-      "derivation": "/nix/store/6kg42ly5rgj2phj09wdq4s9v8kw5xkcn-uv-0.5.21.drv",
-      "description": "Extremely fast Python package installer and resolver, written in Rust",
-      "install_id": "uv",
-      "license": "[ Apache-2.0, MIT ]",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "name": "uv-0.5.21",
-      "pname": "uv",
-      "rev": "9e4d5190a9482a1fb9d18adf0bdb83c6e506eaab",
-      "rev_count": 742084,
-      "rev_date": "2025-01-21T14:28:11Z",
-      "scrape_date": "2025-01-23T00:15:48Z",
-      "stabilities": [
-        "stable",
-        "staging",
-        "unstable"
-      ],
-      "unfree": false,
-      "version": "0.5.21",
-      "outputs_to_install": [
-        "out"
-      ],
-      "outputs": {
-        "out": "/nix/store/nz27sgwbp817m50iz07iw3bqxmsbpcpi-uv-0.5.21"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
