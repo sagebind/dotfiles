@@ -1,3 +1,6 @@
+[dotfiles]
+"~/.editorconfig" = ".editorconfig"
+
 [tools]
 "pipx:stow-python" = "2.4.1"
 ripgrep = "latest"

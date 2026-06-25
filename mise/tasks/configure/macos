@@ -4,16 +4,9 @@
 status build-info | string match -q '*apple*'
   or exit 0
 
-# Dark mode
-defaults write -g AppleInterfaceStyle -string Dark
-
-# Show folders before files in Finder
-defaults write com.apple.finder _FXSortFoldersFirst -bool "true"
-
 # Install Homebrew if it isn't already
 if not type -fq brew
-  set -x NONINTERACTIVE 1
-  /bin/bash -c (curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+  mise run install:homebrew
 end
 
 # Install software defined in Brewfile
