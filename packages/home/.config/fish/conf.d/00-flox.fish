@@ -5,7 +5,7 @@ if type -fq flox
     or status build-info | string match -q '*apple*'
   end
 
-  if not set -q FLOX_ENV
+  if not set -q FLOX_ENV; and test -d ~/.flox
     flox activate -d ~ -m run | source
   end
 

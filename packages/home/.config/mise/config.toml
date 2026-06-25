@@ -1,7 +1,9 @@
 [bootstrap.packages]
 "dnf:distrobox" = "latest"
+"dnf:exiftool" = "latest"
 "dnf:firefox" = "latest"
 "dnf:fish" = "latest"
+"dnf:flac" = "latest"
 "dnf:gnome-network-displays" = "latest"
 "dnf:google-droid-fonts-all" = "latest"
 "dnf:ImageMagick-heic" = "latest"
@@ -11,17 +13,21 @@
 "dnf:make" = "latest"
 "dnf:msedit" = "latest"
 "dnf:NetworkManager-tui" = "latest"
+"dnf:nvtop" = "latest"
 "dnf:pcaro-hermit-fonts" = "latest"
 "dnf:powertop" = "latest"
 "dnf:prename" = "latest"
 "dnf:rclone" = "latest"
 "dnf:seafile-client" = "latest"
 "dnf:solaar" = "latest"
+"dnf:sox" = "latest"
 "dnf:speech-dispatcher" = "latest"
 "dnf:speech-dispatcher-utils" = "latest"
+"dnf:tio" = "latest"
 "dnf:vdpauinfo" = "latest"
 "dnf:wireguard-tools" = "latest"
 "dnf:wl-clipboard" = "latest"
+"dnf:xdg-terminal-exec" = "latest"
 "dnf:ydotool" = "latest"
 
 [settings]
@@ -53,6 +59,7 @@ rush = "latest"
 tokei = "latest"
 usage = "latest"
 yq = "latest"
+"github:sharkdp/numbat" = "latest"
 
 [tools.edit]
 os = ["linux"]

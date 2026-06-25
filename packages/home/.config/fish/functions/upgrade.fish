@@ -2,6 +2,11 @@
 # when a simple shell script will do.
 
 function upgrade -d "Install system package updates"
+  if type -fq mise
+    echo "Upgrading Mise packages..."
+    mise upgrade
+  end
+
   if type -fq flox
     echo "Upgrading Flox packages..."
     flox upgrade

@@ -48,6 +48,7 @@ if `hostname`.strip == "MacBook-Pro-StephenCoakley"
   brew "jpeg-xl"
   brew "mise"
   brew "node"
+  brew "qpdf"
   brew "webp"
   brew "yarn"
   brew "buildkite/buildkite/bk@3", trusted: true
