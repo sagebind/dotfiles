@@ -1,3 +1,29 @@
+[bootstrap.packages]
+"dnf:distrobox" = "latest"
+"dnf:firefox" = "latest"
+"dnf:fish" = "latest"
+"dnf:gnome-network-displays" = "latest"
+"dnf:google-droid-fonts-all" = "latest"
+"dnf:ImageMagick-heic" = "latest"
+"dnf:kitty" = "latest"
+"dnf:libva-utils" = "latest"
+"dnf:lsof" = "latest"
+"dnf:make" = "latest"
+"dnf:msedit" = "latest"
+"dnf:NetworkManager-tui" = "latest"
+"dnf:pcaro-hermit-fonts" = "latest"
+"dnf:powertop" = "latest"
+"dnf:prename" = "latest"
+"dnf:rclone" = "latest"
+"dnf:seafile-client" = "latest"
+"dnf:solaar" = "latest"
+"dnf:speech-dispatcher" = "latest"
+"dnf:speech-dispatcher-utils" = "latest"
+"dnf:vdpauinfo" = "latest"
+"dnf:wireguard-tools" = "latest"
+"dnf:wl-clipboard" = "latest"
+"dnf:ydotool" = "latest"
+
 [settings]
 experimental = true
 
