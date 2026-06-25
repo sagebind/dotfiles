@@ -9,4 +9,12 @@
     "shell": "system",
     "use_new_terminal": false,
   },
+  {
+    "command": "mise exec -- yq -i \"sort_keys(..)\" \"$ZED_FILE\"",
+    "hide": "on_success",
+    "label": "sort keys",
+    "reveal": "never",
+    "reveal_target": "dock",
+    "shell": "system",
+  },
 ]

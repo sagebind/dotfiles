@@ -3,12 +3,19 @@ experimental = true
 
 [tools]
 atuin = "latest"
+"cargo:gifski" = "latest"
+choose = "latest"
+crane = "latest"
+difftastic = "latest"
+direnv = "latest"
 eza = "latest"
 gh = "latest"
 "github:Nukesor/pueue" = "latest"
 "github:complexlogic/rsgain" = "latest"
 "github:ip7z/7zip" = "latest"
 "github:skim-rs/skim" = "latest"
+"github:svenstaro/miniserve" = "latest"
+"github:umlx5h/gtrash" = "0.0.6"
 jq = "latest"
 k9s = "latest"
 kubectl = "latest"
@@ -21,15 +28,21 @@ usage = "latest"
 yq = "latest"
 
 [tools.edit]
-version = "latest"
 os = ["linux"]
+version = "latest"
+
+[tools."github:benibela/xidel"]
+os = ["linux/x64"]
+version = "0.9.8"
+
+[tools."github:benibela/xidel".platforms.linux-x64]
+asset_pattern = "xidel-*.linux64.tar.gz"
 
 [tools."github:canop/broot"]
 version = "1.57.0"
-platforms.linux-x64.bin_path = "x86_64-unknown-linux-musl"
-platforms.macos-arm64.bin_path = "aarch64-apple-darwin"
 
-[tools."github:benibela/xidel"]
-version = "0.9.8"
-os = ["linux/x64"]
-platforms.linux-x64.asset_pattern = "xidel-*.linux64.tar.gz"
+[tools."github:canop/broot".platforms.linux-x64]
+bin_path = "x86_64-unknown-linux-musl"
+
+[tools."github:canop/broot".platforms.macos-arm64]
+bin_path = "aarch64-apple-darwin"

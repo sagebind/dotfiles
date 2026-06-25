@@ -1,48 +1,26 @@
 schema-version = "1.10.0"
 
 [install]
-_7zz-rar.pkg-path = "_7zz-rar"
-_7zz-rar.systems = ["x86_64-linux"]
-choose.pkg-path = "choose"
-crane.outputs = "all"
-crane.pkg-path = "crane"
 devenv.pkg-group = "devenv"
 devenv.pkg-path = "devenv"
-difftastic.pkg-path = "difftastic"
-direnv.pkg-group = "direnv"
-direnv.pkg-path = "direnv"
-doggo.pkg-path = "doggo"
-espanso-wayland.pkg-path = "espanso-wayland"
-espanso-wayland.systems = ["x86_64-linux"]
 exiftool.outputs = "all"
 exiftool.pkg-path = "exiftool"
 flac.outputs = "all"
 flac.pkg-path = "flac"
-gifski.pkg-path = "gifski"
-gtrash.pkg-path = "gtrash"
-gtrash.systems = ["aarch64-linux", "x86_64-linux"]
 hurmit.pkg-path = "nerd-fonts.hurmit"
 kubectx.pkg-path = "kubectx"
 kubernetes-helm.pkg-path = "kubernetes-helm"
 libinput-gestures.pkg-path = "libinput-gestures"
 libinput-gestures.systems = ["aarch64-linux", "x86_64-linux"]
-miniserve.pkg-path = "miniserve"
-mitmproxy.outputs = "all"
-mitmproxy.pkg-group = "mitmproxy"
-mitmproxy.pkg-path = "mitmproxy"
 mkvtoolnix-cli.pkg-path = "mkvtoolnix-cli"
 numbat.pkg-path = "numbat"
 nvtop.pkg-path = "nvtop"
 pdfcpu.pkg-path = "pdfcpu"
-pueue.pkg-path = "pueue"
 qpdf.outputs = "all"
 qpdf.pkg-path = "qpdf"
 regctl.outputs = "all"
 regctl.pkg-group = "regctl"
 regctl.pkg-path = "regctl"
-rsgain.pkg-path = "rsgain"
-skim.outputs = "all"
-skim.pkg-path = "skim"
 sox.outputs = "all"
 sox.pkg-path = "sox"
 tio.pkg-path = "tio"
@@ -51,8 +29,6 @@ wev.pkg-path = "wev"
 wev.systems = ["x86_64-linux"]
 xdg-terminal-exec.pkg-path = "xdg-terminal-exec"
 xdg-terminal-exec.systems = ["x86_64-linux"]
-xidel.pkg-group = "xidel"
-xidel.pkg-path = "xidel"
 
 [options]
 activate.mode = "run"
