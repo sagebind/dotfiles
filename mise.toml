@@ -1,5 +1,8 @@
 [tools]
-"aqua:fish-shell/fish-shell" = "latest"
 "pipx:stow-python" = "2.4.1"
 ripgrep = "latest"
 yq = "latest"
+
+[tools."aqua:fish-shell/fish-shell"]
+version = "latest"
+os = ["linux"]
