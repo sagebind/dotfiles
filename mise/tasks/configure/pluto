@@ -1,33 +1,28 @@
 #!/usr/bin/env fish
 
-function fedora-version
-  grep VERSION_ID /etc/os-release | cut -d= -f2
+if not grep -q "TUXEDO InfinityBook Max 15 AMD Gen10" /sys/devices/virtual/dmi/id/product_name
+  exit 0
 end
 
-if grep -q "TUXEDO InfinityBook Max 15 AMD Gen10" /sys/devices/virtual/dmi/id/product_name
-  echo "detected device: pluto"
+echo "detected device: pluto"
 
-  if not type -fq tlp
-    echo "installing tlp"
+mise run install:tlp
 
-    echo "removing packages that conflict with TLP"
-    sudo dnf remove power-profiles-daemon tuned tuned-ppd
+if not type -fq coolercontrold
+  echo "installing CoolerControl"
 
-    echo "installing tlp repository"
-    curl -L -o /tmp/tlp-release.rpm https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc(fedora-version).noarch.rpm
-    sudo dnf install /tmp/tlp-release.rpm
-    rm /tmp/tlp-release.rpm
+  dnf copr list | grep -q codifryed/CoolerControl
+    or sudo dnf copr enable codifryed/CoolerControl
 
-    echo "installing tlp"
-    sudo dnf install tlp tlp-pd
-  end
+  sudo dnf install coolercontrol
+end
 
-  if not type -fq coolercontrold
-    echo "installing CoolerControl"
+set -l cc_plugin_dir "$HOME/.local/src/tuxedo-infinitybook-gen10-cc-plugin"
 
-    dnf copr list | grep -q codifryed/CoolerControl
-      or sudo dnf copr enable codifryed/CoolerControl
+if not test -d $cc_plugin_dir
+  git clone https://github.com/sagebind/tuxedo-infinitybook-gen10-cc-plugin $cc_plugin_dir
 
-    sudo dnf install coolercontrol
+  if not test -f /etc/coolercontrol/plugins/tuxedo-infinitybook-gen10/manifest.toml
+    make -C $cc_plugin_dir install
   end
 end

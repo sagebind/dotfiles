@@ -8,3 +8,8 @@ if groups | not string match -q '*input*'
   echo "adding myself to input group to allow unprivileged uinput use"
   sudo usermod -a -G input (whoami)
 end
+
+# configure the sg module to load automatically
+if lsmod | not string match -q 'sg*'
+  echo sg | sudo tee /etc/modules-load.d/99-sg.conf
+end

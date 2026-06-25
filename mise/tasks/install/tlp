@@ -1,0 +1,20 @@
+#!/usr/bin/env fish
+
+function fedora-version
+  grep VERSION_ID /etc/os-release | cut -d= -f2
+end
+
+if not type -fq tlp
+  echo "installing tlp"
+
+  echo "removing packages that conflict with TLP"
+  sudo dnf remove power-profiles-daemon tuned tuned-ppd
+
+  echo "installing tlp repository"
+  curl -L -o /tmp/tlp-release.rpm https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc(fedora-version).noarch.rpm
+  sudo dnf install /tmp/tlp-release.rpm
+  rm /tmp/tlp-release.rpm
+
+  echo "installing tlp"
+  sudo dnf install tlp tlp-pd
+end
