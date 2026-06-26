@@ -45,9 +45,18 @@
 "dnf:xdg-terminal-exec" = "latest"
 "dnf:ydotool" = "latest"
 
-[bootstrap.macos.defaults]
-"com.apple.finder"._FXSortFoldersFirst = true
-NSGlobalDomain.AppleInterfaceStyle = "Dark"
+[bootstrap.macos.defaults."com.apple.desktopservices"]
+DSDontWriteNetworkStores = true
+
+[bootstrap.macos.defaults."com.apple.finder"]
+_FXShowPosixPathInTitle = true
+_FXSortFoldersFirst = true
+FXEnableExtensionChangeWarning = false
+ShowPathbar = true
+
+[bootstrap.macos.defaults.NSGlobalDomain]
+AppleInterfaceStyle = "Dark"
+AppleShowAllExtensions = true
 
 [settings]
 dotfiles.default_mode = "symlink"
