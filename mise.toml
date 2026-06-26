@@ -49,9 +49,6 @@
 "com.apple.finder"._FXSortFoldersFirst = true
 NSGlobalDomain.AppleInterfaceStyle = "Dark"
 
-[bootstrap.hooks]
-final = "mise run 'configure:*'"
-
 [settings]
 dotfiles.default_mode = "symlink"
 experimental = true
@@ -64,5 +61,11 @@ yq = "latest"
 version = "latest"
 os = ["linux"]
 
+[tasks.bootstrap]
+depends = ["configure:*"]
+
 [tasks."install:homebrew"]
 file = "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"
+
+[tasks."install:rustup"]
+file = "https://static.rust-lang.org/rustup/rustup-init.sh"

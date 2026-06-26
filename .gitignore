@@ -2,4 +2,3 @@ __pycache__
 *.pyc
 *.ignore
 /build
-/home.linux/.config/niri/dms
