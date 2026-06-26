@@ -101,6 +101,12 @@ cursor {
     xcursor-size 32
 }
 
+blur {
+    passes 4
+    offset 2
+    saturation 1.1
+}
+
 animations {
     workspace-switch {
         spring damping-ratio=0.80 stiffness=523 epsilon=0.0001

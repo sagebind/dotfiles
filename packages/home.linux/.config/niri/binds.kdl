@@ -78,7 +78,7 @@ binds {
     Mod+Shift+T { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+W { toggle-column-tabbed-display; }
-    Mod+M { maximize-window-to-edges; }
+    Mod+M hotkey-overlay-title="Toggle Maximize" { maximize-window-to-edges; }
 
     // === Focus Navigation ===
     Mod+Left { focus-column-left; }
