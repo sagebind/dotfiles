@@ -1,0 +1,9 @@
+[tools]
+"github:buildkite/buildkite-mcp-server" = "latest"
+
+[tools."http:helm2"]
+version = "2.16.2"
+url = "https://get.helm.sh/helm-v2.16.2-darwin-amd64.tar.gz"
+checksum = "sha256:8bee3a69bd873c09dd07dc12594837f03a13b443727c7ce76db7b779c4ee9794"
+rename_exe = "helm2"
+os = ["macos"]
