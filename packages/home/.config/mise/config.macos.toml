@@ -1,8 +1,0 @@
-[bootstrap.macos.defaults."com.apple.finder"]
-_FXSortFoldersFirst = true
-
-[bootstrap.macos.defaults.NSGlobalDomain]
-AppleInterfaceStyle = "Dark"
-
-[tasks."install:homebrew"]
-file = "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"

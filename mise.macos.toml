@@ -1,0 +1,7 @@
+[dotfiles]
+"~/.Brewfile" = "packages/home.darwin/.Brewfile"
+"~/.config/kitty/conf.d/*" = "packages/home.darwin/.config/kitty/conf.d/*"
+"~/Library/Application Support" = {
+    source = "packages/home.darwin/Library/Application Support",
+    mode = "symlink-each",
+}

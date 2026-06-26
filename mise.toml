@@ -1,11 +1,68 @@
 [dotfiles]
+"~/.cargo/config.toml" = "packages/home/.cargo/config.toml"
+"~/.config/atuin" = "packages/home/.config/atuin"
+"~/.config/broot/*" = "packages/home/.config/broot/*"
+"~/.config/fish/**/*.fish" = "packages/home/.config/fish/**/*.fish"
+"~/.config/gh/config.yml" = "packages/home/.config/gh/config.yml"
+"~/.config/git" = "packages/home/.config/git"
+"~/.config/k9s/skins/transparent.yaml" = "packages/home/.config/k9s/skins/transparent.yaml"
+"~/.config/kitty/kitty.conf" = "packages/home/.config/kitty/kitty.conf"
+"~/.config/mise" = "packages/home/.config/mise"
+"~/.config/organize" = "packages/home/.config/organize"
+"~/.config/tio" = "packages/home/.config/tio"
+"~/.config/zed/*" = "packages/home/.config/zed/*"
 "~/.editorconfig" = ".editorconfig"
 
+[bootstrap.packages]
+"dnf:distrobox" = "latest"
+"dnf:firefox" = "latest"
+"dnf:fish" = "latest"
+"dnf:flac" = "latest"
+"dnf:gnome-network-displays" = "latest"
+"dnf:google-droid-fonts-all" = "latest"
+"dnf:ImageMagick-heic" = "latest"
+"dnf:kitty" = "latest"
+"dnf:libva-utils" = "latest"
+"dnf:lsof" = "latest"
+"dnf:make" = "latest"
+"dnf:msedit" = "latest"
+"dnf:NetworkManager-tui" = "latest"
+"dnf:nvtop" = "latest"
+"dnf:pcaro-hermit-fonts" = "latest"
+"dnf:perl-Image-ExifTool" = "latest"
+"dnf:powertop" = "latest"
+"dnf:prename" = "latest"
+"dnf:rclone" = "latest"
+"dnf:seafile-client" = "latest"
+"dnf:solaar" = "latest"
+"dnf:sox" = "latest"
+"dnf:speech-dispatcher" = "latest"
+"dnf:speech-dispatcher-utils" = "latest"
+"dnf:tio" = "latest"
+"dnf:vdpauinfo" = "latest"
+"dnf:wireguard-tools" = "latest"
+"dnf:wl-clipboard" = "latest"
+"dnf:xdg-terminal-exec" = "latest"
+"dnf:ydotool" = "latest"
+
+[bootstrap.macos.defaults]
+"com.apple.finder"._FXSortFoldersFirst = true
+NSGlobalDomain.AppleInterfaceStyle = "Dark"
+
+[bootstrap.hooks]
+final = "mise run 'configure:*'"
+
+[settings]
+dotfiles.default_mode = "symlink"
+experimental = true
+
 [tools]
-"pipx:stow-python" = "2.4.1"
 ripgrep = "latest"
 yq = "latest"
 
 [tools."aqua:fish-shell/fish-shell"]
 version = "latest"
 os = ["linux"]
+
+[tasks."install:homebrew"]
+file = "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"

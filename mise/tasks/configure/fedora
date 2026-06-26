@@ -4,32 +4,6 @@ if not type -fq dnf
   exit 0
 end
 
-set -l desired_packages \
-  distrobox \
-  firefox \
-  fish \
-  gnome-network-displays \
-  google-droid-fonts-all \
-  ImageMagick-heic \
-  kitty \
-  libva-utils \
-  lsof \
-  make \
-  msedit \
-  NetworkManager-tui \
-  pcaro-hermit-fonts \
-  powertop \
-  prename \
-  rclone \
-  seafile-client \
-  solaar \
-  speech-dispatcher \
-  speech-dispatcher-utils \
-  vdpauinfo \
-  wireguard-tools \
-  wl-clipboard \
-  ydotool
-
 set -l undesired_packages \
   alacritty \
   brave-browser \
@@ -47,20 +21,10 @@ function package_is_installed -a name
   rpm -q $name > /dev/null
 end
 
-for package in $desired_packages
-  if not package_is_installed $package
-    set -a packages_to_install $package
-  end
-end
-
 for package in $undesired_packages
   if package_is_installed $package
     set -a packages_to_remove $package
   end
-end
-
-if set -q packages_to_install[1]
-  sudo dnf install -y $packages_to_install
 end
 
 if set -q packages_to_remove[1]
