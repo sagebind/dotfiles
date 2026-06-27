@@ -37,4 +37,3 @@ keymap:
     application:
       only:
         - /^resolve(-real)?$/
-        - dev.zed.Zed
