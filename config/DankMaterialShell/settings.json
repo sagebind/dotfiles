@@ -282,7 +282,7 @@
   "loginctlLockIntegration": true,
   "fadeToLockEnabled": false,
   "fadeToLockGracePeriod": 5,
-  "fadeToDpmsEnabled": true,
+  "fadeToDpmsEnabled": false,
   "fadeToDpmsGracePeriod": 5,
   "launchPrefix": "",
   "brightnessDevicePins": {},

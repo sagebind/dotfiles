@@ -57,5 +57,8 @@
   "dankKDEConnect": {
     "enabled": true,
     "selectedDeviceId": "49ecc7344ed11e619033b9c882bddb67"
+  },
+  "tlpPowerProfile": {
+    "enabled": false
   }
 }
