@@ -18,6 +18,13 @@ window-rule {
     clip-to-geometry true
 }
 
+// Vicinae settings should *not* float. Ideally it would be resizable too:
+// https://github.com/vicinaehq/vicinae/issues/1425
+window-rule {
+    match app-id="vicinae"
+    open-floating false
+}
+
 window-rule {
     match app-id=r#"^org\.gnome\."#
     draw-border-with-background false
