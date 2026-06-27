@@ -18,6 +18,11 @@ function upgrade -d "Install system package updates"
     brew upgrade
   end
 
+  if type -fq flatpak
+    echo "Upgrading Flatpak packages..."
+    flatpak update -y
+  end
+
   if type -fq nobara-sync
     echo "Upgrading Nobara packages..."
     nobara-sync cli
