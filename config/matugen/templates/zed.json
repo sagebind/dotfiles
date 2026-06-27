@@ -820,7 +820,7 @@
         "scrollbar.track.background": null,
         "scrollbar.track.border": "{{colors.outline_variant.dark.hex}}20",
         "editor.foreground": "{{colors.on_surface.dark.hex}}",
-        "editor.background": "{{colors.background.dark.hex}}E9",
+        "editor.background": "{{colors.background.dark.hex}}CC",
         "editor.gutter.background": "{{colors.surface_dim.dark.hex}}B6",
         "editor.subheader.background": "{{colors.surface.dark.hex}}B6",
         "editor.indent_guide": "{{colors.outline_variant.dark.hex}}22",
