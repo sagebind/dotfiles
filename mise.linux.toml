@@ -1,7 +1,6 @@
 [dotfiles]
 "~/.config/DankMaterialShell/*.json" = "config/DankMaterialShell/*.json"
 "~/.config/gamemode.ini" = "config/gamemode.ini"
-"~/.config/kitty/conf.d/linux.conf" = "config/kitty/conf.d/linux.conf"
 "~/.config/matugen" = "config/matugen"
 "~/.config/niri/*" = "config/niri/*"
 "~/.config/solaar" = "config/solaar"

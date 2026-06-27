@@ -1,6 +1,5 @@
 [dotfiles]
 "~/.Brewfile" = "config/.Brewfile"
-"~/.config/kitty/conf.d/macos.conf" = "config/kitty/conf.d/macos.conf"
 "~/Library/Application Support/k9s/skins/transparent.yaml" = "config/k9s/skins/transparent.yaml"
 "~/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/*" = "config/alfred/workflows/*"
 "~/Library/Application Support/SwiftBar/plugins/*" = "config/swiftbar/plugins/*"
