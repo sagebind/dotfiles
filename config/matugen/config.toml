@@ -4,3 +4,7 @@
 input_path = "~/.config/matugen/templates/pluto-kbd.txt"
 output_path = "~/.local/share/pluto-kbd.txt"
 post_hook = "~/.config/matugen/hooks/pluto-kbd.sh"
+
+[templates.zed]
+input_path = '~/.config/matugen/templates/zed.json'
+output_path = '~/.config/zed/themes/dank-zed-theme.json'
