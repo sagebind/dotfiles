@@ -11,3 +11,19 @@
 "~/.local/share/nautilus/scripts" = "config/nautilus/scripts"
 "~/.local/share/vicinae/scripts" = "config/vicinae/scripts"
 "~/Templates" = "config/nautilus/templates"
+
+[bootstrap.linux.systemd.units.keepassxc]
+description = "KeePassXC system tray service"
+wants = ["graphical-session.target"]
+after = ["graphical-session.target"]
+exec_start = "flatpak run org.keepassxc.KeePassXC --minimized"
+wanted_by = ["graphical-session.target"]
+
+[bootstrap.linux.systemd.units.kitty]
+description = "Kitty terminal (single-instance, hidden)"
+wants = ["graphical-session.target"]
+after = ["graphical-session.target"]
+exec_start = "/usr/bin/kitty --start-as=hidden --single-instance"
+restart = "on-failure"
+restart_sec = "2s"
+wanted_by = ["graphical-session.target"]
