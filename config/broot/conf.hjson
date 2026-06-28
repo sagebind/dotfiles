@@ -1,4 +1,4 @@
-default_flags: "-gp"
+default_flags: "-g"
 show_selection_mark: true
 quit_on_last_cancel: true
 content_search_max_file_size: 10MB
@@ -29,6 +29,9 @@ special_paths: {
         sum: "never"
     }
     "~/.config": {
+        show: "always"
+    }
+    "~/.dotfiles": {
         show: "always"
     }
 }

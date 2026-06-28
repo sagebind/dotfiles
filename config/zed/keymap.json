@@ -1,51 +1,22 @@
 [
   {
     "bindings": {
-      "ctrl-p": "file_finder::Toggle"
-    }
+      "ctrl-p": "file_finder::Toggle",
+      "ctrl-.": "tab_switcher::OpenInActivePane",
+    },
   },
   {
     "context": "Workspace",
     "unbind": {
-      "ctrl-e": "file_finder::Toggle"
-    }
+      "ctrl-e": "file_finder::Toggle",
+    },
   },
   {
     "context": "Pane",
     "bindings": {
       "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-shift-tab": "pane::ActivatePreviousItem"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "ctrl-up": "editor::MoveLineUp",
-      "ctrl-down": "editor::MoveLineDown"
-    }
-  },
-  {
-    "context": "(Editor && (showing_code_actions || showing_completions))",
-    "unbind": {
-      "ctrl-p": "editor::ContextMenuPrevious"
-    }
-  },
-  {
-    "context": "ProjectPanel",
-    "bindings": {
-      "ctrl-shift-n": "project_panel::NewDirectory"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "ctrl-shift-up": [
-        "editor::AddSelectionAbove",
-        {
-          "skip_soft_wrap": true
-        }
-      ]
-    }
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+    },
   },
   {
     "context": "Editor",
@@ -53,31 +24,61 @@
       "alt-shift-up": [
         "editor::AddSelectionAbove",
         {
-          "skip_soft_wrap": true
-        }
-      ]
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "ctrl-shift-down": [
-        "editor::AddSelectionBelow",
-        {
-          "skip_soft_wrap": true
-        }
-      ]
-    }
-  },
-  {
-    "context": "Editor",
-    "unbind": {
+          "skip_soft_wrap": true,
+        },
+      ],
       "alt-shift-down": [
         "editor::AddSelectionBelow",
         {
-          "skip_soft_wrap": true
-        }
-      ]
-    }
-  }
+          "skip_soft_wrap": true,
+        },
+      ],
+    },
+    "bindings": {
+      "ctrl-up": "editor::MoveLineUp",
+      "ctrl-down": "editor::MoveLineDown",
+      "ctrl-shift-up": [
+        "editor::AddSelectionAbove",
+        {
+          "skip_soft_wrap": true,
+        },
+      ],
+      "ctrl-shift-down": [
+        "editor::AddSelectionBelow",
+        {
+          "skip_soft_wrap": true,
+        },
+      ],
+    },
+  },
+  {
+    "context": "(Editor && (showing_code_actions || showing_completions))",
+    "unbind": {
+      "ctrl-p": "editor::ContextMenuPrevious",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-shift-n": "project_panel::NewDirectory",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-v": "terminal::Paste",
+    },
+  },
+  {
+    "context": "Terminal && selection",
+    "bindings": {
+      "ctrl-c": "terminal::Copy",
+    },
+  },
+  {
+    "context": "Terminal && screen == alt",
+    "bindings": {
+      "alt-enter": ["terminal::SendKeystroke", "alt-enter"],
+    },
+  },
 ]
