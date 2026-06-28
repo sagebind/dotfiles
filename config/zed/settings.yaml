@@ -36,7 +36,7 @@ linux:
   buffer_font_size: 15.0
   terminal:
     font_size: 15.0
-  ui_font_size: 18.0
+  ui_font_size: 17.0
 lsp_document_colors: inlay
 macos:
   buffer_font_size: 13.0
@@ -88,6 +88,7 @@ toolbar:
   breadcrumbs: false
   quick_actions: false
   selections_menu: false
+ui_font_family: Hermit
 window_decorations: client
 wrap_guides:
   - 80
