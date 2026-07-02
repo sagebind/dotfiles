@@ -115,6 +115,21 @@ rules:
           dest: ~/Seafile/Documents/Financial/Receipts/{python.strftime('%Y-%m-%d')} Reverb.pdf
           on_conflict: deduplicate
 
+  - locations:
+      - ~/Downloads
+      - ~/Seafile/Documents/Inbox
+    filters:
+      - extension: pdf
+      - name
+      - filecontent: Receipt|Invoice|INVOICE|ORDER
+      - filecontent: Stephen\s+Coakley
+      - filecontent: >-
+          \b(?P<month>\d{1,2})/(?P<day>\d{1,2})/(?P<year>\d{4})\b
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Receipts/{filecontent.year}-{filecontent.month.zfill(2)}-{filecontent.day.zfill(2)} {name}.pdf
+          on_conflict: deduplicate
+
   - locations: ~/Downloads
     filters:
       - name

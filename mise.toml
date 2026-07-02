@@ -39,6 +39,7 @@
 "dnf:sox" = "latest"
 "dnf:speech-dispatcher" = "latest"
 "dnf:speech-dispatcher-utils" = "latest"
+"dnf:tesseract" = "latest"
 "dnf:tio" = "latest"
 "dnf:vdpauinfo" = "latest"
 "dnf:wireguard-tools" = "latest"

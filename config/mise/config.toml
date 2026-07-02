@@ -22,7 +22,6 @@ jq = "latest"
 k9s = "latest"
 kubectl = "latest"
 kubectx = "latest"
-"pipx:organize-tool" = "latest"
 regctl = "latest"
 ripgrep = "latest"
 rush = "latest"
@@ -51,3 +50,15 @@ bin_path = "x86_64-unknown-linux-musl"
 
 [tools."github:canop/broot".platforms.macos-arm64]
 bin_path = "aarch64-apple-darwin"
+
+[tools."github:qpdf/qpdf"]
+version = "latest"
+os = ["linux/x64"]
+
+[tools."pipx:ocrmypdf"]
+version = "latest"
+dependencies = ["uv"]
+
+[tools."pipx:organize-tool"]
+version = "latest"
+dependencies = ["uv"]

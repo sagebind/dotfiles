@@ -1,5 +1,5 @@
 #!/bin/sh
 
 echo "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read -r filename; do
-    pdfcpu optimize "$filename"
+    mise exec -- pdfcpu optimize "$filename"
 done

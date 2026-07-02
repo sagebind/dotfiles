@@ -1,5 +1,5 @@
 #!/bin/sh
 
 echo "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read -r filename; do
-    pdfcpu split "$filename" .
+    mise exec -- pdfcpu split "$filename" .
 done
