@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
 
 echo "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read --line filename
-  mise exec -- ocrmypdf --skip-text $filename $filename
-end
+  mise exec -- ocrmypdf --quiet --skip-text $filename $filename
+end | zenity --progress --pulsate --auto-close
