@@ -5,6 +5,7 @@
 "~/.config/niri/*" = "config/niri/*"
 "~/.config/solaar" = "config/solaar"
 "~/.config/systemd/user/*" = "config/systemd/user/*"
+"~/.config/xdg-terminals.list" = "config/xdg-terminals.list"
 "~/.config/xremap" = "config/xremap"
 "~/.local/bin/*" = "linux/bin/*"
 "~/.local/share/actions-for-nautilus" = "config/actions-for-nautilus"
