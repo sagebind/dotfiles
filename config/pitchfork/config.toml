@@ -1,0 +1,4 @@
+[settings.web]
+auto_start = true
+bind_port = 3120
+bind_address = "127.0.0.1"
