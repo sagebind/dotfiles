@@ -385,7 +385,7 @@ rules:
           return exif["pdf"]["pagecount"] > 1
     actions:
       - shell: |
-          pdfcpu split "{path}" "{path.parent}"
+          pdfcpu split --force "{path}" "{path.parent}"
       - trash
 
   - locations:
