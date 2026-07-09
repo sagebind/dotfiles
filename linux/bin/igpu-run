@@ -58,8 +58,8 @@ set -l bwrap_args --dev-bind / /
 set -a bwrap_args --bind /dev/zero $dri_path
 
 # Map libraries to empty files.
-while read -l file
-  set -a bwrap_args --bind /dev/zero $file
-end < $cache_file_path
+# while read -l file
+#   set -a bwrap_args --bind /dev/zero $file
+# end < $cache_file_path
 
 exec bwrap $bwrap_args $argv
