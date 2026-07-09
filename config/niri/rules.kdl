@@ -77,6 +77,12 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id="^newelle$" title="^Preferences$"
+    open-floating false
+    max-width 650
+}
+
 // DaVinci Resolve splash screen.
 window-rule {
     match app-id="^resolve(-real)?$" title="^resolve(-real)?$"
