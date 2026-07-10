@@ -40,7 +40,6 @@ if `hostname`.strip == "MacBook-Pro-StephenCoakley"
 
   brew "aws-vault"
   brew "bash" # Get a newer Bash version needed for running some scripts
-  brew "cmake"
   brew "groovy"
   brew "jpeg-xl"
   brew "node"
