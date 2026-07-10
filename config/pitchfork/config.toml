@@ -1,1 +1,9 @@
-/home/stephen/.dotfiles/config/pitchfork/config.toml
+[settings.web]
+auto_start = true
+bind_port = 3120
+bind_address = "127.0.0.1"
+
+[daemons.openserp]
+run = "openserp serve -p 7000"
+boot_start = true
+mise = true
