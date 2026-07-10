@@ -3,6 +3,8 @@
 
 function upgrade -d "Install system package updates"
   if type -fq mise
+    echo "Upgrading Mise itself..."
+    mise self-update; or true
     echo "Upgrading Mise packages..."
     mise upgrade
   end
