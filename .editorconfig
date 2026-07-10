@@ -10,7 +10,7 @@ trim_trailing_whitespace = true
 [Makefile]
 indent_style = tab
 
-[{*.fish,*.yaml,*.yml,*.rules}]
+[{*.bash,*.fish,*.yaml,*.yml,*.rules,*.sh,*.zsh}]
 indent_size = 2
 
 [*.tsv]
