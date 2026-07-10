@@ -9,7 +9,7 @@
 "~/.config/kitty/*.conf" = "config/kitty/*.conf"
 "~/.config/mise" = "config/mise"
 "~/.config/organize" = "config/organize"
-"~/.config/pitchfork" = "config/pitchfork"
+"~/.config/pitchfork/config.toml" = "config/pitchfork/config.toml"
 "~/.config/tio" = "config/tio"
 "~/.config/zed/*.json" = "config/zed/*.json"
 "~/.editorconfig" = ".editorconfig"

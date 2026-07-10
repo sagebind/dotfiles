@@ -1,5 +1,7 @@
 [tools]
 "github:buildkite/buildkite-mcp-server" = "latest"
+"github:karust/openserp" = "0.8.6"
+"pitchfork" = "latest"
 
 [tools."http:helm2"]
 version = "2.16.2"
