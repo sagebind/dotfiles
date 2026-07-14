@@ -48,6 +48,7 @@
 "dnf:wl-clipboard" = "latest"
 "dnf:xdg-terminal-exec" = "latest"
 "dnf:ydotool" = "latest"
+"dnf:zed" = "latest"
 
 [bootstrap.macos.defaults."com.apple.desktopservices"]
 DSDontWriteNetworkStores = true

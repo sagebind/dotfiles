@@ -30,6 +30,7 @@ cask "localsend"
 cask "middleclick"
 cask "supersonic"
 cask "swiftbar"
+cask "zed"
 
 if `hostname`.strip == "MacBook-Pro-StephenCoakley"
   tap "buildkite/buildkite"
