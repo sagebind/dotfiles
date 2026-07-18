@@ -2,7 +2,6 @@
   {
     "bindings": {
       "ctrl-p": "file_finder::Toggle",
-      "ctrl-.": "tab_switcher::OpenInActivePane",
     },
   },
   {
