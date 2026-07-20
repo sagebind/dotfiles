@@ -8,6 +8,7 @@ choose = "latest"
 crane = "latest"
 difftastic = "latest"
 direnv = "latest"
+edit = "latest"
 eza = "latest"
 gh = "latest"
 "github:Nukesor/pueue" = "latest"
@@ -30,10 +31,6 @@ usage = "latest"
 uv = "latest"
 watchexec = "latest"
 yq = "latest"
-
-[tools.edit]
-os = ["linux"]
-version = "latest"
 
 [tools."github:benibela/xidel"]
 os = ["linux/x64"]
