@@ -1,5 +1,17 @@
 [
   {
+    "label": "git: refresh index",
+    "command": "git update-index --force-write-index",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "never",
+    "hide": "on_success",
+    "show_summary": false,
+    "show_command": false,
+    "save": "none",
+  },
+  {
     "allow_concurrent_runs": false,
     "command": "fish -c \"gh browse ${ZED_RELATIVE_FILE}\"",
     "hide": "on_success",
