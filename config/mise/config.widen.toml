@@ -1,6 +1,12 @@
+[env]
+AWS_VAULT_BIOMETRICS = true
+
 [tools]
+"aws-vault" = "latest"
 "github:buildkite/buildkite-mcp-server" = "latest"
+"github:buildkite/cli" = "latest"
 "github:karust/openserp" = "0.8.6"
+"nono" = "latest"
 "pitchfork" = "latest"
 
 [tools."http:helm2"]

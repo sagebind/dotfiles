@@ -1,0 +1,8 @@
+[bootstrap.packages]
+# Get a newer Bash version needed for running some scripts
+"brew-cask:1password-cli" = "latest"
+"brew:bash" = "latest"
+# "brew:widen/brew/slipway" = "latest"
+
+# [bootstrap.brew.taps]
+# "widen/brew" = "git@github.com:Widen/brew"

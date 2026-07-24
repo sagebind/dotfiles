@@ -14,12 +14,6 @@ function upgrade -d "Install system package updates"
     flox upgrade
   end
 
-  if type -fq brew
-    echo "Upgrading Homebrew packages..."
-    brew update
-    brew upgrade
-  end
-
   if type -fq flatpak
     echo "Upgrading Flatpak packages..."
     flatpak update -y
