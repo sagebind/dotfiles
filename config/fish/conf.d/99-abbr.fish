@@ -10,6 +10,7 @@ if status --is-interactive
 
   abbr ed code
 
+  abbr ff fastfetch
   abbr g git
   abbr gc 'git checkout'
   abbr gcd 'git checkout develop'
