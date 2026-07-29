@@ -77,6 +77,15 @@ window-rule {
     open-floating true
 }
 
+// Increase file picker window size.
+window-rule {
+    match app-id=r#"^org\.gnome\.Nautilus$"# title="^Open File\\b"
+    match app-id=r#"^org\.gnome\.Nautilus$"# title="^File Upload\\b"
+    match app-id=r#"^org\.gnome\.Nautilus$"# title="^Save As\\b"
+    min-width 1200
+    min-height 800
+}
+
 window-rule {
     match app-id="^newelle$" title="^Preferences$"
     open-floating false
