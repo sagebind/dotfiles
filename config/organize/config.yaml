@@ -256,6 +256,16 @@ rules:
   - locations: ~/Downloads
     filters:
       - extension: pdf
+      - filecontent: >-
+          Check #(?P<check>\d{5})
+      - filecontent: >-
+          (?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})
+    actions:
+      - move: ~/Compass/Financial/Receipts/{filecontent.year}/{filecontent.year}-{filecontent.month}-{filecontent.day} Check {filecontent.check}.pdf
+
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
       - filecontent: 'ALLIANT ENERGY\/WPL'
       - filecontent: "53546"
       - filecontent: '(?P<date>\w{3} \d{2}, \d{4})'
