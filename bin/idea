@@ -1,0 +1,24 @@
+#!/usr/bin/env fish
+
+# Wrapper around IntelliJ IDEA command line which is awkward to configure and is
+# buggy. See also https://youtrack.jetbrains.com/issue/IDEA-391908.
+
+set -l paths "/Applications/IntelliJ IDEA.app/Contents/MacOS/idea"
+
+# Move all flags after path arguments.
+for arg in $argv
+  if string match -q -- '-*' $arg
+    set --append idea_args $arg
+  else
+    set --prepend idea_args $arg
+  end
+end
+
+for path in $paths
+  if test -x $path
+    exec $path $idea_args
+  end
+end
+
+echo "could not find IDEA executable"
+exit 1
