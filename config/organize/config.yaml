@@ -115,6 +115,21 @@ rules:
           dest: ~/Seafile/Documents/Financial/Receipts/{python.strftime('%Y-%m-%d')} Reverb.pdf
           on_conflict: deduplicate
 
+  - locations: ~/Downloads
+    filters:
+      - extension: pdf
+      - filecontent: TDS
+      - filecontent: STEPHEN COAKLEY AND
+      - filecontent: >-
+          (?P<date>[A-Z][a-z]+ \d{1,2}, \d{4})
+      - python: |
+          from datetime import datetime
+          return datetime.strptime(filecontent["date"], '%B %d, %Y')
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Receipts/{python.strftime('%Y-%m-%d')} TDS.pdf
+          on_conflict: deduplicate
+
   - locations:
       - ~/Downloads
       - ~/Seafile/Documents/Inbox
