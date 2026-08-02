@@ -44,6 +44,7 @@
 "dnf:tesseract" = "latest"
 "dnf:tio" = "latest"
 "dnf:vdpauinfo" = "latest"
+"dnf:wev" = "latest"
 "dnf:wireguard-tools" = "latest"
 "dnf:wl-clipboard" = "latest"
 "dnf:xdg-terminal-exec" = "latest"
