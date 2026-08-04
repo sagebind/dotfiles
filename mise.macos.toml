@@ -32,3 +32,10 @@
 "brew:terminal-notifier" = "latest"
 "brew:watch" = "latest"
 "brew:zenity" = "latest"
+
+[bootstrap.macos.launchd.agents.atuin]
+program = "~/.local/bin/mise"
+args = ["exec", "--", "atuin", "daemon", "start"]
+stdout_path = "~/Library/Logs/atuin-daemon.log"
+stderr_path = "~/Library/Logs/atuin-daemon.err.log"
+run_at_load = true
