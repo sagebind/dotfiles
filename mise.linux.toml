@@ -7,7 +7,7 @@
 "~/.config/systemd/user/*" = "config/systemd/user/*"
 "~/.config/xdg-terminals.list" = "config/xdg-terminals.list"
 "~/.config/xremap" = "config/xremap"
-"~/.local/bin/*" = "linux/bin/*"
+"~/.local/bin/*" = "bin/linux/*"
 "~/.local/share/actions-for-nautilus" = "config/actions-for-nautilus"
 "~/.local/share/nautilus/scripts" = "config/nautilus/scripts"
 "~/.local/share/vicinae/scripts" = "config/vicinae/scripts"
