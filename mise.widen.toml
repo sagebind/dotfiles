@@ -6,3 +6,10 @@
 
 # [bootstrap.brew.taps]
 # "widen/brew" = "git@github.com:Widen/brew"
+
+[bootstrap.macos.launchd.agents.pitchfork]
+program = "~/.local/bin/mise"
+args = ["exec", "--env", "widen", "--", "pitchfork", "supervisor", "run", "--boot"]
+stdout_path = "~/Library/Logs/pitchfork.log"
+stderr_path = "~/Library/Logs/pitchfork.err.log"
+run_at_load = true
