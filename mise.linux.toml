@@ -13,6 +13,15 @@
 "~/.local/share/vicinae/scripts" = "config/vicinae/scripts"
 "~/Templates" = "config/nautilus/templates"
 
+[bootstrap.users.stephen]
+group = "stephen"
+# allow unprivileged uinput use
+groups = ["input"]
+
+# configure the sg module to load automatically
+[bootstrap.files."/etc/modules-load.d/99-sg.conf"]
+content = "sg\n"
+
 [bootstrap.linux.systemd.units.keepassxc]
 description = "KeePassXC system tray service"
 wants = ["graphical-session.target"]
