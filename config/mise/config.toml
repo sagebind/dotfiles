@@ -1,4 +1,5 @@
 [settings]
+cargo.binstall_native = true
 experimental = true
 
 [tools]
