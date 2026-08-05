@@ -9,8 +9,6 @@ set -l paths \
   /home/linuxbrew/.linuxbrew/bin \
   # Rust tools
   $HOME/.cargo/bin \
-  # kubectl plugins
-  $HOME/.krew/bin \
   # Local bin, usually already in path
   $HOME/.local/bin
 
