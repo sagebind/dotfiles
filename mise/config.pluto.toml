@@ -11,12 +11,12 @@
 }
 
 [bootstrap.files]
-"/etc/libinput/local-overrides.quirks".source = "system/pluto/etc/libinput/local-overrides.quirks"
-"/etc/modprobe.d/pluto-nvidia.conf".source = "system/pluto/etc/modprobe.d/pluto-nvidia.conf"
-"/etc/systemd/system/tuxedo-charging-profile.service".source = "system/pluto/etc/systemd/system/tuxedo-charging-profile.service"
-"/etc/systemd/system/tuxedo-charging-profile.timer".source = "system/pluto/etc/systemd/system/tuxedo-charging-profile.timer"
-"/etc/udev/rules.d/60-tuxedo-kbd-leds-uaccess.rules".source = "system/pluto/etc/udev/rules.d/60-tuxedo-kbd-leds-uaccess.rules"
+"/etc/libinput/local-overrides.quirks".source = "../system/pluto/etc/libinput/local-overrides.quirks"
+"/etc/modprobe.d/pluto-nvidia.conf".source = "../system/pluto/etc/modprobe.d/pluto-nvidia.conf"
+"/etc/systemd/system/tuxedo-charging-profile.service".source = "../system/pluto/etc/systemd/system/tuxedo-charging-profile.service"
+"/etc/systemd/system/tuxedo-charging-profile.timer".source = "../system/pluto/etc/systemd/system/tuxedo-charging-profile.timer"
+"/etc/udev/rules.d/60-tuxedo-kbd-leds-uaccess.rules".source = "../system/pluto/etc/udev/rules.d/60-tuxedo-kbd-leds-uaccess.rules"
 "/usr/local/bin/tuxedo-charging-profile" = {
-    source = "system/pluto/bin/tuxedo-charging-profile",
+    source = "../system/pluto/bin/tuxedo-charging-profile",
     mode = "0755",
 }

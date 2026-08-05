@@ -1,22 +1,80 @@
 [dotfiles]
-"~/.config/DankMaterialShell/*.json" = "config/DankMaterialShell/*.json"
-"~/.config/gamemode.ini" = "config/gamemode.ini"
-"~/.config/matugen" = "config/matugen"
-"~/.config/niri/*" = "config/niri/*"
-"~/.config/solaar" = "config/solaar"
-"~/.config/systemd/user/*" = "config/systemd/user/*"
-"~/.config/xdg-terminals.list" = "config/xdg-terminals.list"
-"~/.config/xremap" = "config/xremap"
-"~/.local/bin/*" = "bin/linux/*"
-"~/.local/share/actions-for-nautilus" = "config/actions-for-nautilus"
-"~/.local/share/nautilus/scripts" = "config/nautilus/scripts"
-"~/.local/share/vicinae/scripts" = "config/vicinae/scripts"
-"~/Templates" = "config/nautilus/templates"
+"~/.config/DankMaterialShell/*.json" = "../config/DankMaterialShell/*.json"
+"~/.config/gamemode.ini" = "../config/gamemode.ini"
+"~/.config/matugen" = "../config/matugen"
+"~/.config/niri/*" = "../config/niri/*"
+"~/.config/solaar" = "../config/solaar"
+"~/.config/systemd/user/*" = "../config/systemd/user/*"
+"~/.config/xdg-terminals.list" = "../config/xdg-terminals.list"
+"~/.config/xremap" = "../config/xremap"
+"~/.local/bin/*" = "../bin/linux/*"
+"~/.local/share/actions-for-nautilus" = "../config/actions-for-nautilus"
+"~/.local/share/nautilus/scripts" = "../config/nautilus/scripts"
+"~/.local/share/vicinae/scripts" = "../config/vicinae/scripts"
+"~/Templates" = "../config/nautilus/templates"
+
+[bootstrap.packages]
+"dnf:bleachbit" = "latest"
+"dnf:distrobox" = "latest"
+"dnf:firefox" = "latest"
+"dnf:fish" = "latest"
+"dnf:flac" = "latest"
+"dnf:gnome-network-displays" = "latest"
+"dnf:google-droid-fonts-all" = "latest"
+"dnf:ImageMagick-heic" = "latest"
+"dnf:kitty" = "latest"
+"dnf:libva-utils" = "latest"
+"dnf:lsof" = "latest"
+"dnf:make" = "latest"
+"dnf:mkvtoolnix" = "latest"
+"dnf:msedit" = "latest"
+"dnf:NetworkManager-tui" = "latest"
+"dnf:nvtop" = "latest"
+"dnf:pcaro-hermit-fonts" = "latest"
+"dnf:perl-Image-ExifTool" = "latest"
+"dnf:powertop" = "latest"
+"dnf:prename" = "latest"
+"dnf:rclone" = "latest"
+"dnf:seafile-client" = "latest"
+"dnf:solaar" = "latest"
+"dnf:sox" = "latest"
+"dnf:speech-dispatcher" = "latest"
+"dnf:speech-dispatcher-utils" = "latest"
+"dnf:tesseract" = "latest"
+"dnf:tio" = "latest"
+"dnf:vdpauinfo" = "latest"
+"dnf:wev" = "latest"
+"dnf:wireguard-tools" = "latest"
+"dnf:wl-clipboard" = "latest"
+"dnf:xdg-terminal-exec" = "latest"
+"dnf:ydotool" = "latest"
+"dnf:zed" = "latest"
 
 [bootstrap.users.stephen]
 group = "stephen"
 # allow unprivileged uinput use
 groups = ["input"]
+
+[bootstrap.directories."/etc/mise"]
+owner = "root"
+group = "root"
+mode = "0755"
+
+# detect system info and set machine-specific mise env
+[bootstrap.files."/etc/mise/miserc.toml"]
+owner = "root"
+group = "root"
+template = true
+content = """
+env = [
+{% if "TUXEDO" in read_file(path="/sys/devices/virtual/dmi/id/chassis_vendor") %}
+    "tuxedo",
+{% endif %}
+{% if "TUXEDO InfinityBook Max 15 AMD Gen10" in read_file(path="/sys/devices/virtual/dmi/id/product_name") %}
+    "pluto",
+{% endif %}
+]
+"""
 
 # configure the sg module to load automatically
 [bootstrap.files."/etc/modules-load.d/99-sg.conf"]

@@ -14,56 +14,6 @@
 "~/.config/zed/*.json" = "config/zed/*.json"
 "~/.editorconfig" = ".editorconfig"
 
-[bootstrap.packages]
-"dnf:bleachbit" = "latest"
-"dnf:distrobox" = "latest"
-"dnf:firefox" = "latest"
-"dnf:fish" = "latest"
-"dnf:flac" = "latest"
-"dnf:gnome-network-displays" = "latest"
-"dnf:google-droid-fonts-all" = "latest"
-"dnf:ImageMagick-heic" = "latest"
-"dnf:kitty" = "latest"
-"dnf:libva-utils" = "latest"
-"dnf:lsof" = "latest"
-"dnf:make" = "latest"
-"dnf:mkvtoolnix" = "latest"
-"dnf:msedit" = "latest"
-"dnf:NetworkManager-tui" = "latest"
-"dnf:nvtop" = "latest"
-"dnf:pcaro-hermit-fonts" = "latest"
-"dnf:perl-Image-ExifTool" = "latest"
-"dnf:powertop" = "latest"
-"dnf:prename" = "latest"
-"dnf:rclone" = "latest"
-"dnf:seafile-client" = "latest"
-"dnf:solaar" = "latest"
-"dnf:sox" = "latest"
-"dnf:speech-dispatcher" = "latest"
-"dnf:speech-dispatcher-utils" = "latest"
-"dnf:tesseract" = "latest"
-"dnf:tio" = "latest"
-"dnf:vdpauinfo" = "latest"
-"dnf:wev" = "latest"
-"dnf:wireguard-tools" = "latest"
-"dnf:wl-clipboard" = "latest"
-"dnf:xdg-terminal-exec" = "latest"
-"dnf:ydotool" = "latest"
-"dnf:zed" = "latest"
-
-[bootstrap.macos.defaults."com.apple.desktopservices"]
-DSDontWriteNetworkStores = true
-
-[bootstrap.macos.defaults."com.apple.finder"]
-_FXShowPosixPathInTitle = true
-_FXSortFoldersFirst = true
-FXEnableExtensionChangeWarning = false
-ShowPathbar = true
-
-[bootstrap.macos.defaults.NSGlobalDomain]
-AppleInterfaceStyle = "Dark"
-AppleShowAllExtensions = true
-
 [settings]
 dotfiles.default_mode = "symlink"
 experimental = true
