@@ -5,8 +5,18 @@
 "~/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/*" = "../config/alfred/workflows/*"
 "~/Library/Application Support/SwiftBar/plugins/*" = "../config/swiftbar/plugins/*"
 
+# detect system info and set machine-specific mise env
+[dotfiles."~/.miserc.toml/env"]
+template = "tera"
+block = """
+env = [
+{% if "MacBookPro18,2" in exec(command="system_profiler SPHardwareDataType") %}
+    "widen",
+{% endif %}
+]
+"""
+
 [bootstrap.packages]
-"brew-cask:block-goose" = "latest"
 "brew-cask:font-hurmit-nerd-font" = "latest"
 "brew-cask:font-symbols-only-nerd-font" = "latest"
 "brew-cask:jordanbaird-ice" = "latest"
