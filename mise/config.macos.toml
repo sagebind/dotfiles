@@ -19,9 +19,12 @@ env = [
 [bootstrap.packages]
 "brew-cask:font-hurmit-nerd-font" = "latest"
 "brew-cask:font-symbols-only-nerd-font" = "latest"
-"brew-cask:jordanbaird-ice" = "latest"
+"brew-cask:kitty" = "latest"
+"brew-cask:localsend" = "latest"
 "brew-cask:middleclick" = "latest"
+# "brew-cask:supersonic-app/supersonic/supersonic" = "latest"
 "brew-cask:swiftbar" = "latest"
+"brew-cask:zed" = "latest"
 "brew:btop" = "latest"
 "brew:colima" = "latest"
 "brew:coreutils" = "latest"
@@ -40,6 +43,7 @@ env = [
 "brew:qpdf" = "latest"
 "brew:rename" = "latest"
 "brew:terminal-notifier" = "latest"
+# "brew:thaw" = "latest"
 "brew:watch" = "latest"
 "brew:zenity" = "latest"
 

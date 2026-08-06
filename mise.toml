@@ -25,8 +25,5 @@ yq = "latest"
 [tasks.bootstrap]
 depends = ["configure:*"]
 
-[tasks."install:homebrew"]
-file = "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"
-
 [tasks."install:rustup"]
 file = "https://static.rust-lang.org/rustup/rustup-init.sh"
