@@ -2,7 +2,7 @@ function zed --wraps zed
   set -l zed_args $argv
 
   # Open in current window if in a Zed terminal.
-  if test $TERM_PROGRAM = zed; and not contains -- --existing $zed_args
+  if set -q TERM_PROGRAM; and test $TERM_PROGRAM = zed; and not contains -- --existing $zed_args
     set --prepend zed_args --existing
   end
 
