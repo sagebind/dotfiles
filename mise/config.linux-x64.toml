@@ -1,0 +1,3 @@
+[bootstrap.packages]
+"flatpak:com.usebottles.bottles" = "latest"
+"flatpak:org.mozilla.thunderbird" = "latest"
