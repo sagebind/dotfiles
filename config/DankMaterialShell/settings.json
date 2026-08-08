@@ -660,6 +660,10 @@
           "enabled": true
         },
         {
+          "id": "easyEffects",
+          "enabled": true
+        },
+        {
           "id": "controlCenterButton",
           "enabled": true,
           "showBrightnessIcon": false,
