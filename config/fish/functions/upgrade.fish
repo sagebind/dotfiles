@@ -13,11 +13,6 @@ function upgrade -d "Install system package updates"
     popd
   end
 
-  if type -fq flox
-    echo "Upgrading Flox packages..."
-    flox upgrade
-  end
-
   if type -fq flatpak
     echo "Upgrading Flatpak packages..."
     flatpak update -y
