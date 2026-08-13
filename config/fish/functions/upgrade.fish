@@ -7,6 +7,10 @@ function upgrade -d "Install system package updates"
     mise self-update; or true
     echo "Upgrading Mise packages..."
     mise upgrade
+    echo "Upgrading Mise-managed system packages..."
+    pushd (dotfiles-path)
+    mise bootstrap packages upgrade
+    popd
   end
 
   if type -fq flox
