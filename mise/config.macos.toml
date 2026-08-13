@@ -16,6 +16,7 @@ env = [
 """
 
 [bootstrap.packages]
+"brew-cask:bruno" = "latest"
 "brew-cask:font-hurmit-nerd-font" = "latest"
 "brew-cask:font-symbols-only-nerd-font" = "latest"
 "brew-cask:kitty" = "latest"
