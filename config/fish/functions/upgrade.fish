@@ -9,7 +9,7 @@ function upgrade -d "Install system package updates"
     mise upgrade
     echo "Upgrading Mise-managed system packages..."
     pushd (dotfiles-path)
-    mise bootstrap packages upgrade
+    mise bootstrap packages upgrade -y
     popd
   end
 
