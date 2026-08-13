@@ -1,6 +1,5 @@
 [dotfiles]
 "~/.local/bin/idea" = "../bin/idea"
-"~/.Brewfile" = "../config/.Brewfile"
 "~/Library/Application Support/k9s/skins/transparent.yaml" = "../config/k9s/skins/transparent.yaml"
 "~/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/*" = "../config/alfred/workflows/*"
 "~/Library/Application Support/SwiftBar/plugins/*" = "../config/swiftbar/plugins/*"
