@@ -1,3 +1,5 @@
 function dotfiles -d "Apply dotfiles again"
-  mise -C (dotfiles-path) bootstrap
+  pushd (dotfiles-path)
+  mise bootstrap
+  popd
 end
