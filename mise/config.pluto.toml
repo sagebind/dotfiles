@@ -20,3 +20,12 @@
     source = "../system/pluto/bin/tuxedo-charging-profile",
     mode = "0755",
 }
+
+[bootstrap.linux.systemd.units.easy-effects-profile]
+type = "oneshot"
+exec_start = "~/.local/bin/easy-effects-timer"
+
+[bootstrap.linux.systemd.units.easy-effects-profile-timer]
+on_boot_sec = "120"
+on_unit_active_sec = "10"
+unit = "easy-effects-profile"

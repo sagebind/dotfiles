@@ -1,0 +1,9 @@
+#!/usr/bin/env fish
+
+set -l easy_effects_socket "$XDG_RUNTIME_DIR/.flatpak/com.github.wwmm.easyeffects/tmp/EasyEffectsServer"
+
+if pactl list sinks | rg -q 'headphones:.+, available'
+  echo "load_preset:output:Headphones" | socat - UNIX-CONNECT:$easy_effects_socket
+else
+  echo "load_preset:output:TUXEDO InfinityBook Max 15 Gen10" | socat - UNIX-CONNECT:$easy_effects_socket
+end

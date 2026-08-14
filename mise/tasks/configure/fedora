@@ -7,7 +7,6 @@ end
 set -l undesired_packages \
   alacritty \
   brave-browser \
-  dnf-app-center \
   libreoffice \
   libreoffice-base \
   libreoffice-calc \
