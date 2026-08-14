@@ -14,6 +14,7 @@
 "~/Templates" = "../config/nautilus/templates"
 
 [bootstrap.packages]
+"dnf:alsa-tools" = "latest"
 "dnf:bleachbit" = "latest"
 "dnf:distrobox" = "latest"
 "dnf:firefox" = "latest"
@@ -64,6 +65,7 @@
 "flatpak:com.makemkv.MakeMKV" = "latest"
 "flatpak:com.moonlight_stream.Moonlight" = "latest"
 "flatpak:com.ranfdev.DistroShelf" = "latest"
+"flatpak:com.saivert.pwvucontrol" = "latest"
 "flatpak:de.hohnstaedt.xca" = "latest"
 "flatpak:es.danirod.Cartero" = "latest"
 "flatpak:fm.reaper.Reaper" = "latest"
