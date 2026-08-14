@@ -49,6 +49,13 @@
           "skip_soft_wrap": true,
         },
       ],
+      "cmd-r": "buffer_search::DeployReplace",
+      "cmd-shift-r": [
+        "pane::DeploySearch",
+        {
+          "replace_enabled": true,
+        },
+      ],
     },
   },
   {
