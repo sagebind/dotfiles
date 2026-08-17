@@ -3,6 +3,7 @@ cargo.binstall_native = true
 experimental = true
 
 [tools]
+"aqua:fujiapple852/trippy" = "latest"
 atuin = "latest"
 "cargo:gifski" = "latest"
 choose = "latest"

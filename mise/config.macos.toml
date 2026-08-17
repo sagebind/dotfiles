@@ -39,6 +39,7 @@ env = [
 "brew:gnutls" = "latest"
 "brew:imagemagick" = "latest"
 "brew:media-info" = "latest"
+"brew:mtr" = "latest"
 "brew:parallel" = "latest"
 "brew:qpdf" = "latest"
 "brew:rename" = "latest"
