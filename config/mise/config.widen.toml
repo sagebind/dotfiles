@@ -1,13 +1,5 @@
 [env]
-AWS_VAULT_BACKEND = "op-desktop"
-
-[env.AWS_VAULT_OP_DESKTOP_ACCOUNT_ID]
-age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpdkVTN0l2cVpwWFdXZmVJaTk4R1JiMnRncTlBNm43L2RyTWZjRFpnUVVnCjYvdkJ5SzFrN3VGR2psVFBhKzY0OXgzelRuUmMxa0NVMkptWTdnVUJTUkUKLT4gc3NoLWVkMjU1MTkgMndiUWdRIHZ3S1VxRlAvU2VYK0RQSW1Ob1lja3FxVS9MN2VoSDV5cHlSWTc5eGtDVlEKRXcyNTZuK1FiWUhCZGlWNEFjVjNYUmtpdENTVVhnTWNrZGFSbzZ5SVFCZwotPiB5UlpQSy1UMy1ncmVhc2UKYmtLS2drUTJaSjRjODJVSHBCQkR4ZjdzVlB5aHppS0lJZwotLS0gRWdKRHUvN3kxSFdqd3djc3JPUWxwckdrN0FQZFZBMFJMNEliMmpwUkNLYwpViklpdW4pHjlQAMBtnPpZPm57yEVMjDJe9dHKt0Hc2Sb/YClXb7+i8jkNOzdP/zRlC1ZO1TIx6X+D"
-redact = true
-
-[env.AWS_VAULT_OP_VAULT_ID]
-age = "YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBYQXV5U2dDK1BoUklFcU9hMHhwN3dRZWYzLzNwYWd2VUJ0dWRuQXJERW5RCmxxRUNaSjBkTmdjMlAyeE1uUG1McWM0UlVDc0FKMWNSUUFJeC9ZcVdWYVUKLT4gc3NoLWVkMjU1MTkgMndiUWdRIHZxVDBlekJHVldYbHd6UTk3UGs4Q0YyN21yOGovaWlObU40by9SZFJQaVEKUVkrVWFvVEd2K2QwRzVEcmovQnQ1RVhYMmo5V20xVzl3K2lXdTNOaWNhTQotPiBoLHgnYEdyQS1ncmVhc2UKTk82SU5mMUU3aThRMnVCU2lmaThkNFZONFJ1ZEVjRXd3VERucFpOUUxjUFpkWEV2aXNPcFVKcEhlajdHY3pZCi0tLSBqaEtTRFU2SiszZi85bW1rMmNoUE12U1dhZEVZazRBZjVIQUszRyt5OGVvCmd+EiGRWIeMuMyyiT9JN53U3ME3fKtO/1eWlHUbAe1k9NeMpalVk74EFi04HvN7+tEe4CnTtvakb/s"
-redact = true
+AWS_VAULT_BACKEND = "file"
 
 [tools]
 "age" = "latest"
@@ -25,3 +17,10 @@ url = "https://get.helm.sh/helm-v2.16.2-darwin-amd64.tar.gz"
 checksum = "sha256:8bee3a69bd873c09dd07dc12594837f03a13b443727c7ce76db7b779c4ee9794"
 rename_exe = "helm2"
 os = ["macos"]
+
+[tasks]
+aws-credential-process = '''
+#!/usr/bin/env bash
+export AWS_VAULT_FILE_PASSPHRASE=$(op read -n "op://Employee/aws-vault keychain/password")
+aws-vault exec aws-users --duration 10h --json
+'''
