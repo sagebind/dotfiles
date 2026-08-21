@@ -56,7 +56,7 @@ window-rule {
 window-rule {
     match app-id="^resolve(-real)?$" title="^DaVinci Resolve Studio"
     match app-id="^com.moonlight_stream.Moonlight$"
-    match app-id="^Openterface Mini-KVM$"
+    match app-id="^Openterface Mini-KVM$" title="^Openterface"
     open-maximized-to-edges true
 }
 
