@@ -125,9 +125,10 @@ env = [
 ]
 """
 
+[bootstrap.files]
 # configure the sg module to load automatically
-[bootstrap.files."/etc/modules-load.d/99-sg.conf"]
-content = "sg\n"
+"/etc/modules-load.d/99-sg.conf".content = "sg\n"
+"/etc/udev/rules.d/51-openterface.rules".source = "../config/openterface/openterface.rules"
 
 [bootstrap.linux.systemd.units.keepassxc]
 description = "KeePassXC system tray service"
