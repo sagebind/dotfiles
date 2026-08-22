@@ -8,7 +8,10 @@ environment {
 
 input {
     touchpad {
+        dwt
         tap
+        natural-scroll
+        click-method "clickfinger"
     }
 }
 

@@ -1,7 +1,18 @@
-[bootstrap.files]
-"/etc/modprobe.d/apple-fn-keys.conf".content = "options hid_apple fnmode=2"
+[dotfiles]
 "~/.config/niri/machine-specific.kdl".content = '''
+input {
+    touchpad {
+        dwt
+        natural-scroll
+        click-method "clickfinger"
+        accel-speed 0.2
+    }
+}
+
 output "eDP-1" {
     scale 1.75
 }
 '''
+
+[bootstrap.files]
+"/etc/modprobe.d/apple-fn-keys.conf".content = "options hid_apple fnmode=2"
