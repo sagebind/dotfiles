@@ -14,6 +14,9 @@ binds {
     XF86MenuKB repeat=false hotkey-overlay-title="Application Launcher" {
         spawn "vicinae" "toggle";
     }
+    Mod+Space repeat=false hotkey-overlay-title="Application Launcher" {
+        spawn "vicinae" "toggle";
+    }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
         spawn "vicinae" "vicinae://launch/clipboard/history";
     }

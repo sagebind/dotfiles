@@ -38,11 +38,6 @@ input {
     }
 }
 
-output "eDP-1" {
-    mode "2560x1600@240.000"
-    scale 1.25
-}
-
 layout {
     gaps 5
     background-color "transparent"
@@ -161,4 +156,4 @@ debug {
     wait-for-frame-completion-before-queueing
 }
 
-include optional=true "hosts/pluto.kdl"
+include optional=true "machine-specific.kdl"

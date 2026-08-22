@@ -1,2 +1,7 @@
 [bootstrap.files]
 "/etc/modprobe.d/apple-fn-keys.conf".content = "options hid_apple fnmode=2"
+"~/.config/niri/machine-specific.kdl".content = '''
+output "eDP-1" {
+    scale 1.75
+}
+'''

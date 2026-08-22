@@ -1,5 +1,9 @@
 #!/usr/bin/env fish
 
+if type -fq niri
+  exit 0
+end
+
 for copr in ulysg/xwayland-satellite blakegardner/xremap yalter/niri avengemedia/dms
   dnf copr list | grep -q $copr
     or sudo dnf copr enable -y $copr
