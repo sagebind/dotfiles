@@ -1,3 +1,6 @@
+[dotfiles]
+"~/.config/DankMaterialShell/*.json" = "../config/DankMaterialShell/*.json"
+
 [bootstrap.directories]
 "/etc/libinput" = {
     owner = "root",

@@ -1,3 +1,5 @@
 [bootstrap.packages]
+"flatpak:ai.jan.Jan" = "latest"
 "flatpak:com.usebottles.bottles" = "latest"
+"flatpak:fr.handbrake.ghb" = "latest"
 "flatpak:org.mozilla.thunderbird" = "latest"

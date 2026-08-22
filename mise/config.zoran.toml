@@ -1,0 +1,2 @@
+[bootstrap.files]
+"/etc/modprobe.d/apple-fn-keys.conf".content = "options hid_apple fnmode=2"

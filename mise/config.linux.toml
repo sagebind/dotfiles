@@ -1,5 +1,4 @@
 [dotfiles]
-"~/.config/DankMaterialShell/*.json" = "../config/DankMaterialShell/*.json"
 "~/.config/gamemode.ini" = "../config/gamemode.ini"
 "~/.config/matugen" = "../config/matugen"
 "~/.config/niri/*" = "../config/niri/*"
@@ -41,6 +40,7 @@
 "dnf:sox" = "latest"
 "dnf:speech-dispatcher" = "latest"
 "dnf:speech-dispatcher-utils" = "latest"
+"dnf:sqlite" = "latest"
 "dnf:tesseract" = "latest"
 "dnf:tio" = "latest"
 "dnf:vdpauinfo" = "latest"
@@ -50,7 +50,6 @@
 "dnf:xdg-terminal-exec" = "latest"
 "dnf:ydotool" = "latest"
 "dnf:zed" = "latest"
-"flatpak:ai.jan.Jan" = "latest"
 "flatpak:app.drey.EarTag" = "latest"
 "flatpak:be.alexandervanhee.gradia" = "latest"
 "flatpak:ca.littlesvr.asunder" = "latest"
@@ -69,7 +68,6 @@
 "flatpak:de.hohnstaedt.xca" = "latest"
 "flatpak:es.danirod.Cartero" = "latest"
 "flatpak:fm.reaper.Reaper" = "latest"
-"flatpak:fr.handbrake.ghb" = "latest"
 "flatpak:io.github.dimtpap.coppwr" = "latest"
 "flatpak:io.github.dweymouth.supersonic" = "latest"
 "flatpak:io.github.flattool.Ignition" = "latest"
@@ -99,6 +97,9 @@
 "flatpak:org.nickvision.tubeconverter" = "latest"
 "flatpak:org.onlyoffice.desktopeditors" = "latest"
 
+[bootstrap.user]
+login_shell = "/usr/bin/fish"
+
 [bootstrap.users.stephen]
 group = "stephen"
 # allow unprivileged uinput use
@@ -121,6 +122,9 @@ env = [
 {% endif %}
 {% if "TUXEDO InfinityBook Max 15 AMD Gen10" in read_file(path="/sys/devices/virtual/dmi/id/product_name") %}
     "pluto",
+{% endif %}
+{% if "MacBookPro18,3" in read_file(path="/sys/devices/virtual/dmi/id/product_name") %}
+    "zoran",
 {% endif %}
 ]
 """

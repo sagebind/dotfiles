@@ -44,6 +44,9 @@ asset_pattern = "xidel-*.linux64.tar.gz"
 [tools."github:canop/broot"]
 version = "1.57.0"
 
+[tools."github:canop/broot".platforms.linux-arm64]
+bin_path = "aarch64-unknown-linux-gnu"
+
 [tools."github:canop/broot".platforms.linux-x64]
 bin_path = "x86_64-unknown-linux-musl"
 
