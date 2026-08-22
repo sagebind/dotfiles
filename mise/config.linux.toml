@@ -32,6 +32,8 @@
 "dnf:NetworkManager-tui" = "latest"
 "dnf:nvtop" = "latest"
 "dnf:pcaro-hermit-fonts" = "latest"
+"dnf:perl-IO-Compress" = "latest" # exiftool dependency
+"dnf:perl-IO-Zlib" = "latest" # exiftool dependency
 "dnf:perl-Image-ExifTool" = "latest"
 "dnf:powertop" = "latest"
 "dnf:prename" = "latest"
