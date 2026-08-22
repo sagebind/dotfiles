@@ -32,7 +32,6 @@ input {
         dwt
 
         // macOS / GNOME style trackpad behavior.
-        tap
         natural-scroll
         click-method "clickfinger"
     }
