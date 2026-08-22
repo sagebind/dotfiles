@@ -15,6 +15,7 @@
 [bootstrap.packages]
 "dnf:alsa-tools" = "latest"
 "dnf:bleachbit" = "latest"
+"dnf:dconf-editor" = "latest"
 "dnf:distrobox" = "latest"
 "dnf:firefox" = "latest"
 "dnf:fish" = "latest"
