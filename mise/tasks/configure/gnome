@@ -1,0 +1,5 @@
+#!/usr/bin/env fish
+
+if type -fq dconf
+  dconf write /org/gnome/desktop/wm/preferences/button-layout "'appmenu:maximize,close'"
+end
