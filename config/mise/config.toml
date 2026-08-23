@@ -1,6 +1,7 @@
 [settings]
 cargo.binstall_native = true
 experimental = true
+github.credential_command = "gh auth token"
 
 [tools]
 "aqua:fujiapple852/trippy" = "latest"

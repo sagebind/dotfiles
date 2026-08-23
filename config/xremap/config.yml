@@ -3,6 +3,13 @@ modmap:
     remap:
       CONTROL_R: MENU
 
+  - name: Bind right Cmd as menu on MacBook
+    remap:
+      SUPER_R: MENU
+    device:
+      only:
+        - Apple SPI Keyboard
+
   # Niri currently does not support binds on a modifier key when pressed alone.
   # This is a workaround to open the overview when the Mod key is tapped, like
   # GNOME.

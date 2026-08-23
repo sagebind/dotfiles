@@ -11,6 +11,9 @@
 "~/.local/share/nautilus/scripts" = "../config/nautilus/scripts"
 "~/.local/share/vicinae/scripts" = "../config/vicinae/scripts"
 "~/Templates" = "../config/nautilus/templates"
+"~/.hidden".content = '''
+thunderbird
+'''
 
 [bootstrap.packages]
 "dnf:alsa-tools" = "latest"
