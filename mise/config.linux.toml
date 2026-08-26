@@ -1,4 +1,5 @@
 [dotfiles]
+"~/.config/environment.d/*" = "../config/environment.d/*"
 "~/.config/gamemode.ini" = "../config/gamemode.ini"
 "~/.config/matugen" = "../config/matugen"
 "~/.config/niri/*" = "../config/niri/*"
@@ -40,6 +41,8 @@ thunderbird
 "dnf:perl-Image-ExifTool" = "latest"
 "dnf:powertop" = "latest"
 "dnf:prename" = "latest"
+"dnf:qt5ct" = "latest" # make Qt apps look better
+"dnf:qt6ct" = "latest"
 "dnf:rclone" = "latest"
 "dnf:seafile-client" = "latest"
 "dnf:solaar" = "latest"
