@@ -155,4 +155,5 @@ debug {
     wait-for-frame-completion-before-queueing
 }
 
+include optional=true "device-quirks.kdl"
 include optional=true "machine-specific.kdl"

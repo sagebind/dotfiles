@@ -2,7 +2,12 @@
 "~/.config/environment.d/*" = "../config/environment.d/*"
 "~/.config/gamemode.ini" = "../config/gamemode.ini"
 "~/.config/matugen" = "../config/matugen"
-"~/.config/niri/*" = "../config/niri/*"
+"~/.config/niri/scripts" = "../config/niri/scripts"
+"~/.config/niri/*.kdl" = "../config/niri/*.kdl"
+"~/.config/niri/device-quirks.kdl" = {
+    source = "../config/niri/device-quirks.kdl.tera",
+    mode = "template",
+}
 "~/.config/solaar" = "../config/solaar"
 "~/.config/systemd/user/*" = "../config/systemd/user/*"
 "~/.config/xdg-terminals.list" = "../config/xdg-terminals.list"
