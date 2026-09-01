@@ -29,6 +29,7 @@ thunderbird
 "dnf:firefox" = "latest"
 "dnf:fish" = "latest"
 "dnf:flac" = "latest"
+"dnf:gcc" = "latest"
 "dnf:gnome-network-displays" = "latest"
 "dnf:google-droid-fonts-all" = "latest"
 "dnf:ImageMagick-heic" = "latest"
@@ -49,6 +50,7 @@ thunderbird
 "dnf:qt5ct" = "latest" # make Qt apps look better
 "dnf:qt6ct" = "latest"
 "dnf:rclone" = "latest"
+"dnf:satty" = "latest"
 "dnf:seafile-client" = "latest"
 "dnf:solaar" = "latest"
 "dnf:sox" = "latest"
