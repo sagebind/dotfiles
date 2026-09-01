@@ -165,3 +165,14 @@ exec_start = "/usr/bin/kitty --start-as=hidden --single-instance"
 restart = "on-failure"
 restart_sec = "2s"
 wanted_by = ["graphical-session.target"]
+
+[bootstrap.linux.systemd.units.xremap]
+description = "Xremap key mapper"
+wants = ["graphical-session.target"]
+after = ["graphical-session.target"]
+exec_start = "/usr/bin/xremap --watch=config,device --ignore=solaar --ignore=ydotoold --ignore=vicinae-snippet-virtual-keyboard %h/.config/xremap/config.yml"
+restart = "on-failure"
+restart_sec = "10s"
+standard_output = "journal"
+standard_error = "journal"
+wanted_by = ["niri.service"]
