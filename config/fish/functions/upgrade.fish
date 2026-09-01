@@ -21,5 +21,8 @@ function upgrade -d "Install system package updates"
   if type -fq nobara-sync
     echo "Upgrading Nobara packages..."
     nobara-sync cli
+  else if type -fq dnf
+    echo "Upgrading Fedora packages..."
+    sudo dnf upgrade
   end
 end
