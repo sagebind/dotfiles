@@ -5,7 +5,6 @@ AWS_VAULT_PROMPT = "osascript"
 [tools]
 "age" = "latest"
 "aws-vault" = "latest"
-"github:buildkite/buildkite-mcp-server" = "latest"
 "github:buildkite/cli" = "latest"
 "nono" = "latest"
 "pipx:yubikey-manager" = "latest"
