@@ -50,6 +50,7 @@ window-rule {
     match app-id="^steam$" title="^Steam$"
     match title="Supersonic"
     match title="MusicBrainz Picard"
+    match app-id="io.gitlab.news_flash.NewsFlash" title="Newsflash"
     open-maximized true
 }
 
