@@ -94,6 +94,7 @@ thunderbird
 "flatpak:io.github.tanaybhomia.Whisp" = "latest"
 "flatpak:io.gitlab.adhami3310.Impression" = "latest"
 "flatpak:io.gitlab.liferooter.TextPieces" = "latest"
+"flatpak:io.gitlab.news_flash.NewsFlash" = "latest"
 "flatpak:io.missioncenter.MissionCenter" = "latest"
 "flatpak:io.qt.qdbusviewer" = "latest"
 "flatpak:md.obsidian.Obsidian" = "latest"
