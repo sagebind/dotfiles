@@ -1,2 +1,16 @@
+[bootstrap.packages]
+"dnf:coolercontrol" = "latest"
+"dnf:macsmc-fans-cc-plugin" = "latest"
+
 [bootstrap.files]
 "/etc/modprobe.d/apple-fn-keys.conf".content = "options hid_apple fnmode=2 swap_fn_leftctrl=1"
+
+[bootstrap.hooks.pre-packages]
+run = """
+if ! dnf copr list | grep -q codifryed/CoolerControl; then
+    sudo dnf copr enable codifryed/CoolerControl
+fi
+if ! dnf copr list | grep -q sagebind/coolercontrol-plugins; then
+    sudo dnf copr enable sagebind/coolercontrol-plugins
+fi
+"""

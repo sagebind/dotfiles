@@ -39,13 +39,4 @@ if grep -q "TUXEDO InfinityBook Max 15 AMD Gen10" /sys/devices/virtual/dmi/id/pr
     echo "installing tlp"
     sudo dnf install tlp tlp-pd
   end
-
-  if not type -fq coolercontrold
-    echo "installing CoolerControl"
-
-    dnf copr list | grep -q codifryed/CoolerControl
-      or sudo dnf copr enable codifryed/CoolerControl
-
-    sudo dnf install coolercontrol
-  end
 end

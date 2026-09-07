@@ -13,6 +13,10 @@
     mode = "0755",
 }
 
+[bootstrap.packages]
+"dnf:coolercontrol" = "latest"
+"dnf:tuxedo-infinitybook-gen10-cc-plugin" = "latest"
+
 [bootstrap.files]
 "/etc/libinput/local-overrides.quirks".source = "../system/pluto/etc/libinput/local-overrides.quirks"
 "/etc/modprobe.d/pluto-nvidia.conf".source = "../system/pluto/etc/modprobe.d/pluto-nvidia.conf"
@@ -32,3 +36,13 @@ exec_start = "~/.local/bin/easy-effects-timer"
 on_boot_sec = "120"
 on_unit_active_sec = "10"
 unit = "easy-effects-profile"
+
+[bootstrap.hooks.pre-packages]
+run = """
+if ! dnf copr list | grep -q codifryed/CoolerControl; then
+    sudo dnf copr enable codifryed/CoolerControl
+fi
+if ! dnf copr list | grep -q sagebind/coolercontrol-plugins; then
+    sudo dnf copr enable sagebind/coolercontrol-plugins
+fi
+"""

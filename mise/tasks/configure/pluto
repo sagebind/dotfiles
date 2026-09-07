@@ -7,22 +7,3 @@ end
 echo "detected device: pluto"
 
 mise run install:tlp
-
-if not type -fq coolercontrold
-  echo "installing CoolerControl"
-
-  dnf copr list | grep -q codifryed/CoolerControl
-    or sudo dnf copr enable codifryed/CoolerControl
-
-  sudo dnf install coolercontrol
-end
-
-set -l cc_plugin_dir "$HOME/.local/src/tuxedo-infinitybook-gen10-cc-plugin"
-
-if not test -d $cc_plugin_dir
-  git clone https://github.com/sagebind/tuxedo-infinitybook-gen10-cc-plugin $cc_plugin_dir
-
-  if not test -f /etc/coolercontrol/plugins/tuxedo-infinitybook-gen10/manifest.toml
-    make -C $cc_plugin_dir install
-  end
-end
