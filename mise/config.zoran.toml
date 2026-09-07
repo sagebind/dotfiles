@@ -3,7 +3,8 @@
 "dnf:macsmc-fans-cc-plugin" = "latest"
 
 [bootstrap.files]
-"/etc/modprobe.d/apple-fn-keys.conf".content = "options hid_apple fnmode=2 swap_fn_leftctrl=1"
+"/etc/modprobe.d/apple-fn-keys.conf".content = "options hid_apple fnmode=2 swap_fn_leftctrl=1\n"
+"/etc/modprobe.d/macsmc-fancontrol.conf".content = "options macsmc_hwmon fan_control=1\n"
 
 [bootstrap.hooks.pre-packages]
 run = """
