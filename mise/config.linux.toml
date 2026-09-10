@@ -9,7 +9,6 @@
     mode = "template",
 }
 "~/.config/solaar" = "../config/solaar"
-"~/.config/systemd/user/*" = "../config/systemd/user/*"
 "~/.config/xdg-terminals.list" = "../config/xdg-terminals.list"
 "~/.config/xremap" = "../config/xremap"
 "~/.local/bin/*" = "../bin/linux/*"
@@ -189,3 +188,11 @@ restart_sec = "10s"
 standard_output = "journal"
 standard_error = "journal"
 wanted_by = ["niri.service"]
+
+[bootstrap.linux.systemd.units.ydotoold]
+description = "Starts ydotoold Daemon"
+after = ["dev.mise.xremap.service"]
+exec_start = "/usr/bin/ydotoold"
+restart = "on-failure"
+restart_sec = "10s"
+wanted_by = ["basic.target"]
