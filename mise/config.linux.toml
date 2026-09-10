@@ -114,6 +114,18 @@ thunderbird
 "flatpak:org.nickvision.tubeconverter" = "latest"
 "flatpak:org.onlyoffice.desktopeditors" = "latest"
 
+# Stuff to remove.
+"dnf:alacritty".state = "absent"
+"dnf:brave-browser".state = "absent"
+"dnf:libreoffice".state = "absent"
+"dnf:libreoffice-base".state = "absent"
+"dnf:libreoffice-calc".state = "absent"
+"dnf:libreoffice-draw".state = "absent"
+"dnf:libreoffice-emailmerge".state = "absent"
+"dnf:libreoffice-impress".state = "absent"
+"dnf:libreoffice-math".state = "absent"
+"dnf:libreoffice-writer".state = "absent"
+
 [bootstrap.user]
 login_shell = "/usr/bin/fish"
 
