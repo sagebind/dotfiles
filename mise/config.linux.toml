@@ -1,6 +1,10 @@
 [dotfiles]
 "~/.config/environment.d/*" = "../config/environment.d/*"
 "~/.config/gamemode.ini" = "../config/gamemode.ini"
+"~/.config/gtk-3.0/settings.ini" = {
+    source = "../config/gtk-3.0/settings.ini",
+    mode = "copy",
+}
 "~/.config/gtk-4.0/settings.ini" = {
     source = "../config/gtk-4.0/settings.ini",
     mode = "copy",

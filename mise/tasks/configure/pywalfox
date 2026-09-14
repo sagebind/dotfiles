@@ -1,0 +1,11 @@
+#!/usr/bin/env fish
+
+type -fq pywalfox
+  or exit 0
+
+if not test -f ~/.mozilla/native-messaging-hosts/pywalfox.json
+  pywalfox install
+end
+
+mkdir -p ~/.cache/wal
+ln -sf ~/.cache/wal/dank-pywalfox.json ~/.cache/wal/colors.json
