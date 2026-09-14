@@ -4,3 +4,8 @@ if type -fq dconf
     dconf write /org/gnome/desktop/interface/clock-format "'24h'"
     dconf write /org/gnome/desktop/wm/preferences/button-layout "'appmenu:maximize,close'"
 end
+
+if type -fq gsettings
+    gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
+    gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+end

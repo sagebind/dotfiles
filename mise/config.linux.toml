@@ -1,6 +1,10 @@
 [dotfiles]
 "~/.config/environment.d/*" = "../config/environment.d/*"
 "~/.config/gamemode.ini" = "../config/gamemode.ini"
+"~/.config/gtk-4.0/settings.ini" = {
+    source = "../config/gtk-4.0/settings.ini",
+    mode = "copy",
+}
 "~/.config/matugen" = "../config/matugen"
 "~/.config/niri/scripts" = "../config/niri/scripts"
 "~/.config/niri/*.kdl" = "../config/niri/*.kdl"
@@ -21,6 +25,7 @@ thunderbird
 '''
 
 [bootstrap.packages]
+"dnf:adw-gtk3-theme" = "latest"
 "dnf:alsa-tools" = "latest"
 "dnf:bleachbit" = "latest"
 "dnf:dconf-editor" = "latest"
@@ -30,6 +35,7 @@ thunderbird
 "dnf:flac" = "latest"
 "dnf:gcc" = "latest"
 "dnf:gnome-network-displays" = "latest"
+"dnf:gnome-tweaks" = "latest"
 "dnf:google-droid-fonts-all" = "latest"
 "dnf:ImageMagick-heic" = "latest"
 "dnf:kitty" = "latest"
@@ -106,6 +112,8 @@ thunderbird
 "flatpak:org.audacityteam.Audacity" = "latest"
 "flatpak:org.gimp.GIMP" = "latest"
 "flatpak:org.gnome.meld" = "latest"
+"flatpak:org.gtk.Gtk3theme.adw-gtk3" = "latest"
+"flatpak:org.gtk.Gtk3theme.adw-gtk3-dark" = "latest"
 "flatpak:org.gustavoperedo.FontDownloader" = "latest"
 "flatpak:org.keepassxc.KeePassXC" = "latest"
 "flatpak:org.localsend.localsend_app" = "latest"

@@ -27,6 +27,10 @@ jq = "latest"
 k9s = "latest"
 kubectl = "latest"
 kubectx = "latest"
+"pipx:pywalfox" = {
+    version = "latest",
+    os = ["linux"],
+}
 podlet = "latest"
 regctl = "latest"
 ripgrep = "latest"
