@@ -1,6 +1,9 @@
 [bootstrap.packages]
 "dnf:coolercontrol" = "latest"
+"dnf:fuse" = "latest"
 "dnf:macsmc-fans-cc-plugin" = "latest"
+"dnf:nautilus-python" = "latest"
+"dnf:seadrive-gui" = "latest"
 
 [bootstrap.files]
 "/etc/modprobe.d/apple-fn-keys.conf".content = "options hid_apple fnmode=2 swap_fn_leftctrl=1\n"
