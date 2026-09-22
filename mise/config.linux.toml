@@ -67,6 +67,7 @@ thunderbird
 "dnf:speech-dispatcher-utils" = "latest"
 "dnf:sqlite" = "latest"
 "dnf:tesseract" = "latest"
+"dnf:tesseract-langpack-eng" = "latest"
 "dnf:tio" = "latest"
 "dnf:vdpauinfo" = "latest"
 "dnf:wev" = "latest"
