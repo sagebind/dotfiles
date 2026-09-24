@@ -175,6 +175,11 @@ env = [
 "/etc/modules-load.d/99-sg.conf".content = "sg\n"
 "/etc/udev/rules.d/51-openterface.rules".source = "../config/openterface/openterface.rules"
 
+[bootstrap.services.atuin]
+scope = "user"
+requires_tools = true
+command = "~/.local/bin/mise exec -- atuin daemon start"
+
 [bootstrap.linux.systemd.units.keepassxc]
 description = "KeePassXC system tray service"
 wants = ["graphical-session.target"]
