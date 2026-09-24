@@ -9,7 +9,7 @@
 # "widen/brew" = "git@github.com:Widen/brew"
 
 [bootstrap.macos.launchd.agents.pitchfork]
-program = "~/.local/bin/mise"
+program = "{{ mise_bin }}"
 args = ["exec", "--env", "widen", "--", "pitchfork", "supervisor", "run", "--boot"]
 stdout_path = "~/Library/Logs/pitchfork.log"
 stderr_path = "~/Library/Logs/pitchfork.err.log"
