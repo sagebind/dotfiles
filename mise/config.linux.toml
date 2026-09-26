@@ -144,7 +144,7 @@ login_shell = "/usr/bin/fish"
 [bootstrap.users.stephen]
 group = "stephen"
 # allow unprivileged uinput use
-groups = ["input"]
+groups = ["cdrom", "input"]
 
 [bootstrap.directories."/etc/mise"]
 owner = "root"
