@@ -1,5 +1,6 @@
 .classpath
 .DS_Store
+.goose
 .project
 .settings
 .tags*
