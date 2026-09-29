@@ -1,6 +1,7 @@
 [env]
 AWS_VAULT_BACKEND = "file"
 AWS_VAULT_PROMPT = "osascript"
+OPENSPEC_TELEMETRY = "0"
 
 [tools]
 "age" = "latest"
