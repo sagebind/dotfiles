@@ -100,6 +100,15 @@
       "matchType": "exact",
       "action": "mute",
       "urgency": "default"
+    },
+    {
+      "enabled": true,
+      "field": "desktopEntry",
+      "pattern": "Seafile",
+      "matchType": "exact",
+      "action": "mute",
+      "urgency": "default",
+      "bypassDnd": false
     }
   ],
   "osdAlwaysShowValue": true,
