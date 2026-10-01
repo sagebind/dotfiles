@@ -5,5 +5,5 @@ bind_address = "127.0.0.1"
 
 [daemons.hermes]
 run = "~/.local/bin/hermes dashboard --host 0.0.0.0 --no-open"
-boot_start = true
+boot_start = false
 mise = true
