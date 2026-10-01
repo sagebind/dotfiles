@@ -8,6 +8,7 @@ OPENSPEC_TELEMETRY = "0"
 "aws-vault" = "latest"
 "github:buildkite/cli" = "latest"
 "nono" = "latest"
+"npm:@fission-ai/openspec" = "latest"
 "pipx:yubikey-manager" = "latest"
 "pitchfork" = "latest"
 
