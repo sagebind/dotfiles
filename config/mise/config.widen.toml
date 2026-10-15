@@ -11,7 +11,6 @@ OPENSPEC_TELEMETRY = "0"
 "nono" = "latest"
 "npm:@fission-ai/openspec" = "latest"
 "pipx:yubikey-manager" = "latest"
-"pitchfork" = "latest"
 
 [tools."http:helm2"]
 version = "2.16.2"
