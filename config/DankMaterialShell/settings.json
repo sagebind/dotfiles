@@ -3,6 +3,7 @@
   "currentThemeCategory": "dynamic",
   "popupTransparency": 0.7,
   "cornerRadius": 12,
+  "clockFormat": "24h",
   "useFahrenheit": true,
   "barElevationEnabled": false,
   "blurEnabled": true,
@@ -46,6 +47,11 @@
     },
     {
       "id": "doNotDisturb",
+      "enabled": true,
+      "width": 50
+    },
+    {
+      "id": "builtin_vpn",
       "enabled": true,
       "width": 50
     },
@@ -191,18 +197,19 @@
         },
         {
           "id": "vpn",
-          "enabled": true
+          "enabled": false
         },
         {
           "id": "easyEffects",
-          "enabled": true
+          "enabled": false
         },
         {
           "id": "controlCenterButton",
           "enabled": true,
           "showBrightnessIcon": false,
           "showBrightnessPercent": false,
-          "showIdleInhibitorIcon": true
+          "showIdleInhibitorIcon": true,
+          "showVpnIcon": true
         },
         {
           "id": "notificationButton",
