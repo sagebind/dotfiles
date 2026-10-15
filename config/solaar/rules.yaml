@@ -6,10 +6,20 @@
 - Rule:
   - MouseGesture: Mouse Left
   - KeyPress:
-    - [Super_L, Page_Down]
+    - [Super_L, Right]
     - click
 - Rule:
   - MouseGesture: Mouse Right
+  - KeyPress:
+    - [Super_L, Left]
+    - click
+- Rule:
+  - MouseGesture: Mouse Up
+  - KeyPress:
+    - [Super_L, Page_Down]
+    - click
+- Rule:
+  - MouseGesture: Mouse Down
   - KeyPress:
     - [Super_L, Page_Up]
     - click
