@@ -28,6 +28,25 @@
 thunderbird
 '''
 
+# detect system info and set machine-specific mise env
+[dotfiles."~/.miserc.toml/env"]
+template = "tera"
+block = """
+env = [
+{% if "TUXEDO" in read_file(path="/sys/devices/virtual/dmi/id/chassis_vendor") %}
+    "tuxedo",
+{% endif %}
+{% if "TUXEDO InfinityBook Max 15 AMD Gen10" in read_file(path="/sys/devices/virtual/dmi/id/product_name") %}
+    "niri",
+    "pluto",
+{% endif %}
+{% if "MacBookPro18,3" in read_file(path="/sys/devices/virtual/dmi/id/product_name") %}
+    "niri",
+    "zoran",
+{% endif %}
+]
+"""
+
 [bootstrap.packages]
 "dnf:adw-gtk3-theme" = "latest"
 "dnf:alsa-tools" = "latest"
@@ -86,7 +105,6 @@ thunderbird
 "flatpak:com.github.rafostar.Clapper" = "latest"
 "flatpak:com.github.tchx84.Flatseal" = "latest"
 "flatpak:com.github.wwmm.easyeffects" = "latest"
-"flatpak:com.jetbrains.DataGrip" = "latest"
 "flatpak:com.makemkv.MakeMKV" = "latest"
 "flatpak:com.moonlight_stream.Moonlight" = "latest"
 "flatpak:com.ranfdev.DistroShelf" = "latest"
@@ -145,30 +163,6 @@ login_shell = "/usr/bin/fish"
 group = "stephen"
 # allow unprivileged uinput use
 groups = ["cdrom", "input"]
-
-[bootstrap.directories."/etc/mise"]
-owner = "root"
-group = "root"
-mode = "0755"
-
-# detect system info and set machine-specific mise env
-[bootstrap.files."/etc/mise/miserc.toml"]
-owner = "root"
-group = "root"
-template = true
-content = """
-env = [
-{% if "TUXEDO" in read_file(path="/sys/devices/virtual/dmi/id/chassis_vendor") %}
-    "tuxedo",
-{% endif %}
-{% if "TUXEDO InfinityBook Max 15 AMD Gen10" in read_file(path="/sys/devices/virtual/dmi/id/product_name") %}
-    "pluto",
-{% endif %}
-{% if "MacBookPro18,3" in read_file(path="/sys/devices/virtual/dmi/id/product_name") %}
-    "zoran",
-{% endif %}
-]
-"""
 
 [bootstrap.files]
 # configure the sg module to load automatically

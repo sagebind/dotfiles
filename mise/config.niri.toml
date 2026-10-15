@@ -1,0 +1,23 @@
+[bootstrap.dnf.repos]
+dms.copr = "avengemedia/dms"
+niri.copr = "yalter/niri"
+xremap.copr = "blakegardner/xremap"
+xwayland-satellite.copr = "ulysg/xwayland-satellite"
+
+[bootstrap.packages]
+"dnf:dms" = "latest"
+"dnf:niri" = "latest"
+"dnf:nodejs" = "latest"
+"dnf:quickshell-git" = "latest"
+"dnf:vicinae" = "latest"
+"dnf:wayland-utils" = "latest"
+"dnf:xremap-niri" = "latest"
+
+"dnf:mako".state = "absent"
+"dnf:waybar".state = "absent"
+
+[bootstrap.hooks.post-packages]
+run = [
+    "systemctl enable --user dms.service",
+    "systemctl enable --user vicinae.service",
+]
