@@ -11,4 +11,5 @@ coolercontrol-plugins.copr = "sagebind/coolercontrol-plugins"
 
 [bootstrap.files]
 "/etc/modprobe.d/apple-fn-keys.conf".content = "options hid_apple fnmode=2 swap_fn_leftctrl=1\n"
+"/etc/modprobe.d/appledrm-notch.conf".content = "options appledrm show_notch=1\n"
 "/etc/modprobe.d/macsmc-fancontrol.conf".content = "options macsmc_hwmon fan_control=1\n"
