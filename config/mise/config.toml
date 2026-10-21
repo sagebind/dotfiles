@@ -67,8 +67,8 @@ os = ["linux/x64"]
 
 [tools."pipx:ocrmypdf"]
 version = "latest"
-dependencies = ["uv"]
+depends = ["uv"]
 
 [tools."pipx:organize-tool"]
 version = "latest"
-dependencies = ["uv"]
+depends = ["uv"]
