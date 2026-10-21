@@ -5,6 +5,7 @@ xremap.copr = "blakegardner/xremap"
 xwayland-satellite.copr = "ulysg/xwayland-satellite"
 
 [bootstrap.packages]
+"dnf:dankcalendar" = "latest"
 "dnf:dms" = "latest"
 "dnf:niri" = "latest"
 "dnf:nodejs" = "latest"
