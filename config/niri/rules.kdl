@@ -162,6 +162,14 @@ window-rule {
 }
 
 window-rule {
+    match app-id="net.thunderbird.Thunderbird" title=" - Mozilla Thunderbird$"
+    draw-border-with-background false
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
     match app-id=r#"^com\.seafile\.seafile-applet$"#
     open-floating true
     default-floating-position x=256 y=8 relative-to="top-right"
