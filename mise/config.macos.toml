@@ -19,6 +19,7 @@ env = [
 "brew-cask:bruno" = "latest"
 "brew-cask:font-hurmit-nerd-font" = "latest"
 "brew-cask:font-symbols-only-nerd-font" = "latest"
+"brew-cask:keepassxc" = "latest"
 "brew-cask:kitty" = "latest"
 "brew-cask:localsend" = "latest"
 "brew-cask:middleclick" = "latest"
