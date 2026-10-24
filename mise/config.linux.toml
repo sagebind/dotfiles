@@ -110,6 +110,7 @@ env = [
 "flatpak:com.ranfdev.DistroShelf" = "latest"
 "flatpak:com.saivert.pwvucontrol" = "latest"
 "flatpak:de.hohnstaedt.xca" = "latest"
+"flatpak:dev.mooday.GstPipelineStudio" = "latest"
 "flatpak:es.danirod.Cartero" = "latest"
 "flatpak:fm.reaper.Reaper" = "latest"
 "flatpak:io.github.dimtpap.coppwr" = "latest"
