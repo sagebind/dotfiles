@@ -1,5 +1,6 @@
 [bootstrap.dnf.repos]
 dms.copr = "avengemedia/dms"
+dux.copr = "duxlabs/dux"
 niri.copr = "yalter/niri"
 xremap.copr = "blakegardner/xremap"
 xwayland-satellite.copr = "ulysg/xwayland-satellite"
@@ -7,6 +8,7 @@ xwayland-satellite.copr = "ulysg/xwayland-satellite"
 [bootstrap.packages]
 "dnf:dankcalendar" = "latest"
 "dnf:dms" = "latest"
+"dnf:dms-greeter" = "latest"
 "dnf:niri" = "latest"
 "dnf:nodejs" = "latest"
 "dnf:quickshell-git" = "latest"
