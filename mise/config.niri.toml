@@ -24,3 +24,6 @@ run = [
     "systemctl enable --user dms.service",
     "systemctl enable --user vicinae.service",
 ]
+
+[bootstrap.files]
+"/etc/dnf/protected.d/niri.conf".content = "dms-greeter\nniri\n"
