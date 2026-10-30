@@ -35,7 +35,7 @@ keymap:
       Ctrl-Comma: Ctrl-Dot
     window:
       only:
-        - Open WebUI — Mozilla Firefox
+        - /Open WebUI — Mozilla Firefox$/
 
   - name: Obsidian close settings with ESC
     remap:
