@@ -26,9 +26,16 @@ keymap:
     remap:
       Ctrl-Comma:
         launch: ["firefox", "about:preferences"]
+    application:
+      only:
+        - org.mozilla.firefox
+
+  - name: Open WebUI settings
+    remap:
+      Ctrl-Comma: Ctrl-Dot
     window:
       only:
-        - / Mozilla Firefox$/
+        - Open WebUI — Mozilla Firefox
 
   - name: Obsidian close settings with ESC
     remap:
