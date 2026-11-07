@@ -1,6 +1,6 @@
 [bootstrap.dnf.repos]
-dms.copr = "avengemedia/dms"
-dux.copr = "duxlabs/dux"
+dms.copr = "duxlabs/dms"
+dux.copr = "duxlabs/dux-repo"
 niri.copr = "yalter/niri"
 xremap.copr = "blakegardner/xremap"
 xwayland-satellite.copr = "ulysg/xwayland-satellite"
