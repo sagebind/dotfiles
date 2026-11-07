@@ -6,9 +6,9 @@ xremap.copr = "blakegardner/xremap"
 xwayland-satellite.copr = "ulysg/xwayland-satellite"
 
 [bootstrap.packages]
-"dnf:dankcalendar" = "latest"
 "dnf:dms" = "latest"
-"dnf:dms-greeter" = "latest"
+"dnf:dux-calendar" = "latest"
+"dnf:dux-greeter" = "latest"
 "dnf:niri" = "latest"
 "dnf:nodejs" = "latest"
 "dnf:quickshell-git" = "latest"
@@ -26,4 +26,4 @@ run = [
 ]
 
 [bootstrap.files]
-"/etc/dnf/protected.d/niri.conf".content = "dms-greeter\nniri\n"
+"/etc/dnf/protected.d/niri.conf".content = "dux-greeter\nniri\n"
