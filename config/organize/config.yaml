@@ -75,6 +75,17 @@ rules:
           on_conflict: deduplicate
 
   - locations: ~/Downloads
+    filters:
+      - filecontent: "Health Savings Account"
+      - filecontent: STEPHEN
+      - filecontent: >-
+          This Statement Date\s*(?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})
+    actions:
+      - move:
+          dest: ~/Seafile/Documents/Financial/Statements/HSA/{filecontent.year}-{filecontent.month}-{filecontent.day}.pdf
+          on_conflict: skip
+
+  - locations: ~/Downloads
     subfolders: true
     filters:
       - extension: pdf
