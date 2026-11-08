@@ -292,7 +292,8 @@
       "widgetOutlineOpacity": 0.1,
       "shadowCustomColor": "#ffffff",
       "followInterfaceStyle": false,
-      "widgetFollowInterfaceStyle": false
+      "widgetFollowInterfaceStyle": false,
+      "widgetPadding": 8
     }
   ],
   "builtInPluginSettings": {
@@ -317,6 +318,7 @@
       "showOnLastDisplay": true,
       "position": 1,
       "mode": "compact",
+      "middleClickAction": "close",
       "taskbarAlign": "center",
       "widgetExpansion": "popout",
       "iconSize": 48,
@@ -381,5 +383,7 @@
   "blurBorderSeeded": true,
   "dmsWindowsFloatingSeeded": [
     "niri"
-  ]
+  ],
+  "interfaceStyle": "classic",
+  "density": "comfortable"
 }
