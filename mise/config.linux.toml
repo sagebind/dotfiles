@@ -176,13 +176,6 @@ after = ["graphical-session.target"]
 exec_start = "{{ mise_bin }} exec -- atuin daemon start"
 wanted_by = ["graphical-session.target"]
 
-[bootstrap.linux.systemd.units.keepassxc]
-description = "KeePassXC system tray service"
-wants = ["graphical-session.target"]
-after = ["graphical-session.target"]
-exec_start = "flatpak run org.keepassxc.KeePassXC --minimized"
-wanted_by = ["graphical-session.target"]
-
 [bootstrap.linux.systemd.units.kitty]
 description = "Kitty terminal (single-instance, hidden)"
 wants = ["graphical-session.target"]
