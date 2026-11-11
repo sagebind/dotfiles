@@ -49,4 +49,16 @@ output "eDP-1" {
     scale 1.75
 }
 
+// Force top bar to be fully black to help hide the notch.
+layer-rule {
+    match namespace="^dms:bar$"
+    shadow {
+        on
+        color "#000000"
+        draw-behind-window true
+        offset x=0 y=-28
+        softness 0
+    }
+}
+
 {% endif %}
