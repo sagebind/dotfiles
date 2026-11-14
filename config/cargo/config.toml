@@ -1,5 +1,8 @@
 [build]
 # target-dir = ".cache/cargo"
 
+[registry]
+global-min-publish-age = "3 days"
+
 [registries.crates-io]
 protocol = "sparse"
