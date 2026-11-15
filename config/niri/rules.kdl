@@ -79,6 +79,14 @@ window-rule {
     open-floating true
 }
 
+// Windows that open floating by default, but actually I prefer they did not.
+// Mostly app settings windows.
+window-rule {
+    match app-id="Audacity4" title="Preferences"
+    match app-id="^resolve(-real)?$" title="^Preferences$"
+    open-floating false
+}
+
 // Increase file picker window size.
 window-rule {
     match app-id=r#"^org\.gnome\.Nautilus$"# title="^Open File\\b"
@@ -94,8 +102,9 @@ window-rule {
     max-width 650
 }
 
-// DaVinci Resolve splash screen.
+// Splash screens
 window-rule {
+    match app-id="^Audacity4$" title="^Audacity4?$"
     match app-id="^resolve(-real)?$" title="^resolve(-real)?$"
     open-floating true
     focus-ring {
@@ -126,11 +135,6 @@ window-rule {
     shadow {
         off
     }
-}
-
-window-rule {
-    match app-id="^resolve(-real)?$" title="^Preferences$"
-    open-floating false
 }
 
 window-rule {
