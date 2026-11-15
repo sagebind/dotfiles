@@ -199,7 +199,9 @@
       "centerWidgets": [
         {
           "id": "music",
-          "enabled": true
+          "enabled": true,
+          "mediaSize": 2,
+          "mediaSmoothLyrics": false
         },
         {
           "id": "clock",
@@ -302,6 +304,12 @@
     },
     "dms_clipboard_search": {
       "trigger": "cb"
+    },
+    "dms_qr_generator": {
+      "trigger": "qrg"
+    },
+    "dms_power": {
+      "trigger": "pw"
     }
   },
   "configVersion": 42,
