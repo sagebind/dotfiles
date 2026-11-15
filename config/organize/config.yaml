@@ -245,7 +245,7 @@ rules:
     filters:
       - extension: pdf
       - filecontent: >-
-          (?P<account>[\w\- ]+)( \(.+\))? Reconciliation Report
+          \s*(?P<account>[\w\- ]+)( \(.+\))? Reconciliation Report
       - filecontent: 'For the Statement Ending (?P<month>\d{2})/(?P<day>\d{2})/(?P<year>\d{4})'
     actions:
       - move:
