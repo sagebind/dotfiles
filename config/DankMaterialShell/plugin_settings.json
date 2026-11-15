@@ -63,5 +63,8 @@
   },
   "easyEffects": {
     "enabled": false
+  },
+  "dankCalendarAgenda": {
+    "enabled": true
   }
 }
