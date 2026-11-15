@@ -1,0 +1,401 @@
+#!/usr/bin/env bash
+# install_icon_kde=vcs-diff
+# install_keyboard_shortcut=<Control><Shift>C
+
+# Source the file '.common-functions.sh'.
+SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
+ROOT_DIR=$(grep --only-matching "^.*scripts[^/]*" <<<"$SCRIPT_DIR")
+source "$ROOT_DIR/.common-functions.sh"
+
+_main() {
+    local input_files=""
+
+    # Execute initial checks.
+    input_files=$(_get_files "par_type=all; par_min_items=2; par_max_items=3; par_sort_list=true")
+
+    # Run the main process.
+    _compare "$input_files"
+}
+
+# Function: _compare
+#
+# Description:
+#   This function compares files based on their MIME types and available
+#   commands. It supports two or three files depending on the command and file
+#   type.
+#
+# Parameters:
+#   $1 (input_files): Input files separated by '$FIELD_SEPARATOR'.
+_compare() {
+    local input_files=$1
+    local num_files_compare=2 # Default number of files to compare.
+    local msg=""
+
+    local file_1="" # First file in the input.
+    local file_2="" # Second file in the input.
+    local file_3="" # Third file in the input, optional.
+
+    # Extract individual file paths from the input string.
+    file_1=$(_get_element "$input_files" "1")
+    file_2=$(_get_element "$input_files" "2")
+    file_3=$(_get_element "$input_files" "3")
+
+    # Perform a preliminary comparison to check if the files are identical.
+    _compare_identical "$file_1" "$file_2" "$file_3"
+
+    # Adjust the number of files to compare if a third file is provided.
+    if [[ -n "$file_3" ]]; then
+        num_files_compare=3
+    fi
+
+    # Determine the command to execute.
+    local command=""
+    command=$(_get_command "$file_1" "$num_files_compare")
+
+    # Check dependencies required for the command.
+    _check_dependencies "$command"
+
+    # Execute the appropriate command based on the determined type.
+    case $command in
+    "magick")
+        # Use ImageMagick's compare tool for image files.
+        if ((num_files_compare > 2)); then
+            msg="$(_i18n 'You must select only two images to compare!')"
+            _display_error_box "$msg"
+            _exit_script
+        fi
+        _compare_images "$file_1" "$file_2"
+        ;;
+    "diffpdf")
+        # Use 'diffpdf' for comparing PDF files.
+        if ((num_files_compare > 2)); then
+            msg="$(_i18n 'You must select only two PDFs to compare!')"
+            _display_error_box "$msg"
+            _exit_script
+        fi
+        diffpdf -- "$file_1" "$file_2" &
+        ;;
+    "meld" | "kdiff3")
+        # Use 'meld' or 'kdiff3' for general file or directory comparison.
+        if ((num_files_compare == 2)); then
+            $command -- "$file_1" "$file_2" &
+        else
+            $command -- "$file_1" "$file_2" "$file_3" &
+        fi
+        ;;
+    *",xxd")
+        # Use a hex comparison tool for binary files.
+        if ((num_files_compare > 2)); then
+            msg="$(_i18n 'You must select only two binary files to compare!')"
+            _display_error_box "$msg"
+            _exit_script
+        fi
+        _compare_hexa "$command" "$file_1" "$file_2" "$file_3"
+        ;;
+    esac
+}
+
+# Function: _compare_hexa
+#
+# Description:
+#   This function compares binary files in hexadecimal format and handles
+#   modifications. It converts files to hex view, compares them, and allows
+#   editing or saving changes.
+#
+# Parameters:
+#   $1 (command): Command to use for comparison (e.g., 'meld').
+#   $2 (file_1): First binary file to compare.
+#   $3 (file_2): Second binary file to compare.
+_compare_hexa() {
+    local command=$1
+    local file_1=$2
+    local file_2=$3
+
+    # Remove the ',xxd' suffix from the command name.
+    command=${command//,xxd/}
+
+    # Get the sizes of the two files to calculate differences.
+    local file_1_size=""
+    local file_2_size=""
+    local size_difference=0
+    file_1_size=$(_get_file_size "$file_1")
+    file_2_size=$(_get_file_size "$file_2")
+    size_difference=$(_get_difference "$file_1_size" "$file_2_size")
+
+    # If the files have different sizes,
+    # compute a column width for better comparison.
+    local cols=24
+    if ((size_difference != 0)); then
+        cols=$(_get_hex_ideal_cols "$size_difference")
+    fi
+
+    # Convert the binary files into hexadecimal format for comparison.
+    local file_1_hex=""
+    local file_2_hex=""
+    file_1_hex="$TEMP_DIR_TASK/1_$(basename -- "$file_1")"
+    file_2_hex="$TEMP_DIR_TASK/2_$(basename -- "$file_2")"
+    xxd -c "$cols" "$file_1" "$file_1_hex"
+    xxd -c "$cols" "$file_2" "$file_2_hex"
+
+    # Remove the address column from the hex dumps for cleaner comparison.
+    sed -i "s|^[^:]*: ||g" "$file_1_hex"
+    sed -i "s|^[^:]*: ||g" "$file_2_hex"
+
+    # Use the defined comparison command to compare or edit the hex dumps.
+    $command -- "$file_1_hex" "$file_2_hex"
+
+    # Simplify the hex dumps for further processing (plain hex dump format).
+    sed -i "s|  .*||g; s| ||g" "$file_1_hex"
+    sed -i "s|  .*||g; s| ||g" "$file_2_hex"
+
+    # Save the files after possible modifications.
+    local file_1_modified="$file_1_hex.bin"
+    local file_2_modified="$file_2_hex.bin"
+    xxd -revert -p "$file_1_hex" "$file_1_modified"
+    xxd -revert -p "$file_2_hex" "$file_2_modified"
+
+    # Move the modified files to their original locations, replacing the
+    # originals.
+    _move_file "safe_overwrite" "$file_1_modified" "$file_1"
+    _move_file "safe_overwrite" "$file_2_modified" "$file_2"
+}
+
+# Function: _compare_identical
+#
+# Description:
+#   This function checks if two or three defined items (files or directories)
+#   are identical. If all selected items are identical, displays a message and
+#   exits the script.
+#
+# Parameters:
+#   $1 (file_1): First item to compare.
+#   $2 (file_2): Second item to compare.
+#   $3 (file_3): Optional. Third item to compare.
+_compare_identical() {
+    local file_1=$1
+    local file_2=$2
+    local file_3=$3
+    local msg=""
+
+    # Variables to store the results of the comparisons.
+    local diff_1_2=""
+    local diff_1_3=""
+
+    # Compare the first and second items. Use 'diff' to check for differences.
+    diff_1_2=$(diff --brief --recursive -- "$file_1" "$file_2" 2>&1)
+
+    # If a third item is not provided, check if 'file_1' and 'file_2' are
+    # identical.
+    if [[ -z "$file_3" ]]; then
+        if [[ -z "$diff_1_2" ]]; then
+            msg="$(_i18n 'The selected items are identical.')"
+            _display_info_box "$msg"
+            _exit_script
+        fi
+    else
+        # If a third item is provided, compare it with the first item.
+        diff_1_3=$(diff --brief --recursive -- "$file_1" "$file_3" 2>&1)
+
+        # Check if all three items are identical.
+        if [[ -z "$diff_1_2" ]] && [[ -z "$diff_1_3" ]]; then
+            msg="$(_i18n 'The selected items are identical.')"
+            _display_info_box "$msg"
+            _exit_script
+        fi
+    fi
+}
+
+# Function: _compare_images
+#
+# Description:
+#   This function compares two images using ImageMagick. If the images are
+#   identical, it displays a message and exits the script. Otherwise, it
+#   generates a visual diff and opens it with an image viewer.
+#
+# Parameters:
+#   $1 (file_1): First image to compare.
+#   $2 (file_2): Second image to compare.
+#
+# Returns:
+#   1 (false): If the dimensions of either image cannot be retrieved.
+_compare_images() {
+    local file_1=$1
+    local file_2=$2
+
+    # Check if the two images have identical pixel values.
+    if _cmd_magick compare -metric AE -- "$file_1" "$file_2" null: &>/dev/null; then
+        local msg=""
+        msg="$(_i18n 'The selected images have the same pixel values.')"
+        _display_info_box "$msg"
+        _exit_script
+    fi
+
+    # Retrieve the dimensions of each image (width x height format).
+    local dimensions_1=""
+    local dimensions_2=""
+    dimensions_1=$(_cmd_magick identify -format "%wx%h" "$file_1" 2>&1)
+    _check_output "$?" "$dimensions_1" "$file_1" "" || return 1
+    dimensions_2=$(_cmd_magick identify -format "%wx%h" "$file_2" 2>&1)
+    _check_output "$?" "$dimensions_2" "$file_2" "" || return 1
+
+    # Create a temporary file for the visual diff output.
+    local temp_file=""
+    temp_file="$(_make_temp_dir)/Compare.png"
+
+    # Compare the images based on their dimensions.
+    if [[ "$dimensions_1" == "$dimensions_2" ]]; then
+        # If dimensions are the same, use a grayscale diff for better clarity.
+        _cmd_magick convert \
+            '(' "$file_1" -flatten -grayscale Rec709Luminance ')' \
+            '(' "$file_2" -flatten -grayscale Rec709Luminance ')' \
+            '(' -clone 0-1 -compose darken -composite ')' \
+            -channel RGB -combine "$temp_file"
+    else
+        # If dimensions differ, generate a visual diff highlighting
+        # differences.
+        _cmd_magick compare -- "$file_1" "$file_2" -compose src "$temp_file"
+    fi
+
+    # Determine the default image viewer to display the visual diff.
+    local image_viewer=""
+    # shellcheck disable=SC2034
+    local apps=(
+        "loupe"
+        "eog"
+    )
+    image_viewer=$(_get_available_app "apps")
+    if [[ -z "$image_viewer" ]]; then
+        image_viewer=$(_xdg_get_default_app "image/png")
+    fi
+
+    # Open the visual diff with the default image viewer.
+    if [[ "$image_viewer" == *"eog" ]]; then
+        # If the viewer is Eye of GNOME (eog), ensure a new instance is opened.
+        $image_viewer --new-instance -- "$temp_file"
+    else
+        $image_viewer -- "$temp_file"
+    fi
+}
+
+# Function: _get_command
+#
+# Description:
+#   This function determines the appropriate command for comparing files or
+#   directories. The selection is based on the file type, the number of files
+#   to compare, and system availability of commands.
+#
+# Parameters:
+#   $1 (input_file): The file to analyze for MIME type or encoding.
+#   $2 (num_files_compare): The number of files to compare (2 or 3).
+#
+# Returns:
+#   Prints the selected command name (e.g., 'diffpdf', 'magick', 'meld',
+#   'kdiff3', or 'meld,xxd') to standard output.
+_get_command() {
+    local input_file=$1
+    local num_files_compare=$2
+    local command=""
+
+    # Determine the MIME type of the input file.
+    local file_mime=""
+    file_mime=$(_get_file_mime "$input_file")
+
+    # Select preferred commands based on the file MIME type.
+    case $file_mime in
+    "application/pdf") command="diffpdf" ;;
+    "inode/directory") command="meld" ;;
+    "inode/x-empty") command="meld" ;;
+    "image/"*) command="magick" ;;
+    "text/"*) command="meld" ;;
+    *)
+        # For unknown MIME types, determine the file encoding.
+        local file_encoding=""
+        file_encoding=$(_get_file_encoding "$input_file")
+        if [[ "$file_encoding" == "binary" ]]; then
+            # Binary file comparison.
+            command="meld,xxd"
+        else
+            # Default to text comparison.
+            command="meld"
+        fi
+        ;;
+    esac
+
+    # Adjust the selected command for KDE or LXQt desktop environments.
+    if [[ "$command" == "meld"* ]] && _is_qt_desktop; then
+        command=${command//meld/kdiff3}
+    fi
+
+    printf "%s" "$command"
+}
+
+# Function: _get_hex_ideal_cols
+#
+# Description:
+#   This function determines the ideal number of columns for a hexadecimal
+#   display. The column width is chosen to evenly divide the size difference
+#   between files, ensuring a more organized and visually coherent hex dump.
+#
+# Parameters:
+#   $1 (size_difference): The size difference in bytes between the two files.
+#
+# Returns:
+#   Prints the column width (from 5 to 23) that evenly divides the size
+#   difference, or 24 if no such width is found, to standard output.
+_get_hex_ideal_cols() {
+    local size_difference=$1
+    local cols=24 # Default column width for the hex display.
+
+    # Iterate from 23 down to 5 to find the largest divisor of the size
+    # difference. This ensures that the columns align neatly for better
+    # readability.
+    local i=0
+    for ((i = 23; i >= 5; i--)); do
+        if ((size_difference % i == 0)); then
+            cols=$i
+            break
+        fi
+    done
+
+    printf "%s" "$cols"
+}
+
+# Function: _get_difference
+#
+# Description:
+#   This function calculates the absolute difference between two numbers. The
+#   result is always a positive value, regardless of the order of the inputs.
+#
+# Parameters:
+#   $1 (num_1): The first number.
+#   $2 (num_2): The second number.
+#
+# Returns:
+#   Prints the absolute difference between the two numbers to standard output.
+_get_difference() {
+    local num_1=$1
+    local num_2=$2
+
+    if ((num_1 > num_2)); then
+        printf "%s" "$((num_1 - num_2))"
+    else
+        printf "%s" "$((num_2 - num_1))"
+    fi
+}
+
+# Function: _get_file_size
+#
+# Description:
+#   This function returns the size of a file in bytes.
+#
+# Parameters:
+#   $1 (file): The path of the file.
+#
+# Returns:
+#   Prints the file size in bytes to standard output. Prints nothing if the
+#   file cannot be read.
+_get_file_size() {
+    stat --format="%s" "$1" 2>/dev/null
+}
+
+_main "$@"
