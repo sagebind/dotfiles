@@ -1,7 +1,7 @@
 {
   "currentThemeName": "dynamic",
   "currentThemeCategory": "dynamic",
-  "popupTransparency": 0.7,
+  "popupTransparency": 0.85,
   "clockFormat": "24h",
   "useFahrenheit": true,
   "barElevationEnabled": false,
@@ -198,6 +198,10 @@
       ],
       "centerWidgets": [
         {
+          "id": "dankCalendarAgenda",
+          "enabled": true
+        },
+        {
           "id": "music",
           "enabled": true,
           "mediaSize": 2,
@@ -393,5 +397,6 @@
     "niri"
   ],
   "interfaceStyle": "classic",
-  "density": "comfortable"
+  "density": "comfortable",
+  "calendarBackend": "dankcal"
 }
