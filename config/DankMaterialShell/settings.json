@@ -7,7 +7,7 @@
   "barElevationEnabled": false,
   "blurEnabled": true,
   "blurBorderOpacity": 0.3,
-  "blurWallpaperOnOverview": true,
+  "blurWallpaperOnOverview": false,
   "controlCenterWidgets": [
     {
       "id": "user",
@@ -168,9 +168,7 @@
   "updaterUseCustomCommand": true,
   "updaterCustomCommand": "nobara-sync cli",
   "screenPreferences": {
-    "wallpaper": [
-      "all"
-    ]
+    "wallpaper": ["all"]
   },
   "barConfigs": [
     {
@@ -178,9 +176,7 @@
       "name": "Main Bar",
       "enabled": true,
       "position": 0,
-      "screenPreferences": [
-        "all"
-      ],
+      "screenPreferences": ["all"],
       "showOnLastDisplay": true,
       "leftWidgets": [
         {
@@ -324,9 +320,7 @@
       "id": "dock",
       "name": "Dock",
       "enabled": false,
-      "screenPreferences": [
-        "all"
-      ],
+      "screenPreferences": ["all"],
       "showOnLastDisplay": true,
       "position": 1,
       "mode": "compact",
@@ -393,9 +387,7 @@
     }
   ],
   "blurBorderSeeded": true,
-  "dmsWindowsFloatingSeeded": [
-    "niri"
-  ],
+  "dmsWindowsFloatingSeeded": ["niri"],
   "interfaceStyle": "classic",
   "density": "comfortable",
   "calendarBackend": "dankcal"
