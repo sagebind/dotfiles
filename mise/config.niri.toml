@@ -16,6 +16,8 @@ xwayland-satellite.copr = "ulysg/xwayland-satellite"
 "dnf:wayland-utils" = "latest"
 "dnf:xremap-niri" = "latest"
 
+# Stuff to remove.
+"dnf:gnome-calendar".state = "absent"
 "dnf:mako".state = "absent"
 "dnf:waybar".state = "absent"
 
