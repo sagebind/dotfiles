@@ -114,6 +114,7 @@ env = [
 "flatpak:dev.mooday.GstPipelineStudio" = "latest"
 "flatpak:es.danirod.Cartero" = "latest"
 "flatpak:fm.reaper.Reaper" = "latest"
+"flatpak:io.github.alainm23.planify" = "latest"
 "flatpak:io.github.dimtpap.coppwr" = "latest"
 "flatpak:io.github.dweymouth.supersonic" = "latest"
 "flatpak:io.github.flattool.Ignition" = "latest"
